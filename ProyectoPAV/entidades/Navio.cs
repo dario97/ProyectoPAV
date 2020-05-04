@@ -8,6 +8,33 @@ namespace ProyectoPAV.entidades
 {
     class Navio
     {
+        int codigoNavio = 0;
+        string nombre = "";
+        float altura = 0.0f;
+        float autonomia = 0.0f;
+        float desplazamiento = 0.0f;
+        float eslora = 0.0f;
+        float manga = 0.0f;
+        int cantMaxPasjeros = 0;
+        int cantTripulantes = 0;
+        int tipoClasificacion = 0;
+        int cantMotores = 0;
 
+        Navio()
+        {
+           
+        }
+
+        public string Nombre { get => nombre; set => nombre = value; }
+        public float Altura { get => altura; set => altura = value; }
+        public float Autonomia { get => autonomia; set => autonomia = value; }
+        public float Desplazamiento { get => desplazamiento; set => desplazamiento = value; }
+        public float Eslora { get => eslora; set => eslora = value; }
+        public float Manga { get => manga; set => manga = value; }
+        public int CantMaxPasjeros { get => cantMaxPasjeros; set => cantMaxPasjeros = value; }
+        public int CantTripulantes { get => cantTripulantes; set => cantTripulantes = value; }
+        public int TipoClasificacion { get => tipoClasificacion; set => tipoClasificacion = value; }
+        public int CantMotores { get => cantMotores; set => cantMotores = value; }
+        public int CodigoNavio { get => codigoNavio; set => codigoNavio = value; }
     }
 }
