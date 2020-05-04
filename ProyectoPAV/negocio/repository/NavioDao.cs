@@ -32,7 +32,7 @@ namespace ProyectoPAV.negocio.repository
 
         private bool update(Navio navio)
         {
-            string strSQL = "UPDATE Productos " +
+            string strSQL = "UPDATE NAVIOS " +
                              "SET Nombre_navio=" + "'" + navio.Nombre + "'" + "," +
                              " Altura=" + "'" + navio.Altura + "'" + "," +
                              " Autonomia=" + "'" + navio.Autonomia + "'" + "," +
