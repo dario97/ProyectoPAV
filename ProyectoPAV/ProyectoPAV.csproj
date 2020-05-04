@@ -55,7 +55,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\clases\Ignorar.cs" />
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
     <Compile Include="negocio\repository\NavioDao.cs" />
     <Compile Include="Program.cs" />
@@ -84,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\" />
+    <Folder Include="gui\clases\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
