@@ -23,6 +23,11 @@ namespace ProyectoPAV.negocio.servicios
             return navioDao.consultar_x_nombre(nombre);
         }
 
+        internal DataTable consultarTodos()
+        {
+            return navioDao.consultarTodos();
+        }
+
         internal bool crearNavio(Navio navio)
         {
             return navioDao.create(navio);

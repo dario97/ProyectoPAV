@@ -119,6 +119,9 @@
     <EmbeddedResource Include="gui\frm_abmc_usuarios.resx">
       <DependentUpon>frm_abmc_usuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="gui\Frm_Alta_Navio.resx">
+      <DependentUpon>Frm_Alta_Navio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="gui\frm_alta_TipoNavio.resx">
       <DependentUpon>frm_alta_TipoNavio.cs</DependentUpon>
     </EmbeddedResource>
