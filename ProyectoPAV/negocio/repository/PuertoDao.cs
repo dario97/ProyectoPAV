@@ -1,6 +1,7 @@
 ﻿using ProyectoPAV.entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,16 +17,33 @@ namespace ProyectoPAV.negocio.repository
             accesoBD = new BE_acceso_BD();
         }
 
-        private Puerto mapping(DataRow row)
-        {
-            int codPuerto = row["Cod_puerto"];
-            string nombre = row["Nombre"].ToString();
-               
-            Puerto puerto = new Puerto(codPuerto, nombre);
+        //private Puerto mapping(DataRow row)
+        //{
+        //    int codPuerto = row["Cod_puerto"];
+        //    string nombre = row["Nombre"].ToString();
 
-            return puerto;
+        //    Puerto puerto = new Puerto(codPuerto, nombre);
+
+        //    return puerto;
+        //}
+
+
+        public DataTable consultar_x_nombre(string nombre)
+        {
+
+            string sql = @"SELECT * FROM PUERTOS WHERE Nombre like '%" + nombre + "%'";
+            return accesoBD.ejecutarConsulta(sql);
+
         }
-            
+
+        public DataTable consultarTodos()
+        {
+
+            string sql = @"SELECT * FROM PUERTOS";
+            return accesoBD.ejecutarConsulta(sql);
+
+        }
+
 
         internal bool create(Puerto puerto)
         {

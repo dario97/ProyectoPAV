@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="gui\frm_alta_puertos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frm_alta_puertos.Designer.cs">
+      <DependentUpon>frm_alta_puertos.cs</DependentUpon>
+    </Compile>
     <Compile Include="entidades\Navio.cs" />
     <Compile Include="entidades\Puerto.cs" />
     <Compile Include="entidades\Puesto.cs" />
@@ -114,6 +120,9 @@
     <Compile Include="negocio\servicios\TipoClasificacionNavioService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="gui\frm_alta_puertos.resx">
+      <DependentUpon>frm_alta_puertos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

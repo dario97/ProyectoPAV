@@ -71,6 +71,7 @@
             this.cmd_Agregar.TabIndex = 1;
             this.cmd_Agregar.Text = "Agregar";
             this.cmd_Agregar.UseVisualStyleBackColor = true;
+            this.cmd_Agregar.Click += new System.EventHandler(this.cmd_Agregar_Click);
             // 
             // txt_navio
             // 

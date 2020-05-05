@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoPAV.entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,12 @@ namespace ProyectoPAV.gui
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frm_alta_puertos abrir = new frm_alta_puertos();
+            abrir.ShowDialog();
         }
     }
 }
