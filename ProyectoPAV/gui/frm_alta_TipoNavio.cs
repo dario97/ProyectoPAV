@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoPAV.gui
 {
-    public partial class Form1 : Form
+    public partial class frm_alta_TipoNavio : Form
     {
-        public Form1()
+        public frm_alta_TipoNavio()
         {
             InitializeComponent();
         }
