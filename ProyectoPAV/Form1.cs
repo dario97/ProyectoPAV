@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +21,12 @@ namespace ProyectoPAV
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            TipoClasificacionNavio tipo = new TipoClasificacionNavio(1, "Lujo");
+            TipoClasificacionNavioDao tipoDao = new TipoClasificacionNavioDao();
+
+            tipoDao.delete(tipo);
+
+
 
         }
     }

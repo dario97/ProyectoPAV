@@ -11,7 +11,7 @@ namespace ProyectoPAV.negocio.repository
     {
         BE_acceso_BD accesoBD = new BE_acceso_BD();
 
-        private bool create(Navio navio)
+        internal bool create(Navio navio)
         {
             string strSQL = "INSERT INTO NAVIOS (Nombre_navio, Altura, Autonomia, Desplazamiento, Eslora, Manga, Cant_max_pasajeros, Cant_tripulantes, Tipo_clasificacion, Cant_motores)" +
                 "VALUES (" +
@@ -30,7 +30,7 @@ namespace ProyectoPAV.negocio.repository
             return true;
         }
 
-        private bool update(Navio navio)
+        internal bool update(Navio navio)
         {
             string strSQL = "UPDATE NAVIOS " +
                              "SET Nombre_navio=" + "'" + navio.Nombre + "'" + "," +
@@ -49,7 +49,18 @@ namespace ProyectoPAV.negocio.repository
             return true;
         }
 
+        internal bool delete(Navio navio)
+        {
+            string strSQL = "DELETE FROM NAVIOS " +
+                                " WHERE Cod_navio =" + navio.CodigoNavio;
 
+
+
+            accesoBD.ejecutarConsulta(strSQL);
+            return true;
+
+
+        }
 
 
 

@@ -8,11 +8,18 @@ namespace ProyectoPAV.entidades
 {
     class TipoClasificacionNavio
     {
-        int codigoClasificacion = 0;
+        int codigoClasificacion;
         string descripcion = "";
 
-        TipoClasificacionNavio()
+        public TipoClasificacionNavio(int codigoClasificacion, string descripcion)
         {
+            this.codigoClasificacion = codigoClasificacion;
+            this.descripcion = descripcion;
+        }
+
+        public TipoClasificacionNavio(string descripcion)
+        {
+            this.descripcion = descripcion;
 
         }
 

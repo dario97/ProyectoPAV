@@ -57,6 +57,9 @@
     </Compile>
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
     <Compile Include="negocio\repository\NavioDao.cs" />
+    <Compile Include="negocio\repository\TipoClasificacionNavioDao.cs" />
+    <Compile Include="negocio\servicios\NavioService.cs" />
+    <Compile Include="negocio\servicios\TipoClasificacionNavioService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

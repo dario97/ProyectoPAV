@@ -20,9 +20,33 @@ namespace ProyectoPAV.entidades
         int tipoClasificacion = 0;
         int cantMotores = 0;
 
-        Navio()
+        public Navio(int codigoNavio, string nombre, float altura, float autonomia, float desplazamiento, float eslora, float manga, int cantMaxPasjeros, int cantTripulantes, int tipoClasificacion, int cantMotores)
         {
-           
+            this.codigoNavio = codigoNavio;
+            this.nombre = nombre;
+            this.altura = altura;
+            this.autonomia = autonomia;
+            this.desplazamiento = desplazamiento;
+            this.eslora = eslora;
+            this.manga = manga;
+            this.cantMaxPasjeros = cantMaxPasjeros;
+            this.cantTripulantes = cantTripulantes;
+            this.tipoClasificacion = tipoClasificacion;
+            this.cantMotores = cantMotores;
+        }
+
+        public Navio(string nombre, float altura, float autonomia, float desplazamiento, float eslora, float manga, int cantMaxPasjeros, int cantTripulantes, int tipoClasificacion, int cantMotores)
+        {
+            this.nombre = nombre;
+            this.altura = altura;
+            this.autonomia = autonomia;
+            this.desplazamiento = desplazamiento;
+            this.eslora = eslora;
+            this.manga = manga;
+            this.cantMaxPasjeros = cantMaxPasjeros;
+            this.cantTripulantes = cantTripulantes;
+            this.tipoClasificacion = tipoClasificacion;
+            this.cantMotores = cantMotores;
         }
 
         public string Nombre { get => nombre; set => nombre = value; }
