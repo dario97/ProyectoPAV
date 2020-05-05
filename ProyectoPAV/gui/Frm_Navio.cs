@@ -36,5 +36,10 @@ namespace ProyectoPAV.gui
         {
 
         }
+
+        private void Frm_Navio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
