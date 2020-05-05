@@ -21,12 +21,27 @@ namespace ProyectoPAV.negocio.repository
         //{
         //    int codigoTipo = row["Cod_clasificacion"];
         //    string descripcion = row["Descripcion"].ToString();
-            
+
         //    TipoClasificacionNavio tipo = new TipoClasificacionNavio(codigoTipo, descripcion);
-            
+
         //    return tipo;
         //}
 
+        public DataTable consultar_x_nombre(string nombre)
+        {
+
+            string sql = @"SELECT * FROM CLASIFICACION_NAVIO WHERE Descripcion like '%" + nombre + "%'";
+            return accesoBD.ejecutarConsulta(sql);
+
+        }
+
+        public DataTable consultarTodos()
+        {
+
+            string sql = @"SELECT * FROM CLASIFICACION_NAVIO";
+            return accesoBD.ejecutarConsulta(sql);
+
+        }
 
         internal bool create(TipoClasificacionNavio tipoClasificacion)
         {
