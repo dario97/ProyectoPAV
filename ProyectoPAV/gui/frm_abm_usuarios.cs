@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoPAV.gui
+namespace ProyectoPAV.gui.clases
 {
-    public partial class Frm_Navio : Form
+    public partial class frm_abm_usuarios : Form
     {
-        public Frm_Navio()
+        public frm_abm_usuarios()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,24 +22,20 @@ namespace ProyectoPAV.gui
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void frm_abm_usuarios_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Frm_Navio_Load(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            frm_alta_usuario ventana = new frm_alta_usuario();
+            ventana.ShowDialog();
         }
     }
 }

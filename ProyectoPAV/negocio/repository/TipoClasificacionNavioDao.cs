@@ -9,8 +9,22 @@ namespace ProyectoPAV.negocio.repository
 {
     class TipoClasificacionNavioDao
     {
-        BE_acceso_BD accesoBD = new BE_acceso_BD();
+        private static BE_acceso_BD accesoBD;
 
+
+        public TipoClasificacionNavioDao(){
+            accesoBD = new BE_acceso_BD();
+        }
+
+        private TipoClasificacionNavio mapping(DataRow row)
+        {
+            int codigoTipo = row["Cod_clasificacion"];
+            string descripcion = row["Descripcion"].ToString();
+            
+            TipoClasificacionNavio tipo = new TipoClasificacionNavio(codigoTipo, descripcion);
+            
+            return tipo;
+        }
 
 
         internal bool create(TipoClasificacionNavio tipoClasificacion)

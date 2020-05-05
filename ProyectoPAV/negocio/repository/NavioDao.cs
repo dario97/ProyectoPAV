@@ -9,7 +9,33 @@ namespace ProyectoPAV.negocio.repository
 {
     class NavioDao
     {
-        BE_acceso_BD accesoBD = new BE_acceso_BD();
+        private static BE_acceso_BD accesoBD;
+
+        public NavioDao(){
+            
+            accesoBD = new BE_acceso_BD();
+        
+        }
+
+
+        private Navio mapping(DataRow row)
+        {
+            int codigoNavio = row["Cod_navio"];
+            string nombre = row["Nombre_navio"].ToString();
+            float altura = row["Altura"];
+            float autonomia = row["Autonomia"];
+            float desplazamiento = row["Desplazamiento"];
+            float eslora = row["Eslora"];
+            float manga = row["Manga"];
+            int cantMaxPasajeros = row["Cant_max_pasajeros"];
+            int cantTripulantes = row["Cant_tripulantes"];
+            int tipoClasificacion = row["Tipo_clasificacion"];
+            int cantMotores = row["Cant_motores"];
+               
+            Navio navio = new Navio(codigoNavio, nombre, altura, autonomia, desplazamiento, eslora, manga, cantMaxPasajeros, cantTripulantes, tipoClasificacion, cantMotores);
+            
+            return navio;
+        }
 
         internal bool create(Navio navio)
         {
@@ -68,3 +94,12 @@ namespace ProyectoPAV.negocio.repository
 
     }
 }
+
+            
+
+
+
+
+
+            
+

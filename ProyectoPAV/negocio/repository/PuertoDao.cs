@@ -16,6 +16,17 @@ namespace ProyectoPAV.negocio.repository
             accesoBD = new BE_acceso_BD();
         }
 
+        private Puerto mapping(DataRow row)
+        {
+            int codPuerto = row["Cod_puerto"];
+            string nombre = row["Nombre"].ToString();
+               
+            Puerto puerto = new Puerto(codPuerto, nombre);
+
+            return puerto;
+        }
+            
+
         internal bool create(Puerto puerto)
         {
             string strSQL = "INSERT INTO PUERTOS (Nombre)" +
