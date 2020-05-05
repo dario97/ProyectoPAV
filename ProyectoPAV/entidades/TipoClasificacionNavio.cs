@@ -27,5 +27,6 @@ namespace ProyectoPAV.entidades
         public string Descripcion { get => descripcion; set => descripcion = value; }
 
 
+
     }
 }
