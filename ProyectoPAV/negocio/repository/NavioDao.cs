@@ -50,7 +50,7 @@ namespace ProyectoPAV.negocio.repository
         public DataTable consultarTodos()
         {
 
-            string sql = @"SELECT * FROM NAVIOS WHERE Nombre_navio like '%" + nombre + "%'";
+            string sql = @"SELECT * FROM NAVIOS";
             return accesoBD.ejecutarConsulta(sql);
 
         }
