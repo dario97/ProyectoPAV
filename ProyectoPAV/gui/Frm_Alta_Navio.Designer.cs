@@ -232,6 +232,7 @@
             this.cmd_Cancelar.TabIndex = 23;
             this.cmd_Cancelar.Text = "Cancelar";
             this.cmd_Cancelar.UseVisualStyleBackColor = true;
+            this.cmd_Cancelar.Click += new System.EventHandler(this.cmd_Cancelar_Click);
             // 
             // Frm_Alta_Navio
             // 

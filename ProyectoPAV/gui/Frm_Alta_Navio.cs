@@ -69,5 +69,10 @@ namespace ProyectoPAV.gui
                 
 
         }
+
+        private void cmd_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
