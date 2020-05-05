@@ -56,6 +56,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\frm_abmc_puertos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frm_abmc_puertos.Designer.cs">
+      <DependentUpon>frm_abmc_puertos.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\Frm_Alta_Navio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frm_abmc_puertos.resx">
+      <DependentUpon>frm_abmc_puertos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frm_abmc_tipoNavio.resx">
       <DependentUpon>frm_abmc_tipoNavio.cs</DependentUpon>
