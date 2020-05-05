@@ -74,6 +74,12 @@
     <Compile Include="gui\frm_alta_TipoNavio.Designer.cs">
       <DependentUpon>frm_alta_TipoNavio.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\frm_alta_usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frm_alta_usuarios.Designer.cs">
+      <DependentUpon>frm_alta_usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\Frm_Navio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frm_alta_TipoNavio.resx">
       <DependentUpon>frm_alta_TipoNavio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frm_alta_usuarios.resx">
+      <DependentUpon>frm_alta_usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_Navio.resx">
       <DependentUpon>Frm_Navio.cs</DependentUpon>

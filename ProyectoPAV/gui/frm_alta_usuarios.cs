@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace ProyectoPAV.gui
 {
-    public partial class frm_abmc_usuarios : Form
+    public partial class frm_alta_usuarios : Form
     {
-        public frm_abmc_usuarios()
+        public frm_alta_usuarios()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void frm_alta_usuarios_Load(object sender, EventArgs e)
         {
 
         }
