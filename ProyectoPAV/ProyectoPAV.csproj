@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entidades\Navio.cs" />
+    <Compile Include="entidades\Puerto.cs" />
     <Compile Include="entidades\Puesto.cs" />
     <Compile Include="entidades\TipoClasificacionNavio.cs" />
     <Compile Include="Form1.cs">
@@ -57,8 +58,10 @@
     </Compile>
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
     <Compile Include="negocio\repository\NavioDao.cs" />
+    <Compile Include="negocio\repository\PuertoDao.cs" />
     <Compile Include="negocio\repository\TipoClasificacionNavioDao.cs" />
     <Compile Include="negocio\servicios\NavioService.cs" />
+    <Compile Include="negocio\servicios\PuertoService.cs" />
     <Compile Include="negocio\servicios\TipoClasificacionNavioService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

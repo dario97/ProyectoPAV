@@ -43,7 +43,7 @@ namespace ProyectoPAV.negocio.repository
                              " Cant_tripulantes=" + "'" + navio.CantTripulantes + "'" + "," +
                              " Tipo_clasificacion=" + "'" + navio.TipoClasificacion + "'" + "," +
                              " Cant_motores=" + "'" + navio.CantMotores + "'"  +
-                             " WHERE id_producto=" + navio.CodigoNavio;
+                             " WHERE Cod_navio=" + navio.CodigoNavio;
 
             accesoBD.ejecutarConsulta(strSQL);
             return true;

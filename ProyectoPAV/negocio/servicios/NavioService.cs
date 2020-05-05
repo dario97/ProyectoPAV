@@ -19,7 +19,20 @@ namespace ProyectoPAV.negocio.servicios
 
         internal bool crearNavio(Navio navio)
         {
-            return new
-        } 
+            return navioDao.create(navio);
+        }
+
+        internal bool modificarNavio(Navio navio)
+        {
+            return navioDao.update(navio);
+        }
+
+        internal bool eliminarNavio(Navio navio)
+        {
+            return navioDao.delete(navio);
+        }
+
+
+
     }
 }
