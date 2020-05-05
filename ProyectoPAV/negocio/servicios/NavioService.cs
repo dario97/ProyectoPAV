@@ -2,6 +2,7 @@
 using ProyectoPAV.negocio.repository;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,11 @@ namespace ProyectoPAV.negocio.servicios
         public NavioService()
         {
             navioDao = new NavioDao();
+        }
+
+        internal DataTable consultarPorNombre(string nombre)
+        {
+            return navioDao.consultar_x_nombre(nombre);
         }
 
         internal bool crearNavio(Navio navio)
