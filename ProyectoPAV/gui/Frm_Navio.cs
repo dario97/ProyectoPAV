@@ -46,5 +46,10 @@ namespace ProyectoPAV.gui
         {
 
         }
+
+        private void cmd_Consultar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
