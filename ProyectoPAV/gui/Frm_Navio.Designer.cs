@@ -61,6 +61,7 @@
             this.cmd_Consultar.TabIndex = 0;
             this.cmd_Consultar.Text = "Consultar";
             this.cmd_Consultar.UseVisualStyleBackColor = true;
+            this.cmd_Consultar.Click += new System.EventHandler(this.cmd_Consultar_Click);
             // 
             // cmd_Agregar
             // 
