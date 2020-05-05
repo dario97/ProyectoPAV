@@ -56,6 +56,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\Fas1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Fas1.Designer.cs">
+      <DependentUpon>Fas1.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\frm_abmc_tipoNavio.cs">
       <SubType>Form</SubType>
     </Compile>
