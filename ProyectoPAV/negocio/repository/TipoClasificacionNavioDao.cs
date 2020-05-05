@@ -1,6 +1,7 @@
 ﻿using ProyectoPAV.entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,15 +17,15 @@ namespace ProyectoPAV.negocio.repository
             accesoBD = new BE_acceso_BD();
         }
 
-        private TipoClasificacionNavio mapping(DataRow row)
-        {
-            int codigoTipo = row["Cod_clasificacion"];
-            string descripcion = row["Descripcion"].ToString();
+        //private TipoClasificacionNavio mapping(DataRow row)
+        //{
+        //    int codigoTipo = row["Cod_clasificacion"];
+        //    string descripcion = row["Descripcion"].ToString();
             
-            TipoClasificacionNavio tipo = new TipoClasificacionNavio(codigoTipo, descripcion);
+        //    TipoClasificacionNavio tipo = new TipoClasificacionNavio(codigoTipo, descripcion);
             
-            return tipo;
-        }
+        //    return tipo;
+        //}
 
 
         internal bool create(TipoClasificacionNavio tipoClasificacion)
