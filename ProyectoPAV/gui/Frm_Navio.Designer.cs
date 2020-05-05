@@ -58,6 +58,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Consultar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -199,6 +200,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Frm_Navio";
             this.Text = "Frm_Navio";
+            this.Load += new System.EventHandler(this.Frm_Navio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
