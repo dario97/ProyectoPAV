@@ -8,7 +8,7 @@ namespace ProyectoPAV.entidades
 {
     class Navio
     {
-        int codigoNavio = 0;
+        int codigoNavio;
         string nombre = "";
         float altura = 0.0f;
         float autonomia = 0.0f;
