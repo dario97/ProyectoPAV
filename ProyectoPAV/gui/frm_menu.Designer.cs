@@ -149,7 +149,7 @@
             this.Controls.Add(this.cmd_gestionPuestos);
             this.Controls.Add(this.panel1);
             this.Name = "frm_menu";
-            this.Text = "frm_menu";
+            this.Text = "Menu";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -65,6 +65,7 @@
             this.button2.Size = new System.Drawing.Size(50, 45);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -181,7 +182,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_abmc_puertos";
-            this.Text = "frm_abmc_puertos";
+            this.Text = "Puertos";
             ((System.ComponentModel.ISupportInitialize)(this.dvg2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

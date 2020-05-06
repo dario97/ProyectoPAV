@@ -60,7 +60,7 @@
             this.cmd_Consultar.Location = new System.Drawing.Point(643, 105);
             this.cmd_Consultar.Name = "cmd_Consultar";
             this.cmd_Consultar.Size = new System.Drawing.Size(75, 23);
-            this.cmd_Consultar.TabIndex = 2;
+            this.cmd_Consultar.TabIndex = 0;
             this.cmd_Consultar.Text = "Consultar";
             this.cmd_Consultar.UseVisualStyleBackColor = true;
             this.cmd_Consultar.Click += new System.EventHandler(this.cmd_Consultar_Click);
@@ -102,7 +102,7 @@
             this.checkBox_todos.Location = new System.Drawing.Point(229, 48);
             this.checkBox_todos.Name = "checkBox_todos";
             this.checkBox_todos.Size = new System.Drawing.Size(56, 17);
-            this.checkBox_todos.TabIndex = 1;
+            this.checkBox_todos.TabIndex = 2;
             this.checkBox_todos.Text = "Todos";
             this.checkBox_todos.UseVisualStyleBackColor = true;
             this.checkBox_todos.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -125,7 +125,8 @@
             this.dgvl.Location = new System.Drawing.Point(30, 144);
             this.dgvl.Name = "dgvl";
             this.dgvl.Size = new System.Drawing.Size(750, 214);
-            this.dgvl.TabIndex = 3;
+            this.dgvl.TabIndex = 1;
+            this.dgvl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvl_CellContentClick);
             // 
             // ID
             // 
@@ -191,6 +192,7 @@
             this.cmd_Modificar.Size = new System.Drawing.Size(60, 48);
             this.cmd_Modificar.TabIndex = 5;
             this.cmd_Modificar.UseVisualStyleBackColor = true;
+            this.cmd_Modificar.Click += new System.EventHandler(this.cmd_Modificar_Click);
             // 
             // cmd_Eliminar
             // 
@@ -250,7 +252,7 @@
             this.Controls.Add(this.cmd_Consultar);
             this.Controls.Add(this.groupBox1);
             this.Name = "Frm_Navio";
-            this.Text = "Frm_Navio";
+            this.Text = "Navios";
             this.Load += new System.EventHandler(this.Frm_Navio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvl)).EndInit();
             this.groupBox1.ResumeLayout(false);

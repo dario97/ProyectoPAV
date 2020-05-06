@@ -49,7 +49,7 @@
             this.label6.Location = new System.Drawing.Point(49, 201);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 13);
-            this.label6.TabIndex = 25;
+            this.label6.TabIndex = 0;
             this.label6.Text = "Pais de procdenencia";
             // 
             // txt_pais
@@ -57,7 +57,7 @@
             this.txt_pais.Location = new System.Drawing.Point(172, 198);
             this.txt_pais.Name = "txt_pais";
             this.txt_pais.Size = new System.Drawing.Size(164, 20);
-            this.txt_pais.TabIndex = 24;
+            this.txt_pais.TabIndex = 5;
             // 
             // label5
             // 
@@ -65,7 +65,7 @@
             this.label5.Location = new System.Drawing.Point(41, 170);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 13);
-            this.label5.TabIndex = 23;
+            this.label5.TabIndex = 12;
             this.label5.Text = "Ciudad de procedencia";
             // 
             // txt_ciudad
@@ -73,14 +73,14 @@
             this.txt_ciudad.Location = new System.Drawing.Point(172, 167);
             this.txt_ciudad.Name = "txt_ciudad";
             this.txt_ciudad.Size = new System.Drawing.Size(165, 20);
-            this.txt_ciudad.TabIndex = 22;
+            this.txt_ciudad.TabIndex = 4;
             // 
             // cmd_cancelar
             // 
             this.cmd_cancelar.Location = new System.Drawing.Point(262, 239);
             this.cmd_cancelar.Name = "cmd_cancelar";
             this.cmd_cancelar.Size = new System.Drawing.Size(75, 23);
-            this.cmd_cancelar.TabIndex = 21;
+            this.cmd_cancelar.TabIndex = 7;
             this.cmd_cancelar.Text = "Cancelar";
             this.cmd_cancelar.UseVisualStyleBackColor = true;
             // 
@@ -89,7 +89,7 @@
             this.cmd_aceptar.Location = new System.Drawing.Point(172, 239);
             this.cmd_aceptar.Name = "cmd_aceptar";
             this.cmd_aceptar.Size = new System.Drawing.Size(75, 23);
-            this.cmd_aceptar.TabIndex = 20;
+            this.cmd_aceptar.TabIndex = 6;
             this.cmd_aceptar.Text = "Aceptar";
             this.cmd_aceptar.UseVisualStyleBackColor = true;
             // 
@@ -99,7 +99,7 @@
             this.label4.Location = new System.Drawing.Point(72, 143);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 13);
-            this.label4.TabIndex = 19;
+            this.label4.TabIndex = 11;
             this.label4.Text = "Tipo Documento";
             // 
             // label3
@@ -108,7 +108,7 @@
             this.label3.Location = new System.Drawing.Point(76, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 13);
-            this.label3.TabIndex = 18;
+            this.label3.TabIndex = 10;
             this.label3.Text = "Nro Documento";
             // 
             // label2
@@ -117,7 +117,7 @@
             this.label2.Location = new System.Drawing.Point(115, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 17;
+            this.label2.TabIndex = 9;
             this.label2.Text = "Nombre";
             // 
             // txt_nombre
@@ -125,14 +125,14 @@
             this.txt_nombre.Location = new System.Drawing.Point(172, 88);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(164, 20);
-            this.txt_nombre.TabIndex = 16;
+            this.txt_nombre.TabIndex = 1;
             // 
             // txt_nroDoc
             // 
             this.txt_nroDoc.Location = new System.Drawing.Point(172, 114);
             this.txt_nroDoc.Name = "txt_nroDoc";
             this.txt_nroDoc.Size = new System.Drawing.Size(164, 20);
-            this.txt_nroDoc.TabIndex = 15;
+            this.txt_nroDoc.TabIndex = 2;
             // 
             // cmd_tipoDoc
             // 
@@ -140,7 +140,7 @@
             this.cmd_tipoDoc.Location = new System.Drawing.Point(172, 140);
             this.cmd_tipoDoc.Name = "cmd_tipoDoc";
             this.cmd_tipoDoc.Size = new System.Drawing.Size(164, 21);
-            this.cmd_tipoDoc.TabIndex = 14;
+            this.cmd_tipoDoc.TabIndex = 3;
             // 
             // label1
             // 
@@ -149,7 +149,7 @@
             this.label1.Location = new System.Drawing.Point(105, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 24);
-            this.label1.TabIndex = 13;
+            this.label1.TabIndex = 8;
             this.label1.Text = "MODIFICAR USUARIO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -172,7 +172,7 @@
             this.Controls.Add(this.cmd_tipoDoc);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Modificar_Usuario";
-            this.Text = "Frm_Modificar_Usuario";
+            this.Text = "Modificar Usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 

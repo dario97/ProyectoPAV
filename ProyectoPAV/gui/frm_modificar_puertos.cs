@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace ProyectoPAV.gui
 {
-    public partial class Frm_Modificar_Usuario : Form
+    public partial class frm_modificar_puertos : Form
     {
-        public Frm_Modificar_Usuario()
+        public frm_modificar_puertos()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void cmd_cancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

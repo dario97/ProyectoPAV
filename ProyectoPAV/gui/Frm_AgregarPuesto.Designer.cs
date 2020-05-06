@@ -92,7 +92,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Frm_AgregarPuesto";
-            this.Text = "Frm_AgregarPuesto";
+            this.Text = "Agregar Puesto";
             this.ResumeLayout(false);
             this.PerformLayout();
 

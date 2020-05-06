@@ -50,12 +50,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt_navio
             // 
             this.txt_navio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_navio.Location = new System.Drawing.Point(331, 34);
+            this.txt_navio.Location = new System.Drawing.Point(203, 46);
             this.txt_navio.Name = "txt_navio";
             this.txt_navio.pp_mensaje_error = null;
             this.txt_navio.pp_nombre_campo = null;
@@ -67,7 +68,7 @@
             // txt_altura
             // 
             this.txt_altura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_altura.Location = new System.Drawing.Point(331, 63);
+            this.txt_altura.Location = new System.Drawing.Point(203, 75);
             this.txt_altura.Name = "txt_altura";
             this.txt_altura.pp_mensaje_error = null;
             this.txt_altura.pp_nombre_campo = null;
@@ -79,7 +80,7 @@
             // txt_autonomia
             // 
             this.txt_autonomia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_autonomia.Location = new System.Drawing.Point(331, 93);
+            this.txt_autonomia.Location = new System.Drawing.Point(203, 105);
             this.txt_autonomia.Name = "txt_autonomia";
             this.txt_autonomia.pp_mensaje_error = null;
             this.txt_autonomia.pp_nombre_campo = null;
@@ -91,7 +92,7 @@
             // txt_desplazamiento
             // 
             this.txt_desplazamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_desplazamiento.Location = new System.Drawing.Point(331, 123);
+            this.txt_desplazamiento.Location = new System.Drawing.Point(203, 135);
             this.txt_desplazamiento.Name = "txt_desplazamiento";
             this.txt_desplazamiento.pp_mensaje_error = null;
             this.txt_desplazamiento.pp_nombre_campo = null;
@@ -103,7 +104,7 @@
             // txt_eslora
             // 
             this.txt_eslora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_eslora.Location = new System.Drawing.Point(331, 153);
+            this.txt_eslora.Location = new System.Drawing.Point(203, 165);
             this.txt_eslora.Name = "txt_eslora";
             this.txt_eslora.pp_mensaje_error = null;
             this.txt_eslora.pp_nombre_campo = null;
@@ -115,7 +116,7 @@
             // txt_manga
             // 
             this.txt_manga.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_manga.Location = new System.Drawing.Point(331, 183);
+            this.txt_manga.Location = new System.Drawing.Point(203, 195);
             this.txt_manga.Name = "txt_manga";
             this.txt_manga.pp_mensaje_error = null;
             this.txt_manga.pp_nombre_campo = null;
@@ -127,7 +128,7 @@
             // txt_cant_max_pasajeros
             // 
             this.txt_cant_max_pasajeros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_cant_max_pasajeros.Location = new System.Drawing.Point(331, 213);
+            this.txt_cant_max_pasajeros.Location = new System.Drawing.Point(203, 225);
             this.txt_cant_max_pasajeros.Name = "txt_cant_max_pasajeros";
             this.txt_cant_max_pasajeros.pp_mensaje_error = null;
             this.txt_cant_max_pasajeros.pp_nombre_campo = null;
@@ -139,7 +140,7 @@
             // txt_cant_tripulantes
             // 
             this.txt_cant_tripulantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_cant_tripulantes.Location = new System.Drawing.Point(331, 243);
+            this.txt_cant_tripulantes.Location = new System.Drawing.Point(203, 255);
             this.txt_cant_tripulantes.Name = "txt_cant_tripulantes";
             this.txt_cant_tripulantes.pp_mensaje_error = null;
             this.txt_cant_tripulantes.pp_nombre_campo = null;
@@ -151,7 +152,7 @@
             // txt_clasificacion
             // 
             this.txt_clasificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_clasificacion.Location = new System.Drawing.Point(331, 273);
+            this.txt_clasificacion.Location = new System.Drawing.Point(203, 285);
             this.txt_clasificacion.Name = "txt_clasificacion";
             this.txt_clasificacion.pp_mensaje_error = null;
             this.txt_clasificacion.pp_nombre_campo = null;
@@ -163,7 +164,7 @@
             // txt_cant_motores
             // 
             this.txt_cant_motores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_cant_motores.Location = new System.Drawing.Point(331, 303);
+            this.txt_cant_motores.Location = new System.Drawing.Point(203, 315);
             this.txt_cant_motores.Name = "txt_cant_motores";
             this.txt_cant_motores.pp_mensaje_error = null;
             this.txt_cant_motores.pp_nombre_campo = null;
@@ -174,16 +175,17 @@
             // 
             // cmd_aceptar
             // 
-            this.cmd_aceptar.Location = new System.Drawing.Point(442, 376);
+            this.cmd_aceptar.Location = new System.Drawing.Point(102, 376);
             this.cmd_aceptar.Name = "cmd_aceptar";
             this.cmd_aceptar.Size = new System.Drawing.Size(75, 23);
             this.cmd_aceptar.TabIndex = 10;
             this.cmd_aceptar.Text = "Aceptar";
             this.cmd_aceptar.UseVisualStyleBackColor = true;
+            this.cmd_aceptar.Click += new System.EventHandler(this.cmd_aceptar_Click);
             // 
             // cmd_cancelar
             // 
-            this.cmd_cancelar.Location = new System.Drawing.Point(543, 376);
+            this.cmd_cancelar.Location = new System.Drawing.Point(203, 376);
             this.cmd_cancelar.Name = "cmd_cancelar";
             this.cmd_cancelar.Size = new System.Drawing.Size(75, 23);
             this.cmd_cancelar.TabIndex = 11;
@@ -193,7 +195,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(169, 44);
+            this.label1.Location = new System.Drawing.Point(41, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 12;
@@ -202,7 +204,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(169, 73);
+            this.label2.Location = new System.Drawing.Point(41, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 13;
@@ -211,7 +213,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(169, 103);
+            this.label3.Location = new System.Drawing.Point(41, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 14;
@@ -220,7 +222,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(169, 133);
+            this.label4.Location = new System.Drawing.Point(41, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 15;
@@ -229,7 +231,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(173, 163);
+            this.label5.Location = new System.Drawing.Point(45, 175);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 16;
@@ -238,7 +240,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(169, 193);
+            this.label6.Location = new System.Drawing.Point(41, 205);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 17;
@@ -247,7 +249,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(169, 223);
+            this.label7.Location = new System.Drawing.Point(41, 235);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(150, 13);
             this.label7.TabIndex = 18;
@@ -256,7 +258,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(169, 253);
+            this.label8.Location = new System.Drawing.Point(41, 265);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 13);
             this.label8.TabIndex = 19;
@@ -265,7 +267,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(169, 283);
+            this.label9.Location = new System.Drawing.Point(41, 295);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(66, 13);
             this.label9.TabIndex = 20;
@@ -274,17 +276,28 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(169, 313);
+            this.label10.Location = new System.Drawing.Point(41, 325);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(104, 13);
             this.label10.TabIndex = 21;
             this.label10.Text = "Cantidad de motores";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label11.Location = new System.Drawing.Point(98, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(158, 20);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "MODIFICAR NAVIO";
+            // 
             // Frm_Modificar_Navio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(655, 425);
+            this.ClientSize = new System.Drawing.Size(361, 419);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -308,7 +321,7 @@
             this.Controls.Add(this.txt_altura);
             this.Controls.Add(this.txt_navio);
             this.Name = "Frm_Modificar_Navio";
-            this.Text = "Frm_Modificar_Navio";
+            this.Text = "Modificar Navio";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,5 +351,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

@@ -42,6 +42,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmd_tipoDoc = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvg1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             this.cmd_agregar.Location = new System.Drawing.Point(12, 393);
             this.cmd_agregar.Name = "cmd_agregar";
             this.cmd_agregar.Size = new System.Drawing.Size(54, 45);
-            this.cmd_agregar.TabIndex = 0;
+            this.cmd_agregar.TabIndex = 2;
             this.cmd_agregar.UseVisualStyleBackColor = true;
             this.cmd_agregar.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -64,8 +65,9 @@
             this.cmd_editar.Location = new System.Drawing.Point(72, 393);
             this.cmd_editar.Name = "cmd_editar";
             this.cmd_editar.Size = new System.Drawing.Size(54, 45);
-            this.cmd_editar.TabIndex = 1;
+            this.cmd_editar.TabIndex = 3;
             this.cmd_editar.UseVisualStyleBackColor = true;
+            this.cmd_editar.Click += new System.EventHandler(this.cmd_editar_Click);
             // 
             // cmd_salir
             // 
@@ -74,7 +76,7 @@
             this.cmd_salir.Location = new System.Drawing.Point(543, 393);
             this.cmd_salir.Name = "cmd_salir";
             this.cmd_salir.Size = new System.Drawing.Size(54, 45);
-            this.cmd_salir.TabIndex = 2;
+            this.cmd_salir.TabIndex = 5;
             this.cmd_salir.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -92,7 +94,7 @@
             this.dvg1.Location = new System.Drawing.Point(18, 171);
             this.dvg1.Name = "dvg1";
             this.dvg1.Size = new System.Drawing.Size(573, 210);
-            this.dvg1.TabIndex = 4;
+            this.dvg1.TabIndex = 1;
             this.dvg1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // chk_seleccion
@@ -128,7 +130,7 @@
             this.txt_nroDoc.Location = new System.Drawing.Point(167, 122);
             this.txt_nroDoc.Name = "txt_nroDoc";
             this.txt_nroDoc.Size = new System.Drawing.Size(143, 20);
-            this.txt_nroDoc.TabIndex = 9;
+            this.txt_nroDoc.TabIndex = 0;
             // 
             // cmd_eliminar
             // 
@@ -137,16 +139,17 @@
             this.cmd_eliminar.Location = new System.Drawing.Point(132, 393);
             this.cmd_eliminar.Name = "cmd_eliminar";
             this.cmd_eliminar.Size = new System.Drawing.Size(54, 45);
-            this.cmd_eliminar.TabIndex = 10;
+            this.cmd_eliminar.TabIndex = 4;
             this.cmd_eliminar.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.cmd_tipoDoc);
             this.groupBox1.Location = new System.Drawing.Point(12, 79);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(585, 308);
-            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -168,6 +171,15 @@
             this.label3.Size = new System.Drawing.Size(225, 24);
             this.label3.TabIndex = 12;
             this.label3.Text = "GESTION DE USUARIOS";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(504, 63);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Consultar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frm_abmc_usuarios
             // 
@@ -210,5 +222,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmd_tipoDoc;
+        private System.Windows.Forms.Button button1;
     }
 }

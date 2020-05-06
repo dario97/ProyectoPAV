@@ -33,5 +33,11 @@ namespace ProyectoPAV.gui
             frm_alta_puertos abrir = new frm_alta_puertos();
             abrir.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frm_modificar_puertos abrir1 = new frm_modificar_puertos();
+            abrir1.ShowDialog();
+        }
     }
 }
