@@ -35,6 +35,7 @@ namespace ProyectoPAV.gui
 
         private void cmd_SeleccionarPuesto_Click(object sender, EventArgs e)
         {
-          
+
+        }
     }
 }
