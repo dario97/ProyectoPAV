@@ -64,10 +64,10 @@ namespace ProyectoPAV.negocio.repository
             return true;
         }
 
-        internal bool delete(TipoClasificacionNavio tipoClasificacion)
+        internal bool delete(int id)
         {
             string strSQL = "DELETE FROM CLASIFICACION_NAVIO " +
-                                " WHERE Cod_clasificacion =" + tipoClasificacion.CodigoClasificacion;
+                                " WHERE Cod_clasificacion =" + id;
 
             accesoBD.ejecutarConsulta(strSQL);
             return true;
