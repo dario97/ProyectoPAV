@@ -1,4 +1,5 @@
 ﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,18 +19,21 @@ namespace ProyectoPAV.gui
         private int pp_id;
         private string pp_descripcion;
 
+        TipoClasificacionNavioService tipoService = new TipoClasificacionNavioService();
+        
         public Frm_modificacion_tipoNavio(int pp_id, string pp_descripcion)
         {
             this.pp_id = pp_id;
             this.pp_descripcion = pp_descripcion;
-            txt_tipo.Text = pp_descripcion;
 
             InitializeComponent();
         }
 
         private void botonConfirmar_Click(object sender, EventArgs e)
         {
-            
+            TipoClasificacionNavio tipo = new TipoClasificacionNavio(pp_id, this.txt_tipo.Text);
+            tipoService.modificarTipoClasificacionNavio(tipo);
+            MessageBox.Show("El tipo se modificó con exito", "Mensaje", MessageBoxButtons.OK);
         }
 
         private void botonCancelar_Click(object sender, EventArgs e)
