@@ -57,7 +57,7 @@
             this.cmd_gestionPuestos.Location = new System.Drawing.Point(34, 93);
             this.cmd_gestionPuestos.Name = "cmd_gestionPuestos";
             this.cmd_gestionPuestos.Size = new System.Drawing.Size(159, 64);
-            this.cmd_gestionPuestos.TabIndex = 1;
+            this.cmd_gestionPuestos.TabIndex = 0;
             this.cmd_gestionPuestos.Text = "GESTION DE PUESTOS";
             this.cmd_gestionPuestos.UseVisualStyleBackColor = false;
             this.cmd_gestionPuestos.Click += new System.EventHandler(this.button1_Click);
@@ -70,7 +70,7 @@
             this.button2.Location = new System.Drawing.Point(34, 272);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 92);
-            this.button2.TabIndex = 2;
+            this.button2.TabIndex = 4;
             this.button2.Text = "GESTION DE TIPOS DE NAVIOS";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -96,7 +96,7 @@
             this.button4.Location = new System.Drawing.Point(34, 184);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(159, 64);
-            this.button4.TabIndex = 4;
+            this.button4.TabIndex = 2;
             this.button4.Text = "GESTION DE NAVIOS";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -108,7 +108,7 @@
             this.button6.Location = new System.Drawing.Point(266, 93);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(159, 64);
-            this.button6.TabIndex = 6;
+            this.button6.TabIndex = 1;
             this.button6.Text = "GESTION DE USUARIOS";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -120,7 +120,7 @@
             this.button7.Location = new System.Drawing.Point(266, 272);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(159, 92);
-            this.button7.TabIndex = 7;
+            this.button7.TabIndex = 5;
             this.button7.Text = "GESTION DE TIPO DE CAMAROTES";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);

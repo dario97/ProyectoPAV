@@ -21,5 +21,10 @@ namespace ProyectoPAV.gui
         {
 
         }
+
+        private void frm_modificar_puertos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

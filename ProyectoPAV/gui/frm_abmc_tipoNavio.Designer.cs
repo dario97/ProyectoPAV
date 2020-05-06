@@ -51,7 +51,7 @@
             this.botonConsultar.Location = new System.Drawing.Point(289, 34);
             this.botonConsultar.Name = "botonConsultar";
             this.botonConsultar.Size = new System.Drawing.Size(75, 23);
-            this.botonConsultar.TabIndex = 2;
+            this.botonConsultar.TabIndex = 1;
             this.botonConsultar.Text = "Consultar";
             this.botonConsultar.UseVisualStyleBackColor = true;
             this.botonConsultar.Click += new System.EventHandler(this.botonConsultar_Click);
@@ -80,7 +80,7 @@
             this.chk_todos.Location = new System.Drawing.Point(110, 64);
             this.chk_todos.Name = "chk_todos";
             this.chk_todos.Size = new System.Drawing.Size(56, 17);
-            this.chk_todos.TabIndex = 3;
+            this.chk_todos.TabIndex = 2;
             this.chk_todos.Text = "Todos";
             this.chk_todos.UseVisualStyleBackColor = true;
             // 
@@ -165,7 +165,7 @@
             this.txt_tipoNavio.Location = new System.Drawing.Point(110, 37);
             this.txt_tipoNavio.Name = "txt_tipoNavio";
             this.txt_tipoNavio.Size = new System.Drawing.Size(173, 20);
-            this.txt_tipoNavio.TabIndex = 1;
+            this.txt_tipoNavio.TabIndex = 0;
             // 
             // label1
             // 

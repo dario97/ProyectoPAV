@@ -96,6 +96,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frm_modificar_puertos";
             this.Text = "frm_modificar_puertos";
+            this.Load += new System.EventHandler(this.frm_modificar_puertos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

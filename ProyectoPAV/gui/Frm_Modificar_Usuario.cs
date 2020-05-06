@@ -26,5 +26,45 @@ namespace ProyectoPAV.gui
         {
             this.Close();
         }
+
+        private void Frm_Modificar_Usuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_nombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_nroDoc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmd_tipoDoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_ciudad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_pais_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmd_aceptar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmd_cancelar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

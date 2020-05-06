@@ -58,6 +58,7 @@
             this.txt_pais.Name = "txt_pais";
             this.txt_pais.Size = new System.Drawing.Size(164, 20);
             this.txt_pais.TabIndex = 5;
+            this.txt_pais.TextChanged += new System.EventHandler(this.txt_pais_TextChanged);
             // 
             // label5
             // 
@@ -74,6 +75,7 @@
             this.txt_ciudad.Name = "txt_ciudad";
             this.txt_ciudad.Size = new System.Drawing.Size(165, 20);
             this.txt_ciudad.TabIndex = 4;
+            this.txt_ciudad.TextChanged += new System.EventHandler(this.txt_ciudad_TextChanged);
             // 
             // cmd_cancelar
             // 
@@ -83,6 +85,7 @@
             this.cmd_cancelar.TabIndex = 7;
             this.cmd_cancelar.Text = "Cancelar";
             this.cmd_cancelar.UseVisualStyleBackColor = true;
+            this.cmd_cancelar.Click += new System.EventHandler(this.cmd_cancelar_Click_1);
             // 
             // cmd_aceptar
             // 
@@ -92,6 +95,7 @@
             this.cmd_aceptar.TabIndex = 6;
             this.cmd_aceptar.Text = "Aceptar";
             this.cmd_aceptar.UseVisualStyleBackColor = true;
+            this.cmd_aceptar.Click += new System.EventHandler(this.cmd_aceptar_Click);
             // 
             // label4
             // 
@@ -126,6 +130,7 @@
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(164, 20);
             this.txt_nombre.TabIndex = 1;
+            this.txt_nombre.TextChanged += new System.EventHandler(this.txt_nombre_TextChanged);
             // 
             // txt_nroDoc
             // 
@@ -133,6 +138,7 @@
             this.txt_nroDoc.Name = "txt_nroDoc";
             this.txt_nroDoc.Size = new System.Drawing.Size(164, 20);
             this.txt_nroDoc.TabIndex = 2;
+            this.txt_nroDoc.TextChanged += new System.EventHandler(this.txt_nroDoc_TextChanged);
             // 
             // cmd_tipoDoc
             // 
@@ -141,6 +147,7 @@
             this.cmd_tipoDoc.Name = "cmd_tipoDoc";
             this.cmd_tipoDoc.Size = new System.Drawing.Size(164, 21);
             this.cmd_tipoDoc.TabIndex = 3;
+            this.cmd_tipoDoc.SelectedIndexChanged += new System.EventHandler(this.cmd_tipoDoc_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -173,6 +180,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Frm_Modificar_Usuario";
             this.Text = "Modificar Usuario";
+            this.Load += new System.EventHandler(this.Frm_Modificar_Usuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

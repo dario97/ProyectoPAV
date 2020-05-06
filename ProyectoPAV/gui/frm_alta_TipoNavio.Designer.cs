@@ -67,7 +67,7 @@
             this.botonCrear.Location = new System.Drawing.Point(130, 94);
             this.botonCrear.Name = "botonCrear";
             this.botonCrear.Size = new System.Drawing.Size(75, 23);
-            this.botonCrear.TabIndex = 3;
+            this.botonCrear.TabIndex = 1;
             this.botonCrear.Text = "Crear";
             this.botonCrear.UseVisualStyleBackColor = true;
             this.botonCrear.Click += new System.EventHandler(this.botonAceptar_Click);
@@ -77,7 +77,7 @@
             this.botonCancelar.Location = new System.Drawing.Point(221, 94);
             this.botonCancelar.Name = "botonCancelar";
             this.botonCancelar.Size = new System.Drawing.Size(75, 23);
-            this.botonCancelar.TabIndex = 4;
+            this.botonCancelar.TabIndex = 2;
             this.botonCancelar.Text = "Cancelar";
             this.botonCancelar.UseVisualStyleBackColor = true;
             this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);

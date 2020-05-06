@@ -86,6 +86,7 @@
             this.label2.Size = new System.Drawing.Size(230, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "MODIFICAR TIPO DE NAVIO";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Frm_modificacion_tipoNavio
             // 
