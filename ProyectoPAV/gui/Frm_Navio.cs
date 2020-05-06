@@ -86,15 +86,15 @@ namespace ProyectoPAV.gui
                 dgvl.Rows[i].Cells[0].Value = tabla.Rows[i]["codigoNavio"].ToString();
                 dgvl.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre"].ToString();
                 dgvl.Rows[i].Cells[2].Value = tabla.Rows[i]["altura"].ToString();
-                dgvl.Rows[i].Cells[0].Value = tabla.Rows[i]["autonomia"].ToString();
-                dgvl.Rows[i].Cells[1].Value = tabla.Rows[i]["desplazamiento"].ToString();
-                dgvl.Rows[i].Cells[2].Value = tabla.Rows[i]["eslora"].ToString();
-                dgvl.Rows[i].Cells[0].Value = tabla.Rows[i]["manga"].ToString();
-                dgvl.Rows[i].Cells[1].Value = tabla.Rows[i]["cantMaxPasjeros"].ToString();
-                dgvl.Rows[i].Cells[2].Value = tabla.Rows[i]["cantTripulantes"].ToString();
-                dgvl.Rows[i].Cells[0].Value = tabla.Rows[i]["tipoClasificacion"].ToString();
-                dgvl.Rows[i].Cells[1].Value = tabla.Rows[i]["cantMotores"].ToString();
-                dgvl.Rows[i].Cells[2].Value = tabla.Rows[i]["altura"].ToString();
+                dgvl.Rows[i].Cells[3].Value = tabla.Rows[i]["autonomia"].ToString();
+                dgvl.Rows[i].Cells[4].Value = tabla.Rows[i]["desplazamiento"].ToString();
+                dgvl.Rows[i].Cells[5].Value = tabla.Rows[i]["eslora"].ToString();
+                dgvl.Rows[i].Cells[6].Value = tabla.Rows[i]["manga"].ToString();
+                dgvl.Rows[i].Cells[7].Value = tabla.Rows[i]["cantMaxPasjeros"].ToString();
+                dgvl.Rows[i].Cells[8].Value = tabla.Rows[i]["cantTripulantes"].ToString();
+                dgvl.Rows[i].Cells[9].Value = tabla.Rows[i]["tipoClasificacion"].ToString();
+                dgvl.Rows[i].Cells[10].Value = tabla.Rows[i]["cantMotores"].ToString();
+              
             }
         }
        
