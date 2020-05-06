@@ -74,5 +74,10 @@ namespace ProyectoPAV.gui
         {
             this.Close();
         }
+
+        private void textBox011_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
