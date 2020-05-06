@@ -153,6 +153,12 @@
     <Compile Include="gui\frm_menu.Designer.cs">
       <DependentUpon>frm_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\Frm_modificacion_tipoNavio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Frm_modificacion_tipoNavio.Designer.cs">
+      <DependentUpon>Frm_modificacion_tipoNavio.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\Frm_Modificar_Navio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frm_menu.resx">
       <DependentUpon>frm_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Frm_modificacion_tipoNavio.resx">
+      <DependentUpon>Frm_modificacion_tipoNavio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_Modificar_Navio.resx">
       <DependentUpon>Frm_Modificar_Navio.cs</DependentUpon>
