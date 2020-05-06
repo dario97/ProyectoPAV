@@ -37,6 +37,7 @@
             this.botonModificar = new System.Windows.Forms.Button();
             this.botonEliminar = new System.Windows.Forms.Button();
             this.botonSalir = new System.Windows.Forms.Button();
+            this.chk_Todos = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +54,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chk_Todos);
             this.groupBox1.Controls.Add(this.botonSalir);
             this.groupBox1.Controls.Add(this.botonEliminar);
             this.groupBox1.Controls.Add(this.botonModificar);
@@ -61,16 +63,16 @@
             this.groupBox1.Controls.Add(this.label_tipoNavio);
             this.groupBox1.Controls.Add(this.txt_tipoNavio);
             this.groupBox1.Controls.Add(this.botonConsultar);
-            this.groupBox1.Location = new System.Drawing.Point(21, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(379, 307);
+            this.groupBox1.Size = new System.Drawing.Size(388, 307);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipos de Navios";
             // 
             // registrarTipo
             // 
-            this.registrarTipo.Location = new System.Drawing.Point(6, 219);
+            this.registrarTipo.Location = new System.Drawing.Point(6, 244);
             this.registrarTipo.Name = "registrarTipo";
             this.registrarTipo.Size = new System.Drawing.Size(75, 23);
             this.registrarTipo.TabIndex = 4;
@@ -81,7 +83,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 63);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 88);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(358, 150);
             this.dataGridView1.TabIndex = 3;
@@ -104,7 +106,7 @@
             // 
             // botonModificar
             // 
-            this.botonModificar.Location = new System.Drawing.Point(87, 219);
+            this.botonModificar.Location = new System.Drawing.Point(87, 244);
             this.botonModificar.Name = "botonModificar";
             this.botonModificar.Size = new System.Drawing.Size(75, 23);
             this.botonModificar.TabIndex = 5;
@@ -113,7 +115,7 @@
             // 
             // botonEliminar
             // 
-            this.botonEliminar.Location = new System.Drawing.Point(169, 220);
+            this.botonEliminar.Location = new System.Drawing.Point(167, 244);
             this.botonEliminar.Name = "botonEliminar";
             this.botonEliminar.Size = new System.Drawing.Size(75, 23);
             this.botonEliminar.TabIndex = 6;
@@ -128,6 +130,17 @@
             this.botonSalir.TabIndex = 7;
             this.botonSalir.Text = "Salir";
             this.botonSalir.UseVisualStyleBackColor = true;
+            this.botonSalir.Click += new System.EventHandler(this.botonSalir_Click);
+            // 
+            // chk_Todos
+            // 
+            this.chk_Todos.AutoSize = true;
+            this.chk_Todos.Location = new System.Drawing.Point(110, 64);
+            this.chk_Todos.Name = "chk_Todos";
+            this.chk_Todos.Size = new System.Drawing.Size(56, 17);
+            this.chk_Todos.TabIndex = 8;
+            this.chk_Todos.Text = "Todos";
+            this.chk_Todos.UseVisualStyleBackColor = true;
             // 
             // frm_abmc_tipoNavio
             // 
@@ -155,5 +168,6 @@
         private System.Windows.Forms.Button botonSalir;
         private System.Windows.Forms.Button botonEliminar;
         private System.Windows.Forms.Button botonModificar;
+        private System.Windows.Forms.CheckBox chk_Todos;
     }
 }

@@ -27,5 +27,10 @@ namespace ProyectoPAV.gui
             frm_alta_TipoNavio frmAlta = new frm_alta_TipoNavio();
             frmAlta.ShowDialog();
         }
+
+        private void botonSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
