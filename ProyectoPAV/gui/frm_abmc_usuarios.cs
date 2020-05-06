@@ -32,5 +32,11 @@ namespace ProyectoPAV.gui
             frm_alta_usuarios ventana = new frm_alta_usuarios();
             ventana.ShowDialog();
         }
+
+        private void cmd_editar_Click(object sender, EventArgs e)
+        {
+            Frm_Modificar_Usuario ventana1 = new Frm_Modificar_Usuario();
+            this.ShowDialog();
+        }
     }
 }
