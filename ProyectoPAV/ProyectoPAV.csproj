@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entidades\TextBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="entidades\TextBox02.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="gui\frm_abmc_TiposCamarote.cs">
       <SubType>Form</SubType>
     </Compile>

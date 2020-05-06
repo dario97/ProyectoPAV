@@ -34,9 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox_todos = new System.Windows.Forms.CheckBox();
             this.dgvl = new System.Windows.Forms.DataGridView();
-            this.cmd_Modificar = new System.Windows.Forms.Button();
-            this.cmd_Eliminar = new System.Windows.Forms.Button();
-            this.cmd_Salir = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Altura = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +45,9 @@
             this.Cantidad_de_Tripulantes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Clasificación = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad_de_Motores = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmd_Modificar = new System.Windows.Forms.Button();
+            this.cmd_Eliminar = new System.Windows.Forms.Button();
+            this.cmd_Salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvl)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             this.cmd_Consultar.Location = new System.Drawing.Point(643, 105);
             this.cmd_Consultar.Name = "cmd_Consultar";
             this.cmd_Consultar.Size = new System.Drawing.Size(75, 23);
-            this.cmd_Consultar.TabIndex = 0;
+            this.cmd_Consultar.TabIndex = 2;
             this.cmd_Consultar.Text = "Consultar";
             this.cmd_Consultar.UseVisualStyleBackColor = true;
             this.cmd_Consultar.Click += new System.EventHandler(this.cmd_Consultar_Click);
@@ -66,7 +66,7 @@
             this.cmd_Agregar.Location = new System.Drawing.Point(30, 403);
             this.cmd_Agregar.Name = "cmd_Agregar";
             this.cmd_Agregar.Size = new System.Drawing.Size(75, 23);
-            this.cmd_Agregar.TabIndex = 1;
+            this.cmd_Agregar.TabIndex = 4;
             this.cmd_Agregar.Text = "Agregar";
             this.cmd_Agregar.UseVisualStyleBackColor = true;
             this.cmd_Agregar.Click += new System.EventHandler(this.cmd_Agregar_Click);
@@ -77,7 +77,7 @@
             this.txt_navio.Location = new System.Drawing.Point(251, 70);
             this.txt_navio.Name = "txt_navio";
             this.txt_navio.Size = new System.Drawing.Size(100, 20);
-            this.txt_navio.TabIndex = 2;
+            this.txt_navio.TabIndex = 0;
             this.txt_navio.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
@@ -97,7 +97,7 @@
             this.checkBox_todos.Location = new System.Drawing.Point(251, 111);
             this.checkBox_todos.Name = "checkBox_todos";
             this.checkBox_todos.Size = new System.Drawing.Size(56, 17);
-            this.checkBox_todos.TabIndex = 5;
+            this.checkBox_todos.TabIndex = 1;
             this.checkBox_todos.Text = "Todos";
             this.checkBox_todos.UseVisualStyleBackColor = true;
             this.checkBox_todos.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -120,34 +120,7 @@
             this.dgvl.Location = new System.Drawing.Point(30, 150);
             this.dgvl.Name = "dgvl";
             this.dgvl.Size = new System.Drawing.Size(750, 214);
-            this.dgvl.TabIndex = 6;
-            // 
-            // cmd_Modificar
-            // 
-            this.cmd_Modificar.Location = new System.Drawing.Point(127, 402);
-            this.cmd_Modificar.Name = "cmd_Modificar";
-            this.cmd_Modificar.Size = new System.Drawing.Size(75, 23);
-            this.cmd_Modificar.TabIndex = 7;
-            this.cmd_Modificar.Text = "Modificar";
-            this.cmd_Modificar.UseVisualStyleBackColor = true;
-            // 
-            // cmd_Eliminar
-            // 
-            this.cmd_Eliminar.Location = new System.Drawing.Point(231, 401);
-            this.cmd_Eliminar.Name = "cmd_Eliminar";
-            this.cmd_Eliminar.Size = new System.Drawing.Size(75, 23);
-            this.cmd_Eliminar.TabIndex = 8;
-            this.cmd_Eliminar.Text = "Eliminar";
-            this.cmd_Eliminar.UseVisualStyleBackColor = true;
-            // 
-            // cmd_Salir
-            // 
-            this.cmd_Salir.Location = new System.Drawing.Point(722, 402);
-            this.cmd_Salir.Name = "cmd_Salir";
-            this.cmd_Salir.Size = new System.Drawing.Size(75, 23);
-            this.cmd_Salir.TabIndex = 9;
-            this.cmd_Salir.Text = "Salir";
-            this.cmd_Salir.UseVisualStyleBackColor = true;
+            this.dgvl.TabIndex = 3;
             // 
             // ID
             // 
@@ -203,6 +176,33 @@
             // 
             this.Cantidad_de_Motores.HeaderText = "Motores";
             this.Cantidad_de_Motores.Name = "Cantidad_de_Motores";
+            // 
+            // cmd_Modificar
+            // 
+            this.cmd_Modificar.Location = new System.Drawing.Point(127, 402);
+            this.cmd_Modificar.Name = "cmd_Modificar";
+            this.cmd_Modificar.Size = new System.Drawing.Size(75, 23);
+            this.cmd_Modificar.TabIndex = 5;
+            this.cmd_Modificar.Text = "Modificar";
+            this.cmd_Modificar.UseVisualStyleBackColor = true;
+            // 
+            // cmd_Eliminar
+            // 
+            this.cmd_Eliminar.Location = new System.Drawing.Point(231, 401);
+            this.cmd_Eliminar.Name = "cmd_Eliminar";
+            this.cmd_Eliminar.Size = new System.Drawing.Size(75, 23);
+            this.cmd_Eliminar.TabIndex = 6;
+            this.cmd_Eliminar.Text = "Eliminar";
+            this.cmd_Eliminar.UseVisualStyleBackColor = true;
+            // 
+            // cmd_Salir
+            // 
+            this.cmd_Salir.Location = new System.Drawing.Point(722, 402);
+            this.cmd_Salir.Name = "cmd_Salir";
+            this.cmd_Salir.Size = new System.Drawing.Size(75, 23);
+            this.cmd_Salir.TabIndex = 7;
+            this.cmd_Salir.Text = "Salir";
+            this.cmd_Salir.UseVisualStyleBackColor = true;
             // 
             // Frm_Navio
             // 
