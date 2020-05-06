@@ -14,7 +14,7 @@ namespace ProyectoPAV.gui
 {
     public partial class Frm_Alta_Navio : Form
     {
-        NavioService _navio = new NavioService();
+        private static NavioService _navio = new NavioService();
 
         public Frm_Alta_Navio()
         {
@@ -68,6 +68,11 @@ namespace ProyectoPAV.gui
 
                 
 
+        }
+
+        private void cmd_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

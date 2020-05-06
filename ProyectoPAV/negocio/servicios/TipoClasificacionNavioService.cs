@@ -2,6 +2,7 @@
 using ProyectoPAV.negocio.repository;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,16 @@ namespace ProyectoPAV.negocio.servicios
         public TipoClasificacionNavioService()
         {
             clasificacionNavioDao = new TipoClasificacionNavioDao();
+        }
+
+        internal DataTable consultarPorNombre(string nombre)
+        {
+            return clasificacionNavioDao.consultar_x_nombre(nombre);
+        }
+
+        internal DataTable consultarTodos()
+        {
+            return clasificacionNavioDao.consultarTodos();
         }
 
         internal bool crearTipoClasificacionNavio(TipoClasificacionNavio tipoClasificacion)

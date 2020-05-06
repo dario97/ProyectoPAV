@@ -51,5 +51,12 @@ namespace ProyectoPAV.gui
         {
 
         }
+
+        private void cmd_Agregar_Click(object sender, EventArgs e)
+        {
+
+            Frm_Alta_Navio frmAlta = new Frm_Alta_Navio();
+            frmAlta.ShowDialog();
+        }
     }
 }
