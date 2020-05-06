@@ -321,7 +321,7 @@
             this.Controls.Add(this.txt_altura);
             this.Controls.Add(this.txt_navio);
             this.Name = "Frm_Modificar_Navio";
-            this.Text = "Frm_Modificar_Navio";
+            this.Text = "Modificar Navio";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -97,7 +97,7 @@
             this.Controls.Add(this.botonConfirmar);
             this.Controls.Add(this.label1);
             this.Name = "Frm_modificacion_tipoNavio";
-            this.Text = "Modificar Tipo de Navio";
+            this.Text = "Modificar  Tipo de Navio";
             this.Load += new System.EventHandler(this.Frm_modificacion_tipoNavio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

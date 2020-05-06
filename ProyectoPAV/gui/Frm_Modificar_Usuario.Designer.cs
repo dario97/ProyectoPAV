@@ -172,7 +172,7 @@
             this.Controls.Add(this.cmd_tipoDoc);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Modificar_Usuario";
-            this.Text = "3";
+            this.Text = "Modificar Usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 
