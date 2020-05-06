@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cmd_tipoDoc = new System.Windows.Forms.ComboBox();
+            this.txt_nroDoc = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cmd_crear = new System.Windows.Forms.Button();
+            this.cmd_cancelar = new System.Windows.Forms.Button();
+            this.txt_ciudad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_pais = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -53,27 +53,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CREAR NUEVO USUARIO";
             // 
-            // comboBox1
+            // cmd_tipoDoc
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(133, 125);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(164, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cmd_tipoDoc.FormattingEnabled = true;
+            this.cmd_tipoDoc.Location = new System.Drawing.Point(133, 125);
+            this.cmd_tipoDoc.Name = "cmd_tipoDoc";
+            this.cmd_tipoDoc.Size = new System.Drawing.Size(164, 21);
+            this.cmd_tipoDoc.TabIndex = 1;
             // 
-            // textBox1
+            // txt_nroDoc
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 20);
-            this.textBox1.TabIndex = 2;
+            this.txt_nroDoc.Location = new System.Drawing.Point(133, 99);
+            this.txt_nroDoc.Name = "txt_nroDoc";
+            this.txt_nroDoc.Size = new System.Drawing.Size(164, 20);
+            this.txt_nroDoc.TabIndex = 2;
             // 
-            // textBox2
+            // txt_nombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(133, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 20);
-            this.textBox2.TabIndex = 3;
+            this.txt_nombre.Location = new System.Drawing.Point(133, 73);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(164, 20);
+            this.txt_nombre.TabIndex = 3;
             // 
             // label2
             // 
@@ -102,30 +102,30 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Tipo Documento";
             // 
-            // button1
+            // cmd_crear
             // 
-            this.button1.Location = new System.Drawing.Point(133, 224);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Crear";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmd_crear.Location = new System.Drawing.Point(133, 224);
+            this.cmd_crear.Name = "cmd_crear";
+            this.cmd_crear.Size = new System.Drawing.Size(75, 23);
+            this.cmd_crear.TabIndex = 7;
+            this.cmd_crear.Text = "Crear";
+            this.cmd_crear.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // cmd_cancelar
             // 
-            this.button2.Location = new System.Drawing.Point(223, 224);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmd_cancelar.Location = new System.Drawing.Point(223, 224);
+            this.cmd_cancelar.Name = "cmd_cancelar";
+            this.cmd_cancelar.Size = new System.Drawing.Size(75, 23);
+            this.cmd_cancelar.TabIndex = 8;
+            this.cmd_cancelar.Text = "Cancelar";
+            this.cmd_cancelar.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txt_ciudad
             // 
-            this.textBox3.Location = new System.Drawing.Point(133, 152);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(165, 20);
-            this.textBox3.TabIndex = 9;
+            this.txt_ciudad.Location = new System.Drawing.Point(133, 152);
+            this.txt_ciudad.Name = "txt_ciudad";
+            this.txt_ciudad.Size = new System.Drawing.Size(165, 20);
+            this.txt_ciudad.TabIndex = 9;
             // 
             // label5
             // 
@@ -136,12 +136,12 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Ciudad de procedencia";
             // 
-            // textBox4
+            // txt_pais
             // 
-            this.textBox4.Location = new System.Drawing.Point(133, 183);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(164, 20);
-            this.textBox4.TabIndex = 11;
+            this.txt_pais.Location = new System.Drawing.Point(133, 183);
+            this.txt_pais.Name = "txt_pais";
+            this.txt_pais.Size = new System.Drawing.Size(164, 20);
+            this.txt_pais.TabIndex = 11;
             // 
             // label6
             // 
@@ -158,17 +158,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(324, 266);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt_pais);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txt_ciudad);
+            this.Controls.Add(this.cmd_cancelar);
+            this.Controls.Add(this.cmd_crear);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txt_nombre);
+            this.Controls.Add(this.txt_nroDoc);
+            this.Controls.Add(this.cmd_tipoDoc);
             this.Controls.Add(this.label1);
             this.Name = "frm_alta_usuarios";
             this.Text = "frm_alta_usuarios";
@@ -181,17 +181,17 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox cmd_tipoDoc;
+        private System.Windows.Forms.TextBox txt_nroDoc;
+        private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button cmd_crear;
+        private System.Windows.Forms.Button cmd_cancelar;
+        private System.Windows.Forms.TextBox txt_ciudad;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_pais;
         private System.Windows.Forms.Label label6;
     }
 }
