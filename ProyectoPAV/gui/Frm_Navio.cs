@@ -114,7 +114,7 @@ namespace ProyectoPAV.gui
         {
             NavioService navioelim = new NavioService();
             int tipocodigo = -1;
-            tipocodigo = Convert.ToInt32(this.dgvl.CurrentRow.Cells["Codigo"].Value.ToString());
+            tipocodigo = Convert.ToInt32(this.dgvl.CurrentRow.Cells["ID"].Value.ToString());
 
             if(tipocodigo != -1)
             {
