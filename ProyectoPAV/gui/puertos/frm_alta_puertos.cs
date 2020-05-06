@@ -21,5 +21,15 @@ namespace ProyectoPAV.entidades
         {
             this.Close();
         }
+
+        private void cmd_crear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_alta_puertos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

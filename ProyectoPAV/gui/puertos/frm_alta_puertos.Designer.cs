@@ -53,6 +53,7 @@
             this.cmd_crear.TabIndex = 1;
             this.cmd_crear.Text = "Crear";
             this.cmd_crear.UseVisualStyleBackColor = true;
+            this.cmd_crear.Click += new System.EventHandler(this.cmd_crear_Click);
             // 
             // cmd_cancelar
             // 
@@ -92,6 +93,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frm_alta_puertos";
             this.Text = "Agregar Puesto";
+            this.Load += new System.EventHandler(this.frm_alta_puertos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

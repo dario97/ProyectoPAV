@@ -19,26 +19,6 @@ namespace ProyectoPAV.negocio.repository
         }
 
 
-        //private Navio mapping(DataRow row)
-        //{
-        //    int codigoNavio = Convert.ToInt32(row["Cod_navio"]);
-        //    string nombre = row["Nombre_navio"].ToString();
-        //    float altura = Convert.ToSingle(row["Altura"]);
-        //    float autonomia = Convert.ToSingle(row["Autonomia"]);
-        //    float desplazamiento = Convert.ToSingle(row["Desplazamiento"]);
-        //    float eslora = Convert.ToSingle(row["Eslora"]);
-        //    float manga = Convert.ToSingle(row["Manga"]);
-        //    int cantMaxPasajeros = Convert.ToInt32(row["Cant_max_pasajeros"]);
-        //    int cantTripulantes = Convert.ToInt32(row["Cant_tripulantes"]);
-        //    int tipoClasificacion = Convert.ToInt32(row["Tipo_clasificacion"]);
-        //    int cantMotores = Convert.ToInt32(row["Cant_motores"]);
-
-        //    Navio navio = new Navio(codigoNavio, nombre, altura, autonomia, desplazamiento, eslora, manga, cantMaxPasajeros, cantTripulantes, tipoClasificacion, cantMotores);
-
-        //    return navio;
-        //}
-
-
         public DataTable consultar_x_nombre(string nombre)
         {
         
