@@ -1,4 +1,5 @@
 ﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,6 +43,12 @@ namespace ProyectoPAV.gui
 
             frm_modificar_puertos abrir1 = new frm_modificar_puertos(id, nombre);
             abrir1.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            PuertoService puerto3 = new PuertoService();
+            in
         }
     }
 }
