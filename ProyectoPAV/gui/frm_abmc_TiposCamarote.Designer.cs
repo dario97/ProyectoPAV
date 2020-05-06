@@ -201,6 +201,7 @@
             this.cmd_modificar.Size = new System.Drawing.Size(95, 71);
             this.cmd_modificar.TabIndex = 11;
             this.cmd_modificar.UseVisualStyleBackColor = true;
+            this.cmd_modificar.Click += new System.EventHandler(this.cmd_modificar_Click);
             // 
             // cmd_salir
             // 
@@ -221,6 +222,7 @@
             this.cmd_eliminar.Size = new System.Drawing.Size(95, 71);
             this.cmd_eliminar.TabIndex = 13;
             this.cmd_eliminar.UseVisualStyleBackColor = true;
+            this.cmd_eliminar.Click += new System.EventHandler(this.cmd_eliminar_Click);
             // 
             // frm_abmc_TiposCamarote
             // 
