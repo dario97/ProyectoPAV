@@ -39,9 +39,9 @@ namespace ProyectoPAV.negocio.servicios
             return puertoDao.update(puerto);
         }
 
-        internal bool eliminarPuerto(Puerto puerto)
+        internal bool eliminarPuerto(int id)
         {
-            return puertoDao.delete(puerto);
+            return puertoDao.delete(id);
         }
     }
 }

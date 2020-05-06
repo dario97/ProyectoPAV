@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +14,7 @@ namespace ProyectoPAV.gui
 {
     public partial class Frm_AgregarCamarote : Form
     {
-        private static CamaroteService _camarote = new CamaroteService; 
+        private static CamaroteService _camarote = new CamaroteService(); 
 
         public Frm_AgregarCamarote()
         {

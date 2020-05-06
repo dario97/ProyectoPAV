@@ -47,8 +47,13 @@ namespace ProyectoPAV.gui
 
         private void button4_Click(object sender, EventArgs e)
         {
-            PuertoService puerto3 = new PuertoService();
-            in
+            //PuertoService puerto3 = new PuertoService();
+            //in
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

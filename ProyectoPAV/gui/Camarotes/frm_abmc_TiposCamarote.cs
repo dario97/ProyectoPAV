@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoPAV.negocio.servicios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +30,7 @@ namespace ProyectoPAV.gui
 
         private void cmd_buscar_Click(object sender, EventArgs e)
         {
-            camaroteService camarotes = new camaroteService();
+            CamaroteService camarotes = new CamaroteService();
             DataTable tabla = new DataTable();
 
             if (txt_codigoNavio.Text == ""

@@ -65,10 +65,10 @@ namespace ProyectoPAV.negocio.repository
             return true;
         }
 
-        internal bool delete(Puerto puerto)
+        internal bool delete(int id)
         {
             string strSQL = "DELETE FROM PUERTOS " +
-                                " WHERE Cod_puerto =" + puerto.CodigoPuerto;
+                                " WHERE Cod_puerto =" + id;
 
             accesoBD.ejecutarConsulta(strSQL);
             return true;
