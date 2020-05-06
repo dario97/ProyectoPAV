@@ -111,6 +111,12 @@
     <Compile Include="gui\frm_alta_usuarios.Designer.cs">
       <DependentUpon>frm_alta_usuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\frm_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frm_menu.Designer.cs">
+      <DependentUpon>frm_menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\Frm_Navio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frm_alta_usuarios.resx">
       <DependentUpon>frm_alta_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frm_menu.resx">
+      <DependentUpon>frm_menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_Navio.resx">
       <DependentUpon>Frm_Navio.cs</DependentUpon>
