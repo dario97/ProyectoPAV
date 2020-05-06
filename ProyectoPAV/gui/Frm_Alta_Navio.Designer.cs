@@ -51,6 +51,7 @@
             this.cmd_Aceptar = new System.Windows.Forms.Button();
             this.cmd_Cancelar = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt_nombre
@@ -245,11 +246,22 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "CREACION DE NAVIO";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(77, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(139, 24);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "CREAR NAVIO";
+            // 
             // Frm_Alta_Navio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(294, 372);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.cmd_Cancelar);
             this.Controls.Add(this.cmd_Aceptar);
             this.Controls.Add(this.label10);
@@ -305,5 +317,6 @@
         private System.Windows.Forms.Button cmd_Aceptar;
         private System.Windows.Forms.Button cmd_Cancelar;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
