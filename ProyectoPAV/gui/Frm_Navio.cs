@@ -110,5 +110,15 @@ namespace ProyectoPAV.gui
             Frm_Alta_Navio frmAlta = new Frm_Alta_Navio();
             frmAlta.ShowDialog();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvl_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
