@@ -38,5 +38,17 @@ namespace ProyectoPAV.gui
             ventana.ShowDialog();
        
         }
+
+        private void cmd_eliminar_Click(object sender, EventArgs e)
+        {
+            frm_eliminar_camarote ventana2 = new frm_eliminar_camarote();
+            ventana2.ShowDialog();
+        }
+
+        private void cmd_modificar_Click(object sender, EventArgs e)
+        {
+            frm_editar_camarote ventana3 = new frm_editar_camarote();
+            ventana3.ShowDialog();
+        }
     }
 }
