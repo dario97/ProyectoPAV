@@ -16,6 +16,10 @@ namespace ProyectoPAV.entidades
             this.CodigoPuerto = codigoPuerto;
             this.Nombre = nombre;
         }
+        public Puerto(string nombre)
+        {
+            this.Nombre = nombre;
+        }
 
         public int CodigoPuerto { get => codigoPuerto; set => codigoPuerto = value; }
         public string Nombre { get => nombre; set => nombre = value; }

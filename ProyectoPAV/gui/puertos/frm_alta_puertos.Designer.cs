@@ -53,6 +53,7 @@
             this.cmd_crear.TabIndex = 1;
             this.cmd_crear.Text = "Crear";
             this.cmd_crear.UseVisualStyleBackColor = true;
+            this.cmd_crear.Click += new System.EventHandler(this.cmd_crear_Click);
             // 
             // cmd_cancelar
             // 
