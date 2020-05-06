@@ -36,7 +36,7 @@
             this.txt_codigoNavio = new System.Windows.Forms.TextBox();
             this.txt_nroCamarote = new System.Windows.Forms.TextBox();
             this.txt_nroCubierta = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv3 = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +49,8 @@
             this.cmd_modificar = new System.Windows.Forms.Button();
             this.cmd_salir = new System.Windows.Forms.Button();
             this.cmd_eliminar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.chbx = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -112,21 +113,21 @@
             this.txt_nroCubierta.Size = new System.Drawing.Size(100, 20);
             this.txt_nroCubierta.TabIndex = 1;
             // 
-            // dataGridView1
+            // dgv3
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 207);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(448, 133);
-            this.dataGridView1.TabIndex = 3;
+            this.dgv3.GridColor = System.Drawing.SystemColors.ControlText;
+            this.dgv3.Location = new System.Drawing.Point(32, 239);
+            this.dgv3.Name = "dgv3";
+            this.dgv3.Size = new System.Drawing.Size(474, 133);
+            this.dgv3.TabIndex = 3;
             // 
             // Codigo
             // 
@@ -179,26 +180,26 @@
             this.cmd_buscar.TabIndex = 3;
             this.cmd_buscar.Text = "Buscar";
             this.cmd_buscar.UseVisualStyleBackColor = false;
-            this.cmd_buscar.Click += new System.EventHandler(this.button1_Click);
+            this.cmd_buscar.Click += new System.EventHandler(this.cmd_buscar_Click);
             // 
             // cmd_agregar
             // 
             this.cmd_agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_agregar.BackgroundImage")));
             this.cmd_agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_agregar.Location = new System.Drawing.Point(32, 354);
+            this.cmd_agregar.Location = new System.Drawing.Point(32, 378);
             this.cmd_agregar.Name = "cmd_agregar";
-            this.cmd_agregar.Size = new System.Drawing.Size(95, 71);
+            this.cmd_agregar.Size = new System.Drawing.Size(58, 47);
             this.cmd_agregar.TabIndex = 4;
             this.cmd_agregar.UseVisualStyleBackColor = true;
-            this.cmd_agregar.Click += new System.EventHandler(this.button2_Click);
+            this.cmd_agregar.Click += new System.EventHandler(this.cmd_agregar_Click);
             // 
             // cmd_modificar
             // 
             this.cmd_modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_modificar.BackgroundImage")));
             this.cmd_modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_modificar.Location = new System.Drawing.Point(133, 354);
+            this.cmd_modificar.Location = new System.Drawing.Point(114, 378);
             this.cmd_modificar.Name = "cmd_modificar";
-            this.cmd_modificar.Size = new System.Drawing.Size(95, 71);
+            this.cmd_modificar.Size = new System.Drawing.Size(55, 47);
             this.cmd_modificar.TabIndex = 5;
             this.cmd_modificar.UseVisualStyleBackColor = true;
             this.cmd_modificar.Click += new System.EventHandler(this.cmd_modificar_Click);
@@ -207,9 +208,9 @@
             // 
             this.cmd_salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_salir.BackgroundImage")));
             this.cmd_salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_salir.Location = new System.Drawing.Point(435, 354);
+            this.cmd_salir.Location = new System.Drawing.Point(444, 378);
             this.cmd_salir.Name = "cmd_salir";
-            this.cmd_salir.Size = new System.Drawing.Size(95, 71);
+            this.cmd_salir.Size = new System.Drawing.Size(62, 47);
             this.cmd_salir.TabIndex = 7;
             this.cmd_salir.UseVisualStyleBackColor = true;
             // 
@@ -217,12 +218,23 @@
             // 
             this.cmd_eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_eliminar.BackgroundImage")));
             this.cmd_eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_eliminar.Location = new System.Drawing.Point(234, 354);
+            this.cmd_eliminar.Location = new System.Drawing.Point(187, 378);
             this.cmd_eliminar.Name = "cmd_eliminar";
-            this.cmd_eliminar.Size = new System.Drawing.Size(95, 71);
+            this.cmd_eliminar.Size = new System.Drawing.Size(61, 47);
             this.cmd_eliminar.TabIndex = 6;
             this.cmd_eliminar.UseVisualStyleBackColor = true;
             this.cmd_eliminar.Click += new System.EventHandler(this.cmd_eliminar_Click);
+            // 
+            // chbx
+            // 
+            this.chbx.AutoSize = true;
+            this.chbx.Location = new System.Drawing.Point(148, 207);
+            this.chbx.Name = "chbx";
+            this.chbx.Size = new System.Drawing.Size(56, 17);
+            this.chbx.TabIndex = 9;
+            this.chbx.Text = "Todos";
+            this.chbx.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.chbx.UseVisualStyleBackColor = true;
             // 
             // frm_abmc_TiposCamarote
             // 
@@ -230,13 +242,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(542, 437);
+            this.Controls.Add(this.chbx);
             this.Controls.Add(this.cmd_eliminar);
             this.Controls.Add(this.cmd_salir);
             this.Controls.Add(this.cmd_modificar);
             this.Controls.Add(this.cmd_agregar);
             this.Controls.Add(this.cmd_buscar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv3);
             this.Controls.Add(this.txt_nroCubierta);
             this.Controls.Add(this.txt_nroCamarote);
             this.Controls.Add(this.txt_codigoNavio);
@@ -247,7 +260,8 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frm_abmc_TiposCamarote";
             this.Text = "Camarotes";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frm_abmc_TiposCamarote_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,7 +276,7 @@
         private System.Windows.Forms.TextBox txt_codigoNavio;
         private System.Windows.Forms.TextBox txt_nroCamarote;
         private System.Windows.Forms.TextBox txt_nroCubierta;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -275,5 +289,6 @@
         private System.Windows.Forms.Button cmd_modificar;
         private System.Windows.Forms.Button cmd_salir;
         private System.Windows.Forms.Button cmd_eliminar;
+        private System.Windows.Forms.CheckBox chbx;
     }
 }

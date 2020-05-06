@@ -27,18 +27,64 @@ namespace ProyectoPAV.gui
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cmd_buscar_Click(object sender, EventArgs e)
         {
+            camaroteService camarotes = new camaroteService();
+            DataTable tabla = new DataTable();
 
+            if (txt_codigoNavio.Text == ""
+                && txt_nroCamarote.Text == ""
+                && txt_nroCubierta.Text == ""
+                && chbx.Checked == false)
+            {
+                MessageBox.Show("No se cargó ningún dato", "Mensaje", MessageBoxButtons.OK);
+            }
+
+            if(txt_codigoNavio.Text != ""
+                && txt_nroCamarote.Text != ""
+                && txt_nroCubierta.Text != ""
+                && chbx.Checked == false)
+            {
+                tabla = camarotes.consultarCamarote(txt_codigoNavio.Text, txt_nroCubierta.Text, txt_nroCamarote.Text);
+                if (tabla.Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encontró ningún camarote con esos datos", " Mensaje", MessageBoxButtons.OK);
+
+                }
+            }
+
+            if (chbx.Checked == true)
+            {
+                tabla = camarotes.consultarTodos();
+            }
+
+            cargar_grilla(tabla);
+
+           
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void cargar_grilla(DataTable tabla)
+        {
+            for (int i = 0; i < tabla.Rows.Count; i++)
+            {
+                dgv3.Rows.Add();
+                dgv3.Rows[i].Cells[0].Value = tabla.Rows[i]["Cod_Camarote"].ToString();
+                dgv3.Rows[i].Cells[1].Value = tabla.Rows[i]["Num_Cubierta"].ToString();
+                dgv3.Rows[i].Cells[2].Value = tabla.Rows[i]["Num_Camarote"].ToString();
+                dgv3.Rows[i].Cells[3].Value = tabla.Rows[i]["Tipo_Camarote"].ToString();
+                dgv3.Rows[i].Cells[4].Value = tabla.Rows[i]["Ubicacion"].ToString();
+                dgv3.Rows[i].Cells[5].Value = tabla.Rows[i]["Cant_Camas"].ToString();
+            }
+        }
+
+        private void cmd_agregar_Click(object sender, EventArgs e)
         {
             Frm_AgregarCamarote ventana = new Frm_AgregarCamarote();
             ventana.ShowDialog();
-       
+
         }
 
+        
         private void cmd_eliminar_Click(object sender, EventArgs e)
         {
             //frm_eliminar_camarote ventana2 = new frm_eliminar_camarote();
@@ -49,6 +95,11 @@ namespace ProyectoPAV.gui
         {
             //frm_editar_camarote ventana3 = new frm_editar_camarote();
             //ventana3.ShowDialog();
+        }
+
+        private void frm_abmc_TiposCamarote_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
