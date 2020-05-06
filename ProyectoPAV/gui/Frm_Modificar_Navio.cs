@@ -16,5 +16,10 @@ namespace ProyectoPAV.gui
         {
             InitializeComponent();
         }
+
+        private void cmd_aceptar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

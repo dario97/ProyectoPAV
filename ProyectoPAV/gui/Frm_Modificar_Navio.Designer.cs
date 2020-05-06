@@ -180,6 +180,7 @@
             this.cmd_aceptar.TabIndex = 10;
             this.cmd_aceptar.Text = "Aceptar";
             this.cmd_aceptar.UseVisualStyleBackColor = true;
+            this.cmd_aceptar.Click += new System.EventHandler(this.cmd_aceptar_Click);
             // 
             // cmd_cancelar
             // 
