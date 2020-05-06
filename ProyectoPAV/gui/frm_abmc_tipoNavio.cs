@@ -100,5 +100,10 @@ namespace ProyectoPAV.gui
             frmModificacion.ShowDialog();
             
         }
+
+        private void frm_abmc_tipoNavio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

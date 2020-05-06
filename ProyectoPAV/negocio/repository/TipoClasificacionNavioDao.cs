@@ -55,8 +55,8 @@ namespace ProyectoPAV.negocio.repository
 
         internal bool update(TipoClasificacionNavio tipoClasificacion)
         {
-            string strSQL = "UPDATE CLASIFICACION_NAVIO (Descripcion)" +
-                "SET Descripcion=" + tipoClasificacion.Descripcion +
+            string strSQL = "UPDATE CLASIFICACION_NAVIO " +
+                " SET Descripcion= " +  "'" + tipoClasificacion.Descripcion + "'" +
                 " WHERE Cod_clasificacion =" + tipoClasificacion.CodigoClasificacion;
                 
 
