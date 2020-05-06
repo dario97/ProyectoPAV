@@ -181,7 +181,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_abmc_puertos";
-            this.Text = "frm_abmc_puertos";
+            this.Text = "Puertos";
             ((System.ComponentModel.ISupportInitialize)(this.dvg2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
