@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoPAV.negocio.servicios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,7 +50,58 @@ namespace ProyectoPAV.gui
 
         private void cmd_Consultar_Click(object sender, EventArgs e)
         {
+            NavioService navio = new NavioService();
+            DataTable tabla = new DataTable();
 
+            if (txt_navio.Text == ""
+                && checkBox_todos.Checked==false);
+            {
+                MessageBox.Show("No se cargó ningún dato", "importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                txt_navio.Focus();
+            }
+
+            if (txt_navio.Text != ""
+                && checkBox_todos.Checked == false) ;
+            {
+                tabla = navio.consultarPorNombre(txt_navio.Text);
+                if (tabla.Rows.Count == 0) ;
+                {
+                    MessageBox.Show("No se encontró ningún navío con ese nombre.");
+                }
+            }
+
+            if (checkBox_todos.Checked == true);
+            {
+                tabla = navio.consultarTodos();
+            }
+            cargar_grilla(tabla);
+        }
+
+        private void cargar_grilla(DataTable tabla)
+        {
+            dgvl.Rows.Clear();
+            for (int i = 0; i < tabla.Rows.Count; i++)
+            {
+                dgvl.Rows.Add();
+                dgvl.Rows[i].Cells[0].Value = tabla.Rows[i]["codigoNavio"].ToString();
+                dgvl.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre"].ToString();
+                dgvl.Rows[i].Cells[2].Value = tabla.Rows[i]["altura"].ToString();
+                dgvl.Rows[i].Cells[0].Value = tabla.Rows[i]["autonomia"].ToString();
+                dgvl.Rows[i].Cells[1].Value = tabla.Rows[i]["desplazamiento"].ToString();
+                dgvl.Rows[i].Cells[2].Value = tabla.Rows[i]["eslora"].ToString();
+                dgvl.Rows[i].Cells[0].Value = tabla.Rows[i]["manga"].ToString();
+                dgvl.Rows[i].Cells[1].Value = tabla.Rows[i]["cantMaxPasjeros"].ToString();
+                dgvl.Rows[i].Cells[2].Value = tabla.Rows[i]["cantTripulantes"].ToString();
+                dgvl.Rows[i].Cells[0].Value = tabla.Rows[i]["tipoClasificacion"].ToString();
+                dgvl.Rows[i].Cells[1].Value = tabla.Rows[i]["cantMotores"].ToString();
+                dgvl.Rows[i].Cells[2].Value = tabla.Rows[i]["altura"].ToString();
+            }
+        }
+       
+
+        private NavioService NavioService()
+        {
+            throw new NotImplementedException();
         }
 
         private void cmd_Agregar_Click(object sender, EventArgs e)

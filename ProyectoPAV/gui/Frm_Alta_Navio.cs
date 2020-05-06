@@ -55,14 +55,14 @@ namespace ProyectoPAV.gui
                 _navio.crearNavio(navio);
 
                 MessageBox.Show("Se grabó exitosamente los datos"
-                            , "Mensaje"
+                            , ""
                             , MessageBoxButtons.OK
                             , MessageBoxIcon.Exclamation);
                 this.Close();
             }
             else
             {
-                MessageBox.Show("El Navío ya existe", "Hola" ,MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El Navío ya existe", "" ,MessageBoxButtons.OK, MessageBoxIcon.Error);
                 
             }
 

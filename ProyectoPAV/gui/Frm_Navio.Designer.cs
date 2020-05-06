@@ -33,24 +33,22 @@
             this.txt_navio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox_todos = new System.Windows.Forms.CheckBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Altura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Eslora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Manga = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Desplazamiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Autonomia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad_de_Camarotes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Capacidad_Maxima_de_Pasajeros = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad_de_Motores = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad_de_Tripulantes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clasificación = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cubiertas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvl = new System.Windows.Forms.DataGridView();
             this.cmd_Modificar = new System.Windows.Forms.Button();
             this.cmd_Eliminar = new System.Windows.Forms.Button();
             this.cmd_Salir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Altura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Autonomia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Desplazamiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Eslora = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Manga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Capacidad_Maxima_de_Pasajeros = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad_de_Tripulantes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Clasificación = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad_de_Motores = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvl)).BeginInit();
             this.SuspendLayout();
             // 
             // cmd_Consultar
@@ -104,92 +102,25 @@
             this.checkBox_todos.UseVisualStyleBackColor = true;
             this.checkBox_todos.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // dataGridView1
+            // dgvl
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvl.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Nombre,
             this.Altura,
+            this.Autonomia,
+            this.Desplazamiento,
             this.Eslora,
             this.Manga,
-            this.Desplazamiento,
-            this.Autonomia,
-            this.Cantidad_de_Camarotes,
             this.Capacidad_Maxima_de_Pasajeros,
-            this.Cantidad_de_Motores,
             this.Cantidad_de_Tripulantes,
             this.Clasificación,
-            this.Cubiertas});
-            this.dataGridView1.Location = new System.Drawing.Point(30, 154);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(750, 214);
-            this.dataGridView1.TabIndex = 6;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Altura
-            // 
-            this.Altura.HeaderText = "Altura";
-            this.Altura.Name = "Altura";
-            // 
-            // Eslora
-            // 
-            this.Eslora.HeaderText = "Eslora";
-            this.Eslora.Name = "Eslora";
-            // 
-            // Manga
-            // 
-            this.Manga.HeaderText = "Manga";
-            this.Manga.Name = "Manga";
-            // 
-            // Desplazamiento
-            // 
-            this.Desplazamiento.HeaderText = "Desplazamiento";
-            this.Desplazamiento.Name = "Desplazamiento";
-            // 
-            // Autonomia
-            // 
-            this.Autonomia.HeaderText = "Autonomia";
-            this.Autonomia.Name = "Autonomia";
-            // 
-            // Cantidad_de_Camarotes
-            // 
-            this.Cantidad_de_Camarotes.HeaderText = "Camarotes";
-            this.Cantidad_de_Camarotes.Name = "Cantidad_de_Camarotes";
-            // 
-            // Capacidad_Maxima_de_Pasajeros
-            // 
-            this.Capacidad_Maxima_de_Pasajeros.HeaderText = "Pasajeros";
-            this.Capacidad_Maxima_de_Pasajeros.Name = "Capacidad_Maxima_de_Pasajeros";
-            // 
-            // Cantidad_de_Motores
-            // 
-            this.Cantidad_de_Motores.HeaderText = "Motores";
-            this.Cantidad_de_Motores.Name = "Cantidad_de_Motores";
-            // 
-            // Cantidad_de_Tripulantes
-            // 
-            this.Cantidad_de_Tripulantes.HeaderText = "Tripulantes";
-            this.Cantidad_de_Tripulantes.Name = "Cantidad_de_Tripulantes";
-            // 
-            // Clasificación
-            // 
-            this.Clasificación.HeaderText = "Clasificacion";
-            this.Clasificación.Name = "Clasificación";
-            // 
-            // Cubiertas
-            // 
-            this.Cubiertas.HeaderText = "Cubiertas";
-            this.Cubiertas.Name = "Cubiertas";
+            this.Cantidad_de_Motores});
+            this.dgvl.Location = new System.Drawing.Point(30, 150);
+            this.dgvl.Name = "dgvl";
+            this.dgvl.Size = new System.Drawing.Size(750, 214);
+            this.dgvl.TabIndex = 6;
             // 
             // cmd_Modificar
             // 
@@ -218,6 +149,61 @@
             this.cmd_Salir.Text = "Salir";
             this.cmd_Salir.UseVisualStyleBackColor = true;
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Altura
+            // 
+            this.Altura.HeaderText = "Altura";
+            this.Altura.Name = "Altura";
+            // 
+            // Autonomia
+            // 
+            this.Autonomia.HeaderText = "Autonomia";
+            this.Autonomia.Name = "Autonomia";
+            // 
+            // Desplazamiento
+            // 
+            this.Desplazamiento.HeaderText = "Desplazamiento";
+            this.Desplazamiento.Name = "Desplazamiento";
+            // 
+            // Eslora
+            // 
+            this.Eslora.HeaderText = "Eslora";
+            this.Eslora.Name = "Eslora";
+            // 
+            // Manga
+            // 
+            this.Manga.HeaderText = "Manga";
+            this.Manga.Name = "Manga";
+            // 
+            // Capacidad_Maxima_de_Pasajeros
+            // 
+            this.Capacidad_Maxima_de_Pasajeros.HeaderText = "Pasajeros";
+            this.Capacidad_Maxima_de_Pasajeros.Name = "Capacidad_Maxima_de_Pasajeros";
+            // 
+            // Cantidad_de_Tripulantes
+            // 
+            this.Cantidad_de_Tripulantes.HeaderText = "Tripulantes";
+            this.Cantidad_de_Tripulantes.Name = "Cantidad_de_Tripulantes";
+            // 
+            // Clasificación
+            // 
+            this.Clasificación.HeaderText = "Clasificacion";
+            this.Clasificación.Name = "Clasificación";
+            // 
+            // Cantidad_de_Motores
+            // 
+            this.Cantidad_de_Motores.HeaderText = "Motores";
+            this.Cantidad_de_Motores.Name = "Cantidad_de_Motores";
+            // 
             // Frm_Navio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,7 +212,7 @@
             this.Controls.Add(this.cmd_Salir);
             this.Controls.Add(this.cmd_Eliminar);
             this.Controls.Add(this.cmd_Modificar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvl);
             this.Controls.Add(this.checkBox_todos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_navio);
@@ -235,7 +221,7 @@
             this.Name = "Frm_Navio";
             this.Text = "Frm_Navio";
             this.Load += new System.EventHandler(this.Frm_Navio_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,22 +234,20 @@
         private System.Windows.Forms.TextBox txt_navio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox_todos;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Altura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Eslora;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Manga;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Desplazamiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Autonomia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad_de_Camarotes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Capacidad_Maxima_de_Pasajeros;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad_de_Motores;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad_de_Tripulantes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Clasificación;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cubiertas;
+        private System.Windows.Forms.DataGridView dgvl;
         private System.Windows.Forms.Button cmd_Modificar;
         private System.Windows.Forms.Button cmd_Eliminar;
         private System.Windows.Forms.Button cmd_Salir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Altura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Autonomia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Desplazamiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Eslora;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Manga;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Capacidad_Maxima_de_Pasajeros;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad_de_Tripulantes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Clasificación;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad_de_Motores;
     }
 }
