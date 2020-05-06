@@ -47,13 +47,15 @@ namespace ProyectoPAV.gui
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //PuertoService puerto3 = new PuertoService();
-            //in
+            PuertoService puerto3 = new PuertoService();
+            int puertoid = -1;
+            puertoid = Convert.ToInt32(this.dvg2.CurrentRow.Cells["Id"].Value.ToString());
+            if (puertoid != -1)
+            {
+                puerto3.eliminarPuerto(puertoid);
+            }
+            
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
