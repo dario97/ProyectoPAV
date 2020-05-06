@@ -171,6 +171,12 @@
     <Compile Include="gui\Frm_Baja_Puerto.Designer.cs">
       <DependentUpon>Frm_Baja_Puerto.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\frm_modificar_puertos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frm_modificar_puertos.Designer.cs">
+      <DependentUpon>frm_modificar_puertos.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\Frm_Modificar_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_Baja_Puerto.resx">
       <DependentUpon>Frm_Baja_Puerto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frm_modificar_puertos.resx">
+      <DependentUpon>frm_modificar_puertos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_Modificar_Usuario.resx">
       <DependentUpon>Frm_Modificar_Usuario.cs</DependentUpon>
