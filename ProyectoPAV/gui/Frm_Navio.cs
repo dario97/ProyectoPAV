@@ -119,6 +119,7 @@ namespace ProyectoPAV.gui
             if(tipocodigo != -1)
             {
                 navioelim.eliminarNavio(tipocodigo);
+                MessageBox.Show("El navío fue correctamente eliminado", "mensaje", MessageBoxButtons.OK);
             }
              
         }
