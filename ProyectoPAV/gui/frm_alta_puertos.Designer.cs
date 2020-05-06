@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmd_crear = new System.Windows.Forms.Button();
+            this.cmd_cancelar = new System.Windows.Forms.Button();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -45,30 +45,30 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Crear Puerto";
             // 
-            // button1
+            // cmd_crear
             // 
-            this.button1.Location = new System.Drawing.Point(26, 83);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Crear";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmd_crear.Location = new System.Drawing.Point(26, 83);
+            this.cmd_crear.Name = "cmd_crear";
+            this.cmd_crear.Size = new System.Drawing.Size(75, 23);
+            this.cmd_crear.TabIndex = 1;
+            this.cmd_crear.Text = "Crear";
+            this.cmd_crear.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // cmd_cancelar
             // 
-            this.button2.Location = new System.Drawing.Point(121, 83);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmd_cancelar.Location = new System.Drawing.Point(121, 83);
+            this.cmd_cancelar.Name = "cmd_cancelar";
+            this.cmd_cancelar.Size = new System.Drawing.Size(75, 23);
+            this.cmd_cancelar.TabIndex = 2;
+            this.cmd_cancelar.Text = "Cancelar";
+            this.cmd_cancelar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txt_nombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(62, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 20);
-            this.textBox1.TabIndex = 3;
+            this.txt_nombre.Location = new System.Drawing.Point(62, 48);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(125, 20);
+            this.txt_nombre.TabIndex = 3;
             // 
             // label2
             // 
@@ -85,9 +85,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(236, 128);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txt_nombre);
+            this.Controls.Add(this.cmd_cancelar);
+            this.Controls.Add(this.cmd_crear);
             this.Controls.Add(this.label1);
             this.Name = "frm_alta_puertos";
             this.Text = "frm_alta_puertos";
@@ -99,9 +99,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button cmd_crear;
+        private System.Windows.Forms.Button cmd_cancelar;
+        private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label2;
     }
 }
