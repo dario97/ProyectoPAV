@@ -16,5 +16,10 @@ namespace ProyectoPAV.entidades
         {
             InitializeComponent();
         }
+
+        private void cmd_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

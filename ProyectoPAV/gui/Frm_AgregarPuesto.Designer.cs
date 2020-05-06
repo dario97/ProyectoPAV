@@ -79,6 +79,7 @@
             this.cmd_Salir.TabIndex = 4;
             this.cmd_Salir.Text = "Salir";
             this.cmd_Salir.UseVisualStyleBackColor = true;
+            this.cmd_Salir.Click += new System.EventHandler(this.cmd_Salir_Click);
             // 
             // Frm_AgregarPuesto
             // 
