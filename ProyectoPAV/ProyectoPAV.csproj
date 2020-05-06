@@ -59,16 +59,16 @@
     <Compile Include="gui\frm_ModificarPuesto.Designer.cs">
       <DependentUpon>frm_ModificarPuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\frm_abmc_TiposCamarote.cs">
+    <Compile Include="gui\Camarotes\frm_abmc_TiposCamarote.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\frm_abmc_TiposCamarote.Designer.cs">
+    <Compile Include="gui\Camarotes\frm_abmc_TiposCamarote.Designer.cs">
       <DependentUpon>frm_abmc_TiposCamarote.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_AgregarCamarote.cs">
+    <Compile Include="gui\Camarotes\Frm_AgregarCamarote.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_AgregarCamarote.Designer.cs">
+    <Compile Include="gui\Camarotes\Frm_AgregarCamarote.Designer.cs">
       <DependentUpon>Frm_AgregarCamarote.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\Frm_AgregarPuesto.cs">
@@ -204,10 +204,10 @@
     <Compile Include="negocio\servicios\TipoClasificacionNavioService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="gui\frm_abmc_TiposCamarote.resx">
+    <EmbeddedResource Include="gui\Camarotes\frm_abmc_TiposCamarote.resx">
       <DependentUpon>frm_abmc_TiposCamarote.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_AgregarCamarote.resx">
+    <EmbeddedResource Include="gui\Camarotes\Frm_AgregarCamarote.resx">
       <DependentUpon>Frm_AgregarCamarote.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_AgregarPuesto.resx">
