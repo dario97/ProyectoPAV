@@ -38,7 +38,7 @@ namespace ProyectoPAV.gui
         private void button2_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(this.dgv4.CurrentRow.Cells["Id"].Value.ToString());
-            string nombre = this.dgv4.CurrentRow.Cells["Descripcion"].Value.ToString();
+            string nombre = this.dgv4.CurrentRow.Cells["Nombre"].Value.ToString();
 
 
             frm_modificar_puertos abrir1 = new frm_modificar_puertos(id, nombre);
@@ -94,7 +94,7 @@ namespace ProyectoPAV.gui
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 dgv4.Rows.Add();
-                dgv4.Rows[i].Cells[0].Value = tabla.Rows[i]["ID"].ToString();
+                dgv4.Rows[i].Cells[0].Value = tabla.Rows[i]["Cod_puerto"].ToString();
                 dgv4.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre"].ToString();
 
             }
