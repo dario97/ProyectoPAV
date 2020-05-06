@@ -57,5 +57,47 @@ namespace ProyectoPAV.gui
             
         }
 
+        private void cmd_consulta_Click(object sender, EventArgs e)
+        {
+            PuertoService puerto = new PuertoService();
+            DataTable tabla = new DataTable();
+
+            if (txt_nombre.Text == ""
+                && chbx1.Checked == false)
+            {
+                MessageBox.Show("No se cargó ningun dato", "mensaje", MessageBoxButtons.OK);
+           
+            }
+
+            if (txt_nombre.Text != ""
+                && chbx1.Checked == false)
+            {
+                tabla = puerto.consultarPorNombre(txt_nombre.Text);
+                if (tabla.Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encontró ningun puerto con ese nombre", " Mensaje", MessageBoxButtons.OK);
+                }
+            }
+
+            if (chbx1.Checked == true)
+            {
+                tabla = puerto.consultarTodos();
+
+            }
+            cargar_grilla(tabla);
+
+        }
+
+        private void cargar_grilla(DataTable tabla)
+        {
+            dvg2.Rows.Clear();
+            for (int i = 0; i < tabla.Rows.Count; i++)
+            {
+                dvg2.Rows.Add();
+                dvg2.Rows[i].Cells[0].Value = tabla.Rows[i]["Id"].ToString();
+                dvg2.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre"].ToString();
+
+            }
+        }
     }
 }
