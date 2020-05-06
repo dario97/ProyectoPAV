@@ -57,7 +57,7 @@
             this.groupBox1.Controls.Add(this.botonConsultar);
             this.groupBox1.Location = new System.Drawing.Point(21, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(610, 307);
+            this.groupBox1.Size = new System.Drawing.Size(379, 307);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipos de Navios";
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(410, 326);
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_abmc_tipoNavio";
             this.Text = "frm_abmc_tipoNavio";
