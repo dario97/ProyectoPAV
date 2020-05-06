@@ -126,7 +126,6 @@
             this.dgvl.Name = "dgvl";
             this.dgvl.Size = new System.Drawing.Size(750, 214);
             this.dgvl.TabIndex = 3;
-            //this.dgvl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvl_CellContentClick);
             // 
             // ID
             // 
@@ -236,7 +235,6 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
-            //this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Frm_Navio
             // 
