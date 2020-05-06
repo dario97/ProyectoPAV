@@ -60,5 +60,6 @@ namespace ProyectoPAV.entidades
         public int TipoClasificacion { get => tipoClasificacion; set => tipoClasificacion = value; }
         public int CantMotores { get => cantMotores; set => cantMotores = value; }
         public int CodigoNavio { get => codigoNavio; set => codigoNavio = value; }
+
     }
 }
