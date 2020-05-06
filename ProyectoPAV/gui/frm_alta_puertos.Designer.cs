@@ -91,7 +91,7 @@
             this.Controls.Add(this.cmd_crear);
             this.Controls.Add(this.label1);
             this.Name = "frm_alta_puertos";
-            this.Text = "frm_alta_puertos";
+            this.Text = "Agregar Puesto";
             this.ResumeLayout(false);
             this.PerformLayout();
 

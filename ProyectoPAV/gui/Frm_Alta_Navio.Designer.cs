@@ -285,7 +285,7 @@
             this.Controls.Add(this.txt_altura);
             this.Controls.Add(this.txt_nombre);
             this.Name = "Frm_Alta_Navio";
-            this.Text = "Form1";
+            this.Text = "Crear Navio";
             this.Load += new System.EventHandler(this.Frm_Alta_Navio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -96,21 +96,21 @@
             this.txt_codigoNavio.Location = new System.Drawing.Point(148, 99);
             this.txt_codigoNavio.Name = "txt_codigoNavio";
             this.txt_codigoNavio.Size = new System.Drawing.Size(100, 20);
-            this.txt_codigoNavio.TabIndex = 4;
+            this.txt_codigoNavio.TabIndex = 0;
             // 
             // txt_nroCamarote
             // 
             this.txt_nroCamarote.Location = new System.Drawing.Point(148, 172);
             this.txt_nroCamarote.Name = "txt_nroCamarote";
             this.txt_nroCamarote.Size = new System.Drawing.Size(100, 20);
-            this.txt_nroCamarote.TabIndex = 5;
+            this.txt_nroCamarote.TabIndex = 2;
             // 
             // txt_nroCubierta
             // 
             this.txt_nroCubierta.Location = new System.Drawing.Point(148, 136);
             this.txt_nroCubierta.Name = "txt_nroCubierta";
             this.txt_nroCubierta.Size = new System.Drawing.Size(100, 20);
-            this.txt_nroCubierta.TabIndex = 6;
+            this.txt_nroCubierta.TabIndex = 1;
             // 
             // dataGridView1
             // 
@@ -126,7 +126,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(38, 207);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(448, 133);
-            this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.TabIndex = 3;
             // 
             // Codigo
             // 
@@ -176,7 +176,7 @@
             this.cmd_buscar.Location = new System.Drawing.Point(313, 121);
             this.cmd_buscar.Name = "cmd_buscar";
             this.cmd_buscar.Size = new System.Drawing.Size(120, 48);
-            this.cmd_buscar.TabIndex = 9;
+            this.cmd_buscar.TabIndex = 3;
             this.cmd_buscar.Text = "Buscar";
             this.cmd_buscar.UseVisualStyleBackColor = false;
             this.cmd_buscar.Click += new System.EventHandler(this.button1_Click);
@@ -188,7 +188,7 @@
             this.cmd_agregar.Location = new System.Drawing.Point(32, 354);
             this.cmd_agregar.Name = "cmd_agregar";
             this.cmd_agregar.Size = new System.Drawing.Size(95, 71);
-            this.cmd_agregar.TabIndex = 10;
+            this.cmd_agregar.TabIndex = 4;
             this.cmd_agregar.UseVisualStyleBackColor = true;
             this.cmd_agregar.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -199,7 +199,7 @@
             this.cmd_modificar.Location = new System.Drawing.Point(133, 354);
             this.cmd_modificar.Name = "cmd_modificar";
             this.cmd_modificar.Size = new System.Drawing.Size(95, 71);
-            this.cmd_modificar.TabIndex = 11;
+            this.cmd_modificar.TabIndex = 5;
             this.cmd_modificar.UseVisualStyleBackColor = true;
             this.cmd_modificar.Click += new System.EventHandler(this.cmd_modificar_Click);
             // 
@@ -210,7 +210,7 @@
             this.cmd_salir.Location = new System.Drawing.Point(435, 354);
             this.cmd_salir.Name = "cmd_salir";
             this.cmd_salir.Size = new System.Drawing.Size(95, 71);
-            this.cmd_salir.TabIndex = 12;
+            this.cmd_salir.TabIndex = 7;
             this.cmd_salir.UseVisualStyleBackColor = true;
             // 
             // cmd_eliminar
@@ -220,7 +220,7 @@
             this.cmd_eliminar.Location = new System.Drawing.Point(234, 354);
             this.cmd_eliminar.Name = "cmd_eliminar";
             this.cmd_eliminar.Size = new System.Drawing.Size(95, 71);
-            this.cmd_eliminar.TabIndex = 13;
+            this.cmd_eliminar.TabIndex = 6;
             this.cmd_eliminar.UseVisualStyleBackColor = true;
             this.cmd_eliminar.Click += new System.EventHandler(this.cmd_eliminar_Click);
             // 
@@ -246,7 +246,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frm_abmc_TiposCamarote";
-            this.Text = "frm_abmc_TiposCamarote";
+            this.Text = "Camarotes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
