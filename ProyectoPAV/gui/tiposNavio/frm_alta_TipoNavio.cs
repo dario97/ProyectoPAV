@@ -66,7 +66,5 @@ namespace ProyectoPAV.gui
             this.Close();
         }
 
-        
-        
     }
 }

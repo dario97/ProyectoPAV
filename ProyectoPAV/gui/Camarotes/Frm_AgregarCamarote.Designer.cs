@@ -35,16 +35,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_codigo = new System.Windows.Forms.TextBox();
+            this.txt_cubierta = new System.Windows.Forms.TextBox();
+            this.txt_numcam = new System.Windows.Forms.TextBox();
+            this.txt_tipo = new System.Windows.Forms.TextBox();
+            this.txt_ubicacion = new System.Windows.Forms.TextBox();
+            this.txt_camas = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cmd_aceptar = new System.Windows.Forms.Button();
+            this.cmd_salir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -116,47 +116,47 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Cantidad de Camas :";
             // 
-            // textBox1
+            // txt_codigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(143, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txt_codigo.Location = new System.Drawing.Point(143, 127);
+            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.Size = new System.Drawing.Size(100, 20);
+            this.txt_codigo.TabIndex = 0;
             // 
-            // textBox2
+            // txt_cubierta
             // 
-            this.textBox2.Location = new System.Drawing.Point(143, 162);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txt_cubierta.Location = new System.Drawing.Point(143, 162);
+            this.txt_cubierta.Name = "txt_cubierta";
+            this.txt_cubierta.Size = new System.Drawing.Size(100, 20);
+            this.txt_cubierta.TabIndex = 1;
             // 
-            // textBox3
+            // txt_numcam
             // 
-            this.textBox3.Location = new System.Drawing.Point(143, 202);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.txt_numcam.Location = new System.Drawing.Point(143, 202);
+            this.txt_numcam.Name = "txt_numcam";
+            this.txt_numcam.Size = new System.Drawing.Size(100, 20);
+            this.txt_numcam.TabIndex = 2;
             // 
-            // textBox4
+            // txt_tipo
             // 
-            this.textBox4.Location = new System.Drawing.Point(410, 127);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.txt_tipo.Location = new System.Drawing.Point(410, 127);
+            this.txt_tipo.Name = "txt_tipo";
+            this.txt_tipo.Size = new System.Drawing.Size(100, 20);
+            this.txt_tipo.TabIndex = 3;
             // 
-            // textBox5
+            // txt_ubicacion
             // 
-            this.textBox5.Location = new System.Drawing.Point(410, 159);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.txt_ubicacion.Location = new System.Drawing.Point(410, 159);
+            this.txt_ubicacion.Name = "txt_ubicacion";
+            this.txt_ubicacion.Size = new System.Drawing.Size(100, 20);
+            this.txt_ubicacion.TabIndex = 4;
             // 
-            // textBox6
+            // txt_camas
             // 
-            this.textBox6.Location = new System.Drawing.Point(410, 194);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 5;
+            this.txt_camas.Location = new System.Drawing.Point(410, 194);
+            this.txt_camas.Name = "txt_camas";
+            this.txt_camas.Size = new System.Drawing.Size(100, 20);
+            this.txt_camas.TabIndex = 5;
             // 
             // label8
             // 
@@ -178,44 +178,45 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Caracteristicas :";
             // 
-            // button1
+            // cmd_aceptar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(313, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 50);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.cmd_aceptar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.cmd_aceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cmd_aceptar.Location = new System.Drawing.Point(313, 247);
+            this.cmd_aceptar.Name = "cmd_aceptar";
+            this.cmd_aceptar.Size = new System.Drawing.Size(101, 50);
+            this.cmd_aceptar.TabIndex = 6;
+            this.cmd_aceptar.Text = "Aceptar";
+            this.cmd_aceptar.UseVisualStyleBackColor = false;
+            this.cmd_aceptar.Click += new System.EventHandler(this.cmd_aceptar_Click);
             // 
-            // button2
+            // cmd_salir
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(420, 247);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 50);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cmd_salir.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.cmd_salir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cmd_salir.Location = new System.Drawing.Point(420, 247);
+            this.cmd_salir.Name = "cmd_salir";
+            this.cmd_salir.Size = new System.Drawing.Size(101, 50);
+            this.cmd_salir.TabIndex = 7;
+            this.cmd_salir.Text = "Salir";
+            this.cmd_salir.UseVisualStyleBackColor = false;
+            this.cmd_salir.Click += new System.EventHandler(this.button2_Click);
             // 
             // Frm_AgregarCamarote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 323);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmd_salir);
+            this.Controls.Add(this.cmd_aceptar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_camas);
+            this.Controls.Add(this.txt_ubicacion);
+            this.Controls.Add(this.txt_tipo);
+            this.Controls.Add(this.txt_numcam);
+            this.Controls.Add(this.txt_cubierta);
+            this.Controls.Add(this.txt_codigo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -225,6 +226,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Frm_AgregarCamarote";
             this.Text = "Agregar Camarote";
+            this.Load += new System.EventHandler(this.Frm_AgregarCamarote_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,15 +241,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_codigo;
+        private System.Windows.Forms.TextBox txt_cubierta;
+        private System.Windows.Forms.TextBox txt_numcam;
+        private System.Windows.Forms.TextBox txt_tipo;
+        private System.Windows.Forms.TextBox txt_ubicacion;
+        private System.Windows.Forms.TextBox txt_camas;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button cmd_aceptar;
+        private System.Windows.Forms.Button cmd_salir;
     }
 }
