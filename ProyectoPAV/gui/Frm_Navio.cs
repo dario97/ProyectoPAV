@@ -124,5 +124,15 @@ namespace ProyectoPAV.gui
         {
 
         }
+
+        private void dgvl_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void cmd_Modificar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

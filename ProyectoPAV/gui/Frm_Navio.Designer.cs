@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Navio));
             this.cmd_Consultar = new System.Windows.Forms.Button();
             this.cmd_Agregar = new System.Windows.Forms.Button();
             this.txt_navio = new System.Windows.Forms.TextBox();
@@ -67,7 +66,6 @@
             // 
             // cmd_Agregar
             // 
-            this.cmd_Agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Agregar.BackgroundImage")));
             this.cmd_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_Agregar.Location = new System.Drawing.Point(30, 373);
             this.cmd_Agregar.Name = "cmd_Agregar";
@@ -126,7 +124,7 @@
             this.dgvl.Name = "dgvl";
             this.dgvl.Size = new System.Drawing.Size(750, 214);
             this.dgvl.TabIndex = 3;
-            //this.dgvl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvl_CellContentClick);
+            this.dgvl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvl_CellContentClick);
             // 
             // ID
             // 
@@ -185,17 +183,16 @@
             // 
             // cmd_Modificar
             // 
-            this.cmd_Modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Modificar.BackgroundImage")));
             this.cmd_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_Modificar.Location = new System.Drawing.Point(93, 373);
             this.cmd_Modificar.Name = "cmd_Modificar";
             this.cmd_Modificar.Size = new System.Drawing.Size(60, 48);
             this.cmd_Modificar.TabIndex = 5;
             this.cmd_Modificar.UseVisualStyleBackColor = true;
+            this.cmd_Modificar.Click += new System.EventHandler(this.cmd_Modificar_Click);
             // 
             // cmd_Eliminar
             // 
-            this.cmd_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Eliminar.BackgroundImage")));
             this.cmd_Eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_Eliminar.Location = new System.Drawing.Point(159, 373);
             this.cmd_Eliminar.Name = "cmd_Eliminar";
@@ -206,7 +203,6 @@
             // 
             // cmd_Salir
             // 
-            this.cmd_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Salir.BackgroundImage")));
             this.cmd_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_Salir.Location = new System.Drawing.Point(714, 374);
             this.cmd_Salir.Name = "cmd_Salir";
@@ -236,7 +232,6 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
-            //this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Frm_Navio
             // 
