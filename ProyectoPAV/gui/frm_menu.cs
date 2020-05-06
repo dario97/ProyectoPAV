@@ -25,7 +25,20 @@ namespace ProyectoPAV.gui
 
         private void button3_Click(object sender, EventArgs e)
         {
+            frm_abmc_puertos abrir1 = new frm_abmc_puertos();
+            abrir1.ShowDialog();
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Frm_Navio abrir3 = new Frm_Navio();
+            abrir3.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frm_abmc_usuarios abrir4 = new frm_abmc_usuarios();
+            abrir4.ShowDialog();
         }
     }
 }

@@ -91,6 +91,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "GESTION DE NAVIOS";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -111,6 +112,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "GESTION DE USUARIOS";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
