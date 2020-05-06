@@ -1,4 +1,5 @@
-﻿using ProyectoPAV.negocio.servicios;
+﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -89,5 +90,15 @@ namespace ProyectoPAV.gui
 
         }
 
+        private void botonModificar_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(this.dgv1.CurrentRow.Cells["ID"].Value.ToString());
+            string descripcion = this.dgv1.CurrentRow.Cells["Descripcion"].Value.ToString();
+
+       
+            Frm_modificacion_tipoNavio frmModificacion = new Frm_modificacion_tipoNavio(id, descripcion);
+            frmModificacion.ShowDialog();
+            
+        }
     }
 }

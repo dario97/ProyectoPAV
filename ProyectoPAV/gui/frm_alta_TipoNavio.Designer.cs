@@ -39,7 +39,7 @@
             // 
             this.txt_tipo.Location = new System.Drawing.Point(130, 59);
             this.txt_tipo.Name = "txt_tipo";
-            this.txt_tipo.Size = new System.Drawing.Size(132, 20);
+            this.txt_tipo.Size = new System.Drawing.Size(166, 20);
             this.txt_tipo.TabIndex = 0;
             // 
             // label1
