@@ -83,7 +83,6 @@
             this.cmd_cancelar.TabIndex = 7;
             this.cmd_cancelar.Text = "Cancelar";
             this.cmd_cancelar.UseVisualStyleBackColor = true;
-            this.cmd_cancelar.Click += new System.EventHandler(this.cmd_cancelar_Click);
             // 
             // cmd_aceptar
             // 
@@ -173,7 +172,7 @@
             this.Controls.Add(this.cmd_tipoDoc);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Modificar_Usuario";
-            this.Text = "Gestion de usuarios";
+            this.Text = "Modificar Usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 

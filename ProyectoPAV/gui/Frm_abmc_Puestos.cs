@@ -32,5 +32,10 @@ namespace ProyectoPAV.gui
             Frm_AgregarPuesto ventana = new Frm_AgregarPuesto();
             ventana.ShowDialog();
         }
+
+        private void cmd_SeleccionarPuesto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

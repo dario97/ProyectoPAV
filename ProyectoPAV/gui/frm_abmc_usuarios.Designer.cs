@@ -42,6 +42,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmd_tipoDoc = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvg1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -143,11 +144,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.cmd_tipoDoc);
             this.groupBox1.Location = new System.Drawing.Point(12, 79);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(585, 308);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -169,6 +171,15 @@
             this.label3.Size = new System.Drawing.Size(225, 24);
             this.label3.TabIndex = 12;
             this.label3.Text = "GESTION DE USUARIOS";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(504, 63);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Consultar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frm_abmc_usuarios
             // 
@@ -211,5 +222,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmd_tipoDoc;
+        private System.Windows.Forms.Button button1;
     }
 }
