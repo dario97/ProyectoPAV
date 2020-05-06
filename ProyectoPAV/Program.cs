@@ -17,7 +17,7 @@ namespace ProyectoPAV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_alta_TipoNavio());
+            Application.Run(new frm_menu());
         }
     }
 }

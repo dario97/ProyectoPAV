@@ -40,5 +40,27 @@ namespace ProyectoPAV.gui
             frm_abmc_usuarios abrir4 = new frm_abmc_usuarios();
             abrir4.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frm_abmc_tipoNavio abrir5 = new frm_abmc_tipoNavio();
+            abrir5.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            frm_abmc_TiposCamarote abrir6 = new frm_abmc_TiposCamarote();
+            abrir6.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
