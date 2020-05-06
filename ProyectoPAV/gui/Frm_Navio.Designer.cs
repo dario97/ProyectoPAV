@@ -185,6 +185,7 @@
             this.cmd_Modificar.TabIndex = 5;
             this.cmd_Modificar.Text = "Modificar";
             this.cmd_Modificar.UseVisualStyleBackColor = true;
+            this.cmd_Modificar.Click += new System.EventHandler(this.cmd_Modificar_Click);
             // 
             // cmd_Eliminar
             // 

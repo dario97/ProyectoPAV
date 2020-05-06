@@ -110,5 +110,13 @@ namespace ProyectoPAV.gui
             Frm_Alta_Navio frmAlta = new Frm_Alta_Navio();
             frmAlta.ShowDialog();
         }
+
+        private void cmd_Modificar_Click(object sender, EventArgs e)
+        {
+        ///Frm_Modificar_Navio frm_modif = new Frm_Modificar_Navio();
+        ///frm_modif.pp_id_usuario = this.dgvl.CurrentRow.Cells["ID"].Value.ToString();
+        ///frm_modif.ShowDialog();
+        }
     }
 }
+
