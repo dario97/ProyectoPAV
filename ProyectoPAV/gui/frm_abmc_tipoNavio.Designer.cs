@@ -34,6 +34,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label_tipoNavio = new System.Windows.Forms.Label();
             this.txt_tipoNavio = new System.Windows.Forms.TextBox();
+            this.botonModificar = new System.Windows.Forms.Button();
+            this.botonEliminar = new System.Windows.Forms.Button();
+            this.botonSalir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +53,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.botonSalir);
+            this.groupBox1.Controls.Add(this.botonEliminar);
+            this.groupBox1.Controls.Add(this.botonModificar);
             this.groupBox1.Controls.Add(this.registrarTipo);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.label_tipoNavio);
@@ -96,6 +102,33 @@
             this.txt_tipoNavio.Size = new System.Drawing.Size(173, 20);
             this.txt_tipoNavio.TabIndex = 1;
             // 
+            // botonModificar
+            // 
+            this.botonModificar.Location = new System.Drawing.Point(87, 219);
+            this.botonModificar.Name = "botonModificar";
+            this.botonModificar.Size = new System.Drawing.Size(75, 23);
+            this.botonModificar.TabIndex = 5;
+            this.botonModificar.Text = "Modificar";
+            this.botonModificar.UseVisualStyleBackColor = true;
+            // 
+            // botonEliminar
+            // 
+            this.botonEliminar.Location = new System.Drawing.Point(169, 220);
+            this.botonEliminar.Name = "botonEliminar";
+            this.botonEliminar.Size = new System.Drawing.Size(75, 23);
+            this.botonEliminar.TabIndex = 6;
+            this.botonEliminar.Text = "Eliminar";
+            this.botonEliminar.UseVisualStyleBackColor = true;
+            // 
+            // botonSalir
+            // 
+            this.botonSalir.Location = new System.Drawing.Point(298, 278);
+            this.botonSalir.Name = "botonSalir";
+            this.botonSalir.Size = new System.Drawing.Size(75, 23);
+            this.botonSalir.TabIndex = 7;
+            this.botonSalir.Text = "Salir";
+            this.botonSalir.UseVisualStyleBackColor = true;
+            // 
             // frm_abmc_tipoNavio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,5 +152,8 @@
         private System.Windows.Forms.Label label_tipoNavio;
         private System.Windows.Forms.TextBox txt_tipoNavio;
         private System.Windows.Forms.Button registrarTipo;
+        private System.Windows.Forms.Button botonSalir;
+        private System.Windows.Forms.Button botonEliminar;
+        private System.Windows.Forms.Button botonModificar;
     }
 }
