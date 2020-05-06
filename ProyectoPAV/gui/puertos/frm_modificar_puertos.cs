@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +14,14 @@ namespace ProyectoPAV.gui
 {
     public partial class frm_modificar_puertos : Form
     {
-        public frm_modificar_puertos()
+        private string pp_nombre;
+        private int pp_id;
+
+        PuertoService puerto = new PuertoService();
+        public frm_modificar_puertos(int pp_id,string pp_nombre)
         {
+            this.pp_id = pp_id;
+            this.pp_nombre = pp_nombre;
             InitializeComponent();
         }
 
@@ -25,6 +33,13 @@ namespace ProyectoPAV.gui
         private void frm_modificar_puertos_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Puerto puerto1 = new Puerto(pp_id, this.txt_nombre.Text);
+            puerto.modificarPuerto(puerto1);
+            MessageBox.Show("El nombre se modifico con exito", "Mensaje", MessageBoxButtons.OK);
         }
     }
 }
