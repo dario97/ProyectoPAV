@@ -158,7 +158,7 @@
             this.Controls.Add(this.txt_NombrePuesto);
             this.Controls.Add(this.label1);
             this.Name = "Frm_abmc_Puestos";
-            this.Text = "Frm_abmc_Puestos";
+            this.Text = "Puestos";
             ((System.ComponentModel.ISupportInitialize)(this.dvg_MostrarPuestos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

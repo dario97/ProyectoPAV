@@ -66,6 +66,7 @@
             this.cmd_editar.Size = new System.Drawing.Size(54, 45);
             this.cmd_editar.TabIndex = 1;
             this.cmd_editar.UseVisualStyleBackColor = true;
+            this.cmd_editar.Click += new System.EventHandler(this.cmd_editar_Click);
             // 
             // cmd_salir
             // 

@@ -246,7 +246,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frm_abmc_TiposCamarote";
-            this.Text = "frm_abmc_TiposCamarote";
+            this.Text = "Camarotes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
