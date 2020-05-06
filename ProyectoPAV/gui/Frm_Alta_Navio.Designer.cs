@@ -219,7 +219,7 @@
             this.cmd_Aceptar.Location = new System.Drawing.Point(466, 393);
             this.cmd_Aceptar.Name = "cmd_Aceptar";
             this.cmd_Aceptar.Size = new System.Drawing.Size(75, 23);
-            this.cmd_Aceptar.TabIndex = 22;
+            this.cmd_Aceptar.TabIndex = 10;
             this.cmd_Aceptar.Text = "Aceptar";
             this.cmd_Aceptar.UseVisualStyleBackColor = true;
             this.cmd_Aceptar.Click += new System.EventHandler(this.cmd_Aceptar_Click);
@@ -229,7 +229,7 @@
             this.cmd_Cancelar.Location = new System.Drawing.Point(590, 393);
             this.cmd_Cancelar.Name = "cmd_Cancelar";
             this.cmd_Cancelar.Size = new System.Drawing.Size(75, 23);
-            this.cmd_Cancelar.TabIndex = 23;
+            this.cmd_Cancelar.TabIndex = 11;
             this.cmd_Cancelar.Text = "Cancelar";
             this.cmd_Cancelar.UseVisualStyleBackColor = true;
             this.cmd_Cancelar.Click += new System.EventHandler(this.cmd_Cancelar_Click);
