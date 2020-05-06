@@ -33,22 +33,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_codigoNavio = new System.Windows.Forms.TextBox();
+            this.txt_nroCamarote = new System.Windows.Forms.TextBox();
+            this.txt_nroCubierta = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmd_buscar = new System.Windows.Forms.Button();
+            this.cmd_agregar = new System.Windows.Forms.Button();
+            this.cmd_modificar = new System.Windows.Forms.Button();
+            this.cmd_salir = new System.Windows.Forms.Button();
+            this.cmd_eliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,26 +91,26 @@
             this.label4.Text = "Numero de Cubierta :";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox1
+            // txt_codigoNavio
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.txt_codigoNavio.Location = new System.Drawing.Point(148, 99);
+            this.txt_codigoNavio.Name = "txt_codigoNavio";
+            this.txt_codigoNavio.Size = new System.Drawing.Size(100, 20);
+            this.txt_codigoNavio.TabIndex = 4;
             // 
-            // textBox2
+            // txt_nroCamarote
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 172);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txt_nroCamarote.Location = new System.Drawing.Point(148, 172);
+            this.txt_nroCamarote.Name = "txt_nroCamarote";
+            this.txt_nroCamarote.Size = new System.Drawing.Size(100, 20);
+            this.txt_nroCamarote.TabIndex = 5;
             // 
-            // textBox3
+            // txt_nroCubierta
             // 
-            this.textBox3.Location = new System.Drawing.Point(148, 136);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.txt_nroCubierta.Location = new System.Drawing.Point(148, 136);
+            this.txt_nroCubierta.Name = "txt_nroCubierta";
+            this.txt_nroCubierta.Size = new System.Drawing.Size(100, 20);
+            this.txt_nroCubierta.TabIndex = 6;
             // 
             // dataGridView1
             // 
@@ -127,17 +127,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(448, 133);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.label5.Location = new System.Drawing.Point(33, 56);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 25);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Datos :";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Codigo
             // 
@@ -169,58 +158,69 @@
             this.Column5.HeaderText = "Cant.Camas";
             this.Column5.Name = "Column5";
             // 
-            // button1
+            // label5
             // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(313, 121);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 48);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label5.Location = new System.Drawing.Point(33, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 25);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Datos :";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button2
+            // cmd_buscar
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(32, 354);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 71);
-            this.button2.TabIndex = 10;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cmd_buscar.BackColor = System.Drawing.Color.DimGray;
+            this.cmd_buscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cmd_buscar.Location = new System.Drawing.Point(313, 121);
+            this.cmd_buscar.Name = "cmd_buscar";
+            this.cmd_buscar.Size = new System.Drawing.Size(120, 48);
+            this.cmd_buscar.TabIndex = 9;
+            this.cmd_buscar.Text = "Buscar";
+            this.cmd_buscar.UseVisualStyleBackColor = false;
+            this.cmd_buscar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button3
+            // cmd_agregar
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(133, 354);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 71);
-            this.button3.TabIndex = 11;
-            this.button3.UseVisualStyleBackColor = true;
+            this.cmd_agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_agregar.BackgroundImage")));
+            this.cmd_agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_agregar.Location = new System.Drawing.Point(32, 354);
+            this.cmd_agregar.Name = "cmd_agregar";
+            this.cmd_agregar.Size = new System.Drawing.Size(95, 71);
+            this.cmd_agregar.TabIndex = 10;
+            this.cmd_agregar.UseVisualStyleBackColor = true;
+            this.cmd_agregar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button4
+            // cmd_modificar
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Location = new System.Drawing.Point(435, 354);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 71);
-            this.button4.TabIndex = 12;
-            this.button4.UseVisualStyleBackColor = true;
+            this.cmd_modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_modificar.BackgroundImage")));
+            this.cmd_modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_modificar.Location = new System.Drawing.Point(133, 354);
+            this.cmd_modificar.Name = "cmd_modificar";
+            this.cmd_modificar.Size = new System.Drawing.Size(95, 71);
+            this.cmd_modificar.TabIndex = 11;
+            this.cmd_modificar.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // cmd_salir
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(234, 354);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 71);
-            this.button5.TabIndex = 13;
-            this.button5.UseVisualStyleBackColor = true;
+            this.cmd_salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_salir.BackgroundImage")));
+            this.cmd_salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_salir.Location = new System.Drawing.Point(435, 354);
+            this.cmd_salir.Name = "cmd_salir";
+            this.cmd_salir.Size = new System.Drawing.Size(95, 71);
+            this.cmd_salir.TabIndex = 12;
+            this.cmd_salir.UseVisualStyleBackColor = true;
+            // 
+            // cmd_eliminar
+            // 
+            this.cmd_eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_eliminar.BackgroundImage")));
+            this.cmd_eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_eliminar.Location = new System.Drawing.Point(234, 354);
+            this.cmd_eliminar.Name = "cmd_eliminar";
+            this.cmd_eliminar.Size = new System.Drawing.Size(95, 71);
+            this.cmd_eliminar.TabIndex = 13;
+            this.cmd_eliminar.UseVisualStyleBackColor = true;
             // 
             // frm_abmc_TiposCamarote
             // 
@@ -228,16 +228,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(542, 437);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmd_eliminar);
+            this.Controls.Add(this.cmd_salir);
+            this.Controls.Add(this.cmd_modificar);
+            this.Controls.Add(this.cmd_agregar);
+            this.Controls.Add(this.cmd_buscar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_nroCubierta);
+            this.Controls.Add(this.txt_nroCamarote);
+            this.Controls.Add(this.txt_codigoNavio);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -257,9 +257,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_codigoNavio;
+        private System.Windows.Forms.TextBox txt_nroCamarote;
+        private System.Windows.Forms.TextBox txt_nroCubierta;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
@@ -268,10 +268,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button cmd_buscar;
+        private System.Windows.Forms.Button cmd_agregar;
+        private System.Windows.Forms.Button cmd_modificar;
+        private System.Windows.Forms.Button cmd_salir;
+        private System.Windows.Forms.Button cmd_eliminar;
     }
 }
