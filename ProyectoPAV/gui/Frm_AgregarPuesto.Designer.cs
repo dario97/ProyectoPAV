@@ -64,7 +64,7 @@
             // 
             // cmd_ConfirmaAgregarPuesto
             // 
-            this.cmd_ConfirmaAgregarPuesto.Location = new System.Drawing.Point(278, 131);
+            this.cmd_ConfirmaAgregarPuesto.Location = new System.Drawing.Point(200, 131);
             this.cmd_ConfirmaAgregarPuesto.Name = "cmd_ConfirmaAgregarPuesto";
             this.cmd_ConfirmaAgregarPuesto.Size = new System.Drawing.Size(75, 23);
             this.cmd_ConfirmaAgregarPuesto.TabIndex = 3;
@@ -73,7 +73,7 @@
             // 
             // cmd_Salir
             // 
-            this.cmd_Salir.Location = new System.Drawing.Point(377, 131);
+            this.cmd_Salir.Location = new System.Drawing.Point(281, 131);
             this.cmd_Salir.Name = "cmd_Salir";
             this.cmd_Salir.Size = new System.Drawing.Size(75, 23);
             this.cmd_Salir.TabIndex = 4;
@@ -85,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 177);
+            this.ClientSize = new System.Drawing.Size(366, 177);
             this.Controls.Add(this.cmd_Salir);
             this.Controls.Add(this.cmd_ConfirmaAgregarPuesto);
             this.Controls.Add(this.txt_NombrePuesto);
