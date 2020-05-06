@@ -36,7 +36,7 @@ namespace ProyectoPAV.gui
         private void cmd_editar_Click(object sender, EventArgs e)
         {
             Frm_Modificar_Usuario ventana1 = new Frm_Modificar_Usuario();
-            this.ShowDialog();
+            ventana1.ShowDialog();
         }
     }
 }
