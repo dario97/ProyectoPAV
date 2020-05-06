@@ -67,6 +67,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "GESTION DE TIPOS DE NAVIOS";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // cmd_gestionPuertos
             // 
@@ -102,6 +103,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "GESTION DE CUBIERTAS";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -123,6 +125,7 @@
             this.button7.TabIndex = 7;
             this.button7.Text = "GESTION DE TIPO DE CAMAROTES";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // frm_menu
             // 
