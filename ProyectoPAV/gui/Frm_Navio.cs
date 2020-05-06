@@ -120,5 +120,9 @@ namespace ProyectoPAV.gui
             this.Close();
         }
 
+        private void Frm_Navio_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
