@@ -147,10 +147,10 @@ namespace ProyectoPAV.gui
             float desplazamiento = Convert.ToSingle(this.dgvl.CurrentRow.Cells["Desplazamiento"].Value.ToString());
             float eslora = Convert.ToSingle(this.dgvl.CurrentRow.Cells["Eslora"].Value.ToString());
             float manga = Convert.ToSingle(this.dgvl.CurrentRow.Cells["Manga"].Value.ToString());
-            int cantMaxPasajeros = Convert.ToInt32(this.dgvl.CurrentRow.Cells["ID"].Value.ToString());
-            int cantTripulantes = Convert.ToInt32(this.dgvl.CurrentRow.Cells["ID"].Value.ToString());
-            int tipoClasificacion = Convert.ToInt32(this.dgvl.CurrentRow.Cells["ID"].Value.ToString());
-            int cantMotores = Convert.ToInt32(this.dgvl.CurrentRow.Cells["ID"].Value.ToString());
+            int cantMaxPasajeros = Convert.ToInt32(this.dgvl.CurrentRow.Cells["Pasajeros"].Value.ToString());
+            int cantTripulantes = Convert.ToInt32(this.dgvl.CurrentRow.Cells["Tripulantes"].Value.ToString());
+            int tipoClasificacion = Convert.ToInt32(this.dgvl.CurrentRow.Cells["Clasificacion"].Value.ToString());
+            int cantMotores = Convert.ToInt32(this.dgvl.CurrentRow.Cells["Motores"].Value.ToString());
 
             Frm_Modificar_Navio formModificar = new Frm_Modificar_Navio(codigoNavio, nombre, altura, autonomia, desplazamiento, eslora, manga, cantMaxPasajeros, cantTripulantes, tipoClasificacion, cantMotores);
             formModificar.ShowDialog();
