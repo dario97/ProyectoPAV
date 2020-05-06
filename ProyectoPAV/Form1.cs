@@ -24,7 +24,7 @@ namespace ProyectoPAV
             TipoClasificacionNavio tipo = new TipoClasificacionNavio(1, "Lujo");
             TipoClasificacionNavioDao tipoDao = new TipoClasificacionNavioDao();
 
-            tipoDao.delete(tipo);
+            
 
 
 

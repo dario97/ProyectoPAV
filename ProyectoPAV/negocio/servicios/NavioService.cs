@@ -38,9 +38,9 @@ namespace ProyectoPAV.negocio.servicios
             return navioDao.update(navio);
         }
 
-        internal bool eliminarNavio(Navio navio)
+        internal bool eliminarNavio(int id)
         {
-            return navioDao.delete(navio);
+            return navioDao.delete(id);
         }
 
 

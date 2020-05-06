@@ -38,9 +38,9 @@ namespace ProyectoPAV.negocio.servicios
             return clasificacionNavioDao.update(tipoClasificacion);
         }
 
-        internal bool eliminarTipoClasificacionNavio(TipoClasificacionNavio tipoClasificacion)
+        internal bool eliminarTipoPorID(int id)
         {
-            return clasificacionNavioDao.delete(tipoClasificacion);
+            return clasificacionNavioDao.delete(id);
         }
 
 

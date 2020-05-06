@@ -202,6 +202,7 @@
             this.cmd_Eliminar.Size = new System.Drawing.Size(60, 48);
             this.cmd_Eliminar.TabIndex = 6;
             this.cmd_Eliminar.UseVisualStyleBackColor = true;
+            this.cmd_Eliminar.Click += new System.EventHandler(this.cmd_Eliminar_Click);
             // 
             // cmd_Salir
             // 
@@ -212,6 +213,7 @@
             this.cmd_Salir.Size = new System.Drawing.Size(66, 47);
             this.cmd_Salir.TabIndex = 7;
             this.cmd_Salir.UseVisualStyleBackColor = true;
+            this.cmd_Salir.Click += new System.EventHandler(this.cmd_Salir_Click);
             // 
             // label2
             // 

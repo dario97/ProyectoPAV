@@ -29,26 +29,37 @@ namespace ProyectoPAV.gui
 
         private void botonAceptar_Click(object sender, EventArgs e)
         {
-            if (tipoService.consultarPorNombre(this.txt_tipo.Text).Rows.Count == 0)
+            if(this.txt_tipo.Text == "")
             {
-                string nombre = this.txt_tipo.Text;
-                
-                TipoClasificacionNavio tipo = new TipoClasificacionNavio(nombre);
-
-                tipoService.crearTipoClasificacionNavio(tipo);
-
-                MessageBox.Show("Se grabó exitosamente los datos"
-                            , "Mensaje"
-                            , MessageBoxButtons.OK
-                            , MessageBoxIcon.Exclamation);
-                this.Close();
+                MessageBox.Show("No se ingresó ningún dato", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_tipo.Focus();
             }
             else
             {
-                MessageBox.Show("El Tipo ya existe", "Hola", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (tipoService.consultarPorNombre(this.txt_tipo.Text).Rows.Count == 0)
+                {
+                    string nombre = this.txt_tipo.Text;
 
+                    TipoClasificacionNavio tipo = new TipoClasificacionNavio(nombre);
+
+                    tipoService.crearTipoClasificacionNavio(tipo);
+
+                    MessageBox.Show("Se creó el tipo " + nombre + " Exitosamente."
+                                , "Mensaje"
+                                , MessageBoxButtons.OK
+                                , MessageBoxIcon.Exclamation);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("El Tipo ya existe", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
+
+            
         }
+
 
         private void botonCancelar_Click(object sender, EventArgs e)
         {
