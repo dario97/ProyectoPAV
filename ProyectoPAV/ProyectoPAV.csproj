@@ -77,10 +77,10 @@
     <Compile Include="gui\Frm_AgregarPuesto.Designer.cs">
       <DependentUpon>Frm_AgregarPuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\frm_alta_puertos.cs">
+    <Compile Include="gui\puertos\frm_alta_puertos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\frm_alta_puertos.Designer.cs">
+    <Compile Include="gui\puertos\frm_alta_puertos.Designer.cs">
       <DependentUpon>frm_alta_puertos.cs</DependentUpon>
     </Compile>
     <Compile Include="entidades\Navio.cs" />
@@ -93,10 +93,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\frm_abmc_puertos.cs">
+    <Compile Include="gui\puertos\frm_abmc_puertos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\frm_abmc_puertos.Designer.cs">
+    <Compile Include="gui\puertos\frm_abmc_puertos.Designer.cs">
       <DependentUpon>frm_abmc_puertos.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\Frm_abmc_Puestos.cs">
@@ -105,16 +105,16 @@
     <Compile Include="gui\Frm_abmc_Puestos.Designer.cs">
       <DependentUpon>Frm_abmc_Puestos.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_Alta_Navio.cs">
+    <Compile Include="gui\navios\Frm_Alta_Navio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_Alta_Navio.Designer.cs">
+    <Compile Include="gui\navios\Frm_Alta_Navio.Designer.cs">
       <DependentUpon>Frm_Alta_Navio.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\frm_abmc_tipoNavio.cs">
+    <Compile Include="gui\tiposNavio\frm_abmc_tipoNavio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\frm_abmc_tipoNavio.Designer.cs">
+    <Compile Include="gui\tiposNavio\frm_abmc_tipoNavio.Designer.cs">
       <DependentUpon>frm_abmc_tipoNavio.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\frm_abmc_usuarios.cs">
@@ -123,10 +123,10 @@
     <Compile Include="gui\frm_abmc_usuarios.Designer.cs">
       <DependentUpon>frm_abmc_usuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\frm_alta_TipoNavio.cs">
+    <Compile Include="gui\tiposNavio\frm_alta_TipoNavio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\frm_alta_TipoNavio.Designer.cs">
+    <Compile Include="gui\tiposNavio\frm_alta_TipoNavio.Designer.cs">
       <DependentUpon>frm_alta_TipoNavio.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\frm_alta_usuarios.cs">
@@ -135,10 +135,10 @@
     <Compile Include="gui\frm_alta_usuarios.Designer.cs">
       <DependentUpon>frm_alta_usuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_Baja_Navio.cs">
+    <Compile Include="gui\navios\Frm_Baja_Navio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_Baja_Navio.Designer.cs">
+    <Compile Include="gui\navios\Frm_Baja_Navio.Designer.cs">
       <DependentUpon>Frm_Baja_Navio.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\Frm_Baja_Puesto.cs">
@@ -159,28 +159,28 @@
     <Compile Include="gui\frm_menu.Designer.cs">
       <DependentUpon>frm_menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_modificacion_tipoNavio.cs">
+    <Compile Include="gui\tiposNavio\Frm_modificacion_tipoNavio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_modificacion_tipoNavio.Designer.cs">
+    <Compile Include="gui\tiposNavio\Frm_modificacion_tipoNavio.Designer.cs">
       <DependentUpon>Frm_modificacion_tipoNavio.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_Modificar_Navio.cs">
+    <Compile Include="gui\navios\Frm_Modificar_Navio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_Modificar_Navio.Designer.cs">
+    <Compile Include="gui\navios\Frm_Modificar_Navio.Designer.cs">
       <DependentUpon>Frm_Modificar_Navio.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_Baja_Puerto.cs">
+    <Compile Include="gui\puertos\Frm_Baja_Puerto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_Baja_Puerto.Designer.cs">
+    <Compile Include="gui\puertos\Frm_Baja_Puerto.Designer.cs">
       <DependentUpon>Frm_Baja_Puerto.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\frm_modificar_puertos.cs">
+    <Compile Include="gui\puertos\frm_modificar_puertos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\frm_modificar_puertos.Designer.cs">
+    <Compile Include="gui\puertos\frm_modificar_puertos.Designer.cs">
       <DependentUpon>frm_modificar_puertos.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\Frm_Modificar_Usuario.cs">
@@ -189,10 +189,10 @@
     <Compile Include="gui\Frm_Modificar_Usuario.Designer.cs">
       <DependentUpon>Frm_Modificar_Usuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_Navio.cs">
+    <Compile Include="gui\navios\Frm_Navio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_Navio.Designer.cs">
+    <Compile Include="gui\navios\Frm_Navio.Designer.cs">
       <DependentUpon>Frm_Navio.cs</DependentUpon>
     </Compile>
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
@@ -213,34 +213,34 @@
     <EmbeddedResource Include="gui\Frm_AgregarPuesto.resx">
       <DependentUpon>Frm_AgregarPuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\frm_alta_puertos.resx">
+    <EmbeddedResource Include="gui\puertos\frm_alta_puertos.resx">
       <DependentUpon>frm_alta_puertos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\frm_abmc_puertos.resx">
+    <EmbeddedResource Include="gui\puertos\frm_abmc_puertos.resx">
       <DependentUpon>frm_abmc_puertos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_abmc_Puestos.resx">
       <DependentUpon>Frm_abmc_Puestos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\frm_abmc_tipoNavio.resx">
+    <EmbeddedResource Include="gui\tiposNavio\frm_abmc_tipoNavio.resx">
       <DependentUpon>frm_abmc_tipoNavio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frm_abmc_usuarios.resx">
       <DependentUpon>frm_abmc_usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_Alta_Navio.resx">
+    <EmbeddedResource Include="gui\navios\Frm_Alta_Navio.resx">
       <DependentUpon>Frm_Alta_Navio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\frm_alta_TipoNavio.resx">
+    <EmbeddedResource Include="gui\tiposNavio\frm_alta_TipoNavio.resx">
       <DependentUpon>frm_alta_TipoNavio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frm_alta_usuarios.resx">
       <DependentUpon>frm_alta_usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_Baja_Navio.resx">
+    <EmbeddedResource Include="gui\navios\Frm_Baja_Navio.resx">
       <DependentUpon>Frm_Baja_Navio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_Baja_Puesto.resx">
@@ -252,25 +252,25 @@
     <EmbeddedResource Include="gui\frm_menu.resx">
       <DependentUpon>frm_menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_modificacion_tipoNavio.resx">
+    <EmbeddedResource Include="gui\tiposNavio\Frm_modificacion_tipoNavio.resx">
       <DependentUpon>Frm_modificacion_tipoNavio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\frm_ModificarPuesto.resx">
       <DependentUpon>frm_ModificarPuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_Modificar_Navio.resx">
+    <EmbeddedResource Include="gui\navios\Frm_Modificar_Navio.resx">
       <DependentUpon>Frm_Modificar_Navio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_Baja_Puerto.resx">
+    <EmbeddedResource Include="gui\puertos\Frm_Baja_Puerto.resx">
       <DependentUpon>Frm_Baja_Puerto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\frm_modificar_puertos.resx">
+    <EmbeddedResource Include="gui\puertos\frm_modificar_puertos.resx">
       <DependentUpon>frm_modificar_puertos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_Modificar_Usuario.resx">
       <DependentUpon>Frm_Modificar_Usuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_Navio.resx">
+    <EmbeddedResource Include="gui\navios\Frm_Navio.resx">
       <DependentUpon>Frm_Navio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
