@@ -112,7 +112,15 @@ namespace ProyectoPAV.gui
         }
         private void cmd_Eliminar_Click(object sender, EventArgs e)
         {
+            NavioService navioelim = new NavioService();
+            int tipocodigo = -1;
+            tipocodigo = Convert.ToInt32(this.dgvl.CurrentRow.Cells["Codigo"].Value.ToString());
 
+            if(tipocodigo != -1)
+            {
+                navioelim.eliminarNavio(tipocodigo);
+            }
+             
         }
 
         private void cmd_Salir_Click(object sender, EventArgs e)
