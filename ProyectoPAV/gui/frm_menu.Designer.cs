@@ -35,15 +35,17 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(127, 29);
+            this.label1.Location = new System.Drawing.Point(133, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 38);
+            this.label1.Size = new System.Drawing.Size(216, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "BIENVENIDO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -123,19 +125,29 @@
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Location = new System.Drawing.Point(124, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(235, 58);
+            this.panel1.TabIndex = 8;
+            // 
             // frm_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(463, 418);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.cmd_gestionPuertos);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cmd_gestionPuestos);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Name = "frm_menu";
             this.Text = "frm_menu";
             this.ResumeLayout(false);
@@ -152,5 +164,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Panel panel1;
     }
 }
