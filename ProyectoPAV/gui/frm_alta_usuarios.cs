@@ -26,5 +26,10 @@ namespace ProyectoPAV.gui
         {
             this.Close();
         }
+
+        private void cmd_crear_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
