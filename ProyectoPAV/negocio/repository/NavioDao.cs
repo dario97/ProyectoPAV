@@ -95,10 +95,10 @@ namespace ProyectoPAV.negocio.repository
             return true;
         }
 
-        internal bool delete(Navio navio)
+        internal bool delete(int id)
         {
             string strSQL = "DELETE FROM NAVIOS " +
-                                " WHERE Cod_navio =" + navio.CodigoNavio;
+                                " WHERE Cod_navio =" + id;
 
 
 
