@@ -217,7 +217,7 @@
             // 
             // cmd_Aceptar
             // 
-            this.cmd_Aceptar.Location = new System.Drawing.Point(455, 294);
+            this.cmd_Aceptar.Location = new System.Drawing.Point(100, 337);
             this.cmd_Aceptar.Name = "cmd_Aceptar";
             this.cmd_Aceptar.Size = new System.Drawing.Size(75, 23);
             this.cmd_Aceptar.TabIndex = 10;
@@ -227,7 +227,7 @@
             // 
             // cmd_Cancelar
             // 
-            this.cmd_Cancelar.Location = new System.Drawing.Point(563, 294);
+            this.cmd_Cancelar.Location = new System.Drawing.Point(190, 337);
             this.cmd_Cancelar.Name = "cmd_Cancelar";
             this.cmd_Cancelar.Size = new System.Drawing.Size(75, 23);
             this.cmd_Cancelar.TabIndex = 11;
@@ -249,7 +249,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 350);
+            this.ClientSize = new System.Drawing.Size(294, 372);
             this.Controls.Add(this.cmd_Cancelar);
             this.Controls.Add(this.cmd_Aceptar);
             this.Controls.Add(this.label10);
