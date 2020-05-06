@@ -252,7 +252,7 @@
             this.Controls.Add(this.cmd_Consultar);
             this.Controls.Add(this.groupBox1);
             this.Name = "Frm_Navio";
-            this.Text = "Frm_Navio";
+            this.Text = "Navios";
             this.Load += new System.EventHandler(this.Frm_Navio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvl)).EndInit();
             this.groupBox1.ResumeLayout(false);

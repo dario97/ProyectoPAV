@@ -53,6 +53,12 @@
     <Compile Include="entidades\TextBox02.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="gui\frm_ModificarPuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frm_ModificarPuesto.Designer.cs">
+      <DependentUpon>frm_ModificarPuesto.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\frm_abmc_TiposCamarote.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_modificacion_tipoNavio.resx">
       <DependentUpon>Frm_modificacion_tipoNavio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frm_ModificarPuesto.resx">
+      <DependentUpon>frm_ModificarPuesto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_Modificar_Navio.resx">
       <DependentUpon>Frm_Modificar_Navio.cs</DependentUpon>

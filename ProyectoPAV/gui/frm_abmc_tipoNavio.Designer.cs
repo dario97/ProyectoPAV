@@ -186,7 +186,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_abmc_tipoNavio";
-            this.Text = "Navios";
+            this.Text = "Buscar Navio";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();

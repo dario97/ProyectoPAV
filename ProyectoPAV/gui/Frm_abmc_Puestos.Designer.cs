@@ -120,6 +120,7 @@
             this.cmd_SeleccionarPuesto.Size = new System.Drawing.Size(72, 57);
             this.cmd_SeleccionarPuesto.TabIndex = 5;
             this.cmd_SeleccionarPuesto.UseVisualStyleBackColor = true;
+            this.cmd_SeleccionarPuesto.Click += new System.EventHandler(this.cmd_SeleccionarPuesto_Click);
             // 
             // cmd_Salir
             // 
