@@ -31,5 +31,12 @@ namespace ProyectoPAV.gui
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Frm_AgregarCamarote ventana = new Frm_AgregarCamarote();
+            ventana.ShowDialog();
+       
+        }
     }
 }
