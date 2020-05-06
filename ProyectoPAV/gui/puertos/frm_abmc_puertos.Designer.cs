@@ -35,15 +35,15 @@
             this.button4 = new System.Windows.Forms.Button();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dvg2 = new System.Windows.Forms.DataGridView();
             this.chbx1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmd_consulta = new System.Windows.Forms.Button();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dvg2)).BeginInit();
+            this.dgv4 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv4)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -105,18 +105,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Nombre";
             // 
-            // dvg2
-            // 
-            this.dvg2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvg2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.nombre});
-            this.dvg2.Location = new System.Drawing.Point(0, 67);
-            this.dvg2.Name = "dvg2";
-            this.dvg2.Size = new System.Drawing.Size(429, 187);
-            this.dvg2.TabIndex = 6;
-            this.dvg2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // chbx1
             // 
             this.chbx1.AutoSize = true;
@@ -141,8 +129,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dgv4);
             this.groupBox1.Controls.Add(this.cmd_consulta);
-            this.groupBox1.Controls.Add(this.dvg2);
             this.groupBox1.Location = new System.Drawing.Point(12, 57);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(441, 260);
@@ -161,15 +149,26 @@
             this.cmd_consulta.UseVisualStyleBackColor = true;
             this.cmd_consulta.Click += new System.EventHandler(this.cmd_consulta_Click);
             // 
-            // id
+            // dgv4
             // 
-            this.id.HeaderText = "Id";
-            this.id.Name = "id";
+            this.dgv4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Nombre});
+            this.dgv4.Location = new System.Drawing.Point(94, 67);
+            this.dgv4.Name = "dgv4";
+            this.dgv4.Size = new System.Drawing.Size(246, 150);
+            this.dgv4.TabIndex = 8;
             // 
-            // nombre
+            // ID
             // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
             // 
             // frm_abmc_puertos
             // 
@@ -187,8 +186,8 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_abmc_puertos";
             this.Text = "Puertos";
-            ((System.ComponentModel.ISupportInitialize)(this.dvg2)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,12 +201,12 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dvg2;
         private System.Windows.Forms.CheckBox chbx1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button cmd_consulta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridView dgv4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
     }
 }

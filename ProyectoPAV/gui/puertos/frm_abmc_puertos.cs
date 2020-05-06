@@ -37,8 +37,8 @@ namespace ProyectoPAV.gui
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(this.dvg2.CurrentRow.Cells["Id"].Value.ToString());
-            string nombre = this.dvg2.CurrentRow.Cells["Descripcion"].Value.ToString();
+            int id = Convert.ToInt32(this.dgv4.CurrentRow.Cells["Id"].Value.ToString());
+            string nombre = this.dgv4.CurrentRow.Cells["Descripcion"].Value.ToString();
 
 
             frm_modificar_puertos abrir1 = new frm_modificar_puertos(id, nombre);
@@ -49,7 +49,7 @@ namespace ProyectoPAV.gui
         {
             PuertoService puerto3 = new PuertoService();
             int puertoid = -1;
-            puertoid = Convert.ToInt32(this.dvg2.CurrentRow.Cells["Id"].Value.ToString());
+            puertoid = Convert.ToInt32(this.dgv4.CurrentRow.Cells["Id"].Value.ToString());
             if (puertoid != -1)
             {
                 puerto3.eliminarPuerto(puertoid);
@@ -90,12 +90,12 @@ namespace ProyectoPAV.gui
 
         private void cargar_grilla(DataTable tabla)
         {
-            dvg2.Rows.Clear();
+            dgv4.Rows.Clear();
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
-                dvg2.Rows.Add();
-                dvg2.Rows[i].Cells[0].Value = tabla.Rows[i]["Id"].ToString();
-                dvg2.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre"].ToString();
+                dgv4.Rows.Add();
+                dgv4.Rows[i].Cells[0].Value = tabla.Rows[i]["ID"].ToString();
+                dgv4.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre"].ToString();
 
             }
         }
