@@ -94,8 +94,8 @@ namespace ProyectoPAV.gui
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 dvg2.Rows.Add();
-                dvg2.Rows[i].Cells[0].Value = tabla.Rows[i]["Id"].ToString();
-                dvg2.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre"].ToString();
+                dvg2.Rows[i].Cells[0].Value = tabla.Rows[i]["id"].ToString();
+                dvg2.Rows[i].Cells[1].Value = tabla.Rows[i]["nombre"].ToString();
 
             }
         }
