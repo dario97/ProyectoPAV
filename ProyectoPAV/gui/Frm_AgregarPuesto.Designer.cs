@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txt_NombrePuesto = new System.Windows.Forms.TextBox();
+            this.cmd_ConfirmaAgregarPuesto = new System.Windows.Forms.Button();
+            this.cmd_Salir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,39 +55,39 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre de Puesto :";
             // 
-            // textBox1
+            // txt_NombrePuesto
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
-            this.textBox1.TabIndex = 2;
+            this.txt_NombrePuesto.Location = new System.Drawing.Point(200, 82);
+            this.txt_NombrePuesto.Name = "txt_NombrePuesto";
+            this.txt_NombrePuesto.Size = new System.Drawing.Size(156, 20);
+            this.txt_NombrePuesto.TabIndex = 2;
             // 
-            // button1
+            // cmd_ConfirmaAgregarPuesto
             // 
-            this.button1.Location = new System.Drawing.Point(278, 131);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmd_ConfirmaAgregarPuesto.Location = new System.Drawing.Point(278, 131);
+            this.cmd_ConfirmaAgregarPuesto.Name = "cmd_ConfirmaAgregarPuesto";
+            this.cmd_ConfirmaAgregarPuesto.Size = new System.Drawing.Size(75, 23);
+            this.cmd_ConfirmaAgregarPuesto.TabIndex = 3;
+            this.cmd_ConfirmaAgregarPuesto.Text = "Agregar";
+            this.cmd_ConfirmaAgregarPuesto.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // cmd_Salir
             // 
-            this.button2.Location = new System.Drawing.Point(377, 131);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmd_Salir.Location = new System.Drawing.Point(377, 131);
+            this.cmd_Salir.Name = "cmd_Salir";
+            this.cmd_Salir.Size = new System.Drawing.Size(75, 23);
+            this.cmd_Salir.TabIndex = 4;
+            this.cmd_Salir.Text = "Salir";
+            this.cmd_Salir.UseVisualStyleBackColor = true;
             // 
             // Frm_AgregarPuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 177);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmd_Salir);
+            this.Controls.Add(this.cmd_ConfirmaAgregarPuesto);
+            this.Controls.Add(this.txt_NombrePuesto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Frm_AgregarPuesto";
@@ -101,8 +101,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txt_NombrePuesto;
+        private System.Windows.Forms.Button cmd_ConfirmaAgregarPuesto;
+        private System.Windows.Forms.Button cmd_Salir;
     }
 }

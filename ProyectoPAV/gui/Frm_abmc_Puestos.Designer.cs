@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_abmc_Puestos));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txt_NombrePuesto = new System.Windows.Forms.TextBox();
+            this.dvg_MostrarPuestos = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.cmd_BuscarNombrePuesto = new System.Windows.Forms.Button();
+            this.cmd_AgregarPuesto = new System.Windows.Forms.Button();
+            this.cmd_BorrarPuesto = new System.Windows.Forms.Button();
+            this.cmd_SeleccionarPuesto = new System.Windows.Forms.Button();
+            this.cmd_Salir = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg_MostrarPuestos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,23 +52,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre de Puesto :";
             // 
-            // textBox1
+            // txt_NombrePuesto
             // 
-            this.textBox1.Location = new System.Drawing.Point(137, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 1;
+            this.txt_NombrePuesto.Location = new System.Drawing.Point(137, 49);
+            this.txt_NombrePuesto.Name = "txt_NombrePuesto";
+            this.txt_NombrePuesto.Size = new System.Drawing.Size(136, 20);
+            this.txt_NombrePuesto.TabIndex = 1;
             // 
-            // dataGridView1
+            // dvg_MostrarPuestos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dvg_MostrarPuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvg_MostrarPuestos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(33, 80);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 2;
+            this.dvg_MostrarPuestos.Location = new System.Drawing.Point(33, 80);
+            this.dvg_MostrarPuestos.Name = "dvg_MostrarPuestos";
+            this.dvg_MostrarPuestos.Size = new System.Drawing.Size(240, 150);
+            this.dvg_MostrarPuestos.TabIndex = 2;
             // 
             // Column1
             // 
@@ -80,56 +80,56 @@
             this.Column2.HeaderText = "Nombre";
             this.Column2.Name = "Column2";
             // 
-            // button1
+            // cmd_BuscarNombrePuesto
             // 
-            this.button1.Location = new System.Drawing.Point(299, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cmd_BuscarNombrePuesto.Location = new System.Drawing.Point(299, 49);
+            this.cmd_BuscarNombrePuesto.Name = "cmd_BuscarNombrePuesto";
+            this.cmd_BuscarNombrePuesto.Size = new System.Drawing.Size(75, 23);
+            this.cmd_BuscarNombrePuesto.TabIndex = 3;
+            this.cmd_BuscarNombrePuesto.Text = "Buscar";
+            this.cmd_BuscarNombrePuesto.UseVisualStyleBackColor = true;
+            this.cmd_BuscarNombrePuesto.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // cmd_AgregarPuesto
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(33, 250);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 57);
-            this.button2.TabIndex = 4;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cmd_AgregarPuesto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_AgregarPuesto.BackgroundImage")));
+            this.cmd_AgregarPuesto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_AgregarPuesto.Location = new System.Drawing.Point(33, 250);
+            this.cmd_AgregarPuesto.Name = "cmd_AgregarPuesto";
+            this.cmd_AgregarPuesto.Size = new System.Drawing.Size(77, 57);
+            this.cmd_AgregarPuesto.TabIndex = 4;
+            this.cmd_AgregarPuesto.UseVisualStyleBackColor = true;
+            this.cmd_AgregarPuesto.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // cmd_BorrarPuesto
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(116, 250);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(83, 57);
-            this.button3.TabIndex = 5;
-            this.button3.UseVisualStyleBackColor = true;
+            this.cmd_BorrarPuesto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_BorrarPuesto.BackgroundImage")));
+            this.cmd_BorrarPuesto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_BorrarPuesto.Location = new System.Drawing.Point(116, 250);
+            this.cmd_BorrarPuesto.Name = "cmd_BorrarPuesto";
+            this.cmd_BorrarPuesto.Size = new System.Drawing.Size(83, 57);
+            this.cmd_BorrarPuesto.TabIndex = 5;
+            this.cmd_BorrarPuesto.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // cmd_SeleccionarPuesto
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Location = new System.Drawing.Point(205, 250);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(72, 57);
-            this.button4.TabIndex = 6;
-            this.button4.UseVisualStyleBackColor = true;
+            this.cmd_SeleccionarPuesto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_SeleccionarPuesto.BackgroundImage")));
+            this.cmd_SeleccionarPuesto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_SeleccionarPuesto.Location = new System.Drawing.Point(205, 250);
+            this.cmd_SeleccionarPuesto.Name = "cmd_SeleccionarPuesto";
+            this.cmd_SeleccionarPuesto.Size = new System.Drawing.Size(72, 57);
+            this.cmd_SeleccionarPuesto.TabIndex = 6;
+            this.cmd_SeleccionarPuesto.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // cmd_Salir
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(313, 170);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(81, 60);
-            this.button5.TabIndex = 7;
-            this.button5.UseVisualStyleBackColor = true;
+            this.cmd_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Salir.BackgroundImage")));
+            this.cmd_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_Salir.Location = new System.Drawing.Point(313, 170);
+            this.cmd_Salir.Name = "cmd_Salir";
+            this.cmd_Salir.Size = new System.Drawing.Size(81, 60);
+            this.cmd_Salir.TabIndex = 7;
+            this.cmd_Salir.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -149,17 +149,17 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(432, 324);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmd_Salir);
+            this.Controls.Add(this.cmd_SeleccionarPuesto);
+            this.Controls.Add(this.cmd_BorrarPuesto);
+            this.Controls.Add(this.cmd_AgregarPuesto);
+            this.Controls.Add(this.cmd_BuscarNombrePuesto);
+            this.Controls.Add(this.dvg_MostrarPuestos);
+            this.Controls.Add(this.txt_NombrePuesto);
             this.Controls.Add(this.label1);
             this.Name = "Frm_abmc_Puestos";
             this.Text = "Frm_abmc_Puestos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvg_MostrarPuestos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,15 +168,15 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txt_NombrePuesto;
+        private System.Windows.Forms.DataGridView dvg_MostrarPuestos;
+        private System.Windows.Forms.Button cmd_BuscarNombrePuesto;
+        private System.Windows.Forms.Button cmd_AgregarPuesto;
+        private System.Windows.Forms.Button cmd_BorrarPuesto;
+        private System.Windows.Forms.Button cmd_SeleccionarPuesto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button cmd_Salir;
         private System.Windows.Forms.Label label2;
     }
 }
