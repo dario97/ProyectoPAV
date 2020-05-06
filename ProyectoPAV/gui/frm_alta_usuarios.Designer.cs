@@ -59,21 +59,21 @@
             this.cmd_tipoDoc.Location = new System.Drawing.Point(133, 125);
             this.cmd_tipoDoc.Name = "cmd_tipoDoc";
             this.cmd_tipoDoc.Size = new System.Drawing.Size(164, 21);
-            this.cmd_tipoDoc.TabIndex = 1;
+            this.cmd_tipoDoc.TabIndex = 2;
             // 
             // txt_nroDoc
             // 
             this.txt_nroDoc.Location = new System.Drawing.Point(133, 99);
             this.txt_nroDoc.Name = "txt_nroDoc";
             this.txt_nroDoc.Size = new System.Drawing.Size(164, 20);
-            this.txt_nroDoc.TabIndex = 2;
+            this.txt_nroDoc.TabIndex = 1;
             // 
             // txt_nombre
             // 
             this.txt_nombre.Location = new System.Drawing.Point(133, 73);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(164, 20);
-            this.txt_nombre.TabIndex = 3;
+            this.txt_nombre.TabIndex = 0;
             // 
             // label2
             // 
@@ -107,7 +107,7 @@
             this.cmd_crear.Location = new System.Drawing.Point(133, 224);
             this.cmd_crear.Name = "cmd_crear";
             this.cmd_crear.Size = new System.Drawing.Size(75, 23);
-            this.cmd_crear.TabIndex = 7;
+            this.cmd_crear.TabIndex = 5;
             this.cmd_crear.Text = "Crear";
             this.cmd_crear.UseVisualStyleBackColor = true;
             this.cmd_crear.Click += new System.EventHandler(this.cmd_crear_Click);
@@ -117,7 +117,7 @@
             this.cmd_cancelar.Location = new System.Drawing.Point(223, 224);
             this.cmd_cancelar.Name = "cmd_cancelar";
             this.cmd_cancelar.Size = new System.Drawing.Size(75, 23);
-            this.cmd_cancelar.TabIndex = 8;
+            this.cmd_cancelar.TabIndex = 6;
             this.cmd_cancelar.Text = "Cancelar";
             this.cmd_cancelar.UseVisualStyleBackColor = true;
             this.cmd_cancelar.Click += new System.EventHandler(this.cmd_cancelar_Click);
@@ -127,7 +127,7 @@
             this.txt_ciudad.Location = new System.Drawing.Point(133, 152);
             this.txt_ciudad.Name = "txt_ciudad";
             this.txt_ciudad.Size = new System.Drawing.Size(165, 20);
-            this.txt_ciudad.TabIndex = 9;
+            this.txt_ciudad.TabIndex = 3;
             // 
             // label5
             // 
@@ -143,7 +143,7 @@
             this.txt_pais.Location = new System.Drawing.Point(133, 183);
             this.txt_pais.Name = "txt_pais";
             this.txt_pais.Size = new System.Drawing.Size(164, 20);
-            this.txt_pais.TabIndex = 11;
+            this.txt_pais.TabIndex = 4;
             // 
             // label6
             // 

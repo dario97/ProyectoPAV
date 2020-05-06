@@ -53,7 +53,7 @@
             this.cmd_agregar.Location = new System.Drawing.Point(12, 393);
             this.cmd_agregar.Name = "cmd_agregar";
             this.cmd_agregar.Size = new System.Drawing.Size(54, 45);
-            this.cmd_agregar.TabIndex = 0;
+            this.cmd_agregar.TabIndex = 2;
             this.cmd_agregar.UseVisualStyleBackColor = true;
             this.cmd_agregar.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -64,7 +64,7 @@
             this.cmd_editar.Location = new System.Drawing.Point(72, 393);
             this.cmd_editar.Name = "cmd_editar";
             this.cmd_editar.Size = new System.Drawing.Size(54, 45);
-            this.cmd_editar.TabIndex = 1;
+            this.cmd_editar.TabIndex = 3;
             this.cmd_editar.UseVisualStyleBackColor = true;
             this.cmd_editar.Click += new System.EventHandler(this.cmd_editar_Click);
             // 
@@ -75,7 +75,7 @@
             this.cmd_salir.Location = new System.Drawing.Point(543, 393);
             this.cmd_salir.Name = "cmd_salir";
             this.cmd_salir.Size = new System.Drawing.Size(54, 45);
-            this.cmd_salir.TabIndex = 2;
+            this.cmd_salir.TabIndex = 5;
             this.cmd_salir.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -93,7 +93,7 @@
             this.dvg1.Location = new System.Drawing.Point(18, 171);
             this.dvg1.Name = "dvg1";
             this.dvg1.Size = new System.Drawing.Size(573, 210);
-            this.dvg1.TabIndex = 4;
+            this.dvg1.TabIndex = 1;
             this.dvg1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // chk_seleccion
@@ -129,7 +129,7 @@
             this.txt_nroDoc.Location = new System.Drawing.Point(167, 122);
             this.txt_nroDoc.Name = "txt_nroDoc";
             this.txt_nroDoc.Size = new System.Drawing.Size(143, 20);
-            this.txt_nroDoc.TabIndex = 9;
+            this.txt_nroDoc.TabIndex = 0;
             // 
             // cmd_eliminar
             // 
@@ -138,7 +138,7 @@
             this.cmd_eliminar.Location = new System.Drawing.Point(132, 393);
             this.cmd_eliminar.Name = "cmd_eliminar";
             this.cmd_eliminar.Size = new System.Drawing.Size(54, 45);
-            this.cmd_eliminar.TabIndex = 10;
+            this.cmd_eliminar.TabIndex = 4;
             this.cmd_eliminar.UseVisualStyleBackColor = true;
             // 
             // groupBox1
