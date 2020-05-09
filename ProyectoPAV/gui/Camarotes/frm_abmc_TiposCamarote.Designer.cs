@@ -230,9 +230,9 @@
             this.chbx.AutoSize = true;
             this.chbx.Location = new System.Drawing.Point(148, 207);
             this.chbx.Name = "chbx";
-            this.chbx.Size = new System.Drawing.Size(56, 17);
+            this.chbx.Size = new System.Drawing.Size(88, 17);
             this.chbx.TabIndex = 9;
-            this.chbx.Text = "Todos";
+            this.chbx.Text = "Buscar todos";
             this.chbx.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.chbx.UseVisualStyleBackColor = true;
             // 
