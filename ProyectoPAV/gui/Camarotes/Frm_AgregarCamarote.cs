@@ -43,7 +43,7 @@ namespace ProyectoPAV.gui
 
         private void cmd_aceptar_Click(object sender, EventArgs e)
         {
-            if (_camarote.consultarCamarote(this.txt_codigo.Text, this.txt_cubierta.Text, this.txt_numcam.Text).Rows.Count == 0)
+            if (_camarote.consultarCamarote(Convert.ToInt32(this.txt_codigo.Text),Convert.ToInt32(this.txt_cubierta.Text),Convert.ToInt32(this.txt_numcam.Text)).Rows.Count == 0)
             {
                 int codNavio = Convert.ToInt32(this.txt_codigo.Text);
                 int numCubierta = Convert.ToInt32(this.txt_cubierta.Text);
