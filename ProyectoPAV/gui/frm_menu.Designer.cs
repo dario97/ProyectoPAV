@@ -58,7 +58,7 @@
             this.cmd_gestionPuestos.Name = "cmd_gestionPuestos";
             this.cmd_gestionPuestos.Size = new System.Drawing.Size(159, 64);
             this.cmd_gestionPuestos.TabIndex = 0;
-            this.cmd_gestionPuestos.Text = "GESTION DE PUESTOS";
+            this.cmd_gestionPuestos.Text = "GESTIÓN DE PUESTOS";
             this.cmd_gestionPuestos.UseVisualStyleBackColor = false;
             this.cmd_gestionPuestos.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -71,7 +71,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 92);
             this.button2.TabIndex = 4;
-            this.button2.Text = "GESTION DE TIPOS DE NAVIOS";
+            this.button2.Text = "GESTIÓN DE TIPOS DE NAVIOS";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -85,7 +85,7 @@
             this.cmd_gestionPuertos.Name = "cmd_gestionPuertos";
             this.cmd_gestionPuertos.Size = new System.Drawing.Size(159, 64);
             this.cmd_gestionPuertos.TabIndex = 3;
-            this.cmd_gestionPuertos.Text = "GESTION DE PUERTOS";
+            this.cmd_gestionPuertos.Text = "GESTIÓN DE PUERTOS";
             this.cmd_gestionPuertos.UseVisualStyleBackColor = false;
             this.cmd_gestionPuertos.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -97,7 +97,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(159, 64);
             this.button4.TabIndex = 2;
-            this.button4.Text = "GESTION DE NAVIOS";
+            this.button4.Text = "GESTIÓN DE NAVIOS";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -109,7 +109,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(159, 64);
             this.button6.TabIndex = 1;
-            this.button6.Text = "GESTION DE USUARIOS";
+            this.button6.Text = "GESTIÓN DE USUARIOS";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -121,7 +121,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(159, 92);
             this.button7.TabIndex = 5;
-            this.button7.Text = "GESTION DE TIPO DE CAMAROTES";
+            this.button7.Text = "GESTIÓN DE CAMAROTE";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -149,7 +149,7 @@
             this.Controls.Add(this.cmd_gestionPuestos);
             this.Controls.Add(this.panel1);
             this.Name = "frm_menu";
-            this.Text = "Menu";
+            this.Text = "Menú";
             this.ResumeLayout(false);
             this.PerformLayout();
 
