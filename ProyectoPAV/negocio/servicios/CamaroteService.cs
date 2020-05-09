@@ -13,9 +13,9 @@ namespace ProyectoPAV.negocio.servicios
         //    //return camaroteDao.consultarCamarote(nombre);
         ////}
 
-        internal DataTable consultarCamarote(string caca, string d, string dsad)
+        internal DataTable consultarCamarote(int codNavio, int numCubierta, int numCamarote)
         {
-            return camaroteDao.consultarTodos();
+            return camaroteDao.consultarCamarote(codNavio, numCubierta, numCamarote);
         }
 
         internal DataTable consultarTodos()

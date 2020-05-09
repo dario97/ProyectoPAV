@@ -46,7 +46,7 @@ namespace ProyectoPAV.gui
                 && txt_nroCubierta.Text != ""
                 && chbx.Checked == false)
             {
-                tabla = camarotes.consultarCamarote(txt_codigoNavio.Text, txt_nroCubierta.Text, txt_nroCamarote.Text);
+                tabla = camarotes.consultarCamarote(Convert.ToInt32(txt_codigoNavio.Text),Convert.ToInt32(txt_nroCubierta.Text),Convert.ToInt32(txt_nroCamarote.Text));
                 if (tabla.Rows.Count == 0)
                 {
                     MessageBox.Show("No se encontró ningún camarote con esos datos", " Mensaje", MessageBoxButtons.OK);

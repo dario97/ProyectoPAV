@@ -19,10 +19,10 @@ namespace ProyectoPAV.negocio.repository
 
         }
 
-        public DataTable consultarCamarote()
+        public DataTable consultarCamarote(int codNavio, int numCubierta, int numCamarote)
         {
 
-            string sql = @"SELECT * FROM CAMAROTES WHERE Cod_navio = ";
+            string sql = @"SELECT * FROM CAMAROTES WHERE Cod_navio = " + codNavio + " AND " + "Num_cubierta = " + numCubierta + " AND " + "Num_camarote = " + numCamarote;
             return accesoBD.ejecutarConsulta(sql);
 
         }
