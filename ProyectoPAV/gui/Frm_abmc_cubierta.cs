@@ -15,10 +15,6 @@ namespace ProyectoPAV.gui
         public Frm_abmc_cubierta()
         {
             InitializeComponent();
-            this.tooltip.SetToolTip(cmd_agregar, "Agregar nueva cubierta");
-            this.tooltip.SetToolTip(cmd_editar ,"Modificar cubierta");
-            this.tooltip.SetToolTip(cmd_borrar,"Eliminar cubierta seleccionada");
-            this.tooltip.SetToolTip(cmd_salir, "Salir al menu principal");
         }
 
         private void Frm_abmc_cubierta_Load(object sender, EventArgs e)
