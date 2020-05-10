@@ -38,5 +38,10 @@ namespace ProyectoPAV.gui
             Frm_Modificar_Usuario ventana1 = new Frm_Modificar_Usuario();
             ventana1.ShowDialog();
         }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
     }
 }
