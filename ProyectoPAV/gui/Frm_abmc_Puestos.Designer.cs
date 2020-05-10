@@ -37,7 +37,7 @@
             this.cmd_SeleccionarPuesto = new System.Windows.Forms.Button();
             this.cmd_Salir = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chk_seleccion = new System.Windows.Forms.CheckBox();
             this.dvg_MostrarPuestos = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -124,15 +124,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "GESTION DE PUESTOS";
             // 
-            // checkBox1
+            // chk_seleccion
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(137, 100);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(56, 17);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "Todos";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chk_seleccion.AutoSize = true;
+            this.chk_seleccion.Location = new System.Drawing.Point(137, 100);
+            this.chk_seleccion.Name = "chk_seleccion";
+            this.chk_seleccion.Size = new System.Drawing.Size(56, 17);
+            this.chk_seleccion.TabIndex = 7;
+            this.chk_seleccion.Text = "Todos";
+            this.chk_seleccion.UseVisualStyleBackColor = true;
             // 
             // dvg_MostrarPuestos
             // 
@@ -174,7 +174,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(396, 357);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chk_seleccion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmd_Salir);
             this.Controls.Add(this.cmd_SeleccionarPuesto);
@@ -203,7 +203,7 @@
         private System.Windows.Forms.Button cmd_SeleccionarPuesto;
         private System.Windows.Forms.Button cmd_Salir;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chk_seleccion;
         private System.Windows.Forms.DataGridView dvg_MostrarPuestos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
