@@ -49,25 +49,25 @@
             // 
             // cmd_salir
             // 
-            this.cmd_salir.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cmd_salir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cmd_salir.Location = new System.Drawing.Point(418, 252);
+            this.cmd_salir.BackColor = System.Drawing.SystemColors.Control;
+            this.cmd_salir.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmd_salir.Location = new System.Drawing.Point(418, 260);
             this.cmd_salir.Name = "cmd_salir";
-            this.cmd_salir.Size = new System.Drawing.Size(101, 50);
-            this.cmd_salir.TabIndex = 29;
+            this.cmd_salir.Size = new System.Drawing.Size(90, 29);
+            this.cmd_salir.TabIndex = 8;
             this.cmd_salir.Text = "Salir";
-            this.cmd_salir.UseVisualStyleBackColor = false;
+            this.cmd_salir.UseVisualStyleBackColor = true;
             // 
             // cmd_aceptar
             // 
-            this.cmd_aceptar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cmd_aceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cmd_aceptar.Location = new System.Drawing.Point(311, 252);
+            this.cmd_aceptar.BackColor = System.Drawing.SystemColors.Control;
+            this.cmd_aceptar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmd_aceptar.Location = new System.Drawing.Point(311, 260);
             this.cmd_aceptar.Name = "cmd_aceptar";
-            this.cmd_aceptar.Size = new System.Drawing.Size(101, 50);
-            this.cmd_aceptar.TabIndex = 27;
+            this.cmd_aceptar.Size = new System.Drawing.Size(90, 29);
+            this.cmd_aceptar.TabIndex = 7;
             this.cmd_aceptar.Text = "Aceptar";
-            this.cmd_aceptar.UseVisualStyleBackColor = false;
+            this.cmd_aceptar.UseVisualStyleBackColor = true;
             this.cmd_aceptar.Click += new System.EventHandler(this.cmd_aceptar_Click);
             // 
             // label9
@@ -95,42 +95,42 @@
             this.txt_camas.Location = new System.Drawing.Point(408, 199);
             this.txt_camas.Name = "txt_camas";
             this.txt_camas.Size = new System.Drawing.Size(100, 20);
-            this.txt_camas.TabIndex = 25;
+            this.txt_camas.TabIndex = 6;
             // 
             // txt_ubicacion
             // 
             this.txt_ubicacion.Location = new System.Drawing.Point(408, 164);
             this.txt_ubicacion.Name = "txt_ubicacion";
             this.txt_ubicacion.Size = new System.Drawing.Size(100, 20);
-            this.txt_ubicacion.TabIndex = 23;
+            this.txt_ubicacion.TabIndex = 5;
             // 
             // txt_tipo
             // 
             this.txt_tipo.Location = new System.Drawing.Point(408, 132);
             this.txt_tipo.Name = "txt_tipo";
             this.txt_tipo.Size = new System.Drawing.Size(100, 20);
-            this.txt_tipo.TabIndex = 21;
+            this.txt_tipo.TabIndex = 4;
             // 
             // txt_numcam
             // 
             this.txt_numcam.Location = new System.Drawing.Point(141, 207);
             this.txt_numcam.Name = "txt_numcam";
             this.txt_numcam.Size = new System.Drawing.Size(100, 20);
-            this.txt_numcam.TabIndex = 19;
+            this.txt_numcam.TabIndex = 3;
             // 
             // txt_cubierta
             // 
             this.txt_cubierta.Location = new System.Drawing.Point(141, 167);
             this.txt_cubierta.Name = "txt_cubierta";
             this.txt_cubierta.Size = new System.Drawing.Size(100, 20);
-            this.txt_cubierta.TabIndex = 18;
+            this.txt_cubierta.TabIndex = 2;
             // 
             // txt_codigo
             // 
             this.txt_codigo.Location = new System.Drawing.Point(141, 132);
             this.txt_codigo.Name = "txt_codigo";
             this.txt_codigo.Size = new System.Drawing.Size(100, 20);
-            this.txt_codigo.TabIndex = 16;
+            this.txt_codigo.TabIndex = 1;
             // 
             // label7
             // 
@@ -195,7 +195,7 @@
             this.label1.Location = new System.Drawing.Point(99, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(371, 48);
-            this.label1.TabIndex = 15;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Modificar Camarote";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
