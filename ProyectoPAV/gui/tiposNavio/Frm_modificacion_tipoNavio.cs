@@ -43,7 +43,7 @@ namespace ProyectoPAV.gui
 
         private void Frm_modificacion_tipoNavio_Load(object sender, EventArgs e)
         {
-
+            this.txt_tipo.Text = pp_descripcion;
         }
 
         private void label2_Click(object sender, EventArgs e)
