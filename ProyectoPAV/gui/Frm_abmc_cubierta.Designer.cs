@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_abmc_cubierta));
             this.dvg1 = new System.Windows.Forms.DataGridView();
             this.txt_nroCubierta = new System.Windows.Forms.TextBox();
@@ -47,6 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.chk_todos = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tooltip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dvg1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -130,7 +132,7 @@
             this.cmd_agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_agregar.Location = new System.Drawing.Point(24, 348);
             this.cmd_agregar.Name = "cmd_agregar";
-            this.cmd_agregar.Size = new System.Drawing.Size(60, 52);
+            this.cmd_agregar.Size = new System.Drawing.Size(63, 60);
             this.cmd_agregar.TabIndex = 5;
             this.cmd_agregar.UseVisualStyleBackColor = false;
             // 
@@ -138,9 +140,9 @@
             // 
             this.cmd_editar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_editar.BackgroundImage")));
             this.cmd_editar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_editar.Location = new System.Drawing.Point(90, 348);
+            this.cmd_editar.Location = new System.Drawing.Point(93, 348);
             this.cmd_editar.Name = "cmd_editar";
-            this.cmd_editar.Size = new System.Drawing.Size(60, 52);
+            this.cmd_editar.Size = new System.Drawing.Size(63, 60);
             this.cmd_editar.TabIndex = 6;
             this.cmd_editar.UseVisualStyleBackColor = true;
             // 
@@ -157,9 +159,9 @@
             // 
             this.cmd_eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_eliminar.BackgroundImage")));
             this.cmd_eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_eliminar.Location = new System.Drawing.Point(156, 348);
+            this.cmd_eliminar.Location = new System.Drawing.Point(162, 348);
             this.cmd_eliminar.Name = "cmd_eliminar";
-            this.cmd_eliminar.Size = new System.Drawing.Size(60, 52);
+            this.cmd_eliminar.Size = new System.Drawing.Size(63, 60);
             this.cmd_eliminar.TabIndex = 8;
             this.cmd_eliminar.UseVisualStyleBackColor = true;
             // 
@@ -167,9 +169,9 @@
             // 
             this.cmd_salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_salir.BackgroundImage")));
             this.cmd_salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_salir.Location = new System.Drawing.Point(507, 348);
+            this.cmd_salir.Location = new System.Drawing.Point(504, 348);
             this.cmd_salir.Name = "cmd_salir";
-            this.cmd_salir.Size = new System.Drawing.Size(60, 52);
+            this.cmd_salir.Size = new System.Drawing.Size(63, 60);
             this.cmd_salir.TabIndex = 9;
             this.cmd_salir.UseVisualStyleBackColor = true;
             // 
@@ -211,7 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 431);
+            this.ClientSize = new System.Drawing.Size(594, 422);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmd_salir);
             this.Controls.Add(this.cmd_eliminar);
@@ -251,5 +253,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox chk_todos;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ToolTip tooltip;
     }
 }
