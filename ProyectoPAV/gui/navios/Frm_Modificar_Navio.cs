@@ -53,5 +53,10 @@ namespace ProyectoPAV.gui
             tipoService.modificarNavio(navio);
             MessageBox.Show("El navío se modificó correctamente", "Mensaje", MessageBoxButtons.OK);
         }
+
+        private void Frm_Modificar_Navio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -322,6 +322,7 @@
             this.Controls.Add(this.txt_navio);
             this.Name = "Frm_Modificar_Navio";
             this.Text = "Modificar Navio";
+            this.Load += new System.EventHandler(this.Frm_Modificar_Navio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
