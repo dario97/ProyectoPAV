@@ -41,9 +41,9 @@
             this.label1.Location = new System.Drawing.Point(15, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 24);
+            this.label1.Size = new System.Drawing.Size(196, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "MODIFICAR PUERTOS";
+            this.label1.Text = "MODIFICAR PUERTO";
             // 
             // label2
             // 
@@ -73,7 +73,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
-            this.button2.Text = "cancelar";
+            this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // txt_nombre

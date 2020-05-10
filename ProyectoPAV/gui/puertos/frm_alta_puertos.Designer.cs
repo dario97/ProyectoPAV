@@ -39,11 +39,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(58, 9);
+            this.label1.Location = new System.Drawing.Point(22, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 24);
+            this.label1.Size = new System.Drawing.Size(186, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Crear Puerto";
+            this.label1.Text = "AGREGAR PUERTO";
             // 
             // cmd_crear
             // 
@@ -51,7 +51,7 @@
             this.cmd_crear.Name = "cmd_crear";
             this.cmd_crear.Size = new System.Drawing.Size(75, 23);
             this.cmd_crear.TabIndex = 1;
-            this.cmd_crear.Text = "Crear";
+            this.cmd_crear.Text = "Aceptar";
             this.cmd_crear.UseVisualStyleBackColor = true;
             this.cmd_crear.Click += new System.EventHandler(this.cmd_crear_Click);
             // 
@@ -93,7 +93,6 @@
             this.Controls.Add(this.label1);
             this.Name = "frm_alta_puertos";
             this.Text = "Agregar Puesto";
-            //this.Load += new System.EventHandler(this.frm_alta_puertos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

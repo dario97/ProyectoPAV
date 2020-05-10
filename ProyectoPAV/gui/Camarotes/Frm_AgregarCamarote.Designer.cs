@@ -53,11 +53,11 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label1.Location = new System.Drawing.Point(101, 9);
+            this.label1.Location = new System.Drawing.Point(49, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 48);
+            this.label1.Size = new System.Drawing.Size(461, 48);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Agregar Camarote";
+            this.label1.Text = "AGREGAR CAMAROTE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
