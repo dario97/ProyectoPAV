@@ -4,7 +4,7 @@ using System.Data;
 
 namespace ProyectoPAV.negocio.servicios
 {
-    class CamaroteService
+    public class CamaroteService
     {
         private static CamaroteDao camaroteDao = new CamaroteDao();
 

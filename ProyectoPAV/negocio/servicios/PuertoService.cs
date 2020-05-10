@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoPAV.negocio.servicios
 {
-    class PuertoService
+    public class PuertoService
     {
         private static PuertoDao puertoDao;
 

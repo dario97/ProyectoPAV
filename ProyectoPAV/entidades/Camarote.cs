@@ -1,6 +1,9 @@
-﻿namespace ProyectoPAV.entidades
+﻿using ProyectoPAV.negocio.repository;
+using ProyectoPAV.negocio.servicios;
+
+namespace ProyectoPAV.entidades
 {
-    class Camarote
+    public class Camarote
     {
         int idNavio;
         int numCubierta;
@@ -26,5 +29,20 @@
         public int IdTipoCamarote { get => idTipoCamarote; set => idTipoCamarote = value; }
         public string Ubicacion { get => ubicacion; set => ubicacion = value; }
         public int CantCamas { get => cantCamas; set => cantCamas = value; }
+
+        public Navio getNavio()
+        {
+            NavioService navioService = new NavioService();
+
+            return navioService.getById(this.idNavio);
+
+        }
+
+        public TipoCamarote getTipoCamarote()
+        {
+            TipoCamaroteService tipoCamaroteService = new TipoCamaroteService();
+
+            return tipoCamaroteService.getById(this.idTipoCamarote);
+        }
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoPAV.negocio.servicios
 {
-    class TipoClasificacionNavioService
+    public class TipoClasificacionNavioService
     {
         private static TipoClasificacionNavioDao clasificacionNavioDao;
 

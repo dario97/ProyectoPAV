@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,6 +19,28 @@ namespace ProyectoPAV.negocio.repository
         
         }
 
+
+        public Navio getById(int id)
+        {
+            string sql = @"SELECT * FROM NAVIOS WHERE Cod_navio= " + id;
+            DataTable data = accesoBD.ejecutarConsulta(sql);
+            
+            int idNavio = Convert.ToInt32(data.Rows[0]["Cod_navio"].ToString());
+            string nombre = data.Rows[0]["Nombre_navio"].ToString();
+            float altura = Convert.ToSingle(data.Rows[0]["Altura"].ToString());
+            float autonomia = Convert.ToSingle(data.Rows[0]["Autonomia"].ToString());
+            float desplazamiento = Convert.ToSingle(data.Rows[0]["Desplazamiento"].ToString());
+            float eslora = Convert.ToSingle(data.Rows[0]["Eslora"].ToString());
+            float manga = Convert.ToSingle(data.Rows[0]["Manga"].ToString());
+            int cantPasajeros = Convert.ToInt32(data.Rows[0]["Cant_max_pasajeros"].ToString());
+            int cantTripulantes = Convert.ToInt32(data.Rows[0]["cantTripulantes"].ToString());
+            int idTipoClasificacion = Convert.ToInt32(data.Rows[0]["Tipo_clasificacion"].ToString());
+            int cantMotores = Convert.ToInt32(data.Rows[0]["Cant_motores"].ToString());
+
+            return new Navio(idNavio, nombre, altura, autonomia, desplazamiento, eslora, manga, cantPasajeros, cantTripulantes, idTipoClasificacion, cantMotores);
+
+
+        }
 
         public DataTable consultar_x_nombre(string nombre)
         {

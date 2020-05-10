@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoPAV.negocio.servicios
 {
-    class NavioService
+    public class NavioService
     {
         private static NavioDao navioDao;
 
@@ -18,6 +18,11 @@ namespace ProyectoPAV.negocio.servicios
             navioDao = new NavioDao();
         }
 
+
+        internal Navio getById(int id)
+        {
+            return navioDao.getById(id);
+        }
         internal DataTable consultarPorNombre(string nombre)
         {
             return navioDao.consultar_x_nombre(nombre);

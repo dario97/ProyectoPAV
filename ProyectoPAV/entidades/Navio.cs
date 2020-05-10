@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoPAV.entidades
 {
-    class Navio
+    public class Navio
     {
         int codigoNavio;
         string nombre = "";
