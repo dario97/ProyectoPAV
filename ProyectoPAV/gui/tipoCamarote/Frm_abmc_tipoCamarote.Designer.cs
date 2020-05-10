@@ -30,17 +30,16 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Tipo = new System.Windows.Forms.Label();
-            this.cmb_tipo = new System.Windows.Forms.ComboBox();
-            this.chk_todos = new System.Windows.Forms.CheckBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bttn_buscar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chk_todos = new System.Windows.Forms.CheckBox();
+            this.Tipo = new System.Windows.Forms.Label();
             this.bttn_crear = new System.Windows.Forms.Button();
             this.bttn_modificar = new System.Windows.Forms.Button();
             this.bttn_eliminar = new System.Windows.Forms.Button();
             this.bttn_salir = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -60,7 +59,6 @@
             this.groupBox1.Controls.Add(this.bttn_buscar);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.chk_todos);
-            this.groupBox1.Controls.Add(this.cmb_tipo);
             this.groupBox1.Controls.Add(this.Tipo);
             this.groupBox1.Location = new System.Drawing.Point(12, 45);
             this.groupBox1.Name = "groupBox1";
@@ -69,33 +67,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             // 
-            // Tipo
+            // bttn_buscar
             // 
-            this.Tipo.AutoSize = true;
-            this.Tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tipo.Location = new System.Drawing.Point(48, 14);
-            this.Tipo.Name = "Tipo";
-            this.Tipo.Size = new System.Drawing.Size(39, 20);
-            this.Tipo.TabIndex = 1;
-            this.Tipo.Text = "Tipo";
-            // 
-            // cmb_tipo
-            // 
-            this.cmb_tipo.FormattingEnabled = true;
-            this.cmb_tipo.Location = new System.Drawing.Point(93, 16);
-            this.cmb_tipo.Name = "cmb_tipo";
-            this.cmb_tipo.Size = new System.Drawing.Size(121, 21);
-            this.cmb_tipo.TabIndex = 2;
-            // 
-            // chk_todos
-            // 
-            this.chk_todos.AutoSize = true;
-            this.chk_todos.Location = new System.Drawing.Point(93, 44);
-            this.chk_todos.Name = "chk_todos";
-            this.chk_todos.Size = new System.Drawing.Size(88, 17);
-            this.chk_todos.TabIndex = 3;
-            this.chk_todos.Text = "Buscar todos";
-            this.chk_todos.UseVisualStyleBackColor = true;
+            this.bttn_buscar.Location = new System.Drawing.Point(220, 16);
+            this.bttn_buscar.Name = "bttn_buscar";
+            this.bttn_buscar.Size = new System.Drawing.Size(75, 21);
+            this.bttn_buscar.TabIndex = 5;
+            this.bttn_buscar.Text = "Buscar";
+            this.bttn_buscar.UseVisualStyleBackColor = true;
+            this.bttn_buscar.Click += new System.EventHandler(this.bttn_buscar_Click);
             // 
             // dataGridView1
             // 
@@ -109,14 +89,36 @@
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // bttn_buscar
+            // ID
             // 
-            this.bttn_buscar.Location = new System.Drawing.Point(220, 16);
-            this.bttn_buscar.Name = "bttn_buscar";
-            this.bttn_buscar.Size = new System.Drawing.Size(75, 21);
-            this.bttn_buscar.TabIndex = 5;
-            this.bttn_buscar.Text = "Buscar";
-            this.bttn_buscar.UseVisualStyleBackColor = true;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Width = 200;
+            // 
+            // chk_todos
+            // 
+            this.chk_todos.AutoSize = true;
+            this.chk_todos.Location = new System.Drawing.Point(93, 44);
+            this.chk_todos.Name = "chk_todos";
+            this.chk_todos.Size = new System.Drawing.Size(88, 17);
+            this.chk_todos.TabIndex = 3;
+            this.chk_todos.Text = "Buscar todos";
+            this.chk_todos.UseVisualStyleBackColor = true;
+            // 
+            // Tipo
+            // 
+            this.Tipo.AutoSize = true;
+            this.Tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tipo.Location = new System.Drawing.Point(48, 14);
+            this.Tipo.Name = "Tipo";
+            this.Tipo.Size = new System.Drawing.Size(39, 20);
+            this.Tipo.TabIndex = 1;
+            this.Tipo.Text = "Tipo";
             // 
             // bttn_crear
             // 
@@ -155,17 +157,6 @@
             this.bttn_salir.Text = "Salir";
             this.bttn_salir.UseVisualStyleBackColor = true;
             // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Width = 200;
-            // 
             // Frm_abmc_tipoCamarote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,7 +186,6 @@
         private System.Windows.Forms.Button bttn_buscar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.CheckBox chk_todos;
-        private System.Windows.Forms.ComboBox cmb_tipo;
         private System.Windows.Forms.Label Tipo;
         private System.Windows.Forms.Button bttn_crear;
         private System.Windows.Forms.Button bttn_modificar;

@@ -61,6 +61,9 @@
     <Compile Include="gui\camarotes\Frm_moficar_camarote.Designer.cs">
       <DependentUpon>Frm_moficar_camarote.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\clases\MiCombito.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="gui\frm_ModificarPuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,7 +334,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\" />
-    <Folder Include="gui\clases\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
