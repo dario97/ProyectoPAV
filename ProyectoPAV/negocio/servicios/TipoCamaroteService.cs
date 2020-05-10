@@ -29,10 +29,10 @@ namespace ProyectoPAV.negocio.servicios
             return tipoCamaroteDao.consultar_x_nombre(nombre);
         }
 
-        //internal DataTable consultarTodos()
-        //{
-        //    return navioDao.consultarTodos();
-        //}
+        internal DataTable consultarTodos()
+        {
+            return tipoCamaroteDao.consultarTodos();
+        }
 
         internal void crearTipoCamarote(TipoCamarote tipoCamarote)
         {

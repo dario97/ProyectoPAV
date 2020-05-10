@@ -50,9 +50,9 @@ namespace ProyectoPAV.gui
                 if (tabla.Rows.Count == 0)
                 {
                     MessageBox.Show("No se encontró ningún camarote con esos datos", " Mensaje", MessageBoxButtons.OK);
-
                 }
             }
+
 
             if (chbx.Checked == true)
             {
@@ -101,6 +101,11 @@ namespace ProyectoPAV.gui
         private void frm_abmc_TiposCamarote_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmd_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

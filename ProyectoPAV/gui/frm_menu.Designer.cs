@@ -36,6 +36,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bttn_tiposDeCamarote = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -134,12 +135,25 @@
             this.panel1.Size = new System.Drawing.Size(235, 58);
             this.panel1.TabIndex = 8;
             // 
+            // bttn_tiposDeCamarote
+            // 
+            this.bttn_tiposDeCamarote.BackColor = System.Drawing.Color.Silver;
+            this.bttn_tiposDeCamarote.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttn_tiposDeCamarote.Location = new System.Drawing.Point(266, 384);
+            this.bttn_tiposDeCamarote.Name = "bttn_tiposDeCamarote";
+            this.bttn_tiposDeCamarote.Size = new System.Drawing.Size(159, 92);
+            this.bttn_tiposDeCamarote.TabIndex = 9;
+            this.bttn_tiposDeCamarote.Text = "GESTIÓN TIPOS DE CAMAROTE";
+            this.bttn_tiposDeCamarote.UseVisualStyleBackColor = false;
+            this.bttn_tiposDeCamarote.Click += new System.EventHandler(this.bttn_tiposDeCamarote_Click);
+            // 
             // frm_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(463, 418);
+            this.ClientSize = new System.Drawing.Size(463, 541);
+            this.Controls.Add(this.bttn_tiposDeCamarote);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -165,5 +179,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button bttn_tiposDeCamarote;
     }
 }

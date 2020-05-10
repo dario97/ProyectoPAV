@@ -30,10 +30,15 @@ namespace ProyectoPAV.negocio.repository
 
         public DataTable consultar_x_nombre(string nombre)
         {
-            string sql = "SELECT FROM TIPO_CAMAROTE WHERE Nombre= " + nombre;
+            string sql = "SELECT * FROM TIPO_CAMAROTE WHERE Nombre= " + nombre;
             return accesoBD.ejecutarConsulta(sql);
         }
 
+        public DataTable consultarTodos()
+        {
+            string sql = "SELECT * FROM TIPO_CAMAROTE";
+            return accesoBD.ejecutarConsulta(sql);
+        }
         public void create(TipoCamarote tipoCamarote)
         {
             string sql = "INSERT INTO TIPO_CAMAROTE (Nombre)" +
