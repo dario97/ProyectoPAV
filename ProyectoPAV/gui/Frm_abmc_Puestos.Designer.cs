@@ -39,8 +39,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.dvg_MostrarPuestos = new System.Windows.Forms.DataGridView();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_MostrarPuestos)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -68,7 +68,7 @@
             this.cmd_BuscarNombrePuesto.Name = "cmd_BuscarNombrePuesto";
             this.cmd_BuscarNombrePuesto.Size = new System.Drawing.Size(75, 23);
             this.cmd_BuscarNombrePuesto.TabIndex = 1;
-            this.cmd_BuscarNombrePuesto.Text = "Buscar";
+            this.cmd_BuscarNombrePuesto.Text = "Consultar";
             this.cmd_BuscarNombrePuesto.UseVisualStyleBackColor = true;
             this.cmd_BuscarNombrePuesto.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -78,7 +78,7 @@
             this.cmd_AgregarPuesto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_AgregarPuesto.Location = new System.Drawing.Point(33, 288);
             this.cmd_AgregarPuesto.Name = "cmd_AgregarPuesto";
-            this.cmd_AgregarPuesto.Size = new System.Drawing.Size(77, 57);
+            this.cmd_AgregarPuesto.Size = new System.Drawing.Size(65, 57);
             this.cmd_AgregarPuesto.TabIndex = 3;
             this.cmd_AgregarPuesto.UseVisualStyleBackColor = true;
             this.cmd_AgregarPuesto.Click += new System.EventHandler(this.button2_Click);
@@ -87,9 +87,9 @@
             // 
             this.cmd_BorrarPuesto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_BorrarPuesto.BackgroundImage")));
             this.cmd_BorrarPuesto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_BorrarPuesto.Location = new System.Drawing.Point(116, 288);
+            this.cmd_BorrarPuesto.Location = new System.Drawing.Point(175, 288);
             this.cmd_BorrarPuesto.Name = "cmd_BorrarPuesto";
-            this.cmd_BorrarPuesto.Size = new System.Drawing.Size(83, 57);
+            this.cmd_BorrarPuesto.Size = new System.Drawing.Size(65, 57);
             this.cmd_BorrarPuesto.TabIndex = 4;
             this.cmd_BorrarPuesto.UseVisualStyleBackColor = true;
             // 
@@ -97,9 +97,9 @@
             // 
             this.cmd_SeleccionarPuesto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_SeleccionarPuesto.BackgroundImage")));
             this.cmd_SeleccionarPuesto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_SeleccionarPuesto.Location = new System.Drawing.Point(205, 288);
+            this.cmd_SeleccionarPuesto.Location = new System.Drawing.Point(104, 288);
             this.cmd_SeleccionarPuesto.Name = "cmd_SeleccionarPuesto";
-            this.cmd_SeleccionarPuesto.Size = new System.Drawing.Size(72, 57);
+            this.cmd_SeleccionarPuesto.Size = new System.Drawing.Size(65, 57);
             this.cmd_SeleccionarPuesto.TabIndex = 5;
             this.cmd_SeleccionarPuesto.UseVisualStyleBackColor = true;
             this.cmd_SeleccionarPuesto.Click += new System.EventHandler(this.cmd_SeleccionarPuesto_Click);
@@ -108,9 +108,9 @@
             // 
             this.cmd_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Salir.BackgroundImage")));
             this.cmd_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_Salir.Location = new System.Drawing.Point(303, 288);
+            this.cmd_Salir.Location = new System.Drawing.Point(308, 288);
             this.cmd_Salir.Name = "cmd_Salir";
-            this.cmd_Salir.Size = new System.Drawing.Size(81, 60);
+            this.cmd_Salir.Size = new System.Drawing.Size(65, 57);
             this.cmd_Salir.TabIndex = 6;
             this.cmd_Salir.UseVisualStyleBackColor = true;
             // 
@@ -145,17 +145,17 @@
             this.dvg_MostrarPuestos.Size = new System.Drawing.Size(340, 150);
             this.dvg_MostrarPuestos.TabIndex = 2;
             // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Codigo";
             this.Column1.Name = "Column1";
             this.Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
             // 
             // groupBox1
             // 

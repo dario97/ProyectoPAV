@@ -34,6 +34,11 @@
             this.cmd_salir = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dvg1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chk_seleccion = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,11 +48,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.cmd_tipoDoc = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dvg1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +58,7 @@
             this.cmd_agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_agregar.Location = new System.Drawing.Point(12, 403);
             this.cmd_agregar.Name = "cmd_agregar";
-            this.cmd_agregar.Size = new System.Drawing.Size(54, 45);
+            this.cmd_agregar.Size = new System.Drawing.Size(65, 55);
             this.cmd_agregar.TabIndex = 2;
             this.cmd_agregar.UseVisualStyleBackColor = true;
             this.cmd_agregar.Click += new System.EventHandler(this.button1_Click);
@@ -67,9 +67,9 @@
             // 
             this.cmd_editar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_editar.BackgroundImage")));
             this.cmd_editar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_editar.Location = new System.Drawing.Point(72, 403);
+            this.cmd_editar.Location = new System.Drawing.Point(83, 403);
             this.cmd_editar.Name = "cmd_editar";
-            this.cmd_editar.Size = new System.Drawing.Size(54, 45);
+            this.cmd_editar.Size = new System.Drawing.Size(64, 55);
             this.cmd_editar.TabIndex = 3;
             this.cmd_editar.UseVisualStyleBackColor = true;
             this.cmd_editar.Click += new System.EventHandler(this.cmd_editar_Click);
@@ -78,9 +78,9 @@
             // 
             this.cmd_salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_salir.BackgroundImage")));
             this.cmd_salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_salir.Location = new System.Drawing.Point(517, 403);
+            this.cmd_salir.Location = new System.Drawing.Point(501, 403);
             this.cmd_salir.Name = "cmd_salir";
-            this.cmd_salir.Size = new System.Drawing.Size(54, 45);
+            this.cmd_salir.Size = new System.Drawing.Size(70, 55);
             this.cmd_salir.TabIndex = 5;
             this.cmd_salir.UseVisualStyleBackColor = true;
             // 
@@ -107,6 +107,31 @@
             this.dvg1.Size = new System.Drawing.Size(542, 210);
             this.dvg1.TabIndex = 1;
             this.dvg1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "TipoDoc";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "NroDoc";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Nombre";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Ciudad";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Pais";
+            this.Column5.Name = "Column5";
             // 
             // chk_seleccion
             // 
@@ -147,9 +172,9 @@
             // 
             this.cmd_eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_eliminar.BackgroundImage")));
             this.cmd_eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_eliminar.Location = new System.Drawing.Point(132, 403);
+            this.cmd_eliminar.Location = new System.Drawing.Point(153, 403);
             this.cmd_eliminar.Name = "cmd_eliminar";
-            this.cmd_eliminar.Size = new System.Drawing.Size(54, 45);
+            this.cmd_eliminar.Size = new System.Drawing.Size(70, 55);
             this.cmd_eliminar.TabIndex = 4;
             this.cmd_eliminar.UseVisualStyleBackColor = true;
             // 
@@ -194,36 +219,11 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "GESTION DE USUARIOS";
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "TipoDoc";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "NroDoc";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nombre";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Ciudad";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Pais";
-            this.Column5.Name = "Column5";
-            // 
             // frm_abmc_usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 456);
+            this.ClientSize = new System.Drawing.Size(608, 467);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmd_eliminar);
             this.Controls.Add(this.txt_nroDoc);

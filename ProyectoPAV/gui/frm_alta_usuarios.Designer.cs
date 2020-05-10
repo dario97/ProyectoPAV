@@ -108,7 +108,7 @@
             this.cmd_crear.Name = "cmd_crear";
             this.cmd_crear.Size = new System.Drawing.Size(75, 23);
             this.cmd_crear.TabIndex = 5;
-            this.cmd_crear.Text = "Crear";
+            this.cmd_crear.Text = "Aceptar ";
             this.cmd_crear.UseVisualStyleBackColor = true;
             this.cmd_crear.Click += new System.EventHandler(this.cmd_crear_Click);
             // 
