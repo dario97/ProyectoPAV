@@ -53,11 +53,11 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label1.Location = new System.Drawing.Point(101, 9);
+            this.label1.Location = new System.Drawing.Point(49, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 48);
+            this.label1.Size = new System.Drawing.Size(461, 48);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Agregar Camarote";
+            this.label1.Text = "AGREGAR CAMAROTE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -180,26 +180,26 @@
             // 
             // cmd_aceptar
             // 
-            this.cmd_aceptar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cmd_aceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cmd_aceptar.Location = new System.Drawing.Point(313, 247);
+            this.cmd_aceptar.BackColor = System.Drawing.SystemColors.Control;
+            this.cmd_aceptar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmd_aceptar.Location = new System.Drawing.Point(313, 266);
             this.cmd_aceptar.Name = "cmd_aceptar";
-            this.cmd_aceptar.Size = new System.Drawing.Size(101, 50);
+            this.cmd_aceptar.Size = new System.Drawing.Size(90, 31);
             this.cmd_aceptar.TabIndex = 6;
             this.cmd_aceptar.Text = "Aceptar";
-            this.cmd_aceptar.UseVisualStyleBackColor = false;
+            this.cmd_aceptar.UseVisualStyleBackColor = true;
             this.cmd_aceptar.Click += new System.EventHandler(this.cmd_aceptar_Click);
             // 
             // cmd_salir
             // 
-            this.cmd_salir.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cmd_salir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cmd_salir.Location = new System.Drawing.Point(420, 247);
+            this.cmd_salir.BackColor = System.Drawing.SystemColors.Control;
+            this.cmd_salir.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmd_salir.Location = new System.Drawing.Point(420, 266);
             this.cmd_salir.Name = "cmd_salir";
-            this.cmd_salir.Size = new System.Drawing.Size(101, 50);
+            this.cmd_salir.Size = new System.Drawing.Size(90, 31);
             this.cmd_salir.TabIndex = 7;
             this.cmd_salir.Text = "Salir";
-            this.cmd_salir.UseVisualStyleBackColor = false;
+            this.cmd_salir.UseVisualStyleBackColor = true;
             this.cmd_salir.Click += new System.EventHandler(this.button2_Click);
             // 
             // Frm_AgregarCamarote

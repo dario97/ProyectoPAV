@@ -191,12 +191,12 @@
             this.label1.AutoSize = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label1.Location = new System.Drawing.Point(99, 14);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label1.Location = new System.Drawing.Point(113, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(371, 48);
+            this.label1.Size = new System.Drawing.Size(288, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Modificar Camarote";
+            this.label1.Text = "MODIFICAR CAMAROTE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Frm_moficar_camarote

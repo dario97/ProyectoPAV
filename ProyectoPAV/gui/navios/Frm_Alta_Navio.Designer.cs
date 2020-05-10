@@ -249,12 +249,12 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(77, 9);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label12.Location = new System.Drawing.Point(41, 9);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(139, 24);
+            this.label12.Size = new System.Drawing.Size(208, 29);
             this.label12.TabIndex = 21;
-            this.label12.Text = "CREAR NAVIO";
+            this.label12.Text = "AGREGAR NAVIO";
             // 
             // Frm_Alta_Navio
             // 

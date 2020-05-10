@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Label label1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_abmc_TiposCamarote));
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,19 +50,21 @@
             this.cmd_salir = new System.Windows.Forms.Button();
             this.cmd_eliminar = new System.Windows.Forms.Button();
             this.chbx = new System.Windows.Forms.CheckBox();
+            label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label1.Location = new System.Drawing.Point(165, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 41);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Camarotes";
+            label1.AutoSize = true;
+            label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            label1.Location = new System.Drawing.Point(97, 9);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(320, 31);
+            label1.TabIndex = 0;
+            label1.Text = "GESTION DE CAMAROTES";
+            label1.Visible = false;
             // 
             // label2
             // 
@@ -257,7 +259,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frm_abmc_TiposCamarote";
             this.Text = "Camarotes";
@@ -269,8 +271,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
