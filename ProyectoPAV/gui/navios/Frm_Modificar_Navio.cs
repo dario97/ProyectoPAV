@@ -56,7 +56,18 @@ namespace ProyectoPAV.gui
 
         private void Frm_Modificar_Navio_Load(object sender, EventArgs e)
         {
-
+            this.txt_navio.Text = pp_nombre;
+            this.txt_manga.Text = pp_manga.ToString();
+            this.txt_eslora.Text = pp_eslora.ToString();
+            this.txt_desplazamiento.Text = pp_desplazamiento.ToString();
+            this.txt_clasificacion.Text = pp_tipoClasificacion.ToString();
+            this.txt_cant_tripulantes.Text = pp_cantTripulantes.ToString();
+            this.txt_cant_motores.Text = pp_cantMotores.ToString();
+            this.txt_cant_max_pasajeros.Text = pp_cantMaxPasajeros.ToString();
+            this.txt_autonomia.Text = pp_autonomia.ToString();
+            this.txt_altura.Text = pp_altura.ToString();    
+        
         }
+        
     }
 }
