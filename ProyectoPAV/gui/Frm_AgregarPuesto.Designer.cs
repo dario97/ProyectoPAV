@@ -68,7 +68,7 @@
             this.cmd_ConfirmaAgregarPuesto.Name = "cmd_ConfirmaAgregarPuesto";
             this.cmd_ConfirmaAgregarPuesto.Size = new System.Drawing.Size(75, 23);
             this.cmd_ConfirmaAgregarPuesto.TabIndex = 1;
-            this.cmd_ConfirmaAgregarPuesto.Text = "Agregar";
+            this.cmd_ConfirmaAgregarPuesto.Text = "Aceptar";
             this.cmd_ConfirmaAgregarPuesto.UseVisualStyleBackColor = true;
             // 
             // cmd_Salir
@@ -77,7 +77,7 @@
             this.cmd_Salir.Name = "cmd_Salir";
             this.cmd_Salir.Size = new System.Drawing.Size(75, 23);
             this.cmd_Salir.TabIndex = 2;
-            this.cmd_Salir.Text = "Salir";
+            this.cmd_Salir.Text = "Cancelar";
             this.cmd_Salir.UseVisualStyleBackColor = true;
             this.cmd_Salir.Click += new System.EventHandler(this.cmd_Salir_Click);
             // 
