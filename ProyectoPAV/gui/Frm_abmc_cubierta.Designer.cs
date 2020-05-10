@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_abmc_cubierta));
             this.dvg1 = new System.Windows.Forms.DataGridView();
             this.txt_nroCubierta = new System.Windows.Forms.TextBox();
             this.txt_idNavio = new System.Windows.Forms.TextBox();
@@ -124,20 +125,23 @@
             // 
             // cmd_agregar
             // 
+            this.cmd_agregar.BackColor = System.Drawing.SystemColors.Control;
+            this.cmd_agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_agregar.BackgroundImage")));
+            this.cmd_agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_agregar.Location = new System.Drawing.Point(24, 348);
             this.cmd_agregar.Name = "cmd_agregar";
             this.cmd_agregar.Size = new System.Drawing.Size(60, 52);
             this.cmd_agregar.TabIndex = 5;
-            this.cmd_agregar.Text = "button1";
-            this.cmd_agregar.UseVisualStyleBackColor = true;
+            this.cmd_agregar.UseVisualStyleBackColor = false;
             // 
             // cmd_editar
             // 
+            this.cmd_editar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_editar.BackgroundImage")));
+            this.cmd_editar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_editar.Location = new System.Drawing.Point(90, 348);
             this.cmd_editar.Name = "cmd_editar";
             this.cmd_editar.Size = new System.Drawing.Size(60, 52);
             this.cmd_editar.TabIndex = 6;
-            this.cmd_editar.Text = "button2";
             this.cmd_editar.UseVisualStyleBackColor = true;
             // 
             // cmd_consultar
@@ -151,20 +155,22 @@
             // 
             // cmd_eliminar
             // 
+            this.cmd_eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_eliminar.BackgroundImage")));
+            this.cmd_eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_eliminar.Location = new System.Drawing.Point(156, 348);
             this.cmd_eliminar.Name = "cmd_eliminar";
             this.cmd_eliminar.Size = new System.Drawing.Size(60, 52);
             this.cmd_eliminar.TabIndex = 8;
-            this.cmd_eliminar.Text = "button4";
             this.cmd_eliminar.UseVisualStyleBackColor = true;
             // 
             // cmd_salir
             // 
+            this.cmd_salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_salir.BackgroundImage")));
+            this.cmd_salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cmd_salir.Location = new System.Drawing.Point(507, 348);
             this.cmd_salir.Name = "cmd_salir";
             this.cmd_salir.Size = new System.Drawing.Size(60, 52);
             this.cmd_salir.TabIndex = 9;
-            this.cmd_salir.Text = "button5";
             this.cmd_salir.UseVisualStyleBackColor = true;
             // 
             // label3
