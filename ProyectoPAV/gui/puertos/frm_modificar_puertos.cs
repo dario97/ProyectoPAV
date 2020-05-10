@@ -32,7 +32,7 @@ namespace ProyectoPAV.gui
 
         private void frm_modificar_puertos_Load(object sender, EventArgs e)
         {
-
+            this.txt_nombre.Text = pp_nombre;
         }
 
         private void button1_Click(object sender, EventArgs e)
