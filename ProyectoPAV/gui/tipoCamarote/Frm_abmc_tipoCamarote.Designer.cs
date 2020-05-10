@@ -31,17 +31,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bttn_buscar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_tipoCamarote = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chk_todos = new System.Windows.Forms.CheckBox();
             this.Tipo = new System.Windows.Forms.Label();
             this.bttn_crear = new System.Windows.Forms.Button();
-            this.bttn_modificar = new System.Windows.Forms.Button();
             this.bttn_eliminar = new System.Windows.Forms.Button();
             this.bttn_salir = new System.Windows.Forms.Button();
+            this.miCombito1 = new ProyectoPAV.gui.clases.MiCombito();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_tipoCamarote)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,8 +56,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.miCombito1);
             this.groupBox1.Controls.Add(this.bttn_buscar);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dgv_tipoCamarote);
             this.groupBox1.Controls.Add(this.chk_todos);
             this.groupBox1.Controls.Add(this.Tipo);
             this.groupBox1.Location = new System.Drawing.Point(12, 45);
@@ -69,7 +70,7 @@
             // 
             // bttn_buscar
             // 
-            this.bttn_buscar.Location = new System.Drawing.Point(220, 16);
+            this.bttn_buscar.Location = new System.Drawing.Point(220, 12);
             this.bttn_buscar.Name = "bttn_buscar";
             this.bttn_buscar.Size = new System.Drawing.Size(75, 21);
             this.bttn_buscar.TabIndex = 5;
@@ -77,17 +78,17 @@
             this.bttn_buscar.UseVisualStyleBackColor = true;
             this.bttn_buscar.Click += new System.EventHandler(this.bttn_buscar_Click);
             // 
-            // dataGridView1
+            // dgv_tipoCamarote
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_tipoCamarote.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_tipoCamarote.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Nombre});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 67);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(341, 120);
-            this.dataGridView1.TabIndex = 4;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgv_tipoCamarote.Location = new System.Drawing.Point(6, 67);
+            this.dgv_tipoCamarote.Name = "dgv_tipoCamarote";
+            this.dgv_tipoCamarote.Size = new System.Drawing.Size(341, 120);
+            this.dgv_tipoCamarote.TabIndex = 4;
+            this.dgv_tipoCamarote.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ID
             // 
@@ -103,7 +104,7 @@
             // chk_todos
             // 
             this.chk_todos.AutoSize = true;
-            this.chk_todos.Location = new System.Drawing.Point(93, 44);
+            this.chk_todos.Location = new System.Drawing.Point(93, 40);
             this.chk_todos.Name = "chk_todos";
             this.chk_todos.Size = new System.Drawing.Size(88, 17);
             this.chk_todos.TabIndex = 3;
@@ -130,18 +131,9 @@
             this.bttn_crear.UseVisualStyleBackColor = true;
             this.bttn_crear.Click += new System.EventHandler(this.bttn_crear_Click);
             // 
-            // bttn_modificar
-            // 
-            this.bttn_modificar.Location = new System.Drawing.Point(109, 248);
-            this.bttn_modificar.Name = "bttn_modificar";
-            this.bttn_modificar.Size = new System.Drawing.Size(84, 26);
-            this.bttn_modificar.TabIndex = 3;
-            this.bttn_modificar.Text = "Modificar";
-            this.bttn_modificar.UseVisualStyleBackColor = true;
-            // 
             // bttn_eliminar
             // 
-            this.bttn_eliminar.Location = new System.Drawing.Point(199, 248);
+            this.bttn_eliminar.Location = new System.Drawing.Point(108, 248);
             this.bttn_eliminar.Name = "bttn_eliminar";
             this.bttn_eliminar.Size = new System.Drawing.Size(75, 26);
             this.bttn_eliminar.TabIndex = 4;
@@ -157,6 +149,20 @@
             this.bttn_salir.Text = "Salir";
             this.bttn_salir.UseVisualStyleBackColor = true;
             // 
+            // miCombito1
+            // 
+            this.miCombito1.FormattingEnabled = true;
+            this.miCombito1.Location = new System.Drawing.Point(93, 13);
+            this.miCombito1.Name = "miCombito1";
+            this.miCombito1.pp_descriptor_tabla_cargar = null;
+            this.miCombito1.pp_nombre_campo = null;
+            this.miCombito1.pp_nombre_tabla = null;
+            this.miCombito1.pp_nombre_tabla_cargar = null;
+            this.miCombito1.pp_pk_tabla_cargar = null;
+            this.miCombito1.pp_validar = false;
+            this.miCombito1.Size = new System.Drawing.Size(121, 21);
+            this.miCombito1.TabIndex = 7;
+            // 
             // Frm_abmc_tipoCamarote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,7 +170,6 @@
             this.ClientSize = new System.Drawing.Size(376, 312);
             this.Controls.Add(this.bttn_salir);
             this.Controls.Add(this.bttn_eliminar);
-            this.Controls.Add(this.bttn_modificar);
             this.Controls.Add(this.bttn_crear);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -173,7 +178,7 @@
             this.Load += new System.EventHandler(this.Frm_abmc_tipoCamarote_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_tipoCamarote)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,14 +189,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button bttn_buscar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_tipoCamarote;
         private System.Windows.Forms.CheckBox chk_todos;
         private System.Windows.Forms.Label Tipo;
         private System.Windows.Forms.Button bttn_crear;
-        private System.Windows.Forms.Button bttn_modificar;
         private System.Windows.Forms.Button bttn_eliminar;
         private System.Windows.Forms.Button bttn_salir;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private clases.MiCombito miCombito1;
     }
 }

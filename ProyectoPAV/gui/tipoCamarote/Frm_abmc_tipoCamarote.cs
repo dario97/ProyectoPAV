@@ -25,42 +25,54 @@ namespace ProyectoPAV.gui.tipoCamarote
 
         private void Frm_abmc_tipoCamarote_Load(object sender, EventArgs e)
         {
-
+            this.miCombito1.cargar();
         }
 
         private void bttn_crear_Click(object sender, EventArgs e)
         {
             Frm_alta_tipoCamarote frm_Alta_Tipo = new Frm_alta_tipoCamarote();
             frm_Alta_Tipo.ShowDialog();
+        
         }
 
         private void bttn_buscar_Click(object sender, EventArgs e)
         {
-            //TipoCamaroteService tipoCamaroteService = new TipoCamaroteService();
-            //DataTable tabla = new DataTable();
+            TipoCamaroteService tipoCamaroteService = new TipoCamaroteService();
+            DataTable tabla = new DataTable();
 
-            //if (this.txt_ .Text == ""
-            //    && checkBox_todos.Checked == false)
-            //{
-            //    MessageBox.Show("No se cargó ningún dato", "importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            //    txt_navio.Focus();
-            //}
+            if (this.txt_tipo.Text == ""
+                && chk_todos.Checked == false)
+            {
+                MessageBox.Show("No se cargó ningún dato", "importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                txt_tipo.Focus();
+            }
 
-            //if (txt_navio.Text != ""
-            //    && checkBox_todos.Checked == false)
-            //{
-            //    tabla = navio.consultarPorNombre(txt_navio.Text);
-            //    if (tabla.Rows.Count == 0)
-            //    {
-            //        MessageBox.Show("No se encontró ningún navío con ese nombre.");
-            //    }
-            //}
+            if (txt_tipo.Text != ""
+                && chk_todos.Checked == false)
+            {
+                tabla = tipoCamaroteService.consultarPorNombre(txt_tipo.Text);
+                if (tabla.Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encontró ningún navío con ese nombre.");
+                }
+            }
 
-            //if (checkBox_todos.Checked == true)
-            //{
-            //    tabla = navio.consultarTodos();
-            //}
-            //cargar_grilla(tabla);
+            if (chk_todos.Checked == true)
+            {
+                tabla = tipoCamaroteService.consultarTodos();
+            }
+            cargar_grilla(tabla);
+        }
+
+        private void cargar_grilla(DataTable tabla)
+        {
+            for (int i = 0; i < tabla.Rows.Count; i++)
+            {
+                dgv_tipoCamarote.Rows.Add();
+                dgv_tipoCamarote.Rows[i].Cells[0].Value = tabla.Rows[i]["Tipo"].ToString();
+                dgv_tipoCamarote.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre"].ToString();
+                
+            }
         }
     }
 }

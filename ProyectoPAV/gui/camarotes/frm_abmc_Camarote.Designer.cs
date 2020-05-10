@@ -213,6 +213,7 @@
             this.cmd_salir.Size = new System.Drawing.Size(62, 47);
             this.cmd_salir.TabIndex = 7;
             this.cmd_salir.UseVisualStyleBackColor = true;
+            this.cmd_salir.Click += new System.EventHandler(this.cmd_salir_Click);
             // 
             // cmd_eliminar
             // 
