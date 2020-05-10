@@ -38,10 +38,10 @@
             this.chbx1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmd_consulta = new System.Windows.Forms.Button();
             this.dgv4 = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmd_consulta = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv4)).BeginInit();
             this.SuspendLayout();
@@ -138,17 +138,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             // 
-            // cmd_consulta
-            // 
-            this.cmd_consulta.Location = new System.Drawing.Point(354, 38);
-            this.cmd_consulta.Name = "cmd_consulta";
-            this.cmd_consulta.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cmd_consulta.Size = new System.Drawing.Size(75, 23);
-            this.cmd_consulta.TabIndex = 7;
-            this.cmd_consulta.Text = "Consultar";
-            this.cmd_consulta.UseVisualStyleBackColor = true;
-            this.cmd_consulta.Click += new System.EventHandler(this.cmd_consulta_Click);
-            // 
             // dgv4
             // 
             this.dgv4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -169,6 +158,17 @@
             // 
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
+            // 
+            // cmd_consulta
+            // 
+            this.cmd_consulta.Location = new System.Drawing.Point(354, 38);
+            this.cmd_consulta.Name = "cmd_consulta";
+            this.cmd_consulta.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cmd_consulta.Size = new System.Drawing.Size(75, 23);
+            this.cmd_consulta.TabIndex = 7;
+            this.cmd_consulta.Text = "Consultar";
+            this.cmd_consulta.UseVisualStyleBackColor = true;
+            this.cmd_consulta.Click += new System.EventHandler(this.cmd_consulta_Click);
             // 
             // frm_abmc_puertos
             // 

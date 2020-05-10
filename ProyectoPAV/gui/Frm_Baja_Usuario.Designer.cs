@@ -40,7 +40,7 @@
             // cbx_tipodoc
             // 
             this.cbx_tipodoc.FormattingEnabled = true;
-            this.cbx_tipodoc.Location = new System.Drawing.Point(168, 51);
+            this.cbx_tipodoc.Location = new System.Drawing.Point(133, 48);
             this.cbx_tipodoc.Name = "cbx_tipodoc";
             this.cbx_tipodoc.Size = new System.Drawing.Size(121, 21);
             this.cbx_tipodoc.TabIndex = 0;
@@ -48,18 +48,18 @@
             // txt_doc
             // 
             this.txt_doc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_doc.Location = new System.Drawing.Point(168, 79);
+            this.txt_doc.Location = new System.Drawing.Point(133, 84);
             this.txt_doc.Name = "txt_doc";
             this.txt_doc.pp_mensaje_error = null;
             this.txt_doc.pp_nombre_campo = null;
             this.txt_doc.pp_nombre_tabla = null;
             this.txt_doc.pp_validar = false;
-            this.txt_doc.Size = new System.Drawing.Size(100, 23);
+            this.txt_doc.Size = new System.Drawing.Size(121, 23);
             this.txt_doc.TabIndex = 1;
             // 
             // cmd_aceptar
             // 
-            this.cmd_aceptar.Location = new System.Drawing.Point(60, 133);
+            this.cmd_aceptar.Location = new System.Drawing.Point(82, 133);
             this.cmd_aceptar.Name = "cmd_aceptar";
             this.cmd_aceptar.Size = new System.Drawing.Size(75, 23);
             this.cmd_aceptar.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // cmd_cancelar
             // 
-            this.cmd_cancelar.Location = new System.Drawing.Point(168, 133);
+            this.cmd_cancelar.Location = new System.Drawing.Point(179, 133);
             this.cmd_cancelar.Name = "cmd_cancelar";
             this.cmd_cancelar.Size = new System.Drawing.Size(75, 23);
             this.cmd_cancelar.TabIndex = 3;
@@ -78,7 +78,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 51);
+            this.label1.Location = new System.Drawing.Point(22, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 13);
             this.label1.TabIndex = 4;
@@ -87,7 +87,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 88);
+            this.label2.Location = new System.Drawing.Point(22, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 5;
@@ -97,7 +97,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label3.Location = new System.Drawing.Point(73, 19);
+            this.label3.Location = new System.Drawing.Point(38, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 20);
             this.label3.TabIndex = 6;
@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 190);
+            this.ClientSize = new System.Drawing.Size(282, 180);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
