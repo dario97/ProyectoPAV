@@ -43,6 +43,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.cmd_tipoDoc = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dvg1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +56,7 @@
             // 
             this.cmd_agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_agregar.BackgroundImage")));
             this.cmd_agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_agregar.Location = new System.Drawing.Point(12, 393);
+            this.cmd_agregar.Location = new System.Drawing.Point(12, 403);
             this.cmd_agregar.Name = "cmd_agregar";
             this.cmd_agregar.Size = new System.Drawing.Size(54, 45);
             this.cmd_agregar.TabIndex = 2;
@@ -62,7 +67,7 @@
             // 
             this.cmd_editar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_editar.BackgroundImage")));
             this.cmd_editar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_editar.Location = new System.Drawing.Point(72, 393);
+            this.cmd_editar.Location = new System.Drawing.Point(72, 403);
             this.cmd_editar.Name = "cmd_editar";
             this.cmd_editar.Size = new System.Drawing.Size(54, 45);
             this.cmd_editar.TabIndex = 3;
@@ -73,7 +78,7 @@
             // 
             this.cmd_salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_salir.BackgroundImage")));
             this.cmd_salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_salir.Location = new System.Drawing.Point(543, 393);
+            this.cmd_salir.Location = new System.Drawing.Point(517, 403);
             this.cmd_salir.Name = "cmd_salir";
             this.cmd_salir.Size = new System.Drawing.Size(54, 45);
             this.cmd_salir.TabIndex = 5;
@@ -91,20 +96,26 @@
             // dvg1
             // 
             this.dvg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvg1.Location = new System.Drawing.Point(18, 171);
+            this.dvg1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dvg1.Location = new System.Drawing.Point(17, 98);
             this.dvg1.Name = "dvg1";
-            this.dvg1.Size = new System.Drawing.Size(573, 210);
+            this.dvg1.Size = new System.Drawing.Size(542, 210);
             this.dvg1.TabIndex = 1;
             this.dvg1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // chk_seleccion
             // 
             this.chk_seleccion.AutoSize = true;
-            this.chk_seleccion.Location = new System.Drawing.Point(78, 148);
+            this.chk_seleccion.Location = new System.Drawing.Point(155, 75);
             this.chk_seleccion.Name = "chk_seleccion";
-            this.chk_seleccion.Size = new System.Drawing.Size(115, 17);
+            this.chk_seleccion.Size = new System.Drawing.Size(56, 17);
             this.chk_seleccion.TabIndex = 5;
-            this.chk_seleccion.Text = "Seleccionar Todos";
+            this.chk_seleccion.Text = "Todos";
             this.chk_seleccion.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -136,7 +147,7 @@
             // 
             this.cmd_eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_eliminar.BackgroundImage")));
             this.cmd_eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_eliminar.Location = new System.Drawing.Point(132, 393);
+            this.cmd_eliminar.Location = new System.Drawing.Point(132, 403);
             this.cmd_eliminar.Name = "cmd_eliminar";
             this.cmd_eliminar.Size = new System.Drawing.Size(54, 45);
             this.cmd_eliminar.TabIndex = 4;
@@ -146,9 +157,11 @@
             // 
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.cmd_tipoDoc);
+            this.groupBox1.Controls.Add(this.dvg1);
+            this.groupBox1.Controls.Add(this.chk_seleccion);
             this.groupBox1.Location = new System.Drawing.Point(12, 79);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(585, 308);
+            this.groupBox1.Size = new System.Drawing.Size(573, 318);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
@@ -156,7 +169,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(504, 63);
+            this.button1.Location = new System.Drawing.Point(484, 63);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -181,18 +194,41 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "GESTION DE USUARIOS";
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "TipoDoc";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "NroDoc";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Nombre";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Ciudad";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Pais";
+            this.Column5.Name = "Column5";
+            // 
             // frm_abmc_usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 450);
+            this.ClientSize = new System.Drawing.Size(597, 456);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmd_eliminar);
             this.Controls.Add(this.txt_nroDoc);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.chk_seleccion);
-            this.Controls.Add(this.dvg1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.cmd_salir);
             this.Controls.Add(this.cmd_editar);
@@ -202,6 +238,7 @@
             this.Text = "frm_abmc_usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.dvg1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +260,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmd_tipoDoc;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
