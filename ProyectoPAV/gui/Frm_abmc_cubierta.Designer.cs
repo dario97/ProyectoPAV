@@ -38,7 +38,16 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmd_agregar = new System.Windows.Forms.Button();
+            this.cmd_editar = new System.Windows.Forms.Button();
+            this.cmd_consultar = new System.Windows.Forms.Button();
+            this.cmd_eliminar = new System.Windows.Forms.Button();
+            this.cmd_salir = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.chk_todos = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvg1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dvg1
@@ -50,29 +59,29 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dvg1.Location = new System.Drawing.Point(24, 162);
+            this.dvg1.Location = new System.Drawing.Point(24, 153);
             this.dvg1.Name = "dvg1";
-            this.dvg1.Size = new System.Drawing.Size(516, 150);
+            this.dvg1.Size = new System.Drawing.Size(543, 178);
             this.dvg1.TabIndex = 0;
             // 
             // txt_nroCubierta
             // 
-            this.txt_nroCubierta.Location = new System.Drawing.Point(199, 103);
+            this.txt_nroCubierta.Location = new System.Drawing.Point(125, 50);
             this.txt_nroCubierta.Name = "txt_nroCubierta";
-            this.txt_nroCubierta.Size = new System.Drawing.Size(100, 20);
+            this.txt_nroCubierta.Size = new System.Drawing.Size(124, 20);
             this.txt_nroCubierta.TabIndex = 1;
             // 
             // txt_idNavio
             // 
-            this.txt_idNavio.Location = new System.Drawing.Point(199, 77);
+            this.txt_idNavio.Location = new System.Drawing.Point(125, 24);
             this.txt_idNavio.Name = "txt_idNavio";
-            this.txt_idNavio.Size = new System.Drawing.Size(100, 20);
+            this.txt_idNavio.Size = new System.Drawing.Size(124, 20);
             this.txt_idNavio.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(100, 80);
+            this.label1.Location = new System.Drawing.Point(19, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 3;
@@ -82,7 +91,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 106);
+            this.label2.Location = new System.Drawing.Point(19, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 13);
             this.label2.TabIndex = 4;
@@ -113,19 +122,104 @@
             this.Column5.HeaderText = "Legajo encargado";
             this.Column5.Name = "Column5";
             // 
+            // cmd_agregar
+            // 
+            this.cmd_agregar.Location = new System.Drawing.Point(24, 348);
+            this.cmd_agregar.Name = "cmd_agregar";
+            this.cmd_agregar.Size = new System.Drawing.Size(60, 52);
+            this.cmd_agregar.TabIndex = 5;
+            this.cmd_agregar.Text = "button1";
+            this.cmd_agregar.UseVisualStyleBackColor = true;
+            // 
+            // cmd_editar
+            // 
+            this.cmd_editar.Location = new System.Drawing.Point(90, 348);
+            this.cmd_editar.Name = "cmd_editar";
+            this.cmd_editar.Size = new System.Drawing.Size(60, 52);
+            this.cmd_editar.TabIndex = 6;
+            this.cmd_editar.Text = "button2";
+            this.cmd_editar.UseVisualStyleBackColor = true;
+            // 
+            // cmd_consultar
+            // 
+            this.cmd_consultar.Location = new System.Drawing.Point(455, 106);
+            this.cmd_consultar.Name = "cmd_consultar";
+            this.cmd_consultar.Size = new System.Drawing.Size(75, 23);
+            this.cmd_consultar.TabIndex = 7;
+            this.cmd_consultar.Text = "Consultar";
+            this.cmd_consultar.UseVisualStyleBackColor = true;
+            // 
+            // cmd_eliminar
+            // 
+            this.cmd_eliminar.Location = new System.Drawing.Point(156, 348);
+            this.cmd_eliminar.Name = "cmd_eliminar";
+            this.cmd_eliminar.Size = new System.Drawing.Size(60, 52);
+            this.cmd_eliminar.TabIndex = 8;
+            this.cmd_eliminar.Text = "button4";
+            this.cmd_eliminar.UseVisualStyleBackColor = true;
+            // 
+            // cmd_salir
+            // 
+            this.cmd_salir.Location = new System.Drawing.Point(507, 348);
+            this.cmd_salir.Name = "cmd_salir";
+            this.cmd_salir.Size = new System.Drawing.Size(60, 52);
+            this.cmd_salir.TabIndex = 9;
+            this.cmd_salir.Text = "button5";
+            this.cmd_salir.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(146, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(303, 29);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "GESTION DE CUBIERTAS";
+            // 
+            // chk_todos
+            // 
+            this.chk_todos.AutoSize = true;
+            this.chk_todos.Location = new System.Drawing.Point(125, 77);
+            this.chk_todos.Name = "chk_todos";
+            this.chk_todos.Size = new System.Drawing.Size(56, 17);
+            this.chk_todos.TabIndex = 11;
+            this.chk_todos.Text = "Todos";
+            this.chk_todos.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.chk_todos);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txt_idNavio);
+            this.groupBox1.Controls.Add(this.txt_nroCubierta);
+            this.groupBox1.Location = new System.Drawing.Point(12, 53);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(570, 289);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Filtros";
+            // 
             // Frm_abmc_cubierta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 450);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_idNavio);
-            this.Controls.Add(this.txt_nroCubierta);
+            this.ClientSize = new System.Drawing.Size(594, 431);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cmd_salir);
+            this.Controls.Add(this.cmd_eliminar);
+            this.Controls.Add(this.cmd_consultar);
+            this.Controls.Add(this.cmd_editar);
+            this.Controls.Add(this.cmd_agregar);
             this.Controls.Add(this.dvg1);
+            this.Controls.Add(this.groupBox1);
             this.Name = "Frm_abmc_cubierta";
             this.Text = "Frm_abmc_cubierta";
+            this.Load += new System.EventHandler(this.Frm_abmc_cubierta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvg1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,5 +237,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Button cmd_agregar;
+        private System.Windows.Forms.Button cmd_editar;
+        private System.Windows.Forms.Button cmd_consultar;
+        private System.Windows.Forms.Button cmd_eliminar;
+        private System.Windows.Forms.Button cmd_salir;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox chk_todos;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

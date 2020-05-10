@@ -21,5 +21,10 @@ namespace ProyectoPAV.gui
         {
 
         }
+
+        private void Frm_abmc_cubierta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
