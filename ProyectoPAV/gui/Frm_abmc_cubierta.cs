@@ -16,10 +16,5 @@ namespace ProyectoPAV.gui
         {
             InitializeComponent();
         }
-
-        private void Frm_abmc_cubierta_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
