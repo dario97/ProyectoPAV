@@ -43,10 +43,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(133, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 40);
+            this.label1.Size = new System.Drawing.Size(216, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "BIENVENIDO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -54,10 +54,10 @@
             // cmd_gestionPuestos
             // 
             this.cmd_gestionPuestos.BackColor = System.Drawing.Color.Silver;
-            this.cmd_gestionPuestos.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_gestionPuestos.Location = new System.Drawing.Point(34, 93);
+            this.cmd_gestionPuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmd_gestionPuestos.Location = new System.Drawing.Point(252, 190);
             this.cmd_gestionPuestos.Name = "cmd_gestionPuestos";
-            this.cmd_gestionPuestos.Size = new System.Drawing.Size(159, 64);
+            this.cmd_gestionPuestos.Size = new System.Drawing.Size(188, 88);
             this.cmd_gestionPuestos.TabIndex = 0;
             this.cmd_gestionPuestos.Text = "GESTIÓN DE PUESTOS";
             this.cmd_gestionPuestos.UseVisualStyleBackColor = false;
@@ -67,10 +67,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Silver;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(34, 272);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(23, 293);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 92);
+            this.button2.Size = new System.Drawing.Size(188, 88);
             this.button2.TabIndex = 4;
             this.button2.Text = "GESTIÓN DE TIPOS DE NAVIOS";
             this.button2.UseVisualStyleBackColor = false;
@@ -81,10 +81,10 @@
             this.cmd_gestionPuertos.BackColor = System.Drawing.Color.Silver;
             this.cmd_gestionPuertos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.cmd_gestionPuertos.Cursor = System.Windows.Forms.Cursors.Default;
-            this.cmd_gestionPuertos.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmd_gestionPuertos.Location = new System.Drawing.Point(266, 184);
+            this.cmd_gestionPuertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmd_gestionPuertos.Location = new System.Drawing.Point(252, 293);
             this.cmd_gestionPuertos.Name = "cmd_gestionPuertos";
-            this.cmd_gestionPuertos.Size = new System.Drawing.Size(159, 64);
+            this.cmd_gestionPuertos.Size = new System.Drawing.Size(188, 88);
             this.cmd_gestionPuertos.TabIndex = 3;
             this.cmd_gestionPuertos.Text = "GESTIÓN DE PUERTOS";
             this.cmd_gestionPuertos.UseVisualStyleBackColor = false;
@@ -93,10 +93,10 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Silver;
-            this.button4.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(34, 184);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(252, 86);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 64);
+            this.button4.Size = new System.Drawing.Size(188, 88);
             this.button4.TabIndex = 2;
             this.button4.Text = "GESTIÓN DE NAVIOS";
             this.button4.UseVisualStyleBackColor = false;
@@ -105,10 +105,10 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Silver;
-            this.button6.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(266, 93);
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(23, 86);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(159, 64);
+            this.button6.Size = new System.Drawing.Size(188, 88);
             this.button6.TabIndex = 1;
             this.button6.Text = "GESTIÓN DE USUARIOS";
             this.button6.UseVisualStyleBackColor = false;
@@ -117,10 +117,10 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Silver;
-            this.button7.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(266, 272);
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(23, 190);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(159, 92);
+            this.button7.Size = new System.Drawing.Size(188, 88);
             this.button7.TabIndex = 5;
             this.button7.Text = "GESTIÓN DE CAMAROTE";
             this.button7.UseVisualStyleBackColor = false;
@@ -138,10 +138,10 @@
             // bttn_tiposDeCamarote
             // 
             this.bttn_tiposDeCamarote.BackColor = System.Drawing.Color.Silver;
-            this.bttn_tiposDeCamarote.Font = new System.Drawing.Font("Perpetua Titling MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttn_tiposDeCamarote.Location = new System.Drawing.Point(266, 384);
+            this.bttn_tiposDeCamarote.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttn_tiposDeCamarote.Location = new System.Drawing.Point(23, 396);
             this.bttn_tiposDeCamarote.Name = "bttn_tiposDeCamarote";
-            this.bttn_tiposDeCamarote.Size = new System.Drawing.Size(159, 92);
+            this.bttn_tiposDeCamarote.Size = new System.Drawing.Size(188, 88);
             this.bttn_tiposDeCamarote.TabIndex = 9;
             this.bttn_tiposDeCamarote.Text = "GESTIÓN TIPOS DE CAMAROTE";
             this.bttn_tiposDeCamarote.UseVisualStyleBackColor = false;
@@ -152,7 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(463, 541);
+            this.ClientSize = new System.Drawing.Size(463, 496);
             this.Controls.Add(this.bttn_tiposDeCamarote);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button7);

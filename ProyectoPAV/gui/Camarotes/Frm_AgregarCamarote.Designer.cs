@@ -180,26 +180,26 @@
             // 
             // cmd_aceptar
             // 
-            this.cmd_aceptar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cmd_aceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cmd_aceptar.Location = new System.Drawing.Point(313, 247);
+            this.cmd_aceptar.BackColor = System.Drawing.SystemColors.Control;
+            this.cmd_aceptar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmd_aceptar.Location = new System.Drawing.Point(313, 266);
             this.cmd_aceptar.Name = "cmd_aceptar";
-            this.cmd_aceptar.Size = new System.Drawing.Size(101, 50);
+            this.cmd_aceptar.Size = new System.Drawing.Size(90, 31);
             this.cmd_aceptar.TabIndex = 6;
             this.cmd_aceptar.Text = "Aceptar";
-            this.cmd_aceptar.UseVisualStyleBackColor = false;
+            this.cmd_aceptar.UseVisualStyleBackColor = true;
             this.cmd_aceptar.Click += new System.EventHandler(this.cmd_aceptar_Click);
             // 
             // cmd_salir
             // 
-            this.cmd_salir.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cmd_salir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cmd_salir.Location = new System.Drawing.Point(420, 247);
+            this.cmd_salir.BackColor = System.Drawing.SystemColors.Control;
+            this.cmd_salir.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmd_salir.Location = new System.Drawing.Point(420, 266);
             this.cmd_salir.Name = "cmd_salir";
-            this.cmd_salir.Size = new System.Drawing.Size(101, 50);
+            this.cmd_salir.Size = new System.Drawing.Size(90, 31);
             this.cmd_salir.TabIndex = 7;
             this.cmd_salir.Text = "Salir";
-            this.cmd_salir.UseVisualStyleBackColor = false;
+            this.cmd_salir.UseVisualStyleBackColor = true;
             this.cmd_salir.Click += new System.EventHandler(this.button2_Click);
             // 
             // Frm_AgregarCamarote
