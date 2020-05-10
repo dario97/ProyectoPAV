@@ -141,7 +141,7 @@
             this.bttn_tiposDeCamarote.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttn_tiposDeCamarote.Location = new System.Drawing.Point(23, 396);
             this.bttn_tiposDeCamarote.Name = "bttn_tiposDeCamarote";
-            this.bttn_tiposDeCamarote.Size = new System.Drawing.Size(417, 88);
+            this.bttn_tiposDeCamarote.Size = new System.Drawing.Size(188, 88);
             this.bttn_tiposDeCamarote.TabIndex = 9;
             this.bttn_tiposDeCamarote.Text = "GESTIÓN TIPOS DE CAMAROTE";
             this.bttn_tiposDeCamarote.UseVisualStyleBackColor = false;
