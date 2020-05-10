@@ -31,9 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_abmc_Puestos));
             this.label1 = new System.Windows.Forms.Label();
             this.txt_NombrePuesto = new System.Windows.Forms.TextBox();
-            this.dvg_MostrarPuestos = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmd_BuscarNombrePuesto = new System.Windows.Forms.Button();
             this.cmd_AgregarPuesto = new System.Windows.Forms.Button();
             this.cmd_BorrarPuesto = new System.Windows.Forms.Button();
@@ -41,7 +38,12 @@
             this.cmd_Salir = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.dvg_MostrarPuestos = new System.Windows.Forms.DataGridView();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_MostrarPuestos)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -59,27 +61,6 @@
             this.txt_NombrePuesto.Name = "txt_NombrePuesto";
             this.txt_NombrePuesto.Size = new System.Drawing.Size(136, 20);
             this.txt_NombrePuesto.TabIndex = 0;
-            // 
-            // dvg_MostrarPuestos
-            // 
-            this.dvg_MostrarPuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvg_MostrarPuestos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
-            this.dvg_MostrarPuestos.Location = new System.Drawing.Point(33, 123);
-            this.dvg_MostrarPuestos.Name = "dvg_MostrarPuestos";
-            this.dvg_MostrarPuestos.Size = new System.Drawing.Size(240, 150);
-            this.dvg_MostrarPuestos.TabIndex = 2;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Codigo";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
             // 
             // cmd_BuscarNombrePuesto
             // 
@@ -127,7 +108,7 @@
             // 
             this.cmd_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Salir.BackgroundImage")));
             this.cmd_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_Salir.Location = new System.Drawing.Point(298, 201);
+            this.cmd_Salir.Location = new System.Drawing.Point(303, 288);
             this.cmd_Salir.Name = "cmd_Salir";
             this.cmd_Salir.Size = new System.Drawing.Size(81, 60);
             this.cmd_Salir.TabIndex = 6;
@@ -153,6 +134,39 @@
             this.checkBox1.Text = "Todos";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // dvg_MostrarPuestos
+            // 
+            this.dvg_MostrarPuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvg_MostrarPuestos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            this.dvg_MostrarPuestos.Location = new System.Drawing.Point(21, 75);
+            this.dvg_MostrarPuestos.Name = "dvg_MostrarPuestos";
+            this.dvg_MostrarPuestos.Size = new System.Drawing.Size(340, 150);
+            this.dvg_MostrarPuestos.TabIndex = 2;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Codigo";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dvg_MostrarPuestos);
+            this.groupBox1.Location = new System.Drawing.Point(12, 48);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(372, 234);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Filtros";
+            // 
             // Frm_abmc_Puestos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,12 +181,13 @@
             this.Controls.Add(this.cmd_BorrarPuesto);
             this.Controls.Add(this.cmd_AgregarPuesto);
             this.Controls.Add(this.cmd_BuscarNombrePuesto);
-            this.Controls.Add(this.dvg_MostrarPuestos);
             this.Controls.Add(this.txt_NombrePuesto);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.Name = "Frm_abmc_Puestos";
             this.Text = "Puestos";
             ((System.ComponentModel.ISupportInitialize)(this.dvg_MostrarPuestos)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,15 +197,16 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_NombrePuesto;
-        private System.Windows.Forms.DataGridView dvg_MostrarPuestos;
         private System.Windows.Forms.Button cmd_BuscarNombrePuesto;
         private System.Windows.Forms.Button cmd_AgregarPuesto;
         private System.Windows.Forms.Button cmd_BorrarPuesto;
         private System.Windows.Forms.Button cmd_SeleccionarPuesto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Button cmd_Salir;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.DataGridView dvg_MostrarPuestos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
