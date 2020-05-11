@@ -72,7 +72,8 @@ namespace ProyectoPAV.gui
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            Frm_abmc_cubierta frmCubierta = new Frm_abmc_cubierta();
+            frmCubierta.ShowDialog();
         }
     }
 }
