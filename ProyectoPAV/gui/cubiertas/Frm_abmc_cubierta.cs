@@ -52,5 +52,10 @@ namespace ProyectoPAV.gui
         {
             this.Close();
         }
+
+        private void cmd_consultar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

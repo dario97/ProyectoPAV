@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entidades\Camarote.cs" />
+    <Compile Include="entidades\Cubierta.cs" />
     <Compile Include="entidades\TextBox01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -238,11 +239,13 @@
     </Compile>
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
     <Compile Include="negocio\repository\CamaroteDao.cs" />
+    <Compile Include="negocio\repository\CubiertaDao.cs" />
     <Compile Include="negocio\repository\NavioDao.cs" />
     <Compile Include="negocio\repository\PuertoDao.cs" />
     <Compile Include="negocio\repository\TipoCamaroteDao.cs" />
     <Compile Include="negocio\repository\TipoClasificacionNavioDao.cs" />
     <Compile Include="negocio\servicios\CamaroteService.cs" />
+    <Compile Include="negocio\servicios\CubiertaService.cs" />
     <Compile Include="negocio\servicios\NavioService.cs" />
     <Compile Include="negocio\servicios\PuertoService.cs" />
     <Compile Include="negocio\servicios\TipoCamaroteService.cs" />

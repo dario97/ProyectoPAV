@@ -1,4 +1,5 @@
-﻿using ProyectoPAV.negocio.servicios;
+﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,53 +31,75 @@ namespace ProyectoPAV.gui
 
         private void cmd_buscar_Click(object sender, EventArgs e)
         {
-            CamaroteService camarotes = new CamaroteService();
+            CamaroteService camaroteService = new CamaroteService();
             DataTable tabla = new DataTable();
+            List<Camarote> camarotesList = new List<Camarote>();
 
-            //if (txt_codigoNavio.Text == ""
-            //    && txt_nroCamarote.Text == ""
-            //    && txt_nroCubierta.Text == ""
-            //    && chbx.Checked == false)
-            //{
-            //    MessageBox.Show("No se cargó ningún dato", "Mensaje", MessageBoxButtons.OK);
-            //}
-
-            //if(txt_codigoNavio.Text != ""
-            //    && txt_nroCamarote.Text != ""
-            //    && txt_nroCubierta.Text != ""
-            //    && chbx.Checked == false)
-            //{
-            //    tabla = camarotes.consultarCamarote(Convert.ToInt32(txt_codigoNavio.Text),Convert.ToInt32(txt_nroCubierta.Text),Convert.ToInt32(txt_nroCamarote.Text));
-            //    if (tabla.Rows.Count == 0)
-            //    {
-            //        MessageBox.Show("No se encontró ningún camarote con esos datos", " Mensaje", MessageBoxButtons.OK);
-            //    }
-            //}
-
-
-            //if (chbx.Checked == true)
-            //{
-            //    tabla = camarotes.consultarTodos();
-            //}
-
-            //cargar_grilla(tabla);
-
-           
-        }
-
-        private void cargar_grilla(DataTable tabla)
-        {
-            for (int i = 0; i < tabla.Rows.Count; i++)
+            if (cmb_navio.SelectedIndex == -1
+                && txt_nroCamarote.Text == ""
+                && txt_nroCubierta.Text == ""
+                && chbx.Checked == false)
             {
-                dgv3.Rows.Add();
-                dgv3.Rows[i].Cells[0].Value = tabla.Rows[i]["Cod_Camarote"].ToString();
-                dgv3.Rows[i].Cells[1].Value = tabla.Rows[i]["Num_Cubierta"].ToString();
-                dgv3.Rows[i].Cells[2].Value = tabla.Rows[i]["Num_Camarote"].ToString();
-                dgv3.Rows[i].Cells[3].Value = tabla.Rows[i]["Tipo_Camarote"].ToString();
-                dgv3.Rows[i].Cells[4].Value = tabla.Rows[i]["Ubicacion"].ToString();
-                dgv3.Rows[i].Cells[5].Value = tabla.Rows[i]["Cant_Camas"].ToString();
+                MessageBox.Show("No se cargó ningún dato", "Mensaje", MessageBoxButtons.OK);
             }
+
+            if (cmb_navio.SelectedIndex != -1
+                && txt_nroCamarote.Text != ""
+                && txt_nroCubierta.Text != ""
+                && chbx.Checked == false)
+            {
+                Camarote camarote = camaroteService.consultarCamarote(Convert.ToInt32(cmb_navio.SelectedValue), Convert.ToInt32(txt_nroCubierta.Text), Convert.ToInt32(txt_nroCamarote.Text));
+              
+                if (camarote == null)
+                {
+                    MessageBox.Show("No se encontró ningún camarote con esos datos", " Mensaje", MessageBoxButtons.OK);
+                    
+                }
+                else
+                {
+                    camarotesList.Add(camarote);
+                }
+            }
+            if (chbx.Checked == true)
+            {
+                camarotesList = camaroteService.getAll();
+                if(camarotesList.Count == 0)
+                {
+                    MessageBox.Show("No se encontró ningún camarote", " Mensaje", MessageBoxButtons.OK);
+                }
+            }
+
+            cargar_grilla(camarotesList);
+
         }
+        private void cargar_grilla(List<Camarote> camarotesList)
+        {
+            if(camarotesList.Count != 0)
+            {
+                for (int i = 0; i < camarotesList.Count; i++)
+                {
+                    dgv3.Rows.Add();
+                    dgv3.Rows[i].Cells[0].Value = camarotesList[i].Id;
+                    dgv3.Rows[i].Cells[1].Value = camarotesList[i].IdNavio;
+                    dgv3.Rows[i].Cells[2].Value = camarotesList[i].NumCubierta;
+                    dgv3.Rows[i].Cells[3].Value = camarotesList[i].NumCamarote;
+                    dgv3.Rows[i].Cells[4].Value = camarotesList[i].IdTipoCamarote;
+                    dgv3.Rows[i].Cells[5].Value = camarotesList[i].Ubicacion;
+                    dgv3.Rows[i].Cells[6].Value = camarotesList[i].CantCamas;
+
+                }
+
+            }
+            
+        }
+                
+
+
+
+
+
+
+
 
         private void cmd_agregar_Click(object sender, EventArgs e)
         {
@@ -100,8 +123,8 @@ namespace ProyectoPAV.gui
 
         private void frm_abmc_TiposCamarote_Load(object sender, EventArgs e)
         {
-            this.miCombito1.cargar();
-            this.miCombito1.SelectedIndex = -1;
+            this.cmb_navio.cargar();
+            this.cmb_navio.SelectedIndex = -1;
         }
 
         private void cmd_salir_Click(object sender, EventArgs e)

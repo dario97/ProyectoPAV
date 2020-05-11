@@ -80,6 +80,7 @@
             this.cmd_aceptar.TabIndex = 5;
             this.cmd_aceptar.Text = "Aceptar";
             this.cmd_aceptar.UseVisualStyleBackColor = true;
+            this.cmd_aceptar.Click += new System.EventHandler(this.cmd_aceptar_Click);
             // 
             // cmd_cancelar
             // 
@@ -89,6 +90,7 @@
             this.cmd_cancelar.TabIndex = 6;
             this.cmd_cancelar.Text = "Cancelar";
             this.cmd_cancelar.UseVisualStyleBackColor = true;
+            this.cmd_cancelar.Click += new System.EventHandler(this.cmd_cancelar_Click);
             // 
             // label2
             // 

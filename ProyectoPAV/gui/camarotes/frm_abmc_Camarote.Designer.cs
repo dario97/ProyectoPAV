@@ -36,12 +36,6 @@
             this.txt_nroCamarote = new System.Windows.Forms.TextBox();
             this.txt_nroCubierta = new System.Windows.Forms.TextBox();
             this.dgv3 = new System.Windows.Forms.DataGridView();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.cmd_buscar = new System.Windows.Forms.Button();
             this.cmd_agregar = new System.Windows.Forms.Button();
@@ -49,7 +43,14 @@
             this.cmd_salir = new System.Windows.Forms.Button();
             this.cmd_eliminar = new System.Windows.Forms.Button();
             this.chbx = new System.Windows.Forms.CheckBox();
-            this.miCombito1 = new ProyectoPAV.gui.clases.MiCombito();
+            this.cmb_navio = new ProyectoPAV.gui.clases.MiCombito();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codigoNavio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             this.SuspendLayout();
@@ -112,7 +113,8 @@
             // 
             this.dgv3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Codigo,
+            this.ID,
+            this.codigoNavio,
             this.Column1,
             this.Column2,
             this.Column3,
@@ -123,36 +125,6 @@
             this.dgv3.Name = "dgv3";
             this.dgv3.Size = new System.Drawing.Size(474, 133);
             this.dgv3.TabIndex = 5;
-            // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Codigo";
-            this.Codigo.Name = "Codigo";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Num.Cubierta";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Num.Camarote";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Tipo";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Ubicacion";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Cant.Camas";
-            this.Column5.Name = "Column5";
             // 
             // label5
             // 
@@ -232,19 +204,54 @@
             this.chbx.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.chbx.UseVisualStyleBackColor = true;
             // 
-            // miCombito1
+            // cmb_navio
             // 
-            this.miCombito1.FormattingEnabled = true;
-            this.miCombito1.Location = new System.Drawing.Point(148, 102);
-            this.miCombito1.Name = "miCombito1";
-            this.miCombito1.pp_descriptor_tabla_cargar = "Nombre_navio";
-            this.miCombito1.pp_nombre_campo = null;
-            this.miCombito1.pp_nombre_tabla = null;
-            this.miCombito1.pp_nombre_tabla_cargar = "NAVIOS";
-            this.miCombito1.pp_pk_tabla_cargar = "Cod_navio";
-            this.miCombito1.pp_validar = false;
-            this.miCombito1.Size = new System.Drawing.Size(121, 21);
-            this.miCombito1.TabIndex = 10;
+            this.cmb_navio.FormattingEnabled = true;
+            this.cmb_navio.Location = new System.Drawing.Point(148, 102);
+            this.cmb_navio.Name = "cmb_navio";
+            this.cmb_navio.pp_descriptor_tabla_cargar = "Nombre_navio";
+            this.cmb_navio.pp_nombre_campo = null;
+            this.cmb_navio.pp_nombre_tabla = null;
+            this.cmb_navio.pp_nombre_tabla_cargar = "NAVIOS";
+            this.cmb_navio.pp_pk_tabla_cargar = "Cod_navio";
+            this.cmb_navio.pp_validar = false;
+            this.cmb_navio.Size = new System.Drawing.Size(121, 21);
+            this.cmb_navio.TabIndex = 10;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // codigoNavio
+            // 
+            this.codigoNavio.HeaderText = "Código Navío";
+            this.codigoNavio.Name = "codigoNavio";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Num.Cubierta";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Num.Camarote";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Tipo";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Ubicacion";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Cant.Camas";
+            this.Column5.Name = "Column5";
             // 
             // frm_abmc_TiposCamarote
             // 
@@ -252,7 +259,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(542, 437);
-            this.Controls.Add(this.miCombito1);
+            this.Controls.Add(this.cmb_navio);
             this.Controls.Add(this.chbx);
             this.Controls.Add(this.cmd_eliminar);
             this.Controls.Add(this.cmd_salir);
@@ -285,18 +292,19 @@
         private System.Windows.Forms.TextBox txt_nroCubierta;
         private System.Windows.Forms.DataGridView dgv3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Button cmd_buscar;
         private System.Windows.Forms.Button cmd_agregar;
         private System.Windows.Forms.Button cmd_modificar;
         private System.Windows.Forms.Button cmd_salir;
         private System.Windows.Forms.Button cmd_eliminar;
         private System.Windows.Forms.CheckBox chbx;
-        private clases.MiCombito miCombito1;
+        private clases.MiCombito cmb_navio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigoNavio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

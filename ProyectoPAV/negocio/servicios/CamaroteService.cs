@@ -1,5 +1,6 @@
 ﻿using ProyectoPAV.entidades;
 using ProyectoPAV.negocio.repository;
+using System.Collections.Generic;
 using System.Data;
 
 namespace ProyectoPAV.negocio.servicios
@@ -13,9 +14,19 @@ namespace ProyectoPAV.negocio.servicios
         //    //return camaroteDao.consultarCamarote(nombre);
         ////}
 
-        internal DataTable consultarCamarote(int codNavio, int numCubierta, int numCamarote)
+        internal Camarote consultarCamarote(int codNavio, int numCubierta, int numCamarote)
         {
             return camaroteDao.consultarCamarote(codNavio, numCubierta, numCamarote);
+        }
+
+        internal Camarote getById(int id)
+        {
+            return camaroteDao.getById(id);
+        }
+
+        internal List<Camarote> getAll()
+        {
+            return camaroteDao.getAll();
         }
 
         internal DataTable consultarTodos()

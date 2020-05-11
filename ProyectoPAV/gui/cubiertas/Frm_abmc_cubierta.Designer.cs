@@ -156,6 +156,7 @@
             this.cmd_consultar.TabIndex = 7;
             this.cmd_consultar.Text = "Consultar";
             this.cmd_consultar.UseVisualStyleBackColor = true;
+            this.cmd_consultar.Click += new System.EventHandler(this.cmd_consultar_Click);
             // 
             // cmd_eliminar
             // 
