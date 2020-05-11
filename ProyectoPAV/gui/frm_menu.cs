@@ -54,11 +54,6 @@ namespace ProyectoPAV.gui
             abrir6.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-         
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
