@@ -30,5 +30,27 @@ namespace ProyectoPAV.gui
         {
 
         }
+
+        private void cmd_agregar_Click(object sender, EventArgs e)
+        {
+            Frm_Agregar_Cubierta frmAgregar = new Frm_Agregar_Cubierta();
+            frmAgregar.ShowDialog();
+        }
+
+        private void cmd_editar_Click(object sender, EventArgs e)
+        {
+            Frm_Modificar_Cubierta frmModificar = new Frm_Modificar_Cubierta();
+            frmModificar.ShowDialog();
+        }
+
+        private void cmd_eliminar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cmd_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
