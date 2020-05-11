@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_abmc_cubierta));
             this.dvg1 = new System.Windows.Forms.DataGridView();
-            this.txt_nroCubierta = new System.Windows.Forms.TextBox();
-            this.txt_idNavio = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt_nroCubierta = new System.Windows.Forms.TextBox();
+            this.txt_idNavio = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.cmd_agregar = new System.Windows.Forms.Button();
             this.cmd_editar = new System.Windows.Forms.Button();
             this.cmd_consultar = new System.Windows.Forms.Button();
@@ -66,6 +66,31 @@
             this.dvg1.Name = "dvg1";
             this.dvg1.Size = new System.Drawing.Size(543, 178);
             this.dvg1.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Id Navio";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nro Cubierta";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Descipcion";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Descripcion";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Legajo encargado";
+            this.Column5.Name = "Column5";
             // 
             // txt_nroCubierta
             // 
@@ -100,31 +125,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Numero de cubierta";
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id Navio";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nro Cubierta";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Descipcion";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Descripcion";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Legajo encargado";
-            this.Column5.Name = "Column5";
-            // 
             // cmd_agregar
             // 
             this.cmd_agregar.BackColor = System.Drawing.SystemColors.Control;
@@ -135,6 +135,7 @@
             this.cmd_agregar.Size = new System.Drawing.Size(63, 60);
             this.cmd_agregar.TabIndex = 5;
             this.cmd_agregar.UseVisualStyleBackColor = false;
+            this.cmd_agregar.Click += new System.EventHandler(this.cmd_agregar_Click);
             // 
             // cmd_editar
             // 
@@ -145,6 +146,7 @@
             this.cmd_editar.Size = new System.Drawing.Size(63, 60);
             this.cmd_editar.TabIndex = 6;
             this.cmd_editar.UseVisualStyleBackColor = true;
+            this.cmd_editar.Click += new System.EventHandler(this.cmd_editar_Click);
             // 
             // cmd_consultar
             // 
@@ -164,6 +166,7 @@
             this.cmd_eliminar.Size = new System.Drawing.Size(63, 60);
             this.cmd_eliminar.TabIndex = 8;
             this.cmd_eliminar.UseVisualStyleBackColor = true;
+            this.cmd_eliminar.Click += new System.EventHandler(this.cmd_eliminar_Click);
             // 
             // cmd_salir
             // 
@@ -174,6 +177,7 @@
             this.cmd_salir.Size = new System.Drawing.Size(63, 60);
             this.cmd_salir.TabIndex = 9;
             this.cmd_salir.UseVisualStyleBackColor = true;
+            this.cmd_salir.Click += new System.EventHandler(this.cmd_salir_Click);
             // 
             // label3
             // 
