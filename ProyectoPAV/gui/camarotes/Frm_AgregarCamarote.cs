@@ -38,17 +38,21 @@ namespace ProyectoPAV.gui
 
         private void Frm_AgregarCamarote_Load(object sender, EventArgs e)
         {
-
+            this.cmb_tipo.cargar();
+            this.cmb_tipo.SelectedIndex = -1;
+            this.cmb_navio.cargar();
+            this.cmb_navio.SelectedIndex = -1;
         }
 
         private void cmd_aceptar_Click(object sender, EventArgs e)
         {
-            if (_camarote.consultarCamarote(Convert.ToInt32(this.txt_codigo.Text),Convert.ToInt32(this.txt_cubierta.Text),Convert.ToInt32(this.txt_numcam.Text)).Rows.Count == 0)
+            if (_camarote.consultarCamarote(Convert.ToInt32(this.cmb_tipo.SelectedValue.ToString()),Convert.ToInt32(this.txt_cubierta.Text),Convert.ToInt32(this.txt_numcam.Text)) == null)
             {
-                int codNavio = Convert.ToInt32(this.txt_codigo.Text);
+
+                int codNavio = Convert.ToInt32(this.cmb_tipo.SelectedValue.ToString());
                 int numCubierta = Convert.ToInt32(this.txt_cubierta.Text);
                 int numCamarote = Convert.ToInt32(this.txt_numcam.Text);
-                int tipo = Convert.ToInt32(this.txt_tipo.Text);
+                int tipo = Convert.ToInt32(this.cmb_tipo.SelectedValue.ToString());
                 string ubicacion = this.txt_ubicacion.Text;
                 int cantCamas = Convert.ToInt32(this.txt_camas.Text);
 
