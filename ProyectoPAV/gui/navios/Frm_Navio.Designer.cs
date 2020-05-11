@@ -35,11 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox_todos = new System.Windows.Forms.CheckBox();
             this.dgvl = new System.Windows.Forms.DataGridView();
-            this.cmd_Modificar = new System.Windows.Forms.Button();
-            this.cmd_Eliminar = new System.Windows.Forms.Button();
-            this.cmd_Salir = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Altura = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +46,11 @@
             this.Tripulantes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Clasificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Motores = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmd_Modificar = new System.Windows.Forms.Button();
+            this.cmd_Eliminar = new System.Windows.Forms.Button();
+            this.cmd_Salir = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvl)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -128,61 +128,6 @@
             this.dgvl.TabIndex = 1;
             this.dgvl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvl_CellContentClick);
             // 
-            // cmd_Modificar
-            // 
-            this.cmd_Modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Modificar.BackgroundImage")));
-            this.cmd_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_Modificar.Location = new System.Drawing.Point(93, 373);
-            this.cmd_Modificar.Name = "cmd_Modificar";
-            this.cmd_Modificar.Size = new System.Drawing.Size(60, 48);
-            this.cmd_Modificar.TabIndex = 5;
-            this.cmd_Modificar.UseVisualStyleBackColor = true;
-            this.cmd_Modificar.Click += new System.EventHandler(this.cmd_Modificar_Click);
-            // 
-            // cmd_Eliminar
-            // 
-            this.cmd_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Eliminar.BackgroundImage")));
-            this.cmd_Eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_Eliminar.Location = new System.Drawing.Point(159, 373);
-            this.cmd_Eliminar.Name = "cmd_Eliminar";
-            this.cmd_Eliminar.Size = new System.Drawing.Size(60, 48);
-            this.cmd_Eliminar.TabIndex = 6;
-            this.cmd_Eliminar.UseVisualStyleBackColor = true;
-            this.cmd_Eliminar.Click += new System.EventHandler(this.cmd_Eliminar_Click);
-            // 
-            // cmd_Salir
-            // 
-            this.cmd_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Salir.BackgroundImage")));
-            this.cmd_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cmd_Salir.Location = new System.Drawing.Point(714, 374);
-            this.cmd_Salir.Name = "cmd_Salir";
-            this.cmd_Salir.Size = new System.Drawing.Size(66, 47);
-            this.cmd_Salir.TabIndex = 7;
-            this.cmd_Salir.UseVisualStyleBackColor = true;
-            this.cmd_Salir.Click += new System.EventHandler(this.cmd_Salir_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(299, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 24);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "GESTION DE NAVIOS";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox_todos);
-            this.groupBox1.Controls.Add(this.txt_navio);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(22, 73);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(766, 294);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Filtros";
-            // 
             // ID
             // 
             this.ID.HeaderText = "ID";
@@ -237,6 +182,61 @@
             // 
             this.Motores.HeaderText = "Motores";
             this.Motores.Name = "Motores";
+            // 
+            // cmd_Modificar
+            // 
+            this.cmd_Modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Modificar.BackgroundImage")));
+            this.cmd_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_Modificar.Location = new System.Drawing.Point(93, 373);
+            this.cmd_Modificar.Name = "cmd_Modificar";
+            this.cmd_Modificar.Size = new System.Drawing.Size(60, 48);
+            this.cmd_Modificar.TabIndex = 5;
+            this.cmd_Modificar.UseVisualStyleBackColor = true;
+            this.cmd_Modificar.Click += new System.EventHandler(this.cmd_Modificar_Click);
+            // 
+            // cmd_Eliminar
+            // 
+            this.cmd_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Eliminar.BackgroundImage")));
+            this.cmd_Eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_Eliminar.Location = new System.Drawing.Point(159, 373);
+            this.cmd_Eliminar.Name = "cmd_Eliminar";
+            this.cmd_Eliminar.Size = new System.Drawing.Size(60, 48);
+            this.cmd_Eliminar.TabIndex = 6;
+            this.cmd_Eliminar.UseVisualStyleBackColor = true;
+            this.cmd_Eliminar.Click += new System.EventHandler(this.cmd_Eliminar_Click);
+            // 
+            // cmd_Salir
+            // 
+            this.cmd_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmd_Salir.BackgroundImage")));
+            this.cmd_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cmd_Salir.Location = new System.Drawing.Point(714, 374);
+            this.cmd_Salir.Name = "cmd_Salir";
+            this.cmd_Salir.Size = new System.Drawing.Size(66, 47);
+            this.cmd_Salir.TabIndex = 7;
+            this.cmd_Salir.UseVisualStyleBackColor = true;
+            this.cmd_Salir.Click += new System.EventHandler(this.cmd_Salir_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label2.Location = new System.Drawing.Point(273, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(256, 29);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "GESTION DE NAVIOS";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkBox_todos);
+            this.groupBox1.Controls.Add(this.txt_navio);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(22, 73);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(766, 294);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Filtros";
             // 
             // Frm_Navio
             // 

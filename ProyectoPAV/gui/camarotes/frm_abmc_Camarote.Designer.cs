@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Label label1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_abmc_TiposCamarote));
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,19 +50,21 @@
             this.cmd_salir = new System.Windows.Forms.Button();
             this.cmd_eliminar = new System.Windows.Forms.Button();
             this.chbx = new System.Windows.Forms.CheckBox();
+            label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label1.Location = new System.Drawing.Point(165, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 41);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Camarotes";
+            label1.AutoSize = true;
+            label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            label1.Location = new System.Drawing.Point(97, 9);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(320, 31);
+            label1.TabIndex = 0;
+            label1.Text = "GESTION DE CAMAROTES";
+            label1.Visible = false;
             // 
             // label2
             // 
@@ -127,7 +129,7 @@
             this.dgv3.Location = new System.Drawing.Point(32, 239);
             this.dgv3.Name = "dgv3";
             this.dgv3.Size = new System.Drawing.Size(474, 133);
-            this.dgv3.TabIndex = 3;
+            this.dgv3.TabIndex = 5;
             // 
             // Codigo
             // 
@@ -172,14 +174,14 @@
             // 
             // cmd_buscar
             // 
-            this.cmd_buscar.BackColor = System.Drawing.Color.DimGray;
-            this.cmd_buscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cmd_buscar.Location = new System.Drawing.Point(313, 121);
+            this.cmd_buscar.BackColor = System.Drawing.SystemColors.Control;
+            this.cmd_buscar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmd_buscar.Location = new System.Drawing.Point(413, 166);
             this.cmd_buscar.Name = "cmd_buscar";
-            this.cmd_buscar.Size = new System.Drawing.Size(120, 48);
-            this.cmd_buscar.TabIndex = 3;
-            this.cmd_buscar.Text = "Buscar";
-            this.cmd_buscar.UseVisualStyleBackColor = false;
+            this.cmd_buscar.Size = new System.Drawing.Size(81, 26);
+            this.cmd_buscar.TabIndex = 4;
+            this.cmd_buscar.Text = "Consultar";
+            this.cmd_buscar.UseVisualStyleBackColor = true;
             this.cmd_buscar.Click += new System.EventHandler(this.cmd_buscar_Click);
             // 
             // cmd_agregar
@@ -189,7 +191,7 @@
             this.cmd_agregar.Location = new System.Drawing.Point(32, 378);
             this.cmd_agregar.Name = "cmd_agregar";
             this.cmd_agregar.Size = new System.Drawing.Size(58, 47);
-            this.cmd_agregar.TabIndex = 4;
+            this.cmd_agregar.TabIndex = 6;
             this.cmd_agregar.UseVisualStyleBackColor = true;
             this.cmd_agregar.Click += new System.EventHandler(this.cmd_agregar_Click);
             // 
@@ -200,7 +202,7 @@
             this.cmd_modificar.Location = new System.Drawing.Point(114, 378);
             this.cmd_modificar.Name = "cmd_modificar";
             this.cmd_modificar.Size = new System.Drawing.Size(55, 47);
-            this.cmd_modificar.TabIndex = 5;
+            this.cmd_modificar.TabIndex = 7;
             this.cmd_modificar.UseVisualStyleBackColor = true;
             this.cmd_modificar.Click += new System.EventHandler(this.cmd_modificar_Click);
             // 
@@ -211,7 +213,7 @@
             this.cmd_salir.Location = new System.Drawing.Point(444, 378);
             this.cmd_salir.Name = "cmd_salir";
             this.cmd_salir.Size = new System.Drawing.Size(62, 47);
-            this.cmd_salir.TabIndex = 7;
+            this.cmd_salir.TabIndex = 9;
             this.cmd_salir.UseVisualStyleBackColor = true;
             this.cmd_salir.Click += new System.EventHandler(this.cmd_salir_Click);
             // 
@@ -222,7 +224,7 @@
             this.cmd_eliminar.Location = new System.Drawing.Point(187, 378);
             this.cmd_eliminar.Name = "cmd_eliminar";
             this.cmd_eliminar.Size = new System.Drawing.Size(61, 47);
-            this.cmd_eliminar.TabIndex = 6;
+            this.cmd_eliminar.TabIndex = 8;
             this.cmd_eliminar.UseVisualStyleBackColor = true;
             this.cmd_eliminar.Click += new System.EventHandler(this.cmd_eliminar_Click);
             // 
@@ -231,9 +233,9 @@
             this.chbx.AutoSize = true;
             this.chbx.Location = new System.Drawing.Point(148, 207);
             this.chbx.Name = "chbx";
-            this.chbx.Size = new System.Drawing.Size(88, 17);
-            this.chbx.TabIndex = 9;
-            this.chbx.Text = "Buscar todos";
+            this.chbx.Size = new System.Drawing.Size(56, 17);
+            this.chbx.TabIndex = 3;
+            this.chbx.Text = "Todos";
             this.chbx.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.chbx.UseVisualStyleBackColor = true;
             // 
@@ -257,7 +259,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frm_abmc_TiposCamarote";
             this.Text = "Camarotes";
@@ -269,8 +271,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

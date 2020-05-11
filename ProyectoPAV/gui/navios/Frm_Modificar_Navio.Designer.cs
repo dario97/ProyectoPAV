@@ -285,10 +285,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label11.Location = new System.Drawing.Point(98, 9);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label11.Location = new System.Drawing.Point(65, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(158, 20);
+            this.label11.Size = new System.Drawing.Size(224, 29);
             this.label11.TabIndex = 22;
             this.label11.Text = "MODIFICAR NAVIO";
             // 

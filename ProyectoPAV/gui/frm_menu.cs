@@ -56,11 +56,6 @@ namespace ProyectoPAV.gui
             abrir6.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-         
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -70,6 +65,12 @@ namespace ProyectoPAV.gui
         {
             Frm_abmc_tipoCamarote frm_Abmc_TipoCamarote = new Frm_abmc_tipoCamarote();
             frm_Abmc_TipoCamarote.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Frm_abmc_cubierta frmCubierta = new Frm_abmc_cubierta();
+            frmCubierta.ShowDialog();
         }
     }
 }

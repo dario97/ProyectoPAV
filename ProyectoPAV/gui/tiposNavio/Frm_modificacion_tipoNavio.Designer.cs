@@ -38,28 +38,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label1.Location = new System.Drawing.Point(11, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 18);
+            this.label1.Size = new System.Drawing.Size(96, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tipo de navío";
             // 
             // botonConfirmar
             // 
-            this.botonConfirmar.Location = new System.Drawing.Point(37, 101);
+            this.botonConfirmar.Location = new System.Drawing.Point(94, 101);
             this.botonConfirmar.Name = "botonConfirmar";
-            this.botonConfirmar.Size = new System.Drawing.Size(112, 23);
+            this.botonConfirmar.Size = new System.Drawing.Size(82, 23);
             this.botonConfirmar.TabIndex = 2;
-            this.botonConfirmar.Text = "Confirmar";
+            this.botonConfirmar.Text = "Aceptar";
             this.botonConfirmar.UseVisualStyleBackColor = true;
             this.botonConfirmar.Click += new System.EventHandler(this.botonConfirmar_Click);
             // 
             // botonCancelar
             // 
-            this.botonCancelar.Location = new System.Drawing.Point(155, 101);
+            this.botonCancelar.Location = new System.Drawing.Point(182, 101);
             this.botonCancelar.Name = "botonCancelar";
-            this.botonCancelar.Size = new System.Drawing.Size(106, 23);
+            this.botonCancelar.Size = new System.Drawing.Size(89, 23);
             this.botonCancelar.TabIndex = 3;
             this.botonCancelar.Text = "Cancelar";
             this.botonCancelar.UseVisualStyleBackColor = true;

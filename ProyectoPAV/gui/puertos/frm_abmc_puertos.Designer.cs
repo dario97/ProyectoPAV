@@ -39,9 +39,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgv4 = new System.Windows.Forms.DataGridView();
+            this.cmd_consulta = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmd_consulta = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv4)).BeginInit();
             this.SuspendLayout();
@@ -50,9 +50,9 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(402, 323);
+            this.button1.Location = new System.Drawing.Point(314, 317);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 45);
+            this.button1.Size = new System.Drawing.Size(62, 53);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -60,9 +60,9 @@
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(74, 323);
+            this.button2.Location = new System.Drawing.Point(80, 313);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 45);
+            this.button2.Size = new System.Drawing.Size(62, 60);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -71,9 +71,9 @@
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(18, 323);
+            this.button3.Location = new System.Drawing.Point(12, 313);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 45);
+            this.button3.Size = new System.Drawing.Size(62, 61);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -82,9 +82,9 @@
             // 
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Location = new System.Drawing.Point(130, 323);
+            this.button4.Location = new System.Drawing.Point(148, 313);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 45);
+            this.button4.Size = new System.Drawing.Size(62, 57);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -119,10 +119,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(132, 21);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label2.Location = new System.Drawing.Point(52, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 24);
+            this.label2.Size = new System.Drawing.Size(284, 29);
             this.label2.TabIndex = 8;
             this.label2.Text = "GESTION DE PUERTOS";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -133,7 +133,7 @@
             this.groupBox1.Controls.Add(this.cmd_consulta);
             this.groupBox1.Location = new System.Drawing.Point(12, 57);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(441, 260);
+            this.groupBox1.Size = new System.Drawing.Size(364, 245);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
@@ -144,24 +144,14 @@
             this.dgv4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Nombre});
-            this.dgv4.Location = new System.Drawing.Point(94, 67);
+            this.dgv4.Location = new System.Drawing.Point(6, 82);
             this.dgv4.Name = "dgv4";
-            this.dgv4.Size = new System.Drawing.Size(246, 150);
+            this.dgv4.Size = new System.Drawing.Size(352, 150);
             this.dgv4.TabIndex = 8;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
             // 
             // cmd_consulta
             // 
-            this.cmd_consulta.Location = new System.Drawing.Point(354, 38);
+            this.cmd_consulta.Location = new System.Drawing.Point(271, 40);
             this.cmd_consulta.Name = "cmd_consulta";
             this.cmd_consulta.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cmd_consulta.Size = new System.Drawing.Size(75, 23);
@@ -170,11 +160,23 @@
             this.cmd_consulta.UseVisualStyleBackColor = true;
             this.cmd_consulta.Click += new System.EventHandler(this.cmd_consulta_Click);
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.Width = 155;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Width = 155;
+            // 
             // frm_abmc_puertos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 378);
+            this.ClientSize = new System.Drawing.Size(392, 378);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.chbx1);
             this.Controls.Add(this.label1);
