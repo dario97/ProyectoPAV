@@ -24,15 +24,20 @@ namespace ProyectoPAV.negocio.servicios
             return tipoCamaroteDao.getById(id);
         }
 
+        internal List<TipoCamarote> getAll()
+        {
+            return tipoCamaroteDao.getAll();
+        }
+
         internal DataTable consultarPorNombre(string nombre)
         {
             return tipoCamaroteDao.consultar_x_nombre(nombre);
         }
 
-        internal DataTable consultarTodos()
-        {
-            return tipoCamaroteDao.consultarTodos();
-        }
+        //internal DataTable consultarTodos()
+        //{
+        //    return tipoCamaroteDao.consultarTodos();
+        //}
 
         internal void crearTipoCamarote(TipoCamarote tipoCamarote)
         {
@@ -44,10 +49,10 @@ namespace ProyectoPAV.negocio.servicios
         //    return navioDao.update(navio);
         //}
 
-        //internal bool eliminarNavio(int id)
-        //{
-        //    return navioDao.delete(id);
-        //}
+        internal bool eliminar(int id)
+        {
+            return tipoCamaroteDao.delete(id);
+        }
 
     }
 }
