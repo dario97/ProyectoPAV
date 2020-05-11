@@ -139,6 +139,7 @@
             this.bttn_eliminar.TabIndex = 4;
             this.bttn_eliminar.Text = "Eliminar";
             this.bttn_eliminar.UseVisualStyleBackColor = true;
+            this.bttn_eliminar.Click += new System.EventHandler(this.bttn_eliminar_Click);
             // 
             // bttn_salir
             // 
@@ -148,17 +149,18 @@
             this.bttn_salir.TabIndex = 5;
             this.bttn_salir.Text = "Salir";
             this.bttn_salir.UseVisualStyleBackColor = true;
+            this.bttn_salir.Click += new System.EventHandler(this.bttn_salir_Click);
             // 
             // miCombito1
             // 
             this.miCombito1.FormattingEnabled = true;
             this.miCombito1.Location = new System.Drawing.Point(93, 13);
             this.miCombito1.Name = "miCombito1";
-            this.miCombito1.pp_descriptor_tabla_cargar = null;
+            this.miCombito1.pp_descriptor_tabla_cargar = "Nombre";
             this.miCombito1.pp_nombre_campo = null;
-            this.miCombito1.pp_nombre_tabla = null;
-            this.miCombito1.pp_nombre_tabla_cargar = null;
-            this.miCombito1.pp_pk_tabla_cargar = null;
+            this.miCombito1.pp_nombre_tabla = "";
+            this.miCombito1.pp_nombre_tabla_cargar = "TIPO_CAMAROTE";
+            this.miCombito1.pp_pk_tabla_cargar = "Tipo";
             this.miCombito1.pp_validar = false;
             this.miCombito1.Size = new System.Drawing.Size(121, 21);
             this.miCombito1.TabIndex = 7;

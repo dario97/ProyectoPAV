@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoPAV.gui.tipoCamarote;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,6 +52,7 @@ namespace ProyectoPAV.gui
         private void button7_Click(object sender, EventArgs e)
         {
             frm_abmc_TiposCamarote abrir6 = new frm_abmc_TiposCamarote();
+           
             abrir6.ShowDialog();
         }
 
@@ -66,8 +68,8 @@ namespace ProyectoPAV.gui
 
         private void bttn_tiposDeCamarote_Click(object sender, EventArgs e)
         {
-            frm_abmc_TiposCamarote frmTipoCamarote = new frm_abmc_TiposCamarote();
-            frmTipoCamarote.ShowDialog();
+            Frm_abmc_tipoCamarote frm_Abmc_TipoCamarote = new Frm_abmc_tipoCamarote();
+            frm_Abmc_TipoCamarote.ShowDialog();
         }
     }
 }

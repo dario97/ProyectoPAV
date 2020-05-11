@@ -1,4 +1,5 @@
-﻿using ProyectoPAV.negocio.servicios;
+﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,6 +27,7 @@ namespace ProyectoPAV.gui.tipoCamarote
         private void Frm_abmc_tipoCamarote_Load(object sender, EventArgs e)
         {
             this.miCombito1.cargar();
+            this.miCombito1.SelectedIndex = -1;
         }
 
         private void bttn_crear_Click(object sender, EventArgs e)
@@ -38,20 +40,23 @@ namespace ProyectoPAV.gui.tipoCamarote
         private void bttn_buscar_Click(object sender, EventArgs e)
         {
             TipoCamaroteService tipoCamaroteService = new TipoCamaroteService();
-            DataTable tabla = new DataTable();
+            TipoCamarote tipoCamarote;
+            List<TipoCamarote> listaTipos = new List<TipoCamarote>();
 
-            if (this.txt_tipo.Text == ""
+            if (this.miCombito1.SelectedIndex == -1
                 && chk_todos.Checked == false)
             {
                 MessageBox.Show("No se cargó ningún dato", "importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                txt_tipo.Focus();
+                miCombito1.Focus();
             }
 
-            if (txt_tipo.Text != ""
+            if (miCombito1.SelectedIndex != -1
                 && chk_todos.Checked == false)
             {
-                tabla = tipoCamaroteService.consultarPorNombre(txt_tipo.Text);
-                if (tabla.Rows.Count == 0)
+                tipoCamarote = tipoCamaroteService.getById(Convert.ToInt32(this.miCombito1.SelectedValue));
+                listaTipos.Add(tipoCamarote);
+
+                if (tipoCamarote == null)
                 {
                     MessageBox.Show("No se encontró ningún navío con ese nombre.");
                 }
@@ -59,19 +64,39 @@ namespace ProyectoPAV.gui.tipoCamarote
 
             if (chk_todos.Checked == true)
             {
-                tabla = tipoCamaroteService.consultarTodos();
+                listaTipos = tipoCamaroteService.getAll();
             }
-            cargar_grilla(tabla);
+            cargar_grilla(listaTipos);
         }
 
-        private void cargar_grilla(DataTable tabla)
+        private void cargar_grilla(List<TipoCamarote> listTiposCamarote)
         {
-            for (int i = 0; i < tabla.Rows.Count; i++)
+
+            dgv_tipoCamarote.Rows.Clear();
+            for (int i = 0; i < listTiposCamarote.Count; i++)
             {
                 dgv_tipoCamarote.Rows.Add();
-                dgv_tipoCamarote.Rows[i].Cells[0].Value = tabla.Rows[i]["Tipo"].ToString();
-                dgv_tipoCamarote.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre"].ToString();
-                
+                dgv_tipoCamarote.Rows[i].Cells[0].Value = listTiposCamarote[i].IdTipo;
+                dgv_tipoCamarote.Rows[i].Cells[1].Value = listTiposCamarote[i].Nombre;
+
+            }
+        }
+
+        private void bttn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bttn_eliminar_Click(object sender, EventArgs e)
+        {
+            TipoCamaroteService tipoCamaroteService = new TipoCamaroteService();
+            int tipoId = -1;
+            tipoId = Convert.ToInt32(this.dgv_tipoCamarote.CurrentRow.Cells["ID"].Value.ToString());
+
+            if (tipoId != -1)
+            {
+                tipoCamaroteService.eliminar(tipoId);
+
             }
         }
     }
