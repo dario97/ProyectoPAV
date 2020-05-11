@@ -16,7 +16,7 @@ namespace ProyectoPAV.entidades
 
         public Cubierta(int id, int idNavio, int numCubierta, string descripcion, int legajoEncargado)
         {
-            this.id = id;
+            this.Id = id;
             this.idNavio = idNavio;
             this.numCubierta = numCubierta;
             this.descripcion = descripcion;
@@ -35,5 +35,6 @@ namespace ProyectoPAV.entidades
         public int NumCubierta { get => numCubierta; set => numCubierta = value; }
         public string Descripcion { get => descripcion; set => descripcion = value; }
         public int LegajoEncargado { get => legajoEncargado; set => legajoEncargado = value; }
+        public int Id { get => id; set => id = value; }
     }
 }

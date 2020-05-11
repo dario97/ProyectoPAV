@@ -19,7 +19,22 @@ namespace ProyectoPAV.negocio.repository
 
         public Cubierta consultarCubierta(int codNavio, int numCubierta)
         {
-            
+            string sql = "SELECT* FROM CUBIERTAS WHERE Cod_navio= " + codNavio + " AND " + " Num_cubierta= " + numCubierta;
+            DataTable data = accesoBD.ejecutarConsulta(sql);
+            Cubierta cubierta = null;
+
+            if (data.Rows.Count != 0)
+            {
+                int id = Convert.ToInt32(data.Rows[0]["id"].ToString());
+                string descripcion = data.Rows[0]["Descripcion"].ToString();
+                int legajoEncargado = Convert.ToInt32(data.Rows[0]["Leg_encargado"].ToString());
+
+                cubierta = new Cubierta(id, codNavio, numCubierta, descripcion, legajoEncargado);
+
+            }
+
+            return cubierta;
+
         }
         public Cubierta getById(int id)
         {
@@ -87,10 +102,23 @@ namespace ProyectoPAV.negocio.repository
 
         public void create(Cubierta cubierta)
         {
-            string sql = "INSERT INTO CUBIERTAS (Cod_navio, Num_cubierta, Descripcion, Leg_encargado)" +
+            string sql;
+            if(cubierta.LegajoEncargado == 0)
+            {
+                sql = "INSERT INTO CUBIERTAS (Cod_navio, Num_cubierta, Descripcion, Leg_encargado)" +
+                " VALUES (" +
+                "'" + cubierta.IdNavio + "'" + "," + "'" + cubierta.NumCubierta + "'" + "," + "'" + cubierta.Descripcion + "'" + "," +
+                "'" + null + "'" + ")";
+                
+            }
+            else
+            {
+                sql = "INSERT INTO CUBIERTAS (Cod_navio, Num_cubierta, Descripcion, Leg_encargado)" +
                 " VALUES (" +
                 "'" + cubierta.IdNavio + "'" + "," + "'" + cubierta.NumCubierta + "'" + "," + "'" + cubierta.Descripcion + "'" + "," +
                 "'" + cubierta.LegajoEncargado + "'" + ")";
+            }
+            
                  
             accesoBD.ejecutarConsulta(sql);
         }

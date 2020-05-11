@@ -108,14 +108,14 @@ namespace ProyectoPAV.negocio.repository
 
         internal bool create(Camarote camarote)
         {
-            string strSQL = "INSERT INTO CAMAROTES (Cod_navio, Num_cubierta, Num_camarote, Tipo, Ubicacion, Cant_camas)" +
-                "VALUES (" +
+            string strSQL = "INSERT INTO CAMAROTES (Cod_navio, Num_cubierta, Num_camarote, Tipo, Ubicacion, Cant_camas) " +
+                " VALUES (" +
                 "'" + camarote.IdNavio + "'" + "," +
                 "'" + camarote.NumCubierta + "'" + "," +
                 "'" + camarote.NumCamarote + "'" + "," +
                 "'" + camarote.IdTipoCamarote + "'" + "," +
                 "'" + camarote.Ubicacion+ "'" + "," +
-                "'" + camarote.CantCamas + "'" + "," + ")";
+                "'" + camarote.CantCamas + "'" + ")";
 
             accesoBD.ejecutarConsulta(strSQL);
             return true;

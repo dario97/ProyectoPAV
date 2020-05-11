@@ -29,6 +29,11 @@ namespace ProyectoPAV.negocio.servicios
             return cubiertaDao.getAll();
         }
 
+        internal Cubierta consultarCubierta(int idNavio, int numCubierta)
+        {
+            return cubiertaDao.consultarCubierta(idNavio, numCubierta);
+        }
+
         internal DataTable consultarPorNombre(string nombre)
         {
             return cubiertaDao.consultar_x_nombre(nombre);

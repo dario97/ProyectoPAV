@@ -43,7 +43,6 @@
             this.cmd_salir = new System.Windows.Forms.Button();
             this.cmd_eliminar = new System.Windows.Forms.Button();
             this.chbx = new System.Windows.Forms.CheckBox();
-            this.cmb_navio = new ProyectoPAV.gui.clases.MiCombito();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoNavio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +50,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmb_navio = new ProyectoPAV.gui.clases.MiCombito();
             label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             this.SuspendLayout();
@@ -204,20 +204,6 @@
             this.chbx.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.chbx.UseVisualStyleBackColor = true;
             // 
-            // cmb_navio
-            // 
-            this.cmb_navio.FormattingEnabled = true;
-            this.cmb_navio.Location = new System.Drawing.Point(148, 102);
-            this.cmb_navio.Name = "cmb_navio";
-            this.cmb_navio.pp_descriptor_tabla_cargar = "Nombre_navio";
-            this.cmb_navio.pp_nombre_campo = null;
-            this.cmb_navio.pp_nombre_tabla = null;
-            this.cmb_navio.pp_nombre_tabla_cargar = "NAVIOS";
-            this.cmb_navio.pp_pk_tabla_cargar = "Cod_navio";
-            this.cmb_navio.pp_validar = false;
-            this.cmb_navio.Size = new System.Drawing.Size(121, 21);
-            this.cmb_navio.TabIndex = 10;
-            // 
             // ID
             // 
             this.ID.HeaderText = "ID";
@@ -252,6 +238,20 @@
             // 
             this.Column5.HeaderText = "Cant.Camas";
             this.Column5.Name = "Column5";
+            // 
+            // cmb_navio
+            // 
+            this.cmb_navio.FormattingEnabled = true;
+            this.cmb_navio.Location = new System.Drawing.Point(148, 102);
+            this.cmb_navio.Name = "cmb_navio";
+            this.cmb_navio.pp_descriptor_tabla_cargar = "Nombre_navio";
+            this.cmb_navio.pp_nombre_campo = null;
+            this.cmb_navio.pp_nombre_tabla = null;
+            this.cmb_navio.pp_nombre_tabla_cargar = "NAVIOS";
+            this.cmb_navio.pp_pk_tabla_cargar = "Cod_navio";
+            this.cmb_navio.pp_validar = false;
+            this.cmb_navio.Size = new System.Drawing.Size(100, 21);
+            this.cmb_navio.TabIndex = 10;
             // 
             // frm_abmc_TiposCamarote
             // 

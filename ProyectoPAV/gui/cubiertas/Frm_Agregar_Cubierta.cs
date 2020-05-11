@@ -1,4 +1,5 @@
-﻿using ProyectoPAV.negocio.servicios;
+﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,6 +43,29 @@ namespace ProyectoPAV.gui
             else
             {
                 
+
+                int idNavio = Convert.ToInt32(this.miCombito1.SelectedValue);
+                int numCubierta = Convert.ToInt32(this.txt_numCubierta.Text.ToString());
+                string descripcion = this.txt_descripcion.Text.ToString();
+                int legajoEncargado = this.txt_legEncargado.Text.ToString() == "" ? 0 : Convert.ToInt32(this.txt_legEncargado.Text.ToString());
+                
+                
+                
+
+                Cubierta cubiertaConsulta = cubiertaService.consultarCubierta(idNavio, numCubierta);
+
+                if (cubiertaConsulta == null)
+                {
+                    Cubierta cubierta = new Cubierta(idNavio, numCubierta, descripcion, legajoEncargado);
+                    cubiertaService.crearCubierta(cubierta);
+                    MessageBox.Show("Se creó con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    MessageBox.Show("Ya existe una Cubierta con esos datos", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+
 
             }
         

@@ -31,13 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_abmc_cubierta));
             this.dvg1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idNavio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numCubierta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.legajoEncargado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_nroCubierta = new System.Windows.Forms.TextBox();
-            this.txt_idNavio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cmd_agregar = new System.Windows.Forms.Button();
@@ -49,6 +48,7 @@
             this.chk_todos = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tooltip = new System.Windows.Forms.ToolTip(this.components);
+            this.miCombito1 = new ProyectoPAV.gui.clases.MiCombito();
             ((System.ComponentModel.ISupportInitialize)(this.dvg1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -57,40 +57,40 @@
             // 
             this.dvg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
+            this.ID,
+            this.idNavio,
+            this.numCubierta,
+            this.descripcion,
+            this.legajoEncargado});
             this.dvg1.Location = new System.Drawing.Point(24, 153);
             this.dvg1.Name = "dvg1";
             this.dvg1.Size = new System.Drawing.Size(543, 178);
             this.dvg1.TabIndex = 0;
             // 
-            // Column1
+            // ID
             // 
-            this.Column1.HeaderText = "Id Navio";
-            this.Column1.Name = "Column1";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
             // 
-            // Column2
+            // idNavio
             // 
-            this.Column2.HeaderText = "Nro Cubierta";
-            this.Column2.Name = "Column2";
+            this.idNavio.HeaderText = "Id Navio";
+            this.idNavio.Name = "idNavio";
             // 
-            // Column3
+            // numCubierta
             // 
-            this.Column3.HeaderText = "Descipcion";
-            this.Column3.Name = "Column3";
+            this.numCubierta.HeaderText = "Nro Cubierta";
+            this.numCubierta.Name = "numCubierta";
             // 
-            // Column4
+            // descripcion
             // 
-            this.Column4.HeaderText = "Descripcion";
-            this.Column4.Name = "Column4";
+            this.descripcion.HeaderText = "Descipcion";
+            this.descripcion.Name = "descripcion";
             // 
-            // Column5
+            // legajoEncargado
             // 
-            this.Column5.HeaderText = "Legajo encargado";
-            this.Column5.Name = "Column5";
+            this.legajoEncargado.HeaderText = "Legajo encargado";
+            this.legajoEncargado.Name = "legajoEncargado";
             // 
             // txt_nroCubierta
             // 
@@ -98,13 +98,6 @@
             this.txt_nroCubierta.Name = "txt_nroCubierta";
             this.txt_nroCubierta.Size = new System.Drawing.Size(124, 20);
             this.txt_nroCubierta.TabIndex = 1;
-            // 
-            // txt_idNavio
-            // 
-            this.txt_idNavio.Location = new System.Drawing.Point(125, 24);
-            this.txt_idNavio.Name = "txt_idNavio";
-            this.txt_idNavio.Size = new System.Drawing.Size(124, 20);
-            this.txt_idNavio.TabIndex = 2;
             // 
             // label1
             // 
@@ -195,17 +188,17 @@
             this.chk_todos.AutoSize = true;
             this.chk_todos.Location = new System.Drawing.Point(125, 77);
             this.chk_todos.Name = "chk_todos";
-            this.chk_todos.Size = new System.Drawing.Size(56, 17);
+            this.chk_todos.Size = new System.Drawing.Size(88, 17);
             this.chk_todos.TabIndex = 11;
-            this.chk_todos.Text = "Todos";
+            this.chk_todos.Text = "Buscar todos";
             this.chk_todos.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.miCombito1);
             this.groupBox1.Controls.Add(this.chk_todos);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txt_idNavio);
             this.groupBox1.Controls.Add(this.txt_nroCubierta);
             this.groupBox1.Location = new System.Drawing.Point(12, 53);
             this.groupBox1.Name = "groupBox1";
@@ -213,6 +206,20 @@
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
+            // 
+            // miCombito1
+            // 
+            this.miCombito1.FormattingEnabled = true;
+            this.miCombito1.Location = new System.Drawing.Point(125, 24);
+            this.miCombito1.Name = "miCombito1";
+            this.miCombito1.pp_descriptor_tabla_cargar = "Nombre_navio";
+            this.miCombito1.pp_nombre_campo = null;
+            this.miCombito1.pp_nombre_tabla = null;
+            this.miCombito1.pp_nombre_tabla_cargar = "NAVIOS";
+            this.miCombito1.pp_pk_tabla_cargar = "Cod_navio";
+            this.miCombito1.pp_validar = false;
+            this.miCombito1.Size = new System.Drawing.Size(124, 21);
+            this.miCombito1.TabIndex = 13;
             // 
             // Frm_abmc_cubierta
             // 
@@ -242,14 +249,8 @@
 
         private System.Windows.Forms.DataGridView dvg1;
         private System.Windows.Forms.TextBox txt_nroCubierta;
-        private System.Windows.Forms.TextBox txt_idNavio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Button cmd_agregar;
         private System.Windows.Forms.Button cmd_editar;
         private System.Windows.Forms.Button cmd_consultar;
@@ -259,5 +260,11 @@
         private System.Windows.Forms.CheckBox chk_todos;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ToolTip tooltip;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idNavio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numCubierta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn legajoEncargado;
+        private clases.MiCombito miCombito1;
     }
 }

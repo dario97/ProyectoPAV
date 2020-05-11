@@ -35,16 +35,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txt_codigo = new System.Windows.Forms.TextBox();
             this.txt_cubierta = new System.Windows.Forms.TextBox();
             this.txt_numcam = new System.Windows.Forms.TextBox();
-            this.txt_tipo = new System.Windows.Forms.TextBox();
             this.txt_ubicacion = new System.Windows.Forms.TextBox();
             this.txt_camas = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cmd_aceptar = new System.Windows.Forms.Button();
             this.cmd_salir = new System.Windows.Forms.Button();
+            this.cmb_tipo = new ProyectoPAV.gui.clases.MiCombito();
+            this.cmb_navio = new ProyectoPAV.gui.clases.MiCombito();
             this.SuspendLayout();
             // 
             // label1
@@ -116,13 +116,6 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Cantidad de Camas :";
             // 
-            // txt_codigo
-            // 
-            this.txt_codigo.Location = new System.Drawing.Point(143, 127);
-            this.txt_codigo.Name = "txt_codigo";
-            this.txt_codigo.Size = new System.Drawing.Size(100, 20);
-            this.txt_codigo.TabIndex = 0;
-            // 
             // txt_cubierta
             // 
             this.txt_cubierta.Location = new System.Drawing.Point(143, 162);
@@ -136,13 +129,6 @@
             this.txt_numcam.Name = "txt_numcam";
             this.txt_numcam.Size = new System.Drawing.Size(100, 20);
             this.txt_numcam.TabIndex = 2;
-            // 
-            // txt_tipo
-            // 
-            this.txt_tipo.Location = new System.Drawing.Point(410, 127);
-            this.txt_tipo.Name = "txt_tipo";
-            this.txt_tipo.Size = new System.Drawing.Size(100, 20);
-            this.txt_tipo.TabIndex = 3;
             // 
             // txt_ubicacion
             // 
@@ -202,21 +188,49 @@
             this.cmd_salir.UseVisualStyleBackColor = true;
             this.cmd_salir.Click += new System.EventHandler(this.button2_Click);
             // 
+            // cmb_tipo
+            // 
+            this.cmb_tipo.FormattingEnabled = true;
+            this.cmb_tipo.Location = new System.Drawing.Point(410, 130);
+            this.cmb_tipo.Name = "cmb_tipo";
+            this.cmb_tipo.pp_descriptor_tabla_cargar = "Nombre";
+            this.cmb_tipo.pp_nombre_campo = null;
+            this.cmb_tipo.pp_nombre_tabla = null;
+            this.cmb_tipo.pp_nombre_tabla_cargar = "TIPO_CAMAROTE";
+            this.cmb_tipo.pp_pk_tabla_cargar = "Tipo";
+            this.cmb_tipo.pp_validar = false;
+            this.cmb_tipo.Size = new System.Drawing.Size(100, 21);
+            this.cmb_tipo.TabIndex = 15;
+            // 
+            // cmb_navio
+            // 
+            this.cmb_navio.FormattingEnabled = true;
+            this.cmb_navio.Location = new System.Drawing.Point(143, 127);
+            this.cmb_navio.Name = "cmb_navio";
+            this.cmb_navio.pp_descriptor_tabla_cargar = "Nombre_navio";
+            this.cmb_navio.pp_nombre_campo = null;
+            this.cmb_navio.pp_nombre_tabla = null;
+            this.cmb_navio.pp_nombre_tabla_cargar = "NAVIOS";
+            this.cmb_navio.pp_pk_tabla_cargar = "Cod_navio";
+            this.cmb_navio.pp_validar = false;
+            this.cmb_navio.Size = new System.Drawing.Size(100, 21);
+            this.cmb_navio.TabIndex = 16;
+            // 
             // Frm_AgregarCamarote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 323);
+            this.Controls.Add(this.cmb_navio);
+            this.Controls.Add(this.cmb_tipo);
             this.Controls.Add(this.cmd_salir);
             this.Controls.Add(this.cmd_aceptar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_camas);
             this.Controls.Add(this.txt_ubicacion);
-            this.Controls.Add(this.txt_tipo);
             this.Controls.Add(this.txt_numcam);
             this.Controls.Add(this.txt_cubierta);
-            this.Controls.Add(this.txt_codigo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -241,15 +255,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txt_codigo;
         private System.Windows.Forms.TextBox txt_cubierta;
         private System.Windows.Forms.TextBox txt_numcam;
-        private System.Windows.Forms.TextBox txt_tipo;
         private System.Windows.Forms.TextBox txt_ubicacion;
         private System.Windows.Forms.TextBox txt_camas;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button cmd_aceptar;
         private System.Windows.Forms.Button cmd_salir;
+        private clases.MiCombito cmb_tipo;
+        private clases.MiCombito cmb_navio;
     }
 }

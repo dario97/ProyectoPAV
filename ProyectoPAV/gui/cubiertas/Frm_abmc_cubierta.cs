@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,7 +30,8 @@ namespace ProyectoPAV.gui
 
         private void Frm_abmc_cubierta_Load(object sender, EventArgs e)
         {
-
+            this.miCombito1.cargar();
+            this.miCombito1.SelectedIndex = -1;
         }
 
         private void cmd_agregar_Click(object sender, EventArgs e)
@@ -55,7 +58,65 @@ namespace ProyectoPAV.gui
 
         private void cmd_consultar_Click(object sender, EventArgs e)
         {
+            CubiertaService cubiertaService = new CubiertaService();
+            List<Cubierta> cubiertasList = new List<Cubierta>();
+
+            if (chk_todos.Checked)
+            {
+               cubiertasList = cubiertaService.getAll();
+               cargar_grilla(cubiertasList);
+            }
+            else
+            {
+                
+
+                if (Convert.ToInt32(this.miCombito1.SelectedIndex.ToString()) != -1 && this.txt_nroCubierta.Text.ToString() != "")
+                {
+                    int codNavio = Convert.ToInt32(this.miCombito1.SelectedValue.ToString());
+                    int numCubierta = Convert.ToInt32(this.txt_nroCubierta.Text.ToString());
+
+                    Cubierta cubierta = cubiertaService.consultarCubierta(codNavio, numCubierta);
+
+                    if(cubierta != null)
+                    {
+                        cubiertasList.Add(cubierta);
+                        cargar_grilla(cubiertasList);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontró ninguna cubierta con esos datos", " Mensaje", MessageBoxButtons.OK);
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Faltan datos", " Mensaje", MessageBoxButtons.OK);
+                }
+            }
+        }
+
+        private void cargar_grilla(List<Cubierta> cubiertasList)
+        {
+            this.dvg1.Rows.Clear();
+            if (cubiertasList.Count != 0)
+            {
+                for (int i = 0; i < cubiertasList.Count; i++)
+                {
+                    
+                    this.dvg1.Rows.Add();
+                    dvg1.Rows[i].Cells[0].Value = cubiertasList[i].Id;
+                    dvg1.Rows[i].Cells[1].Value = cubiertasList[i].IdNavio;
+                    dvg1.Rows[i].Cells[2].Value = cubiertasList[i].NumCubierta;
+                    dvg1.Rows[i].Cells[3].Value = cubiertasList[i].Descripcion;
+                    dvg1.Rows[i].Cells[4].Value = cubiertasList[i].LegajoEncargado;
+                   
+
+                }
+
+            }
 
         }
+
+     
     }
 }
