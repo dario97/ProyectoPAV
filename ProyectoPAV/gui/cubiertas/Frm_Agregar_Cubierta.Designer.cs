@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_codNavio = new System.Windows.Forms.TextBox();
             this.txt_numCubierta = new System.Windows.Forms.TextBox();
             this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.txt_legEncargado = new System.Windows.Forms.TextBox();
@@ -39,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.miCombito1 = new ProyectoPAV.gui.clases.MiCombito();
             this.SuspendLayout();
             // 
             // label1
@@ -50,13 +50,6 @@
             this.label1.Size = new System.Drawing.Size(255, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "AGREGAR CUBIERTA";
-            // 
-            // txt_codNavio
-            // 
-            this.txt_codNavio.Location = new System.Drawing.Point(140, 66);
-            this.txt_codNavio.Name = "txt_codNavio";
-            this.txt_codNavio.Size = new System.Drawing.Size(144, 20);
-            this.txt_codNavio.TabIndex = 1;
             // 
             // txt_numCubierta
             // 
@@ -137,11 +130,26 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Encargado";
             // 
+            // miCombito1
+            // 
+            this.miCombito1.FormattingEnabled = true;
+            this.miCombito1.Location = new System.Drawing.Point(140, 66);
+            this.miCombito1.Name = "miCombito1";
+            this.miCombito1.pp_descriptor_tabla_cargar = "Nombre_navio";
+            this.miCombito1.pp_nombre_campo = null;
+            this.miCombito1.pp_nombre_tabla = null;
+            this.miCombito1.pp_nombre_tabla_cargar = "NAVIOS";
+            this.miCombito1.pp_pk_tabla_cargar = "Cod_navio";
+            this.miCombito1.pp_validar = false;
+            this.miCombito1.Size = new System.Drawing.Size(144, 21);
+            this.miCombito1.TabIndex = 11;
+            // 
             // Frm_Agregar_Cubierta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(363, 261);
+            this.Controls.Add(this.miCombito1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -151,10 +159,10 @@
             this.Controls.Add(this.txt_legEncargado);
             this.Controls.Add(this.txt_descripcion);
             this.Controls.Add(this.txt_numCubierta);
-            this.Controls.Add(this.txt_codNavio);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Agregar_Cubierta";
             this.Text = "Frm_Agregar_Cubierta";
+            this.Load += new System.EventHandler(this.Frm_Agregar_Cubierta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,7 +171,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_codNavio;
         private System.Windows.Forms.TextBox txt_numCubierta;
         private System.Windows.Forms.TextBox txt_descripcion;
         private System.Windows.Forms.TextBox txt_legEncargado;
@@ -173,5 +180,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private clases.MiCombito miCombito1;
     }
 }

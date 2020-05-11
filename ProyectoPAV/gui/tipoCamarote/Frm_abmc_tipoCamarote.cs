@@ -71,7 +71,7 @@ namespace ProyectoPAV.gui.tipoCamarote
 
         private void cargar_grilla(List<TipoCamarote> listTiposCamarote)
         {
-
+        
             dgv_tipoCamarote.Rows.Clear();
             for (int i = 0; i < listTiposCamarote.Count; i++)
             {
@@ -96,6 +96,7 @@ namespace ProyectoPAV.gui.tipoCamarote
             if (tipoId != -1)
             {
                 tipoCamaroteService.eliminar(tipoId);
+                MessageBox.Show("Se eliminó con éxito");
 
             }
         }

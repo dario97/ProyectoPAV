@@ -64,16 +64,16 @@
     <Compile Include="gui\clases\MiCombito.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="gui\Frm_abmc_cubierta.cs">
+    <Compile Include="gui\cubiertas\Frm_abmc_cubierta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_abmc_cubierta.Designer.cs">
+    <Compile Include="gui\cubiertas\Frm_abmc_cubierta.Designer.cs">
       <DependentUpon>Frm_abmc_cubierta.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_Agregar_Cubierta.cs">
+    <Compile Include="gui\cubiertas\Frm_Agregar_Cubierta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_Agregar_Cubierta.Designer.cs">
+    <Compile Include="gui\cubiertas\Frm_Agregar_Cubierta.Designer.cs">
       <DependentUpon>Frm_Agregar_Cubierta.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\frm_ModificarPuesto.cs">
@@ -100,10 +100,10 @@
     <Compile Include="gui\Frm_AgregarPuesto.Designer.cs">
       <DependentUpon>Frm_AgregarPuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_Modificar_Cubierta.cs">
+    <Compile Include="gui\cubiertas\Frm_Modificar_Cubierta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_Modificar_Cubierta.Designer.cs">
+    <Compile Include="gui\cubiertas\Frm_Modificar_Cubierta.Designer.cs">
       <DependentUpon>Frm_Modificar_Cubierta.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\puertos\frm_alta_puertos.cs">
@@ -258,16 +258,16 @@
     <EmbeddedResource Include="gui\camarotes\Frm_moficar_camarote.resx">
       <DependentUpon>Frm_moficar_camarote.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_abmc_cubierta.resx">
+    <EmbeddedResource Include="gui\cubiertas\Frm_abmc_cubierta.resx">
       <DependentUpon>Frm_abmc_cubierta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_AgregarPuesto.resx">
       <DependentUpon>Frm_AgregarPuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_Agregar_Cubierta.resx">
+    <EmbeddedResource Include="gui\cubiertas\Frm_Agregar_Cubierta.resx">
       <DependentUpon>Frm_Agregar_Cubierta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_Modificar_Cubierta.resx">
+    <EmbeddedResource Include="gui\cubiertas\Frm_Modificar_Cubierta.resx">
       <DependentUpon>Frm_Modificar_Cubierta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\puertos\frm_alta_puertos.resx">

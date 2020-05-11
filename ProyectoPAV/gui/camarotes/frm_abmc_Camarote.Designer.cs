@@ -33,7 +33,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_codigoNavio = new System.Windows.Forms.TextBox();
             this.txt_nroCamarote = new System.Windows.Forms.TextBox();
             this.txt_nroCubierta = new System.Windows.Forms.TextBox();
             this.dgv3 = new System.Windows.Forms.DataGridView();
@@ -50,6 +49,7 @@
             this.cmd_salir = new System.Windows.Forms.Button();
             this.cmd_eliminar = new System.Windows.Forms.Button();
             this.chbx = new System.Windows.Forms.CheckBox();
+            this.miCombito1 = new ProyectoPAV.gui.clases.MiCombito();
             label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
             this.SuspendLayout();
@@ -69,11 +69,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 102);
+            this.label2.Location = new System.Drawing.Point(35, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Codigo de Navio :";
+            this.label2.Text = "Navío:";
             // 
             // label3
             // 
@@ -82,7 +82,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Numero de Camarote :";
+            this.label3.Text = "Número de Camarote :";
             // 
             // label4
             // 
@@ -91,15 +91,8 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Numero de Cubierta :";
+            this.label4.Text = "Número de Cubierta :";
             this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // txt_codigoNavio
-            // 
-            this.txt_codigoNavio.Location = new System.Drawing.Point(148, 99);
-            this.txt_codigoNavio.Name = "txt_codigoNavio";
-            this.txt_codigoNavio.Size = new System.Drawing.Size(100, 20);
-            this.txt_codigoNavio.TabIndex = 0;
             // 
             // txt_nroCamarote
             // 
@@ -233,11 +226,25 @@
             this.chbx.AutoSize = true;
             this.chbx.Location = new System.Drawing.Point(148, 207);
             this.chbx.Name = "chbx";
-            this.chbx.Size = new System.Drawing.Size(56, 17);
+            this.chbx.Size = new System.Drawing.Size(88, 17);
             this.chbx.TabIndex = 3;
-            this.chbx.Text = "Todos";
+            this.chbx.Text = "Buscar todos";
             this.chbx.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.chbx.UseVisualStyleBackColor = true;
+            // 
+            // miCombito1
+            // 
+            this.miCombito1.FormattingEnabled = true;
+            this.miCombito1.Location = new System.Drawing.Point(148, 102);
+            this.miCombito1.Name = "miCombito1";
+            this.miCombito1.pp_descriptor_tabla_cargar = "Nombre_navio";
+            this.miCombito1.pp_nombre_campo = null;
+            this.miCombito1.pp_nombre_tabla = null;
+            this.miCombito1.pp_nombre_tabla_cargar = "NAVIOS";
+            this.miCombito1.pp_pk_tabla_cargar = "Cod_navio";
+            this.miCombito1.pp_validar = false;
+            this.miCombito1.Size = new System.Drawing.Size(121, 21);
+            this.miCombito1.TabIndex = 10;
             // 
             // frm_abmc_TiposCamarote
             // 
@@ -245,6 +252,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(542, 437);
+            this.Controls.Add(this.miCombito1);
             this.Controls.Add(this.chbx);
             this.Controls.Add(this.cmd_eliminar);
             this.Controls.Add(this.cmd_salir);
@@ -255,7 +263,6 @@
             this.Controls.Add(this.dgv3);
             this.Controls.Add(this.txt_nroCubierta);
             this.Controls.Add(this.txt_nroCamarote);
-            this.Controls.Add(this.txt_codigoNavio);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -274,7 +281,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_codigoNavio;
         private System.Windows.Forms.TextBox txt_nroCamarote;
         private System.Windows.Forms.TextBox txt_nroCubierta;
         private System.Windows.Forms.DataGridView dgv3;
@@ -291,5 +297,6 @@
         private System.Windows.Forms.Button cmd_salir;
         private System.Windows.Forms.Button cmd_eliminar;
         private System.Windows.Forms.CheckBox chbx;
+        private clases.MiCombito miCombito1;
     }
 }

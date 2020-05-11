@@ -16,5 +16,11 @@ namespace ProyectoPAV.gui
         {
             InitializeComponent();
         }
+
+        private void Frm_Agregar_Cubierta_Load(object sender, EventArgs e)
+        {
+            this.miCombito1.cargar();
+            miCombito1.SelectedIndex = -1;
+        }
     }
 }

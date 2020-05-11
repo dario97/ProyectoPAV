@@ -33,33 +33,33 @@ namespace ProyectoPAV.gui
             CamaroteService camarotes = new CamaroteService();
             DataTable tabla = new DataTable();
 
-            if (txt_codigoNavio.Text == ""
-                && txt_nroCamarote.Text == ""
-                && txt_nroCubierta.Text == ""
-                && chbx.Checked == false)
-            {
-                MessageBox.Show("No se cargó ningún dato", "Mensaje", MessageBoxButtons.OK);
-            }
+            //if (txt_codigoNavio.Text == ""
+            //    && txt_nroCamarote.Text == ""
+            //    && txt_nroCubierta.Text == ""
+            //    && chbx.Checked == false)
+            //{
+            //    MessageBox.Show("No se cargó ningún dato", "Mensaje", MessageBoxButtons.OK);
+            //}
 
-            if(txt_codigoNavio.Text != ""
-                && txt_nroCamarote.Text != ""
-                && txt_nroCubierta.Text != ""
-                && chbx.Checked == false)
-            {
-                tabla = camarotes.consultarCamarote(Convert.ToInt32(txt_codigoNavio.Text),Convert.ToInt32(txt_nroCubierta.Text),Convert.ToInt32(txt_nroCamarote.Text));
-                if (tabla.Rows.Count == 0)
-                {
-                    MessageBox.Show("No se encontró ningún camarote con esos datos", " Mensaje", MessageBoxButtons.OK);
-                }
-            }
+            //if(txt_codigoNavio.Text != ""
+            //    && txt_nroCamarote.Text != ""
+            //    && txt_nroCubierta.Text != ""
+            //    && chbx.Checked == false)
+            //{
+            //    tabla = camarotes.consultarCamarote(Convert.ToInt32(txt_codigoNavio.Text),Convert.ToInt32(txt_nroCubierta.Text),Convert.ToInt32(txt_nroCamarote.Text));
+            //    if (tabla.Rows.Count == 0)
+            //    {
+            //        MessageBox.Show("No se encontró ningún camarote con esos datos", " Mensaje", MessageBoxButtons.OK);
+            //    }
+            //}
 
 
-            if (chbx.Checked == true)
-            {
-                tabla = camarotes.consultarTodos();
-            }
+            //if (chbx.Checked == true)
+            //{
+            //    tabla = camarotes.consultarTodos();
+            //}
 
-            cargar_grilla(tabla);
+            //cargar_grilla(tabla);
 
            
         }
@@ -100,7 +100,8 @@ namespace ProyectoPAV.gui
 
         private void frm_abmc_TiposCamarote_Load(object sender, EventArgs e)
         {
-
+            this.miCombito1.cargar();
+            this.miCombito1.SelectedIndex = -1;
         }
 
         private void cmd_salir_Click(object sender, EventArgs e)
