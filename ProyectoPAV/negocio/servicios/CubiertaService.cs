@@ -54,9 +54,9 @@ namespace ProyectoPAV.negocio.servicios
         //    return navioDao.update(navio);
         //}
 
-        internal bool eliminar(int id)
+        internal bool deleteById(int id)
         {
-            return cubiertaDao.delete(id);
+            return cubiertaDao.deleteById(id);
         }
     }
 }

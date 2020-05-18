@@ -48,7 +48,16 @@ namespace ProyectoPAV.gui
 
         private void cmd_eliminar_Click(object sender, EventArgs e)
         {
-            
+            CubiertaService cubiertaService = new CubiertaService();
+            int id = -1;
+            id = Convert.ToInt32(this.dvg1.CurrentRow.Cells["ID"].Value.ToString());
+
+            if (id != -1)
+            {
+                cubiertaService.deleteById(id);
+                MessageBox.Show("Se eliminó con éxito");
+
+            }
         }
 
         private void cmd_salir_Click(object sender, EventArgs e)

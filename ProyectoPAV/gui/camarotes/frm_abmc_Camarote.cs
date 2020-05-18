@@ -74,11 +74,13 @@ namespace ProyectoPAV.gui
         }
         private void cargar_grilla(List<Camarote> camarotesList)
         {
+            this.dgv3.Rows.Clear();
             if(camarotesList.Count != 0)
             {
                 for (int i = 0; i < camarotesList.Count; i++)
                 {
                     dgv3.Rows.Add();
+                   
                     dgv3.Rows[i].Cells[0].Value = camarotesList[i].Id;
                     dgv3.Rows[i].Cells[1].Value = camarotesList[i].IdNavio;
                     dgv3.Rows[i].Cells[2].Value = camarotesList[i].NumCubierta;
@@ -92,14 +94,6 @@ namespace ProyectoPAV.gui
             }
             
         }
-                
-
-
-
-
-
-
-
 
         private void cmd_agregar_Click(object sender, EventArgs e)
         {
@@ -111,8 +105,16 @@ namespace ProyectoPAV.gui
         
         private void cmd_eliminar_Click(object sender, EventArgs e)
         {
-            //frm_eliminar_camarote ventana2 = new frm_eliminar_camarote();
-            //ventana2.ShowDialog();
+            CamaroteService camaroteService = new CamaroteService();
+            int id = -1;
+            id = Convert.ToInt32(this.dgv3.CurrentRow.Cells["ID"].Value.ToString());
+
+            if (id != -1)
+            {
+                camaroteService.deleteById(id);
+                MessageBox.Show("Se eliminó con éxito");
+
+            }
         }
 
         private void cmd_modificar_Click(object sender, EventArgs e)
@@ -133,3 +135,11 @@ namespace ProyectoPAV.gui
         }
     }
 }
+                
+
+
+
+
+
+
+

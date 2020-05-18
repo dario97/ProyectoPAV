@@ -93,6 +93,15 @@ namespace ProyectoPAV.negocio.repository
             return true;
         }
 
+        internal bool deleteById(int id)
+        {
+            string strSQL = "DELETE FROM CUBIERTAS " +
+                                " WHERE id = " + id;
+
+            accesoBD.ejecutarConsulta(strSQL);
+            return true;
+        }
+
 
         public DataTable consultar_x_nombre(string nombre)
         {

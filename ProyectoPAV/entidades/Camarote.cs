@@ -16,7 +16,7 @@ namespace ProyectoPAV.entidades
         public Camarote(int id ,int idNavio, int numCubierta, int numCamarote, int tipoCamarote, string ubicacion, int cantCamas)
         {
             this.Id = id;
-            this.idNavio = id;
+            this.idNavio = idNavio;
             this.numCubierta = numCubierta;
             this.numCamarote = numCamarote;
             this.idTipoCamarote = tipoCamarote;

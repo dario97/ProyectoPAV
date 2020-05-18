@@ -53,6 +53,7 @@ namespace ProyectoPAV.gui
             if (puertoid != -1)
             {
                 puerto3.eliminarPuerto(puertoid);
+                MessageBox.Show("La eliminación se realizó con éxito", "mensaje", MessageBoxButtons.OK);
             }
             
         }

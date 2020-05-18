@@ -44,9 +44,9 @@ namespace ProyectoPAV.negocio.servicios
             return camaroteDao.update(camarote);
         }
 
-        //internal bool eliminarNavio(int id)
-        //{
-        //    //return camaroteDao.delete(id);
-        //}
+        internal bool deleteById(int id)
+        {
+            return camaroteDao.deleteById(id);
+        }
     }
 }
