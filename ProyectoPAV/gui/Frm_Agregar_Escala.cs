@@ -16,5 +16,10 @@ namespace ProyectoPAV.gui
         {
             InitializeComponent();
         }
+
+        private void Frm_Agregar_Escala_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

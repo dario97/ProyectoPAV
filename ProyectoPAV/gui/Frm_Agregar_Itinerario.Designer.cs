@@ -45,21 +45,21 @@
             // 
             // txt_descripcion
             // 
-            this.txt_descripcion.Location = new System.Drawing.Point(125, 61);
+            this.txt_descripcion.Location = new System.Drawing.Point(123, 46);
             this.txt_descripcion.Name = "txt_descripcion";
             this.txt_descripcion.Size = new System.Drawing.Size(100, 20);
             this.txt_descripcion.TabIndex = 0;
             // 
             // txt_categoria
             // 
-            this.txt_categoria.Location = new System.Drawing.Point(125, 88);
+            this.txt_categoria.Location = new System.Drawing.Point(123, 73);
             this.txt_categoria.Name = "txt_categoria";
             this.txt_categoria.Size = new System.Drawing.Size(100, 20);
             this.txt_categoria.TabIndex = 1;
             // 
             // cmd_agregar
             // 
-            this.cmd_agregar.Location = new System.Drawing.Point(125, 125);
+            this.cmd_agregar.Location = new System.Drawing.Point(123, 110);
             this.cmd_agregar.Name = "cmd_agregar";
             this.cmd_agregar.Size = new System.Drawing.Size(75, 23);
             this.cmd_agregar.TabIndex = 3;
@@ -69,16 +69,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 28);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 13);
+            this.label1.Size = new System.Drawing.Size(213, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "AGREGAR ITINERARIO";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 68);
+            this.label2.Location = new System.Drawing.Point(32, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 5;
@@ -87,7 +88,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 95);
+            this.label3.Location = new System.Drawing.Point(32, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 6;
@@ -96,7 +97,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(34, 125);
+            this.label5.Location = new System.Drawing.Point(32, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 13);
             this.label5.TabIndex = 8;
@@ -108,7 +109,7 @@
             this.dgv1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.num_escala,
             this.cod_puerto});
-            this.dgv1.Location = new System.Drawing.Point(37, 164);
+            this.dgv1.Location = new System.Drawing.Point(35, 149);
             this.dgv1.Name = "dgv1";
             this.dgv1.Size = new System.Drawing.Size(240, 150);
             this.dgv1.TabIndex = 9;
@@ -125,7 +126,7 @@
             // 
             // cmd_aceptar
             // 
-            this.cmd_aceptar.Location = new System.Drawing.Point(37, 341);
+            this.cmd_aceptar.Location = new System.Drawing.Point(35, 314);
             this.cmd_aceptar.Name = "cmd_aceptar";
             this.cmd_aceptar.Size = new System.Drawing.Size(75, 23);
             this.cmd_aceptar.TabIndex = 10;
@@ -134,7 +135,7 @@
             // 
             // cmd_cancelar
             // 
-            this.cmd_cancelar.Location = new System.Drawing.Point(202, 341);
+            this.cmd_cancelar.Location = new System.Drawing.Point(200, 314);
             this.cmd_cancelar.Name = "cmd_cancelar";
             this.cmd_cancelar.Size = new System.Drawing.Size(75, 23);
             this.cmd_cancelar.TabIndex = 11;
@@ -145,7 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(320, 395);
+            this.ClientSize = new System.Drawing.Size(298, 346);
             this.Controls.Add(this.cmd_cancelar);
             this.Controls.Add(this.cmd_aceptar);
             this.Controls.Add(this.dgv1);
