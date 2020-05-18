@@ -77,6 +77,18 @@
     <Compile Include="gui\cubiertas\Frm_Agregar_Cubierta.Designer.cs">
       <DependentUpon>Frm_Agregar_Cubierta.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\Frm_Agregar_Escala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Frm_Agregar_Escala.Designer.cs">
+      <DependentUpon>Frm_Agregar_Escala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Frm_Agregar_Itinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\Frm_Agregar_Itinerario.Designer.cs">
+      <DependentUpon>Frm_Agregar_Itinerario.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\frm_ModificarPuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +285,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\cubiertas\Frm_Modificar_Cubierta.resx">
       <DependentUpon>Frm_Modificar_Cubierta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Frm_Agregar_Escala.resx">
+      <DependentUpon>Frm_Agregar_Escala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\Frm_Agregar_Itinerario.resx">
+      <DependentUpon>Frm_Agregar_Itinerario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\puertos\frm_alta_puertos.resx">
       <DependentUpon>frm_alta_puertos.cs</DependentUpon>
