@@ -46,10 +46,10 @@ namespace ProyectoPAV.gui
 
         private void cmd_aceptar_Click(object sender, EventArgs e)
         {
-            if (_camarote.consultarCamarote(Convert.ToInt32(this.cmb_tipo.SelectedValue.ToString()),Convert.ToInt32(this.txt_cubierta.Text),Convert.ToInt32(this.txt_numcam.Text)) == null)
+            if (_camarote.consultarCamarote(Convert.ToInt32(this.cmb_navio.SelectedValue.ToString()),Convert.ToInt32(this.txt_cubierta.Text),Convert.ToInt32(this.txt_numcam.Text)) == null)
             {
 
-                int codNavio = Convert.ToInt32(this.cmb_tipo.SelectedValue.ToString());
+                int codNavio = Convert.ToInt32(this.cmb_navio.SelectedValue.ToString());
                 int numCubierta = Convert.ToInt32(this.txt_cubierta.Text);
                 int numCamarote = Convert.ToInt32(this.txt_numcam.Text);
                 int tipo = Convert.ToInt32(this.cmb_tipo.SelectedValue.ToString());
@@ -57,6 +57,8 @@ namespace ProyectoPAV.gui
                 int cantCamas = Convert.ToInt32(this.txt_camas.Text);
 
                 Camarote camarote = new Camarote(codNavio, numCubierta, numCamarote, tipo, ubicacion, cantCamas);
+
+            
 
                 _camarote.crearCamarote(camarote);
 
@@ -68,6 +70,11 @@ namespace ProyectoPAV.gui
             {
                 MessageBox.Show("El camarote ya existe, verifique los datos", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void cmb_navio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

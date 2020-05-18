@@ -215,6 +215,7 @@
             this.cmb_navio.pp_validar = false;
             this.cmb_navio.Size = new System.Drawing.Size(100, 21);
             this.cmb_navio.TabIndex = 16;
+            this.cmb_navio.SelectedIndexChanged += new System.EventHandler(this.cmb_navio_SelectedIndexChanged);
             // 
             // Frm_AgregarCamarote
             // 
