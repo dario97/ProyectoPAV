@@ -77,6 +77,12 @@
     <Compile Include="gui\cubiertas\Frm_Agregar_Cubierta.Designer.cs">
       <DependentUpon>Frm_Agregar_Cubierta.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\frm_abmc_itinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\frm_abmc_itinerario.Designer.cs">
+      <DependentUpon>frm_abmc_itinerario.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\frm_ModificarPuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\cubiertas\Frm_abmc_cubierta.resx">
       <DependentUpon>Frm_abmc_cubierta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\frm_abmc_itinerario.resx">
+      <DependentUpon>frm_abmc_itinerario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_AgregarPuesto.resx">
       <DependentUpon>Frm_AgregarPuesto.cs</DependentUpon>
