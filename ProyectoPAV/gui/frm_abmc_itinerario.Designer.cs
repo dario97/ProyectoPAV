@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmd_consultar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +43,7 @@
             this.cmd_salir = new System.Windows.Forms.Button();
             this.chk_todos = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -75,17 +75,18 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Descripcion";
             // 
-            // dataGridView1
+            // dgv1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 120);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(343, 150);
-            this.dataGridView1.TabIndex = 3;
+            this.dgv1.Location = new System.Drawing.Point(24, 120);
+            this.dgv1.Name = "dgv1";
+            this.dgv1.Size = new System.Drawing.Size(343, 150);
+            this.dgv1.TabIndex = 3;
+            this.dgv1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -180,14 +181,14 @@
             this.Controls.Add(this.cmd_eliminar);
             this.Controls.Add(this.cmd_agregar);
             this.Controls.Add(this.txt_descripcion);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmd_consultar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_abmc_itinerario";
             this.Text = "frm_abmc_itinerario";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,7 +199,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button cmd_consultar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
