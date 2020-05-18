@@ -238,6 +238,7 @@
       <DependentUpon>Frm_Navio.cs</DependentUpon>
     </Compile>
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
+    <Compile Include="negocio\repository\BE_transaccion_BD.cs" />
     <Compile Include="negocio\repository\CamaroteDao.cs" />
     <Compile Include="negocio\repository\CubiertaDao.cs" />
     <Compile Include="negocio\repository\NavioDao.cs" />

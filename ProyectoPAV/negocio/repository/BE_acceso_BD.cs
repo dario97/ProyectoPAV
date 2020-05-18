@@ -10,6 +10,8 @@ namespace ProyectoPAV.negocio.repository
 {
     class BE_acceso_BD
     {
+        public enum estado_BE { correcto, error}
+
         OleDbConnection conexion = new OleDbConnection();
         OleDbCommand cmd = new OleDbCommand();
         string cadenaConexion = "Provider=SQLNCLI10;Data Source=DESKTOP-OKDL643\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=ProyectoPAV1";
@@ -27,7 +29,6 @@ namespace ProyectoPAV.negocio.repository
             conexion.Close();
 
         }
-
         public DataTable ejecutarConsulta(string consultaSQL)
         {
             conectar();
@@ -37,5 +38,32 @@ namespace ProyectoPAV.negocio.repository
             desconectar();
             return tabla;
         }
+
+        public estado_BE insertar(string sql)
+        {
+            this.conectar();
+            this.cmd.CommandText = sql;
+            this.cmd.ExecuteNonQuery();
+            this.desconectar();
+            return estado_BE.correcto;
+        }
+        public estado_BE modificar(string sql)
+        {
+            this.conectar();
+            this.cmd.CommandText = sql;
+            this.cmd.ExecuteNonQuery();
+            this.desconectar();
+            return estado_BE.correcto;
+        }
+        public estado_BE borrar(string sql)
+        {
+            this.conectar();
+            this.cmd.CommandText = sql;
+            this.cmd.ExecuteNonQuery();
+            this.desconectar();
+            return estado_BE.correcto;
+        }
+
+
     }
 }
