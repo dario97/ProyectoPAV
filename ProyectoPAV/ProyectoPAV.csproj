@@ -254,6 +254,7 @@
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
     <Compile Include="negocio\repository\CamaroteDao.cs" />
     <Compile Include="negocio\repository\CubiertaDao.cs" />
+    <Compile Include="negocio\repository\EscalaDao.cs" />
     <Compile Include="negocio\repository\ItinerarioDao.cs" />
     <Compile Include="negocio\repository\NavioDao.cs" />
     <Compile Include="negocio\repository\PuertoDao.cs" />

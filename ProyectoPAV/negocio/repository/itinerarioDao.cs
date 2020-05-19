@@ -19,18 +19,23 @@ namespace ProyectoPAV.negocio.repository
 
         }
 
+        private Itinerario mapping(DataRow row)
+        {
+            int id = Convert.ToInt32(row["Cod_itinerario"].ToString());
+            string descripcion = row["Descripcion"].ToString();
+            string categoria = row["Categoria"].ToString();
+
+            Itinerario itinerario = new Itinerario(id, descripcion, categoria);
+
+            return itinerario;
+        }
+
         public Itinerario getById(int idItinerario)
         {
             string sql = "SELECT * FROM ITINERARIOS WHERE Cod_itinerario= " + idItinerario;
             DataTable dataTable = accesoBD.ejecutarConsulta(sql);
 
-            int id = Convert.ToInt32(dataTable.Rows[0]["Cod_itinerario"].ToString());
-            string descripcion = dataTable.Rows[0]["Descripcion"].ToString();
-            string categoria = dataTable.Rows[0]["Categoria"].ToString();
-
-            Itinerario itinerario = new Itinerario(id, descripcion, categoria);
-
-            return itinerario;
+            return mapping(dataTable.Rows[0]);
         }
 
 
@@ -45,17 +50,15 @@ namespace ProyectoPAV.negocio.repository
             {
                 for (int i = 0; i < dataTable.Rows.Count; i++)
                 {
-                    int id = Convert.ToInt32(dataTable.Rows[0]["Cod_itinerario"].ToString());
-                    string descripcion = dataTable.Rows[0]["Descripcion"].ToString();
-                    string categoria = dataTable.Rows[0]["Categoria"].ToString();
-
-                    Itinerario itinerario = new Itinerario(id, descripcion, categoria);
-
+                    
+                    DataRow row = dataTable.Rows[i];
+                    Itinerario itinerario = mapping(row);
                     itinerariosList.Add(itinerario);
                 }
             }
             return itinerariosList;
         }
+
 
 
         internal bool create(Itinerario itinerario)

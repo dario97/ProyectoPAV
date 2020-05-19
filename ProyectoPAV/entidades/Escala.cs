@@ -29,7 +29,7 @@ namespace ProyectoPAV.entidades
         public Itinerario getItinerario()
         {
             ItinerarioService itinerarioService = new ItinerarioService();
-            itinerarioService.
+            return itinerarioService.getById(this.IdItinerario);
         }
         public Puerto getPuerto()
         {

@@ -15,9 +15,7 @@ namespace ProyectoPAV.negocio.servicios
         public ItinerarioService()
         {
             this.itinerarioDao = new ItinerarioDao();
-
         }
-
 
         internal bool create(Itinerario itinerario)
         {
