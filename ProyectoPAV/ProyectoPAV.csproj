@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="entidades\Camarote.cs" />
     <Compile Include="entidades\Cubierta.cs" />
+    <Compile Include="entidades\Escala.cs" />
+    <Compile Include="entidades\Itinerario.cs" />
     <Compile Include="entidades\TextBox01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -77,16 +79,16 @@
     <Compile Include="gui\cubiertas\Frm_Agregar_Cubierta.Designer.cs">
       <DependentUpon>Frm_Agregar_Cubierta.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_Agregar_Escala.cs">
+    <Compile Include="gui\itinerarios\Frm_Agregar_Escala.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_Agregar_Escala.Designer.cs">
+    <Compile Include="gui\itinerarios\Frm_Agregar_Escala.Designer.cs">
       <DependentUpon>Frm_Agregar_Escala.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\Frm_Agregar_Itinerario.cs">
+    <Compile Include="gui\itinerarios\Frm_Agregar_Itinerario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\Frm_Agregar_Itinerario.Designer.cs">
+    <Compile Include="gui\itinerarios\Frm_Agregar_Itinerario.Designer.cs">
       <DependentUpon>Frm_Agregar_Itinerario.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\frm_ModificarPuesto.cs">
@@ -250,15 +252,16 @@
       <DependentUpon>Frm_Navio.cs</DependentUpon>
     </Compile>
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
-    <Compile Include="negocio\repository\BE_transaccion_BD.cs" />
     <Compile Include="negocio\repository\CamaroteDao.cs" />
     <Compile Include="negocio\repository\CubiertaDao.cs" />
+    <Compile Include="negocio\repository\ItinerarioDao.cs" />
     <Compile Include="negocio\repository\NavioDao.cs" />
     <Compile Include="negocio\repository\PuertoDao.cs" />
     <Compile Include="negocio\repository\TipoCamaroteDao.cs" />
     <Compile Include="negocio\repository\TipoClasificacionNavioDao.cs" />
     <Compile Include="negocio\servicios\CamaroteService.cs" />
     <Compile Include="negocio\servicios\CubiertaService.cs" />
+    <Compile Include="negocio\servicios\ItinerarioService.cs" />
     <Compile Include="negocio\servicios\NavioService.cs" />
     <Compile Include="negocio\servicios\PuertoService.cs" />
     <Compile Include="negocio\servicios\TipoCamaroteService.cs" />
@@ -286,10 +289,10 @@
     <EmbeddedResource Include="gui\cubiertas\Frm_Modificar_Cubierta.resx">
       <DependentUpon>Frm_Modificar_Cubierta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_Agregar_Escala.resx">
+    <EmbeddedResource Include="gui\itinerarios\Frm_Agregar_Escala.resx">
       <DependentUpon>Frm_Agregar_Escala.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\Frm_Agregar_Itinerario.resx">
+    <EmbeddedResource Include="gui\itinerarios\Frm_Agregar_Itinerario.resx">
       <DependentUpon>Frm_Agregar_Itinerario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\puertos\frm_alta_puertos.resx">

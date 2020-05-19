@@ -28,6 +28,25 @@ namespace ProyectoPAV.negocio.repository
         //}
 
 
+        public Puerto getById(int id)
+        {
+            string sql = "SELECT * FROM PUERTOS WHERE Cod_puerto=" + id;
+
+            DataTable dataTable = accesoBD.ejecutarConsulta(sql);
+            Puerto puerto = null;
+            
+            if(dataTable.Rows.Count != 0)
+            {
+                string nombre = dataTable.Rows[0]["Nombre"].ToString();
+                puerto = new Puerto(id, nombre);
+            }
+
+            return puerto;
+        }
+
+
+           
+
         public DataTable consultar_x_nombre(string nombre)
         {
 
