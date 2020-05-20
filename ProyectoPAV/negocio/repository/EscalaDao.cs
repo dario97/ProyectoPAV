@@ -28,9 +28,9 @@ namespace ProyectoPAV.negocio.repository
             return escala;
         }
 
-        public Escala getById(int idItinerario, int numEscala)
+        public Escala getById(int id)
         {
-            string sql = "SELECT * FROM PUERTO_ITINERARIO WHERE Cod_itinerario= " + idItinerario + " AND " + "Num_escala= " + numEscala;
+            string sql = "SELECT * FROM PUERTO_ITINERARIO WHERE id= " + id ;
             DataTable dataTable = accesoBD.ejecutarConsulta(sql);
            
             return mapping(dataTable.Rows[0]);
@@ -76,7 +76,8 @@ namespace ProyectoPAV.negocio.repository
             string strSQL = "INSERT INTO PUERTO_ITINERARIO (Cod_itinerario, Num_escala, Cod_puerto) " +
                 " VALUES (" +
                 "'" + escala.IdItinerario + "'" + "," +
-                "'" + escala.NumEscala + "'" + "," + "'" + escala.IdPuerto + "'" + ")";
+                "'" + escala.NumEscala + "'" + "," + 
+                "'" + escala.IdPuerto + "'" + ")";
 
             BE_acceso_BD.estado_BE estado = accesoBD.insertar(strSQL);
 
@@ -98,11 +99,11 @@ namespace ProyectoPAV.negocio.repository
         }
         internal bool delete(Escala escala)
         {
-            return this.deleteById(escala.IdItinerario, escala.NumEscala);
+            return this.deleteById(escala.Id);
         }
-        internal bool deleteById(int idItinerario, int numEscala)
+        internal bool deleteById(int id)
         {
-            string sql = "DELETE FROM PUERTO_ITINERARIO WHERE Cod_itinerario = " + idItinerario + " AND " + " Num_escala= " + numEscala;
+            string sql = "DELETE FROM PUERTO_ITINERARIO WHERE id = " + id;
             BE_acceso_BD.estado_BE estado = accesoBD.borrar(sql);
 
             return verifyState(estado);

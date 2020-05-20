@@ -1,4 +1,5 @@
 ﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace ProyectoPAV.gui
     public partial class Frm_Agregar_Itinerario : Form
     {
         private List<Escala> escalasList;
+        private static ItinerarioService itinerarioService = new ItinerarioService();
         public Frm_Agregar_Itinerario()
         {
             InitializeComponent();
@@ -23,20 +25,34 @@ namespace ProyectoPAV.gui
             escalasList = new List<Escala>();
             this.cmb_puerto.cargar();
             this.cmb_puerto.SelectedIndex = -1;
+            this.cmd_agregar.Enabled = false;
+            this.txt_numEscala.Enabled = false;
+            this.cmb_puerto.Enabled = false;
         }
 
         private void cmd_agregar_Click(object sender, EventArgs e)
         {
             Escala escala = null;
 
-            int numEscala = Convert.ToInt32(this.txt_numEscala.Text);
-            int idPuerto = Convert.ToInt32(this.cmb_puerto.SelectedValue);
+            if (this.txt_descripcion.Text == "" || this.txt_categoria.Text == "" || this.txt_numEscala.Text == "" || this.cmb_puerto.SelectedIndex == -1)
+            {
+                MessageBox.Show("No se cargó ningún dato", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                int numEscala = Convert.ToInt32(this.txt_numEscala.Text);
+                int idPuerto = Convert.ToInt32(this.cmb_puerto.SelectedValue);
 
-            escala = new Escala(numEscala, idPuerto);
+                escala = new Escala(numEscala, idPuerto);
 
-            escalasList.Add(escala);
+                escalasList.Add(escala);
+                this.txt_numEscala.Text = "";
+                this.cmb_puerto.SelectedIndex = -1;
 
-            cargar_grilla(escalasList);
+                cargar_grilla(escalasList);
+            }
+
+            
 
 
         }
@@ -61,10 +77,20 @@ namespace ProyectoPAV.gui
 
         private void cmd_aceptar_Click(object sender, EventArgs e)
         {
-            string descripcion = this.txt_descripcion.Text;
-            string categoria = this.txt_categoria.Text;
+            if (this.txt_descripcion.Text == "" || this.txt_categoria.Text == "")
+            {
+                MessageBox.Show("Debe cargar Descripción y Categoría del Itinerario", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                string descripcion = this.txt_descripcion.Text;
+                string categoria = this.txt_categoria.Text;
 
-            Itinerario itinerario = new Itinerario(descripcion, categoria, escalasList);
+                Itinerario itinerario = new Itinerario(descripcion, categoria, escalasList);
+
+                itinerarioService.cargarItinerario(itinerario);
+            }
+            
 
 
         }
@@ -74,5 +100,58 @@ namespace ProyectoPAV.gui
             this.Close();
         }
 
+        private void txt_descripcion_TextChanged(object sender, EventArgs e)
+        {
+            setAgregarPuertoFieldsVisibility();
+        }
+
+        private void setAgregarPuertoFieldsVisibility()
+        {
+            if(this.txt_descripcion.Text != "" && this.txt_categoria.Text != "")
+            {
+                
+                this.txt_numEscala.Enabled = true;
+                this.cmb_puerto.Enabled = true;
+            }
+            else
+            {
+                
+                this.txt_numEscala.Enabled = false;
+                this.cmb_puerto.Enabled = false;
+            }
+        }
+
+        private void setAgregarButtonVisibility()
+        {
+            if(this.txt_numEscala.Text != "" && this.cmb_puerto.SelectedIndex != -1)
+            {
+                this.cmd_agregar.Enabled = true;
+            }
+            else
+            {
+                this.cmd_agregar.Enabled = false;
+            }
+        }
+
+        private void txt_categoria_TextChanged(object sender, EventArgs e)
+        {
+
+            setAgregarPuertoFieldsVisibility();
+
+        }
+
+        
+
+        private void txt_numEscala_TextChanged(object sender, EventArgs e)
+        {
+            setAgregarButtonVisibility();
+        }
+
+        private void cmb_puerto_SelectedValueChanged(object sender, EventArgs e)
+        {
+            setAgregarButtonVisibility();
+        }
+
+        
     }
 }

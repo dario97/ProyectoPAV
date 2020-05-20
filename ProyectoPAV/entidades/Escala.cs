@@ -11,9 +11,18 @@ namespace ProyectoPAV.entidades
 {
     public class Escala
     {
+        int id;
         int idItinerario;
         int numEscala;
         int idPuerto;
+
+        public Escala(int id, int idItinerario, int numEscala, int idPuerto) 
+        {
+            this.id = id;
+            this.idItinerario = idItinerario;
+            this.numEscala = numEscala;
+            this.idPuerto = idPuerto;
+        }
 
         public Escala(int idItinerario, int numEscala, int idPuerto)
         {
@@ -31,6 +40,7 @@ namespace ProyectoPAV.entidades
         public int IdItinerario { get => idItinerario; set => idItinerario = value; }
         public int NumEscala { get => numEscala; set => numEscala = value; }
         public int IdPuerto { get => idPuerto; set => idPuerto = value; }
+        public int Id { get => id; set => id = value; }
 
         public Itinerario getItinerario()
         {

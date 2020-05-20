@@ -262,6 +262,7 @@
     <Compile Include="negocio\repository\TipoClasificacionNavioDao.cs" />
     <Compile Include="negocio\servicios\CamaroteService.cs" />
     <Compile Include="negocio\servicios\CubiertaService.cs" />
+    <Compile Include="negocio\servicios\EscalaService.cs" />
     <Compile Include="negocio\servicios\ItinerarioService.cs" />
     <Compile Include="negocio\servicios\NavioService.cs" />
     <Compile Include="negocio\servicios\PuertoService.cs" />

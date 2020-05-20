@@ -1,4 +1,5 @@
 ﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -26,17 +27,34 @@ namespace ProyectoPAV.negocio.repository
             string categoria = row["Categoria"].ToString();
 
             Itinerario itinerario = new Itinerario(id, descripcion, categoria);
-
             return itinerario;
         }
 
-
         public bool cargarItinerario(Itinerario itinerario)
         {
+            
             accesoBD.iniciar_transaccion();
             this.create(itinerario);
+            int id = getLastItinerarioInsertId();
+
+            List<Escala> escalas = new List<Escala>(itinerario.Escalas);
+            EscalaService escalaService = new EscalaService();
+
+            for (int i = 0; i<escalas.Count; i++)
+            {
+                escalas[i].IdItinerario = id;
+                escalaService.create(escalas[i]);
+            }
+            accesoBD.cerrar_transaccion();
+            
+                
+
+                
+            Console.WriteLine(id);
             return true;
         }
+
+
         public Itinerario getById(int idItinerario)
         {
             string sql = "SELECT * FROM ITINERARIOS WHERE Cod_itinerario= " + idItinerario;
@@ -66,6 +84,16 @@ namespace ProyectoPAV.negocio.repository
             return itinerariosList;
         }
 
+        private int getLastItinerarioInsertId()
+        {
+            string sql = "SELECT IDENT_CURRENT " + "(" + "'" + "ITINERARIOS" + "'" + ")" + "AS id";
+            DataTable dataTable = accesoBD.ejecutarConsulta(sql);
+            int id = Convert.ToInt32(dataTable.Rows[0]["id"]);
+
+            return id;
+
+        }
+
 
 
         internal bool create(Itinerario itinerario)
@@ -74,7 +102,7 @@ namespace ProyectoPAV.negocio.repository
                 " VALUES (" +
                 "'" + itinerario.Descripcion + "'" + "," +
                 "'" + itinerario.Categoria + "'" + ")";
-
+            
             BE_acceso_BD.estado_BE estado = accesoBD.insertar(strSQL);
 
             return verifyState(estado);
