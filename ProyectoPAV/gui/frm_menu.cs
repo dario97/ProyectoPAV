@@ -72,5 +72,11 @@ namespace ProyectoPAV.gui
             Frm_abmc_cubierta frmCubierta = new Frm_abmc_cubierta();
             frmCubierta.ShowDialog();
         }
+
+        private void bttn_itinerarios_Click(object sender, EventArgs e)
+        {
+            Frm_Agregar_Itinerario frm_Agregar_Itinerario = new Frm_Agregar_Itinerario();
+            frm_Agregar_Itinerario.ShowDialog();
+        }
     }
 }

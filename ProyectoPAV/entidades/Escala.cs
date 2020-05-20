@@ -22,6 +22,12 @@ namespace ProyectoPAV.entidades
             this.idPuerto = idPuerto;
         }
 
+        public Escala(int numEscala, int idPuerto)
+        {
+            this.numEscala = numEscala;
+            this.idPuerto = idPuerto;
+        }
+
         public int IdItinerario { get => idItinerario; set => idItinerario = value; }
         public int NumEscala { get => numEscala; set => numEscala = value; }
         public int IdPuerto { get => idPuerto; set => idPuerto = value; }

@@ -30,6 +30,13 @@ namespace ProyectoPAV.negocio.repository
             return itinerario;
         }
 
+
+        public bool cargarItinerario(Itinerario itinerario)
+        {
+            accesoBD.iniciar_transaccion();
+            this.create(itinerario);
+            return true;
+        }
         public Itinerario getById(int idItinerario)
         {
             string sql = "SELECT * FROM ITINERARIOS WHERE Cod_itinerario= " + idItinerario;
@@ -83,9 +90,9 @@ namespace ProyectoPAV.negocio.repository
             BE_acceso_BD.estado_BE estado = accesoBD.modificar(strSQL);
 
             return verifyState(estado);
+        }
             
 
-        }
 
         internal bool delete(Itinerario itinerario)
         {

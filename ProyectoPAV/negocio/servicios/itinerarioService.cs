@@ -17,6 +17,10 @@ namespace ProyectoPAV.negocio.servicios
             this.itinerarioDao = new ItinerarioDao();
         }
 
+        internal bool cargarItinerario(Itinerario itinerario)
+        {
+            return itinerarioDao.cargarItinerario(itinerario);
+        }
         internal bool create(Itinerario itinerario)
         {
             return itinerarioDao.create(itinerario);

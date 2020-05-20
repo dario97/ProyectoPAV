@@ -34,17 +34,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dgv1 = new System.Windows.Forms.DataGridView();
+            this.dgv_escalas = new System.Windows.Forms.DataGridView();
             this.cmd_aceptar = new System.Windows.Forms.Button();
             this.cmd_cancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_numEscala = new System.Windows.Forms.TextBox();
-            this.cmb_puerto = new ProyectoPAV.gui.clases.MiCombito();
             this.label6 = new System.Windows.Forms.Label();
             this.num_escala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cod_puerto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
+            this.cmb_puerto = new ProyectoPAV.gui.clases.MiCombito();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_escalas)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +70,7 @@
             this.cmd_agregar.TabIndex = 3;
             this.cmd_agregar.Text = "Agregar";
             this.cmd_agregar.UseVisualStyleBackColor = true;
+            this.cmd_agregar.Click += new System.EventHandler(this.cmd_agregar_Click);
             // 
             // label1
             // 
@@ -101,16 +102,16 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Categoría";
             // 
-            // dgv1
+            // dgv_escalas
             // 
-            this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_escalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_escalas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.num_escala,
             this.cod_puerto});
-            this.dgv1.Location = new System.Drawing.Point(35, 196);
-            this.dgv1.Name = "dgv1";
-            this.dgv1.Size = new System.Drawing.Size(349, 150);
-            this.dgv1.TabIndex = 9;
+            this.dgv_escalas.Location = new System.Drawing.Point(35, 196);
+            this.dgv_escalas.Name = "dgv_escalas";
+            this.dgv_escalas.Size = new System.Drawing.Size(349, 150);
+            this.dgv_escalas.TabIndex = 9;
             // 
             // cmd_aceptar
             // 
@@ -120,6 +121,7 @@
             this.cmd_aceptar.TabIndex = 10;
             this.cmd_aceptar.Text = "Confirmar";
             this.cmd_aceptar.UseVisualStyleBackColor = true;
+            this.cmd_aceptar.Click += new System.EventHandler(this.cmd_aceptar_Click);
             // 
             // cmd_cancelar
             // 
@@ -129,6 +131,7 @@
             this.cmd_cancelar.TabIndex = 11;
             this.cmd_cancelar.Text = "Cancelar";
             this.cmd_cancelar.UseVisualStyleBackColor = true;
+            this.cmd_cancelar.Click += new System.EventHandler(this.cmd_cancelar_Click);
             // 
             // groupBox1
             // 
@@ -162,20 +165,6 @@
             this.txt_numEscala.Size = new System.Drawing.Size(120, 23);
             this.txt_numEscala.TabIndex = 0;
             // 
-            // cmb_puerto
-            // 
-            this.cmb_puerto.FormattingEnabled = true;
-            this.cmb_puerto.Location = new System.Drawing.Point(135, 40);
-            this.cmb_puerto.Name = "cmb_puerto";
-            this.cmb_puerto.pp_descriptor_tabla_cargar = null;
-            this.cmb_puerto.pp_nombre_campo = null;
-            this.cmb_puerto.pp_nombre_tabla = null;
-            this.cmb_puerto.pp_nombre_tabla_cargar = null;
-            this.cmb_puerto.pp_pk_tabla_cargar = null;
-            this.cmb_puerto.pp_validar = false;
-            this.cmb_puerto.Size = new System.Drawing.Size(121, 24);
-            this.cmb_puerto.TabIndex = 2;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -198,6 +187,20 @@
             this.cod_puerto.Name = "cod_puerto";
             this.cod_puerto.Width = 190;
             // 
+            // cmb_puerto
+            // 
+            this.cmb_puerto.FormattingEnabled = true;
+            this.cmb_puerto.Location = new System.Drawing.Point(135, 40);
+            this.cmb_puerto.Name = "cmb_puerto";
+            this.cmb_puerto.pp_descriptor_tabla_cargar = "Nombre";
+            this.cmb_puerto.pp_nombre_campo = null;
+            this.cmb_puerto.pp_nombre_tabla = null;
+            this.cmb_puerto.pp_nombre_tabla_cargar = "PUERTOS";
+            this.cmb_puerto.pp_pk_tabla_cargar = "Cod_puerto";
+            this.cmb_puerto.pp_validar = false;
+            this.cmb_puerto.Size = new System.Drawing.Size(121, 24);
+            this.cmb_puerto.TabIndex = 2;
+            // 
             // Frm_Agregar_Itinerario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,7 +209,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmd_cancelar);
             this.Controls.Add(this.cmd_aceptar);
-            this.Controls.Add(this.dgv1);
+            this.Controls.Add(this.dgv_escalas);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -214,7 +217,8 @@
             this.Controls.Add(this.txt_descripcion);
             this.Name = "Frm_Agregar_Itinerario";
             this.Text = "Frm_Agregar_Itinerario";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
+            this.Load += new System.EventHandler(this.Frm_Agregar_Itinerario_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_escalas)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -230,7 +234,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dgv1;
+        private System.Windows.Forms.DataGridView dgv_escalas;
         private System.Windows.Forms.Button cmd_aceptar;
         private System.Windows.Forms.Button cmd_cancelar;
         private System.Windows.Forms.GroupBox groupBox1;
