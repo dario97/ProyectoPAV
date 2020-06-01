@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -74,7 +75,17 @@ namespace ProyectoPAV.gui
             
             if(tipoId != -1)
             {
-                tipoService.eliminarTipoPorID(tipoId);
+                try
+                {
+                    tipoService.eliminarTipoPorID(tipoId);
+                }catch(OleDbException exception)
+                {
+                    if(exception.ErrorCode == -2147217873)
+                    {
+                        MessageBox.Show("No puede eliminar el tipo de navio ya que existen navíos con esta clasificación.", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    }
+                }
+                
                 
             }
             

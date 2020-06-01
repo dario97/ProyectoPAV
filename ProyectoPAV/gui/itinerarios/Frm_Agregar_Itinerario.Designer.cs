@@ -35,15 +35,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgv_escalas = new System.Windows.Forms.DataGridView();
-            this.num_escala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cod_puerto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmd_aceptar = new System.Windows.Forms.Button();
             this.cmd_cancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_numEscala = new System.Windows.Forms.TextBox();
+            this.cmd_eliminar = new System.Windows.Forms.Button();
             this.cmb_puerto = new ProyectoPAV.gui.clases.MiCombito();
+            this.num_escala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cod_puerto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_escalas)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -115,21 +116,9 @@
             this.dgv_escalas.Size = new System.Drawing.Size(349, 150);
             this.dgv_escalas.TabIndex = 9;
             // 
-            // num_escala
-            // 
-            this.num_escala.HeaderText = "Numero de escala";
-            this.num_escala.Name = "num_escala";
-            this.num_escala.Width = 130;
-            // 
-            // cod_puerto
-            // 
-            this.cod_puerto.HeaderText = "Código de puerto";
-            this.cod_puerto.Name = "cod_puerto";
-            this.cod_puerto.Width = 190;
-            // 
             // cmd_aceptar
             // 
-            this.cmd_aceptar.Location = new System.Drawing.Point(35, 352);
+            this.cmd_aceptar.Location = new System.Drawing.Point(230, 395);
             this.cmd_aceptar.Name = "cmd_aceptar";
             this.cmd_aceptar.Size = new System.Drawing.Size(75, 23);
             this.cmd_aceptar.TabIndex = 10;
@@ -139,7 +128,7 @@
             // 
             // cmd_cancelar
             // 
-            this.cmd_cancelar.Location = new System.Drawing.Point(116, 352);
+            this.cmd_cancelar.Location = new System.Drawing.Point(311, 395);
             this.cmd_cancelar.Name = "cmd_cancelar";
             this.cmd_cancelar.Size = new System.Drawing.Size(75, 23);
             this.cmd_cancelar.TabIndex = 11;
@@ -190,6 +179,16 @@
             this.txt_numEscala.TabIndex = 0;
             this.txt_numEscala.TextChanged += new System.EventHandler(this.txt_numEscala_TextChanged);
             // 
+            // cmd_eliminar
+            // 
+            this.cmd_eliminar.Location = new System.Drawing.Point(35, 353);
+            this.cmd_eliminar.Name = "cmd_eliminar";
+            this.cmd_eliminar.Size = new System.Drawing.Size(102, 23);
+            this.cmd_eliminar.TabIndex = 13;
+            this.cmd_eliminar.Text = "Eliminar Escala";
+            this.cmd_eliminar.UseVisualStyleBackColor = true;
+            this.cmd_eliminar.Click += new System.EventHandler(this.cmd_eliminar_Click);
+            // 
             // cmb_puerto
             // 
             this.cmb_puerto.FormattingEnabled = true;
@@ -205,11 +204,24 @@
             this.cmb_puerto.TabIndex = 2;
             this.cmb_puerto.SelectedValueChanged += new System.EventHandler(this.cmb_puerto_SelectedValueChanged);
             // 
+            // num_escala
+            // 
+            this.num_escala.HeaderText = "Numero de escala";
+            this.num_escala.Name = "num_escala";
+            this.num_escala.Width = 130;
+            // 
+            // cod_puerto
+            // 
+            this.cod_puerto.HeaderText = "Puerto";
+            this.cod_puerto.Name = "cod_puerto";
+            this.cod_puerto.Width = 190;
+            // 
             // Frm_Agregar_Itinerario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 430);
+            this.Controls.Add(this.cmd_eliminar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmd_cancelar);
             this.Controls.Add(this.cmd_aceptar);
@@ -220,7 +232,7 @@
             this.Controls.Add(this.txt_categoria);
             this.Controls.Add(this.txt_descripcion);
             this.Name = "Frm_Agregar_Itinerario";
-            this.Text = "Frm_Agregar_Itinerario";
+            this.Text = "Agregar Itinerario";
             this.Load += new System.EventHandler(this.Frm_Agregar_Itinerario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_escalas)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -244,9 +256,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_numEscala;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn num_escala;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cod_puerto;
         private System.Windows.Forms.Label label6;
         private clases.MiCombito cmb_puerto;
+        private System.Windows.Forms.Button cmd_eliminar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn num_escala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cod_puerto;
     }
 }

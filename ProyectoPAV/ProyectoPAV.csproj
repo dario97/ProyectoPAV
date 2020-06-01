@@ -121,6 +121,12 @@
     <Compile Include="gui\cubiertas\Frm_Modificar_Cubierta.Designer.cs">
       <DependentUpon>Frm_Modificar_Cubierta.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\itinerarios\Frm_gestionarItinerarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\itinerarios\Frm_gestionarItinerarios.Designer.cs">
+      <DependentUpon>Frm_gestionarItinerarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\puertos\frm_alta_puertos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\itinerarios\Frm_Agregar_Itinerario.resx">
       <DependentUpon>Frm_Agregar_Itinerario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\itinerarios\Frm_gestionarItinerarios.resx">
+      <DependentUpon>Frm_gestionarItinerarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\puertos\frm_alta_puertos.resx">
       <DependentUpon>frm_alta_puertos.cs</DependentUpon>

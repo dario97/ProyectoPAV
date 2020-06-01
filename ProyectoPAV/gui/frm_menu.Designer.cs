@@ -38,7 +38,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmd_tiposDeCamarote = new System.Windows.Forms.Button();
             this.cmd_gestionCubierta = new System.Windows.Forms.Button();
-            this.bttn_itinerarios = new System.Windows.Forms.Button();
+            this.cmd_itinerarios = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -161,23 +161,25 @@
             this.cmd_gestionCubierta.UseVisualStyleBackColor = false;
             this.cmd_gestionCubierta.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // bttn_itinerarios
+            // cmd_itinerarios
             // 
-            this.bttn_itinerarios.Location = new System.Drawing.Point(459, 86);
-            this.bttn_itinerarios.Name = "bttn_itinerarios";
-            this.bttn_itinerarios.Size = new System.Drawing.Size(161, 23);
-            this.bttn_itinerarios.TabIndex = 11;
-            this.bttn_itinerarios.Text = "GESTIÓN DE ITINERARIOS";
-            this.bttn_itinerarios.UseVisualStyleBackColor = true;
-            this.bttn_itinerarios.Click += new System.EventHandler(this.bttn_itinerarios_Click);
+            this.cmd_itinerarios.BackColor = System.Drawing.Color.Silver;
+            this.cmd_itinerarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmd_itinerarios.Location = new System.Drawing.Point(446, 86);
+            this.cmd_itinerarios.Name = "cmd_itinerarios";
+            this.cmd_itinerarios.Size = new System.Drawing.Size(188, 88);
+            this.cmd_itinerarios.TabIndex = 12;
+            this.cmd_itinerarios.Text = "GESTIÓN DE ITINERARIOS";
+            this.cmd_itinerarios.UseVisualStyleBackColor = false;
+            this.cmd_itinerarios.Click += new System.EventHandler(this.bttn_itinerarios_Click);
             // 
             // frm_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(725, 496);
-            this.Controls.Add(this.bttn_itinerarios);
+            this.ClientSize = new System.Drawing.Size(652, 510);
+            this.Controls.Add(this.cmd_itinerarios);
             this.Controls.Add(this.cmd_gestionCubierta);
             this.Controls.Add(this.cmd_tiposDeCamarote);
             this.Controls.Add(this.label1);
@@ -207,6 +209,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button cmd_tiposDeCamarote;
         private System.Windows.Forms.Button cmd_gestionCubierta;
-        private System.Windows.Forms.Button bttn_itinerarios;
+        private System.Windows.Forms.Button cmd_itinerarios;
     }
 }

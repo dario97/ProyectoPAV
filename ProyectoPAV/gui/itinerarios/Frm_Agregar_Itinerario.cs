@@ -67,7 +67,7 @@ namespace ProyectoPAV.gui
                     dgv_escalas.Rows.Add();
                     
                     dgv_escalas.Rows[i].Cells[0].Value = escalasList[i].NumEscala;
-                    dgv_escalas.Rows[i].Cells[1].Value = escalasList[i].IdPuerto;
+                    dgv_escalas.Rows[i].Cells[1].Value = escalasList[i].getPuerto().Nombre;
                 }
 
             }
@@ -89,11 +89,13 @@ namespace ProyectoPAV.gui
                 Itinerario itinerario = new Itinerario(descripcion, categoria, escalasList);
 
                 itinerarioService.cargarItinerario(itinerario);
+
+                MessageBox.Show("Carga de itinerario finalizada con éxtio", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
             
 
 
-        }
 
         private void cmd_cancelar_Click(object sender, EventArgs e)
         {
@@ -152,6 +154,17 @@ namespace ProyectoPAV.gui
             setAgregarButtonVisibility();
         }
 
-        
+        private void cmd_eliminar_Click(object sender, EventArgs e)
+        {
+            int numEscala = Convert.ToInt32(this.dgv_escalas.CurrentRow.Cells["Num_escala"].Value.ToString());
+            for(int i = 0; i<escalasList.Count; i++)
+            {
+                if(escalasList[i].NumEscala == numEscala)
+                {
+                    escalasList.RemoveAt(i);
+                }
+            }
+            cargar_grilla(escalasList);
+        }
     }
 }

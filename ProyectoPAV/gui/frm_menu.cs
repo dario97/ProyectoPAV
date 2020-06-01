@@ -1,4 +1,5 @@
-﻿using ProyectoPAV.gui.tipoCamarote;
+﻿using ProyectoPAV.gui.itinerarios;
+using ProyectoPAV.gui.tipoCamarote;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -75,8 +76,8 @@ namespace ProyectoPAV.gui
 
         private void bttn_itinerarios_Click(object sender, EventArgs e)
         {
-            Frm_Agregar_Itinerario frm_Agregar_Itinerario = new Frm_Agregar_Itinerario();
-            frm_Agregar_Itinerario.ShowDialog();
+            Frm_gestionarItinerarios frm_gestionar_itinerarios = new Frm_gestionarItinerarios();
+            frm_gestionar_itinerarios.ShowDialog();
         }
     }
 }

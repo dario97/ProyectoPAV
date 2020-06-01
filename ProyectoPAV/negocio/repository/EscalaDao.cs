@@ -19,11 +19,12 @@ namespace ProyectoPAV.negocio.repository
 
         private Escala mapping(DataRow row)
         {
+            int id = Convert.ToInt32(row["id"].ToString());
             int idItinerario = Convert.ToInt32(row["Cod_itinerario"].ToString());
             int numEscala = Convert.ToInt32(row["Num_escala"].ToString());
             int idPuerto = Convert.ToInt32(row["Cod_puerto"].ToString());
 
-            Escala escala = new Escala(idItinerario, numEscala, idPuerto);
+            Escala escala = new Escala(id,idItinerario, numEscala, idPuerto);
 
             return escala;
         }

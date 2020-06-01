@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,9 +69,15 @@ namespace ProyectoPAV.negocio.repository
         {
             string strSQL = "DELETE FROM CLASIFICACION_NAVIO " +
                                 " WHERE Cod_clasificacion =" + id;
-
-            accesoBD.ejecutarConsulta(strSQL);
-            return true;
+            try
+            {
+                accesoBD.ejecutarConsulta(strSQL);
+                return true;
+            }catch(OleDbException e)
+            {
+                throw;
+            }
+                        
         }
 
         

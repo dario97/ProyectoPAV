@@ -23,6 +23,11 @@ namespace ProyectoPAV.negocio.servicios
         //    return itinerarioDao.cargarItinerario(itinerario);
         //}
 
+
+        internal List<Escala> getAllEscalasDeUnItinerario(int id)
+        {
+            return escalaDao.getAllEscalasDeUnItinerario(id);
+        }
         internal bool create(Escala escala)
         {
             return escalaDao.create(escala);

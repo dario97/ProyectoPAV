@@ -94,6 +94,8 @@ namespace ProyectoPAV.negocio.repository
                     + consultaSQL + "\n"
                     + "El mensaje es:" + "\n"
                     + e.Message);
+
+                throw e;
             }
             desconectar();
             return tabla;
