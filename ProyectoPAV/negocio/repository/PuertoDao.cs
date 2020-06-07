@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ProyectoPAV.negocio.repository
 {
@@ -28,6 +29,23 @@ namespace ProyectoPAV.negocio.repository
         //}
 
 
+        public Puerto getById(int id)
+        {
+            string sql = "SELECT * FROM PUERTOS WHERE Cod_puerto=" + id;
+
+            DataTable dataTable = accesoBD.ejecutarConsulta(sql);
+            Puerto puerto = null;
+            
+            if(dataTable.Rows.Count != 0)
+            {
+                string nombre = dataTable.Rows[0]["Nombre"].ToString();
+                puerto = new Puerto(id, nombre);
+            }
+
+            return puerto;
+        }
+
+
         public DataTable consultar_x_nombre(string nombre)
         {
 
@@ -44,6 +62,15 @@ namespace ProyectoPAV.negocio.repository
 
         }
 
+        private int getLastPuertoInsertId()
+        {
+            string sql = "SELECT IDENT_CURRENT " + "(" + "'" + "PUERTOS" + "'" + ")" +  "AS id";
+            DataTable dataTable = accesoBD.ejecutarConsulta(sql);
+            int id = Convert.ToInt32(dataTable.Rows[0]["id"]);
+
+            return id;
+
+        }
 
         internal bool create(Puerto puerto)
         {
@@ -51,10 +78,13 @@ namespace ProyectoPAV.negocio.repository
                 " VALUES (" +
                 "'" + puerto.Nombre + "'" + ")";
 
-            accesoBD.ejecutarConsulta(strSQL);
+            DataTable tabla = accesoBD.ejecutarConsulta(strSQL);
+            int id = getLastPuertoInsertId();
+            Console.WriteLine(id);
+
             return true;
         }
-
+        
         internal bool update(Puerto puerto)
         {
             string strSQL = "UPDATE PUERTOS " +

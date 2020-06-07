@@ -1,4 +1,5 @@
-﻿using ProyectoPAV.gui.tipoCamarote;
+﻿using ProyectoPAV.gui.itinerarios;
+using ProyectoPAV.gui.tipoCamarote;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,6 +72,12 @@ namespace ProyectoPAV.gui
         {
             Frm_abmc_cubierta frmCubierta = new Frm_abmc_cubierta();
             frmCubierta.ShowDialog();
+        }
+
+        private void bttn_itinerarios_Click(object sender, EventArgs e)
+        {
+            Frm_gestionarItinerarios frm_gestionar_itinerarios = new Frm_gestionarItinerarios();
+            frm_gestionar_itinerarios.ShowDialog();
         }
     }
 }

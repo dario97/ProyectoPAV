@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoPAV.entidades
 {
-    class Puerto
+    public class Puerto
     {
         private int codigoPuerto;
         private string nombre;
@@ -19,6 +19,7 @@ namespace ProyectoPAV.entidades
         public Puerto(string nombre)
         {
             this.Nombre = nombre;
+
         }
 
         public int CodigoPuerto { get => codigoPuerto; set => codigoPuerto = value; }

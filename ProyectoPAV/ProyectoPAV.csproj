@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="entidades\Camarote.cs" />
     <Compile Include="entidades\Cubierta.cs" />
+    <Compile Include="entidades\Escala.cs" />
+    <Compile Include="entidades\Itinerario.cs" />
     <Compile Include="entidades\TextBox01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -77,11 +79,17 @@
     <Compile Include="gui\cubiertas\Frm_Agregar_Cubierta.Designer.cs">
       <DependentUpon>Frm_Agregar_Cubierta.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\frm_abmc_itinerario.cs">
+    <Compile Include="gui\itinerarios\Frm_Agregar_Escala.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gui\frm_abmc_itinerario.Designer.cs">
-      <DependentUpon>frm_abmc_itinerario.cs</DependentUpon>
+    <Compile Include="gui\itinerarios\Frm_Agregar_Escala.Designer.cs">
+      <DependentUpon>Frm_Agregar_Escala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\itinerarios\Frm_Agregar_Itinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\itinerarios\Frm_Agregar_Itinerario.Designer.cs">
+      <DependentUpon>Frm_Agregar_Itinerario.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\frm_ModificarPuesto.cs">
       <SubType>Form</SubType>
@@ -112,6 +120,12 @@
     </Compile>
     <Compile Include="gui\cubiertas\Frm_Modificar_Cubierta.Designer.cs">
       <DependentUpon>Frm_Modificar_Cubierta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\itinerarios\Frm_gestionarItinerarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\itinerarios\Frm_gestionarItinerarios.Designer.cs">
+      <DependentUpon>Frm_gestionarItinerarios.cs</DependentUpon>
     </Compile>
     <Compile Include="gui\puertos\frm_alta_puertos.cs">
       <SubType>Form</SubType>
@@ -246,12 +260,16 @@
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
     <Compile Include="negocio\repository\CamaroteDao.cs" />
     <Compile Include="negocio\repository\CubiertaDao.cs" />
+    <Compile Include="negocio\repository\EscalaDao.cs" />
+    <Compile Include="negocio\repository\ItinerarioDao.cs" />
     <Compile Include="negocio\repository\NavioDao.cs" />
     <Compile Include="negocio\repository\PuertoDao.cs" />
     <Compile Include="negocio\repository\TipoCamaroteDao.cs" />
     <Compile Include="negocio\repository\TipoClasificacionNavioDao.cs" />
     <Compile Include="negocio\servicios\CamaroteService.cs" />
     <Compile Include="negocio\servicios\CubiertaService.cs" />
+    <Compile Include="negocio\servicios\EscalaService.cs" />
+    <Compile Include="negocio\servicios\ItinerarioService.cs" />
     <Compile Include="negocio\servicios\NavioService.cs" />
     <Compile Include="negocio\servicios\PuertoService.cs" />
     <Compile Include="negocio\servicios\TipoCamaroteService.cs" />
@@ -270,9 +288,6 @@
     <EmbeddedResource Include="gui\cubiertas\Frm_abmc_cubierta.resx">
       <DependentUpon>Frm_abmc_cubierta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\frm_abmc_itinerario.resx">
-      <DependentUpon>frm_abmc_itinerario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="gui\Frm_AgregarPuesto.resx">
       <DependentUpon>Frm_AgregarPuesto.cs</DependentUpon>
     </EmbeddedResource>
@@ -281,6 +296,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gui\cubiertas\Frm_Modificar_Cubierta.resx">
       <DependentUpon>Frm_Modificar_Cubierta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\itinerarios\Frm_Agregar_Escala.resx">
+      <DependentUpon>Frm_Agregar_Escala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\itinerarios\Frm_Agregar_Itinerario.resx">
+      <DependentUpon>Frm_Agregar_Itinerario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\itinerarios\Frm_gestionarItinerarios.resx">
+      <DependentUpon>Frm_gestionarItinerarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gui\puertos\frm_alta_puertos.resx">
       <DependentUpon>frm_alta_puertos.cs</DependentUpon>

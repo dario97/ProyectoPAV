@@ -18,6 +18,11 @@ namespace ProyectoPAV.negocio.servicios
             puertoDao = new PuertoDao();
         }
 
+
+        internal Puerto getById(int id)
+        {
+            return puertoDao.getById(id);
+        }
         internal DataTable consultarPorNombre(string nombre)
         {
             return puertoDao.consultar_x_nombre(nombre);
