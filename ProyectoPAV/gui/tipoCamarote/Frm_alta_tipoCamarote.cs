@@ -35,12 +35,12 @@ namespace ProyectoPAV.gui.tipoCamarote
             }
             else
             {
-                if (tipoCamaroteService.consultarPorNombre(this.txt_tipo.Text).Rows.Count == 0)
+                if (tipoCamaroteService.GetByName(this.txt_tipo.Text).Count == 0)
                 {
                     string nombre = this.txt_tipo.Text;
 
                     TipoCamarote tipoCamarote = new TipoCamarote(nombre);
-                    tipoCamaroteService.crearTipoCamarote(tipoCamarote);
+                    tipoCamaroteService.CreateTipoCamarote(tipoCamarote);
                     MessageBox.Show("Se creó el tipo de camarote " + nombre + " Exitosamente.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     this.Close();
                 }

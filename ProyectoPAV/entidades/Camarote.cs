@@ -46,7 +46,7 @@ namespace ProyectoPAV.entidades
         {
             NavioService navioService = new NavioService();
 
-            return navioService.getById(this.idNavio);
+            return navioService.GetById(this.idNavio);
 
         }
 
@@ -54,7 +54,7 @@ namespace ProyectoPAV.entidades
         {
             TipoCamaroteService tipoCamaroteService = new TipoCamaroteService();
 
-            return tipoCamaroteService.getById(this.idTipoCamarote);
+            return tipoCamaroteService.GetById(this.idTipoCamarote);
         }
     }
 }

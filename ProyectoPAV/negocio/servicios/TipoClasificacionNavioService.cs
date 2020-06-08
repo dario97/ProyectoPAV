@@ -1,5 +1,6 @@
 ﻿using ProyectoPAV.entidades;
 using ProyectoPAV.negocio.repository;
+using ProyectoPAV.negocio.repository.tipoNavio_repository;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,42 +13,38 @@ namespace ProyectoPAV.negocio.servicios
 {
     public class TipoClasificacionNavioService
     {
-        private static TipoClasificacionNavioDao clasificacionNavioDao;
+     
+        private static TipoNavioRepository tipoNavioRepository = new TipoNavioRepository();
 
-        public TipoClasificacionNavioService()
+        internal List<TipoClasificacionNavio> GetByName(string name)
         {
-            clasificacionNavioDao = new TipoClasificacionNavioDao();
+            return tipoNavioRepository.GetByName(name);
         }
 
-        internal DataTable consultarPorNombre(string nombre)
+        internal List<TipoClasificacionNavio> GetAll()
         {
-            return clasificacionNavioDao.consultar_x_nombre(nombre);
+            return tipoNavioRepository.GetAll();
         }
 
-        internal DataTable consultarTodos()
+        internal void CreateTipoNavio(TipoClasificacionNavio tipoNavio)
         {
-            return clasificacionNavioDao.consultarTodos();
+            tipoNavioRepository.Create(tipoNavio);
         }
 
-        internal bool crearTipoClasificacionNavio(TipoClasificacionNavio tipoClasificacion)
+        internal void UpdateTipoNavio(TipoClasificacionNavio tipoNavio)
         {
-            return clasificacionNavioDao.create(tipoClasificacion);
+            tipoNavioRepository.Update(tipoNavio);
         }
 
-        internal bool modificarTipoClasificacionNavio(TipoClasificacionNavio tipoClasificacion)
-        {
-            return clasificacionNavioDao.update(tipoClasificacion);
-        }
-
-        internal bool eliminarTipoPorID(int id) 
+        internal void DeleteTipoNavioById(int id) 
         {
             try
             {
-                return clasificacionNavioDao.delete(id);
+                tipoNavioRepository.DeleteById(id);
             }
             catch (OleDbException e)
             {
-                throw;
+                throw e;
             }
             
         }

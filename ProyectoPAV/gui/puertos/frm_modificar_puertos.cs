@@ -38,7 +38,7 @@ namespace ProyectoPAV.gui
         private void button1_Click(object sender, EventArgs e)
         {
             Puerto puerto1 = new Puerto(pp_id, this.txt_nombre.Text);
-            puerto.modificarPuerto(puerto1);
+            puerto.UpdatePuerto(puerto1);
             MessageBox.Show("El nombre se modifico con exito", "Mensaje", MessageBoxButtons.OK);
         }
     }

@@ -1,5 +1,6 @@
 ﻿using ProyectoPAV.entidades;
 using ProyectoPAV.negocio.repository;
+using ProyectoPAV.negocio.repository.escala_repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,53 +12,41 @@ namespace ProyectoPAV.negocio.servicios
     public class EscalaService
     {
         EscalaDao escalaDao;
-
+        private static EscalaRepository escalaRepository = new EscalaRepository();
         public EscalaService()
         {
             this.escalaDao = new EscalaDao();
         }
 
-
-        //internal bool cargarItinerario(Itinerario itinerario)
-        //{
-        //    return itinerarioDao.cargarItinerario(itinerario);
-        //}
-
-
         internal List<Escala> getAllEscalasDeUnItinerario(int id)
         {
-            return escalaDao.getAllEscalasDeUnItinerario(id);
+            return escalaRepository.GetAllEscalasFromItinerario(id);
         }
-        internal bool create(Escala escala)
+        internal void Create(Escala escala)
         {
-            return escalaDao.create(escala);
-        }
-
-        internal Escala getById(int id)
-        {
-            return escalaDao.getById(id);
-
+            escalaRepository.Create(escala);
         }
 
-        internal List<Escala> getAll()
+        internal Escala GetById(int id)
         {
-            return escalaDao.getAll();
+            return escalaRepository.GetById(id);
 
         }
 
-        internal bool deleteById(int id)
+        internal List<Escala> GetAll()
         {
-            return escalaDao.deleteById(id);
+            return escalaRepository.GetAll();
+
         }
 
-        internal bool delete(Escala escala)
+        internal void DeleteById(int id)
         {
-            return escalaDao.delete(escala);
+            escalaRepository.DeleteById(id);
         }
 
-        internal bool update(Escala escala)
+        internal void Update(Escala escala)
         {
-            return escalaDao.update(escala);
+            escalaRepository.Update(escala);
         }
     }
 }

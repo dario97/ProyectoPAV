@@ -1,5 +1,6 @@
 ﻿using ProyectoPAV.entidades;
 using ProyectoPAV.negocio.repository;
+using ProyectoPAV.negocio.repository.cubierta_repository;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,52 +12,36 @@ namespace ProyectoPAV.negocio.servicios
 {
     class CubiertaService
     {
-        private static CubiertaDao cubiertaDao;
-
-        public CubiertaService()
+        private static CubiertaRepository cubiertaRepository = new CubiertaRepository();
+     
+        internal Cubierta GetById(int id)
         {
-            cubiertaDao = new CubiertaDao();
+            return cubiertaRepository.GetById(id);
         }
 
-
-        internal Cubierta getById(int id)
+        internal List<Cubierta> GetAll()
         {
-            return cubiertaDao.getById(id);
+            return cubiertaRepository.GetAll();
         }
 
-        internal List<Cubierta> getAll()
+        internal Cubierta GetByPrimaryKey(int idNavio, int numCubierta)
         {
-            return cubiertaDao.getAll();
+            return cubiertaRepository.GetByPrimaryKey(idNavio, numCubierta);
         }
 
-        internal Cubierta consultarCubierta(int idNavio, int numCubierta)
+        internal void CrearCubierta(Cubierta cubierta)
         {
-            return cubiertaDao.consultarCubierta(idNavio, numCubierta);
+            cubiertaRepository.Create(cubierta);
         }
 
-        internal DataTable consultarPorNombre(string nombre)
+        internal void ModificarCubierta(Cubierta cubierta)
         {
-            return cubiertaDao.consultar_x_nombre(nombre);
+            cubiertaRepository.Update(cubierta);
         }
 
-        //internal DataTable consultarTodos()
-        //{
-        //    return tipoCamaroteDao.consultarTodos();
-        //}
-
-        internal void crearCubierta(Cubierta cubierta)
+        internal void DeleteById(int id)
         {
-            cubiertaDao.create(cubierta);
-        }
-
-        //internal bool modificarNavio(Navio navio)
-        //{
-        //    return navioDao.update(navio);
-        //}
-
-        internal bool deleteById(int id)
-        {
-            return cubiertaDao.deleteById(id);
+            cubiertaRepository.DeleteById(id);
         }
     }
 }

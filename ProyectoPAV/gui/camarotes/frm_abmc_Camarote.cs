@@ -48,7 +48,7 @@ namespace ProyectoPAV.gui
                 && txt_nroCubierta.Text != ""
                 && chbx.Checked == false)
             {
-                Camarote camarote = camaroteService.consultarCamarote(Convert.ToInt32(cmb_navio.SelectedValue), Convert.ToInt32(txt_nroCubierta.Text), Convert.ToInt32(txt_nroCamarote.Text));
+                Camarote camarote = camaroteService.GetByPrimaryKey(Convert.ToInt32(cmb_navio.SelectedValue), Convert.ToInt32(txt_nroCubierta.Text), Convert.ToInt32(txt_nroCamarote.Text));
               
                 if (camarote == null)
                 {
@@ -62,7 +62,7 @@ namespace ProyectoPAV.gui
             }
             if (chbx.Checked == true)
             {
-                camarotesList = camaroteService.getAll();
+                camarotesList = camaroteService.GetAll();
                 if(camarotesList.Count == 0)
                 {
                     MessageBox.Show("No se encontró ningún camarote", " Mensaje", MessageBoxButtons.OK);
@@ -111,7 +111,7 @@ namespace ProyectoPAV.gui
 
             if (id != -1)
             {
-                camaroteService.deleteById(id);
+                camaroteService.DeleteById(id);
                 MessageBox.Show("Se eliminó con éxito");
 
             }

@@ -14,7 +14,7 @@ namespace ProyectoPAV.gui
 {
     public partial class Frm_Alta_Navio : Form
     {
-        private static NavioService _navio = new NavioService();
+        private static NavioService navioService = new NavioService();
 
         public Frm_Alta_Navio()
         {
@@ -38,7 +38,7 @@ namespace ProyectoPAV.gui
 
         private void cmd_Aceptar_Click(object sender, EventArgs e)
         {
-            if (_navio.consultarPorNombre(this.txt_nombre.Text).Rows.Count==0)
+            if (navioService.GetByName(this.txt_nombre.Text).Count==0)
             {
                 string nombre = this.txt_nombre.Text;
                 float altura = Convert.ToSingle(this.txt_altura.Text);
@@ -52,7 +52,7 @@ namespace ProyectoPAV.gui
                 int cantMotores = Convert.ToInt32(this.txt_motores.Text);
                 Navio navio = new Navio(nombre, altura, autonomia, desplazamiento, eslora, manga, cantMaxPasajeros, cantTripulantes, tipoClasificacion, cantMotores);
 
-                _navio.crearNavio(navio);
+                navioService.CreateNavio(navio);
 
                 MessageBox.Show("Se grabó exitosamente los datos"
                             , ""

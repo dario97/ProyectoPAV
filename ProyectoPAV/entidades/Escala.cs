@@ -45,13 +45,13 @@ namespace ProyectoPAV.entidades
         public Itinerario getItinerario()
         {
             ItinerarioService itinerarioService = new ItinerarioService();
-            return itinerarioService.getById(this.IdItinerario);
+            return itinerarioService.GetById(this.IdItinerario);
         }
         public Puerto getPuerto()
         {
             PuertoService puertoService = new PuertoService();
 
-            return puertoService.getById(this.IdPuerto);
+            return puertoService.GetById(this.IdPuerto);
         }
 
     }

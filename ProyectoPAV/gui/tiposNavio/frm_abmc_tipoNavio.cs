@@ -24,6 +24,7 @@ namespace ProyectoPAV.gui
         {
             TipoClasificacionNavioService tipoService = new TipoClasificacionNavioService();
             DataTable tabla = new DataTable();
+            List<TipoClasificacionNavio> tiposNavios = new List<TipoClasificacionNavio>();
 
             if (txt_tipoNavio.Text == ""
                 && chk_todos.Checked == false)
@@ -35,8 +36,8 @@ namespace ProyectoPAV.gui
             if (txt_tipoNavio.Text != ""
                 && chk_todos.Checked == false)
             {
-                tabla = tipoService.consultarPorNombre(txt_tipoNavio.Text);
-                if (tabla.Rows.Count == 0)
+                tiposNavios = tipoService.GetByName(txt_tipoNavio.Text);
+                if (tiposNavios.Count == 0)
                 {
                     MessageBox.Show("No se encontró ningún tipo de clasificacion con ese nombre.");
                 }
@@ -44,20 +45,20 @@ namespace ProyectoPAV.gui
 
             if (chk_todos.Checked == true)
             {
-                tabla = tipoService.consultarTodos();
+                tiposNavios = tipoService.GetAll();
             }
-            cargar_grilla(tabla);
+            cargar_grilla(tiposNavios);
 
         }
 
-        private void cargar_grilla(DataTable tabla)
+        private void cargar_grilla(List<TipoClasificacionNavio> tiposNavios)
         {
             dgv1.Rows.Clear();
-            for (int i = 0; i < tabla.Rows.Count; i++)
+            for (int i = 0; i < tiposNavios.Count; i++)
             {
                 dgv1.Rows.Add();
-                dgv1.Rows[i].Cells[0].Value = tabla.Rows[i]["Cod_clasificacion"].ToString();
-                dgv1.Rows[i].Cells[1].Value = tabla.Rows[i]["Descripcion"].ToString();
+                dgv1.Rows[i].Cells[0].Value = tiposNavios[i].CodigoClasificacion.ToString();
+                dgv1.Rows[i].Cells[1].Value = tiposNavios[i].Descripcion.ToString();
 
             }
         }
@@ -77,7 +78,7 @@ namespace ProyectoPAV.gui
             {
                 try
                 {
-                    tipoService.eliminarTipoPorID(tipoId);
+                    tipoService.DeleteTipoNavioById(tipoId);
                 }catch(OleDbException exception)
                 {
                     if(exception.ErrorCode == -2147217873)

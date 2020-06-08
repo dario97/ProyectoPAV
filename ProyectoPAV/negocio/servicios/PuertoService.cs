@@ -1,5 +1,6 @@
 ﻿using ProyectoPAV.entidades;
 using ProyectoPAV.negocio.repository;
+using ProyectoPAV.negocio.repository.puerto_repository;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,42 +12,36 @@ namespace ProyectoPAV.negocio.servicios
 {
     public class PuertoService
     {
-        private static PuertoDao puertoDao;
+        private static PuertoRepository puertoRepository = new PuertoRepository();
 
-        public PuertoService()
+        internal Puerto GetById(int id)
         {
-            puertoDao = new PuertoDao();
+            return puertoRepository.GetById(id);
         }
 
-
-        internal Puerto getById(int id)
+        internal List<Puerto> GetByName(string name)
         {
-            return puertoDao.getById(id);
-        }
-        internal DataTable consultarPorNombre(string nombre)
-        {
-            return puertoDao.consultar_x_nombre(nombre);
-
+            return puertoRepository.GetByName(name);
         }
 
-        internal DataTable consultarTodos()
+        internal List<Puerto> GetAll()
         {
-            return puertoDao.consultarTodos();
+            return puertoRepository.GetAll();
         }
 
-        internal bool crearPuerto(Puerto puerto)
+        internal void CreatePuerto(Puerto puerto)
         {
-            return puertoDao.create(puerto);
+            puertoRepository.Create(puerto);
         }
 
-        internal bool modificarPuerto(Puerto puerto)
+        internal void UpdatePuerto(Puerto puerto)
         {
-            return puertoDao.update(puerto);
+            puertoRepository.Update(puerto);
         }
 
-        internal bool eliminarPuerto(int id)
+        internal void DeletePuertoById(int id)
         {
-            return puertoDao.delete(id);
+            puertoRepository.DeleteById(id);
         }
     }
 }

@@ -1,52 +1,46 @@
 ﻿using ProyectoPAV.entidades;
 using ProyectoPAV.negocio.repository;
+using ProyectoPAV.negocio.repository.camarote_repository;
 using System.Collections.Generic;
 using System.Data;
+using System.Runtime.InteropServices;
 
 namespace ProyectoPAV.negocio.servicios
 {
     public class CamaroteService
     {
-        private static CamaroteDao camaroteDao = new CamaroteDao();
+        private static CamaroteRepository camaroteRepository = new CamaroteRepository();
 
-        //internal DataTable consultarPorNombre(string nombre)
-        //{
-        //    //return camaroteDao.consultarCamarote(nombre);
-        ////}
-
-        internal Camarote consultarCamarote(int codNavio, int numCubierta, int numCamarote)
+        internal Camarote GetByPrimaryKey(int idNavio, int numCubierta, int numCamarote)
         {
-            return camaroteDao.consultarCamarote(codNavio, numCubierta, numCamarote);
+            return camaroteRepository.GetByPrimaryKey(idNavio, numCubierta, numCamarote);
         }
 
-        internal Camarote getById(int id)
+        internal Camarote GetById(int id)
         {
-            return camaroteDao.getById(id);
+            return camaroteRepository.GetById(id);
+            
         }
 
-        internal List<Camarote> getAll()
+        internal List<Camarote> GetAll()
         {
-            return camaroteDao.getAll();
+            return camaroteRepository.GetAll();
         }
 
-        internal DataTable consultarTodos()
+
+        internal void CrearCamarote(Camarote camarote)
         {
-            return camaroteDao.consultarTodos();
+            camaroteRepository.Create(camarote);
         }
 
-        internal bool crearCamarote(Camarote camarote)
+        internal void ModificarCamarote(Camarote camarote)
         {
-            return camaroteDao.create(camarote);
+            camaroteRepository.Update(camarote);
         }
 
-        internal bool modificarNavio(Camarote camarote)
+        internal void DeleteById(int id)
         {
-            return camaroteDao.update(camarote);
-        }
-
-        internal bool deleteById(int id)
-        {
-            return camaroteDao.deleteById(id);
+           camaroteRepository.DeleteById(id);
         }
     }
 }

@@ -33,12 +33,12 @@ namespace ProyectoPAV.entidades
             }
             else
             {
-                if(puerto.consultarPorNombre(this.txt_nombre.Text).Rows.Count==0)
+                if(puerto.GetByName(this.txt_nombre.Text).Count==0)
                 {
                     string nombre = this.txt_nombre.Text;
                     
                     Puerto puerto1 = new Puerto(nombre);
-                    puerto.crearPuerto(puerto1);
+                    puerto.CreatePuerto(puerto1);
                     MessageBox.Show("Se creó el puerto " + nombre + " Exitosamente.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     this.Close();
                 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoPAV.negocio.servicios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace ProyectoPAV.entidades
         float manga = 0.0f;
         int cantMaxPasjeros = 0;
         int cantTripulantes = 0;
-        int tipoClasificacion = 0;
+        int idTipoClasificacion = 0;
         int cantMotores = 0;
 
         public Navio(int codigoNavio, string nombre, float altura, float autonomia, float desplazamiento, float eslora, float manga, int cantMaxPasjeros, int cantTripulantes, int tipoClasificacion, int cantMotores)
@@ -31,7 +32,7 @@ namespace ProyectoPAV.entidades
             this.manga = manga;
             this.cantMaxPasjeros = cantMaxPasjeros;
             this.cantTripulantes = cantTripulantes;
-            this.tipoClasificacion = tipoClasificacion;
+            this.idTipoClasificacion = tipoClasificacion;
             this.cantMotores = cantMotores;
         }
 
@@ -45,7 +46,7 @@ namespace ProyectoPAV.entidades
             this.manga = manga;
             this.cantMaxPasjeros = cantMaxPasjeros;
             this.cantTripulantes = cantTripulantes;
-            this.tipoClasificacion = tipoClasificacion;
+            this.idTipoClasificacion = tipoClasificacion;
             this.cantMotores = cantMotores;
         }
 
@@ -57,9 +58,14 @@ namespace ProyectoPAV.entidades
         public float Manga { get => manga; set => manga = value; }
         public int CantMaxPasjeros { get => cantMaxPasjeros; set => cantMaxPasjeros = value; }
         public int CantTripulantes { get => cantTripulantes; set => cantTripulantes = value; }
-        public int TipoClasificacion { get => tipoClasificacion; set => tipoClasificacion = value; }
+        public int IdTipoClasificacion { get => idTipoClasificacion; set => idTipoClasificacion = value; }
         public int CantMotores { get => cantMotores; set => cantMotores = value; }
         public int CodigoNavio { get => codigoNavio; set => codigoNavio = value; }
 
+        //public TipoClasificacionNavio getTipoClasificacion()
+        //{
+        //    TipoClasificacionNavioService tipoNavioService = new TipoClasificacionNavioService();
+        //    tipoNavioService.
+        //}
     }
 }

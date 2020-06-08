@@ -53,7 +53,7 @@ namespace ProyectoPAV.gui.tipoCamarote
             if (miCombito1.SelectedIndex != -1
                 && chk_todos.Checked == false)
             {
-                tipoCamarote = tipoCamaroteService.getById(Convert.ToInt32(this.miCombito1.SelectedValue));
+                tipoCamarote = tipoCamaroteService.GetById(Convert.ToInt32(this.miCombito1.SelectedValue));
                 listaTipos.Add(tipoCamarote);
 
                 if (tipoCamarote == null)
@@ -64,7 +64,7 @@ namespace ProyectoPAV.gui.tipoCamarote
 
             if (chk_todos.Checked == true)
             {
-                listaTipos = tipoCamaroteService.getAll();
+                listaTipos = tipoCamaroteService.GetAll();
             }
             cargar_grilla(listaTipos);
         }
@@ -95,7 +95,7 @@ namespace ProyectoPAV.gui.tipoCamarote
 
             if (tipoId != -1)
             {
-                tipoCamaroteService.eliminar(tipoId);
+                tipoCamaroteService.DeleteTipoCamaroteById(tipoId);
                 MessageBox.Show("Se eliminó con éxito");
 
             }

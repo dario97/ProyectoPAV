@@ -36,13 +36,13 @@ namespace ProyectoPAV.gui
             }
             else
             {
-                if (tipoService.consultarPorNombre(this.txt_tipo.Text).Rows.Count == 0)
+                if (tipoService.GetByName(this.txt_tipo.Text).Count == 0)
                 {
                     string nombre = this.txt_tipo.Text;
 
                     TipoClasificacionNavio tipo = new TipoClasificacionNavio(nombre);
 
-                    tipoService.crearTipoClasificacionNavio(tipo);
+                    tipoService.CreateTipoNavio(tipo);
 
                     MessageBox.Show("Se creó el tipo " + nombre + " Exitosamente."
                                 , "Mensaje"

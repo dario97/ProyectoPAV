@@ -75,7 +75,7 @@ namespace ProyectoPAV.gui.itinerarios
             {
                 List<Itinerario> itinerarios = new List<Itinerario>();
                 int id = Convert.ToInt32(this.cmb_itinerarios.SelectedValue);
-                Itinerario itinerario = itinerarioService.getById(id);
+                Itinerario itinerario = itinerarioService.GetById(id);
                 escalas = escalaService.getAllEscalasDeUnItinerario(id);
                 itinerarios.Add(itinerario);
                 cargar_grillaItinerarios(itinerarios);
@@ -87,7 +87,7 @@ namespace ProyectoPAV.gui.itinerarios
                 if (this.chk_todos.Checked)
                 {
                     int id = Convert.ToInt32(this.cmb_itinerarios.SelectedValue);
-                    List<Itinerario> itinerariosList = itinerarioService.getAll();
+                    List<Itinerario> itinerariosList = itinerarioService.GetAll();
                     cargar_grillaItinerarios(itinerariosList);
                 }
                 else

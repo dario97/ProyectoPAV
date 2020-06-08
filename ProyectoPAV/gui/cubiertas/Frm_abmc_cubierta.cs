@@ -54,7 +54,7 @@ namespace ProyectoPAV.gui
 
             if (id != -1)
             {
-                cubiertaService.deleteById(id);
+                cubiertaService.DeleteById(id);
                 MessageBox.Show("Se eliminó con éxito");
 
             }
@@ -72,7 +72,7 @@ namespace ProyectoPAV.gui
 
             if (chk_todos.Checked)
             {
-               cubiertasList = cubiertaService.getAll();
+               cubiertasList = cubiertaService.GetAll();
                cargar_grilla(cubiertasList);
             }
             else
@@ -84,7 +84,7 @@ namespace ProyectoPAV.gui
                     int codNavio = Convert.ToInt32(this.miCombito1.SelectedValue.ToString());
                     int numCubierta = Convert.ToInt32(this.txt_nroCubierta.Text.ToString());
 
-                    Cubierta cubierta = cubiertaService.consultarCubierta(codNavio, numCubierta);
+                    Cubierta cubierta = cubiertaService.GetByPrimaryKey(codNavio, numCubierta);
 
                     if(cubierta != null)
                     {

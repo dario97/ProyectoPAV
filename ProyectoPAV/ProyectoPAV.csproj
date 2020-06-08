@@ -258,14 +258,15 @@
       <DependentUpon>Frm_Navio.cs</DependentUpon>
     </Compile>
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
-    <Compile Include="negocio\repository\CamaroteDao.cs" />
-    <Compile Include="negocio\repository\CubiertaDao.cs" />
-    <Compile Include="negocio\repository\EscalaDao.cs" />
-    <Compile Include="negocio\repository\ItinerarioDao.cs" />
-    <Compile Include="negocio\repository\NavioDao.cs" />
-    <Compile Include="negocio\repository\PuertoDao.cs" />
-    <Compile Include="negocio\repository\TipoCamaroteDao.cs" />
-    <Compile Include="negocio\repository\TipoClasificacionNavioDao.cs" />
+    <Compile Include="negocio\repository\camarote_repository\CamaroteRepository.cs" />
+    <Compile Include="negocio\repository\cubierta_repository\CubiertaRepository.cs" />
+    <Compile Include="negocio\repository\escala_repository\EscalaRepository.cs" />
+    <Compile Include="negocio\repository\IRepository.cs" />
+    <Compile Include="negocio\repository\itinerario_repository\ItinerarioRepository.cs" />
+    <Compile Include="negocio\repository\navio_repository\NavioRepository.cs" />
+    <Compile Include="negocio\repository\puerto_repository\PuertoRepository.cs" />
+    <Compile Include="negocio\repository\tipoCamarote_repository\TipoCamaroteRepository.cs" />
+    <Compile Include="negocio\repository\tipoNavio_repository\TipoNavioRepository.cs" />
     <Compile Include="negocio\servicios\CamaroteService.cs" />
     <Compile Include="negocio\servicios\CubiertaService.cs" />
     <Compile Include="negocio\servicios\EscalaService.cs" />

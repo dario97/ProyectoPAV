@@ -50,7 +50,7 @@ namespace ProyectoPAV.gui
         private void cmd_aceptar_Click(object sender, EventArgs e)
         {
             Navio navio = new Navio(pp_codigo, this.txt_navio.Text, Convert.ToSingle(this.txt_altura.Text), Convert.ToSingle(this.txt_autonomia.Text), Convert.ToSingle(this.txt_desplazamiento.Text), Convert.ToSingle(this.txt_eslora.Text), Convert.ToSingle(this.txt_manga.Text), Convert.ToInt32(this.txt_cant_max_pasajeros.Text), Convert.ToInt32(this.txt_cant_tripulantes.Text), Convert.ToInt32(this.txt_clasificacion.Text), Convert.ToInt32(this.txt_cant_motores.Text));
-            tipoService.modificarNavio(navio);
+            tipoService.UpdateNavio(navio);
             MessageBox.Show("El navío se modificó correctamente", "Mensaje", MessageBoxButtons.OK);
         }
 

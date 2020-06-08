@@ -11,44 +11,39 @@ namespace ProyectoPAV.negocio.servicios
 {
     public class NavioService
     {
-        private static NavioDao navioDao;
+        
+        private static NavioRepository navioRepository = new NavioRepository();
 
-        public NavioService()
+        internal Navio GetById(int id)
         {
-            navioDao = new NavioDao();
+            return navioRepository.GetById(id);
+        }
+        internal List<Navio> GetByName(string name)
+        {
+            return navioRepository.GetByName(name);
         }
 
-
-        internal Navio getById(int id)
+        internal List<Navio> GetAll()
         {
-            return navioDao.getById(id);
-        }
-        internal DataTable consultarPorNombre(string nombre)
-        {
-            return navioDao.consultar_x_nombre(nombre);
+            return navioRepository.GetAll();
         }
 
-        internal DataTable consultarTodos()
+        internal void CreateNavio(Navio navio)
         {
-            return navioDao.consultarTodos();
+            navioRepository.Create(navio);
         }
 
-        internal bool crearNavio(Navio navio)
+        internal void UpdateNavio(Navio navio)
         {
-            return navioDao.create(navio);
+             navioRepository.Update(navio);
         }
 
-        internal bool modificarNavio(Navio navio)
+        internal void DeleteNavioById(int id)
         {
-            return navioDao.update(navio);
+            navioRepository.DeleteById(id);
         }
-
-        internal bool eliminarNavio(int id)
-        {
-            return navioDao.delete(id);
-        }
-
-
-
     }
 }
+
+
+

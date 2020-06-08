@@ -88,7 +88,7 @@ namespace ProyectoPAV.gui
 
                 Itinerario itinerario = new Itinerario(descripcion, categoria, escalasList);
 
-                itinerarioService.cargarItinerario(itinerario);
+                itinerarioService.CargarItinerario(itinerario);
 
                 MessageBox.Show("Carga de itinerario finalizada con éxtio", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }

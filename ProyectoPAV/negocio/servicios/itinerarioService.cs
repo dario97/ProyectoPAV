@@ -1,5 +1,6 @@
 ﻿using ProyectoPAV.entidades;
 using ProyectoPAV.negocio.repository;
+using ProyectoPAV.negocio.repository.itinerario_repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,47 +11,38 @@ namespace ProyectoPAV.negocio.servicios
 {
     public class ItinerarioService
     {
-        private ItinerarioDao itinerarioDao;
+        
+        private static ItinerarioRepository itinerarioRepository = new ItinerarioRepository();
 
-        public ItinerarioService()
+        internal void CargarItinerario(Itinerario itinerario)
         {
-            this.itinerarioDao = new ItinerarioDao();
+          itinerarioRepository.CargarItinerario(itinerario);
+        }
+        internal void Create(Itinerario itinerario)
+        {
+            itinerarioRepository.Create(itinerario);
         }
 
-        internal bool cargarItinerario(Itinerario itinerario)
+        internal Itinerario GetById(int id)
         {
-            return itinerarioDao.cargarItinerario(itinerario);
-        }
-        internal bool create(Itinerario itinerario)
-        {
-            return itinerarioDao.create(itinerario);
-        }
-
-        internal Itinerario getById(int id)
-        {
-            return itinerarioDao.getById(id);
+            return itinerarioRepository.GetById(id);
 
         }
 
-        internal List<Itinerario> getAll()
+        internal List<Itinerario> GetAll()
         {
-            return itinerarioDao.getAll();
+            return itinerarioRepository.GetAll();
            
         }
 
-        internal bool deleteById(int id)
+        internal void DeleteById(int id)
         {
-            return itinerarioDao.deleteById(id);
+            itinerarioRepository.DeleteById(id);
         } 
 
-        internal bool delete(Itinerario itinerario)
+        internal void update(Itinerario itinerario)
         {
-            return itinerarioDao.delete(itinerario);
-        }
-
-        internal bool update(Itinerario itinerario)
-        {
-            return itinerarioDao.update(itinerario);
+            itinerarioRepository.Update(itinerario);
         }
 
     }

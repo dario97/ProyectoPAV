@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace ProyectoPAV.negocio.repository
 {
-    class BE_acceso_BD
+    public class BE_acceso_BD
     {
         public enum tipo_conexion { simple, transaccion }
         public enum estado_BE { correcto, error}
@@ -89,11 +89,11 @@ namespace ProyectoPAV.negocio.repository
             catch (Exception e)
             {
                 control_transaccion = estado_BE.error;
-                MessageBox.Show("Error con la Base de Datos" + "\n"
-                    + "En el comando:" + "\n"
-                    + consultaSQL + "\n"
-                    + "El mensaje es:" + "\n"
-                    + e.Message);
+                //MessageBox.Show("Error con la Base de Datos" + "\n"
+                //    + "En el comando:" + "\n"
+                //    + consultaSQL + "\n"
+                //    + "El mensaje es:" + "\n"
+                //    + e.Message);
 
                 throw e;
             }

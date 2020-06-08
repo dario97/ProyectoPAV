@@ -32,7 +32,7 @@ namespace ProyectoPAV.gui
         private void botonConfirmar_Click(object sender, EventArgs e)
         {
             TipoClasificacionNavio tipo = new TipoClasificacionNavio(pp_id, this.txt_tipo.Text);
-            tipoService.modificarTipoClasificacionNavio(tipo);
+            tipoService.UpdateTipoNavio(tipo);
             MessageBox.Show("El tipo se modificó con exito", "Mensaje", MessageBoxButtons.OK);
         }
 

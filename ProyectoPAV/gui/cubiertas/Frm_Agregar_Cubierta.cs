@@ -52,12 +52,12 @@ namespace ProyectoPAV.gui
                 
                 
 
-                Cubierta cubiertaConsulta = cubiertaService.consultarCubierta(idNavio, numCubierta);
+                Cubierta cubiertaConsulta = cubiertaService.GetByPrimaryKey(idNavio, numCubierta);
 
                 if (cubiertaConsulta == null)
                 {
                     Cubierta cubierta = new Cubierta(idNavio, numCubierta, descripcion, legajoEncargado);
-                    cubiertaService.crearCubierta(cubierta);
+                    cubiertaService.CrearCubierta(cubierta);
                     MessageBox.Show("Se creó con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else

@@ -1,5 +1,6 @@
 ﻿using ProyectoPAV.entidades;
 using ProyectoPAV.negocio.repository;
+using ProyectoPAV.negocio.repository.tipoCamarote_repository;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,47 +12,32 @@ namespace ProyectoPAV.negocio.servicios
 {
     public class TipoCamaroteService
     {
-        private static TipoCamaroteDao tipoCamaroteDao;
+       
+        private static TipoCamaroteRepository tipoCamaroteRepository = new TipoCamaroteRepository();
 
-        public TipoCamaroteService()
+        internal TipoCamarote GetById(int id)
         {
-            tipoCamaroteDao = new TipoCamaroteDao();
+            return tipoCamaroteRepository.GetById(id);
         }
 
-
-        internal TipoCamarote getById(int id)
+        internal List<TipoCamarote> GetAll()
         {
-            return tipoCamaroteDao.getById(id);
+            return tipoCamaroteRepository.GetAll();
         }
 
-        internal List<TipoCamarote> getAll()
+        internal List<TipoCamarote> GetByName(string name)
         {
-            return tipoCamaroteDao.getAll();
+            return tipoCamaroteRepository.GetByName(name);
         }
 
-        internal DataTable consultarPorNombre(string nombre)
+        internal void CreateTipoCamarote(TipoCamarote tipoCamarote)
         {
-            return tipoCamaroteDao.consultar_x_nombre(nombre);
+            tipoCamaroteRepository.Create(tipoCamarote);
         }
 
-        //internal DataTable consultarTodos()
-        //{
-        //    return tipoCamaroteDao.consultarTodos();
-        //}
-
-        internal void crearTipoCamarote(TipoCamarote tipoCamarote)
+        internal void DeleteTipoCamaroteById(int id)
         {
-            tipoCamaroteDao.create(tipoCamarote);
-        }
-
-        //internal bool modificarNavio(Navio navio)
-        //{
-        //    return navioDao.update(navio);
-        //}
-
-        internal bool eliminar(int id)
-        {
-            return tipoCamaroteDao.delete(id);
+            tipoCamaroteRepository.DeleteById(id);
         }
 
     }

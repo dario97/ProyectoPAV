@@ -1,4 +1,5 @@
-﻿using ProyectoPAV.negocio.servicios;
+﻿using ProyectoPAV.entidades;
+using ProyectoPAV.negocio.servicios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,8 +51,8 @@ namespace ProyectoPAV.gui
 
         private void cmd_Consultar_Click(object sender, EventArgs e)
         {
-            NavioService navio = new NavioService();
-            DataTable tabla = new DataTable();
+            NavioService navioService = new NavioService();
+            List<Navio> navios = new List<Navio>();
 
             if (txt_navio.Text == ""
                 && checkBox_todos.Checked==false)
@@ -63,8 +64,8 @@ namespace ProyectoPAV.gui
             if (txt_navio.Text != ""
                 && checkBox_todos.Checked == false)
             {
-                tabla = navio.consultarPorNombre(txt_navio.Text);
-                if (tabla.Rows.Count == 0)
+                navios = navioService.GetByName(txt_navio.Text);
+                if (navios.Count == 0)
                 {
                     MessageBox.Show("No se encontró ningún navío con ese nombre.");
                 }
@@ -72,38 +73,32 @@ namespace ProyectoPAV.gui
 
             if (checkBox_todos.Checked == true)
             {
-                tabla = navio.consultarTodos();
+                navios = navioService.GetAll();
             }
-            cargar_grilla(tabla);
+            cargar_grilla(navios);
         }
 
-        private void cargar_grilla(DataTable tabla)
+        private void cargar_grilla(List<Navio> navios)
         {
             dgvl.Rows.Clear();
-            for (int i = 0; i < tabla.Rows.Count; i++)
+            for (int i = 0; i < navios.Count; i++)
             {
                 dgvl.Rows.Add();
-                dgvl.Rows[i].Cells[0].Value = tabla.Rows[i]["Cod_navio"].ToString();
-                dgvl.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre_navio"].ToString();
-                dgvl.Rows[i].Cells[2].Value = tabla.Rows[i]["Altura"].ToString();
-                dgvl.Rows[i].Cells[3].Value = tabla.Rows[i]["Autonomia"].ToString();
-                dgvl.Rows[i].Cells[4].Value = tabla.Rows[i]["Desplazamiento"].ToString();
-                dgvl.Rows[i].Cells[5].Value = tabla.Rows[i]["Eslora"].ToString();
-                dgvl.Rows[i].Cells[6].Value = tabla.Rows[i]["Manga"].ToString();
-                dgvl.Rows[i].Cells[7].Value = tabla.Rows[i]["Cant_max_pasajeros"].ToString();
-                dgvl.Rows[i].Cells[8].Value = tabla.Rows[i]["Cant_tripulantes"].ToString();
-                dgvl.Rows[i].Cells[9].Value = tabla.Rows[i]["Tipo_clasificacion"].ToString();
-                dgvl.Rows[i].Cells[10].Value = tabla.Rows[i]["Cant_motores"].ToString();
+                dgvl.Rows[i].Cells[0].Value = navios[i].CodigoNavio.ToString();
+                dgvl.Rows[i].Cells[1].Value = navios[i].Nombre.ToString();
+                dgvl.Rows[i].Cells[2].Value = navios[i].Altura.ToString();
+                dgvl.Rows[i].Cells[3].Value = navios[i].Autonomia.ToString();
+                dgvl.Rows[i].Cells[4].Value = navios[i].Desplazamiento.ToString();
+                dgvl.Rows[i].Cells[5].Value = navios[i].Eslora.ToString();
+                dgvl.Rows[i].Cells[6].Value = navios[i].Manga.ToString();
+                dgvl.Rows[i].Cells[7].Value = navios[i].CantMaxPasjeros.ToString();
+                dgvl.Rows[i].Cells[8].Value = navios[i].CantTripulantes.ToString();
+                dgvl.Rows[i].Cells[9].Value = navios[i].IdTipoClasificacion.ToString();
+                dgvl.Rows[i].Cells[10].Value = navios[i].CantMotores.ToString();
               
             }
         }
        
-
-        private NavioService NavioService()
-        {
-            throw new NotImplementedException();
-        }
-
         private void cmd_Agregar_Click(object sender, EventArgs e)
         {
 
@@ -118,7 +113,7 @@ namespace ProyectoPAV.gui
 
             if(tipocodigo != -1)
             {
-                navioelim.eliminarNavio(tipocodigo);
+                navioelim.DeleteNavioById(tipocodigo);
             }
              
         }

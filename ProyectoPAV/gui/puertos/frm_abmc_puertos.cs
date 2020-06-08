@@ -52,7 +52,7 @@ namespace ProyectoPAV.gui
             puertoid = Convert.ToInt32(this.dgv4.CurrentRow.Cells["Id"].Value.ToString());
             if (puertoid != -1)
             {
-                puerto3.eliminarPuerto(puertoid);
+                puerto3.DeletePuertoById(puertoid);
                 MessageBox.Show("La eliminación se realizó con éxito", "mensaje", MessageBoxButtons.OK);
             }
             
@@ -60,8 +60,9 @@ namespace ProyectoPAV.gui
 
         private void cmd_consulta_Click(object sender, EventArgs e)
         {
-            PuertoService puerto = new PuertoService();
+            PuertoService puertosService = new PuertoService();
             DataTable tabla = new DataTable();
+            List<Puerto> puertos = new List<Puerto>();
 
             if (txt_nombre.Text == ""
                 && chbx1.Checked == false)
@@ -73,8 +74,8 @@ namespace ProyectoPAV.gui
             if (txt_nombre.Text != ""
                 && chbx1.Checked == false)
             {
-                tabla = puerto.consultarPorNombre(txt_nombre.Text);
-                if (tabla.Rows.Count == 0)
+                puertos = puertosService.GetByName(txt_nombre.Text);
+                if (puertos.Count == 0)
                 {
                     MessageBox.Show("No se encontró ningun puerto con ese nombre", " Mensaje", MessageBoxButtons.OK);
                 }
@@ -82,21 +83,21 @@ namespace ProyectoPAV.gui
 
             if (chbx1.Checked == true)
             {
-                tabla = puerto.consultarTodos();
+                puertos = puertosService.GetAll();
 
             }
-            cargar_grilla(tabla);
+            cargar_grilla(puertos);
 
         }
 
-        private void cargar_grilla(DataTable tabla)
+        private void cargar_grilla(List<Puerto> puertos)
         {
             dgv4.Rows.Clear();
-            for (int i = 0; i < tabla.Rows.Count; i++)
+            for (int i = 0; i < puertos.Count; i++)
             {
                 dgv4.Rows.Add();
-                dgv4.Rows[i].Cells[0].Value = tabla.Rows[i]["Cod_puerto"].ToString();
-                dgv4.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre"].ToString();
+                dgv4.Rows[i].Cells[0].Value = puertos[i].CodigoPuerto.ToString();
+                dgv4.Rows[i].Cells[1].Value = puertos[i].Nombre.ToString();
 
             }
         }
