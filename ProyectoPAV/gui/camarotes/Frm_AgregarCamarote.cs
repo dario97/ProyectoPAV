@@ -46,7 +46,7 @@ namespace ProyectoPAV.gui
 
         private void cmd_aceptar_Click(object sender, EventArgs e)
         {
-            if (_camarote.consultarCamarote(Convert.ToInt32(this.cmb_navio.SelectedValue.ToString()),Convert.ToInt32(this.txt_cubierta.Text),Convert.ToInt32(this.txt_numcam.Text)) == null)
+            if (_camarote.GetByPrimaryKey(Convert.ToInt32(this.cmb_navio.SelectedValue.ToString()),Convert.ToInt32(this.txt_cubierta.Text),Convert.ToInt32(this.txt_numcam.Text)) == null)
             {
 
                 int codNavio = Convert.ToInt32(this.cmb_navio.SelectedValue.ToString());
@@ -60,7 +60,7 @@ namespace ProyectoPAV.gui
 
             
 
-                _camarote.crearCamarote(camarote);
+                _camarote.CrearCamarote(camarote);
 
                 MessageBox.Show("El Camarote se guardó exitosamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
