@@ -11,12 +11,8 @@ namespace ProyectoPAV.negocio.servicios
 {
     public class EscalaService
     {
-        EscalaDao escalaDao;
+     
         private static EscalaRepository escalaRepository = new EscalaRepository();
-        public EscalaService()
-        {
-            this.escalaDao = new EscalaDao();
-        }
 
         internal List<Escala> getAllEscalasDeUnItinerario(int id)
         {

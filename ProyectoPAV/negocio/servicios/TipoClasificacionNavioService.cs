@@ -16,6 +16,11 @@ namespace ProyectoPAV.negocio.servicios
      
         private static TipoNavioRepository tipoNavioRepository = new TipoNavioRepository();
 
+        internal TipoClasificacionNavio GetById(int id)
+        {
+            return tipoNavioRepository.GetById(id);
+        }
+
         internal List<TipoClasificacionNavio> GetByName(string name)
         {
             return tipoNavioRepository.GetByName(name);

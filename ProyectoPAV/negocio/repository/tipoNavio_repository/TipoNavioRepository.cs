@@ -108,7 +108,7 @@ namespace ProyectoPAV.negocio.repository.tipoNavio_repository
         public TipoClasificacionNavio Mapping(DataRow row)
         {
             int idTipo = Convert.ToInt32(row["Cod_clasificacion"].ToString());
-            string descripcion = row["Descripción"].ToString();
+            string descripcion = row["Descripcion"].ToString();
 
             return new TipoClasificacionNavio(idTipo, descripcion);
         }

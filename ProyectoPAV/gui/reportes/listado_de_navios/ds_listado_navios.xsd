@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_listado_navios" targetNamespace="http://tempuri.org/ds_listado_navios.xsd" xmlns:mstns="http://tempuri.org/ds_listado_navios.xsd" xmlns="http://tempuri.org/ds_listado_navios.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_listado_navios" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_listado_navios" msprop:Generator_UserDSName="ds_listado_navios">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Navios" msprop:Generator_TableClassName="NaviosDataTable" msprop:Generator_TableVarName="tableNavios" msprop:Generator_RowChangedName="NaviosRowChanged" msprop:Generator_TablePropName="Navios" msprop:Generator_RowDeletingName="NaviosRowDeleting" msprop:Generator_RowChangingName="NaviosRowChanging" msprop:Generator_RowEvHandlerName="NaviosRowChangeEventHandler" msprop:Generator_RowDeletedName="NaviosRowDeleted" msprop:Generator_RowClassName="NaviosRow" msprop:Generator_UserTableName="Navios" msprop:Generator_RowEvArgName="NaviosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_navio" msprop:Generator_ColumnVarNameInTable="columnCod_navio" msprop:Generator_ColumnPropNameInRow="Cod_navio" msprop:Generator_ColumnPropNameInTable="Cod_navioColumn" msprop:Generator_UserColumnName="Cod_navio" type="xs:int" minOccurs="0" />
+              <xs:element name="Nombre_navio" msprop:Generator_ColumnVarNameInTable="columnNombre_navio" msprop:Generator_ColumnPropNameInRow="Nombre_navio" msprop:Generator_ColumnPropNameInTable="Nombre_navioColumn" msprop:Generator_UserColumnName="Nombre_navio" type="xs:string" minOccurs="0" />
+              <xs:element name="Altura" msprop:Generator_ColumnVarNameInTable="columnAltura" msprop:Generator_ColumnPropNameInRow="Altura" msprop:Generator_ColumnPropNameInTable="AlturaColumn" msprop:Generator_UserColumnName="Altura" type="xs:int" minOccurs="0" />
+              <xs:element name="Autonomia" msprop:Generator_ColumnVarNameInTable="columnAutonomia" msprop:Generator_ColumnPropNameInRow="Autonomia" msprop:Generator_ColumnPropNameInTable="AutonomiaColumn" msprop:Generator_UserColumnName="Autonomia" type="xs:int" minOccurs="0" />
+              <xs:element name="Desplazamiento" msprop:Generator_ColumnVarNameInTable="columnDesplazamiento" msprop:Generator_ColumnPropNameInRow="Desplazamiento" msprop:Generator_ColumnPropNameInTable="DesplazamientoColumn" msprop:Generator_UserColumnName="Desplazamiento" type="xs:int" minOccurs="0" />
+              <xs:element name="Eslora" msprop:Generator_ColumnVarNameInTable="columnEslora" msprop:Generator_ColumnPropNameInRow="Eslora" msprop:Generator_ColumnPropNameInTable="EsloraColumn" msprop:Generator_UserColumnName="Eslora" type="xs:int" minOccurs="0" />
+              <xs:element name="Manga" msprop:Generator_ColumnVarNameInTable="columnManga" msprop:Generator_ColumnPropNameInRow="Manga" msprop:Generator_ColumnPropNameInTable="MangaColumn" msprop:Generator_UserColumnName="Manga" type="xs:int" minOccurs="0" />
+              <xs:element name="Cant_max_pasajeros" msprop:Generator_ColumnVarNameInTable="columnCant_max_pasajeros" msprop:Generator_ColumnPropNameInRow="Cant_max_pasajeros" msprop:Generator_ColumnPropNameInTable="Cant_max_pasajerosColumn" msprop:Generator_UserColumnName="Cant_max_pasajeros" type="xs:int" minOccurs="0" />
+              <xs:element name="Cant_tripulantes" msprop:Generator_ColumnVarNameInTable="columnCant_tripulantes" msprop:Generator_ColumnPropNameInRow="Cant_tripulantes" msprop:Generator_ColumnPropNameInTable="Cant_tripulantesColumn" msprop:Generator_UserColumnName="Cant_tripulantes" type="xs:int" minOccurs="0" />
+              <xs:element name="Tipo_clasificacion" msprop:Generator_ColumnVarNameInTable="columnTipo_clasificacion" msprop:Generator_ColumnPropNameInRow="Tipo_clasificacion" msprop:Generator_ColumnPropNameInTable="Tipo_clasificacionColumn" msprop:Generator_UserColumnName="Tipo_clasificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Cant_motores" msprop:Generator_ColumnVarNameInTable="columnCant_motores" msprop:Generator_ColumnPropNameInRow="Cant_motores" msprop:Generator_ColumnPropNameInTable="Cant_motoresColumn" msprop:Generator_UserColumnName="Cant_motores" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -62,10 +62,10 @@ namespace ProyectoPAV.entidades
         public int CantMotores { get => cantMotores; set => cantMotores = value; }
         public int CodigoNavio { get => codigoNavio; set => codigoNavio = value; }
 
-        //public TipoClasificacionNavio getTipoClasificacion()
-        //{
-        //    TipoClasificacionNavioService tipoNavioService = new TipoClasificacionNavioService();
-        //    tipoNavioService.
-        //}
+        public TipoClasificacionNavio GetTipoNavio()
+        {
+            TipoClasificacionNavioService tipoNavioService = new TipoClasificacionNavioService();
+            return tipoNavioService.GetById(this.IdTipoClasificacion);
+        }
     }
 }

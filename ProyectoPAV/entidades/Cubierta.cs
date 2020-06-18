@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoPAV.negocio.servicios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,5 +37,11 @@ namespace ProyectoPAV.entidades
         public string Descripcion { get => descripcion; set => descripcion = value; }
         public int LegajoEncargado { get => legajoEncargado; set => legajoEncargado = value; }
         public int Id { get => id; set => id = value; }
+
+        public Navio GetNavio()
+        {
+            NavioService navioService = new NavioService();
+            return navioService.GetById(this.IdNavio);
+        }
     }
 }

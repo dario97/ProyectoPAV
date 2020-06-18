@@ -39,6 +39,7 @@
             this.cmd_tiposDeCamarote = new System.Windows.Forms.Button();
             this.cmd_gestionCubierta = new System.Windows.Forms.Button();
             this.cmd_itinerarios = new System.Windows.Forms.Button();
+            this.cmd_reportes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -173,12 +174,25 @@
             this.cmd_itinerarios.UseVisualStyleBackColor = false;
             this.cmd_itinerarios.Click += new System.EventHandler(this.bttn_itinerarios_Click);
             // 
+            // cmd_reportes
+            // 
+            this.cmd_reportes.BackColor = System.Drawing.Color.Silver;
+            this.cmd_reportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmd_reportes.Location = new System.Drawing.Point(446, 190);
+            this.cmd_reportes.Name = "cmd_reportes";
+            this.cmd_reportes.Size = new System.Drawing.Size(188, 88);
+            this.cmd_reportes.TabIndex = 14;
+            this.cmd_reportes.Text = "LISTADOS Y ETADÍSTICAS";
+            this.cmd_reportes.UseVisualStyleBackColor = false;
+            this.cmd_reportes.Click += new System.EventHandler(this.cmd_reportes_Click);
+            // 
             // frm_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(652, 510);
+            this.Controls.Add(this.cmd_reportes);
             this.Controls.Add(this.cmd_itinerarios);
             this.Controls.Add(this.cmd_gestionCubierta);
             this.Controls.Add(this.cmd_tiposDeCamarote);
@@ -210,5 +224,6 @@
         private System.Windows.Forms.Button cmd_tiposDeCamarote;
         private System.Windows.Forms.Button cmd_gestionCubierta;
         private System.Windows.Forms.Button cmd_itinerarios;
+        private System.Windows.Forms.Button cmd_reportes;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoPAV.entidades
 {
-    class TipoClasificacionNavio
+    public class TipoClasificacionNavio
     {
         int codigoClasificacion;
         string descripcion = "";

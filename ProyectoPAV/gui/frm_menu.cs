@@ -1,4 +1,5 @@
 ﻿using ProyectoPAV.gui.itinerarios;
+using ProyectoPAV.gui.reportes;
 using ProyectoPAV.gui.tipoCamarote;
 using System;
 using System.Collections.Generic;
@@ -78,6 +79,12 @@ namespace ProyectoPAV.gui
         {
             Frm_gestionarItinerarios frm_gestionar_itinerarios = new Frm_gestionarItinerarios();
             frm_gestionar_itinerarios.ShowDialog();
+        }
+
+        private void cmd_reportes_Click(object sender, EventArgs e)
+        {
+            Frm_listado_navios frm = new Frm_listado_navios();
+            frm.ShowDialog();
         }
     }
 }

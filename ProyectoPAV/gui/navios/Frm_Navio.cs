@@ -93,7 +93,7 @@ namespace ProyectoPAV.gui
                 dgvl.Rows[i].Cells[6].Value = navios[i].Manga.ToString();
                 dgvl.Rows[i].Cells[7].Value = navios[i].CantMaxPasjeros.ToString();
                 dgvl.Rows[i].Cells[8].Value = navios[i].CantTripulantes.ToString();
-                dgvl.Rows[i].Cells[9].Value = navios[i].IdTipoClasificacion.ToString();
+                dgvl.Rows[i].Cells[9].Value = navios[i].GetTipoNavio().Descripcion;
                 dgvl.Rows[i].Cells[10].Value = navios[i].CantMotores.ToString();
               
             }

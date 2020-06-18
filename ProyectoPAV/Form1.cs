@@ -22,7 +22,7 @@ namespace ProyectoPAV
         private void Form1_Load(object sender, EventArgs e)
         {
             TipoClasificacionNavio tipo = new TipoClasificacionNavio(1, "Lujo");
-            TipoClasificacionNavioDao tipoDao = new TipoClasificacionNavioDao();
+            
 
             
 
