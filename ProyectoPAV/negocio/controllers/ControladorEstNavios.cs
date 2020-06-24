@@ -54,6 +54,11 @@ namespace ProyectoPAV.negocio.controllers
             return this.values;
         }
 
+        public List<string> getNavioNames()
+        {
+            return this.navioNames;
+        }
+
         public void generarEstadisticas()
         {
             BE_acceso_BD dbAccess = new BE_acceso_BD();
@@ -74,21 +79,14 @@ namespace ProyectoPAV.negocio.controllers
                 values.Add(value);
             }
         }
-
-        public void generarConsulta()
-        {
-            
-
-            
-            
-        }
-
-
-
-
-
-
-
-
     }
 }
+
+
+
+
+
+
+
+
+

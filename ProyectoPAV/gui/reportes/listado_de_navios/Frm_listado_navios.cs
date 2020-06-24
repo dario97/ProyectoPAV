@@ -131,12 +131,28 @@ namespace ProyectoPAV.gui.reportes
             }
 
             controladorEstNavios.generarEstadisticas();
-            
-            
 
-            
+            List<string> navioNames = controladorEstNavios.getNavioNames();
+            List<int> values = controladorEstNavios.getValues();
+
+            this.chart_navios.Series[0].Points.Clear();
+            this.chart_navios.Series[0].Points.Clear();
+            this.chart_navios.ChartAreas[0].AxisY.Title = cmb_campos.SelectedItem.ToString();
+            this.chart_navios.ChartAreas[0].AxisX.IsReversed = true;
+
+
+            for (int i = 0; i < values.Count; i++)
+            {
+                int value = values[i];
+                string navioName = navioNames[i];
+                
+
+                this.chart_navios.Series[0].Points.Add(value);
+                this.chart_navios.Series[0].Points.Last().Label = navioName;
+                
+            }
+
         }
-
         private void cmd_generarEstNavios_Click(object sender, EventArgs e)
         {
             generarEstadisticasNavios();
@@ -146,6 +162,13 @@ namespace ProyectoPAV.gui.reportes
 
            
 
+
+
+
+
+
+
+  
 
 
 
