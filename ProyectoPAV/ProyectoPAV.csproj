@@ -295,6 +295,8 @@
     </Compile>
     <Compile Include="negocio\classes\ConstructorInformeNaviosEnPantalla.cs" />
     <Compile Include="negocio\classes\InformeNavios.cs" />
+    <Compile Include="negocio\controllers\ControladorEstNavios.cs" />
+    <Compile Include="negocio\controllers\GenerarEstadisticaTiposNavioController.cs" />
     <Compile Include="negocio\controllers\GenerarListadoNavioController.cs" />
     <Compile Include="negocio\repository\BE_acceso_BD.cs" />
     <Compile Include="negocio\repository\camarote_repository\CamaroteRepository.cs" />
